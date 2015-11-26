@@ -71,7 +71,6 @@ a {
     margin-top: 5px; }
   @media all and (max-width: 767px) {
     .location-h3 {
-      width: 100%;
       font-size: 18px; } }
 
 body {
@@ -148,6 +147,11 @@ body {
   top: 20px;
   right: 20px;
   width: 36px; }
+  @media all and (max-width: 767px) {
+    .location-flag {
+      width: 25px;
+      top: 0;
+      right: 0; } }
 
 .img-container {
   background-color: #000;

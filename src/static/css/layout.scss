@@ -97,4 +97,9 @@ body{
 	top: 20px;
 	right: 20px;
 	width: 36px;
+	@media all and (max-width: $breakpoint-mobile){
+		width: 25px;
+		top: 0;
+		right: 0;
+	}
 }
