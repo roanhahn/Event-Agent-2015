@@ -1,181 +1,75 @@
-header{
-	height: 57px;
+.header{
 	background-color: #fff;
-	overflow: hidden;
-
-	@media screen and (max-width: 767px){
-		height: 50px;
-		background-color: #8C1221;
+	height: $header-height;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	@media all and (max-width: $breakpoint-mobile){
+		height: $header-height-mobile;
 	}
 }
 
 .header-logo{
-	background-color: #8C1221;
-	color: #fff;
-	display: inline-block;
-	font-size: 20px;
-	font-weight: 700;
-	height: 57px;
-	line-height: 57px;
-	padding: 0px 29px;
-
-	@media screen and (max-width: 767px){
-		height: 50px;
-		line-height: 50px;
-		font-size: 18px;
-		display: block;
-		padding: 0px 28px;
+	float: left;
+	width: $logo-width;
+	height: $logo-height;
+	background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll;
+	background-size: $logo-width;
+	margin-top: 15px;
+	display: block;
+	@media all and (max-width: $breakpoint-mobile){
+		width: $logo-width-mobile;
+		background-size: $logo-width-mobile;
+		margin-top: 5px;
+		margin: 5px auto;
+		float: none;
 	}
 }
 
-.header-link{
-	color: #000;
-	font-size: 16px;
-	line-height: 57px;
-	display: inline-block;
-	position: relative;
-
-	&:after{
-		content: "";
-		width: 18px;
-		height: 13px;
-		background: transparent url(../img/icon-envelope-2x.png) no-repeat 0 0 scroll;
-		background-size: 18px;
-		display: inline-block;
-		margin: 0px 10px;
-		position: relative;
-		@media screen and (max-width: 767px){
-			background: transparent url(../img/icon-envelope-white-2x.png) no-repeat 0 0 scroll;
-			background-size: 18px;
-			top: -2px;
-			margin: 0 28px 0 0;
-		}
+.header-menu{
+	@media all and (max-width: $breakpoint-mobile){
+		display: none;
 	}
+}
 
-	@media screen and (max-width: 767px){
-		& span{
-			display: none;
-		}
+.header-menu-list{
+	float: right;
+	border-right: 1px solid $header-border-color;
+}
+
+.header-menu-item{
+	list-style-type: none;
+	float: left;
+	border-left: 1px solid $header-border-color;
+	line-height: $header-height;
+}
+
+.header-menu-link{
+	display: block;
+	padding: 0 40px;
+	color: $header-link-color;
+	font-family: $secondary-font;
+	font-size: $header-link-size;
+	font-weight: normal;
+
+	&:hover{
+		color: $header-hover-color;
 	}
 }
 
 .hero{
-	background-color: #fff;
-	background-position: top center;
-	background-attachment: scroll;
-	background-size: cover;
-	position: relative;
-	color: #fff;
-	height: 665px;
+	background-color: $hero-bg-color;
+	color: $hero-color;
+	padding: 50px 0;
+	font-family: $secondary-font;
 
-	@media screen and (max-width: 767px){
-		height: 335px;
-	}
-
-	&:before{
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0,0,0,0.10);
-	}
-}
-
-.hero-copy{
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	padding-bottom: 75px;
-
-	@media screen and (max-width: 767px){
-		padding-bottom: 32px;
-	}
-}
-
-.hero-h1{
-	font-size: 64px;
-	font-weight: 700;
-	color: #FFFFFF;
-	line-height: 68px;
-	text-shadow: 0px 2px 13px rgba(0,0,0,0.35);
-
-	@media screen and (max-width: 767px){
-		font-size: 27px;
-		line-height: 35px;
-	}
-}
-.hero-small{
-	font-weight: 300;
-	display: block;
-	font-size: 27px;
-	color: #FFFFFF;
-	letter-spacing: 0.16px;
-	line-height: 35px;
-	margin-top: 5px;
-	text-shadow: 0px 2px 14px rgba(0,0,0,0.50);
-
-	@media screen and (max-width: 767px){
-		font-size: 21px;
-		letter-spacing: 0.13px;
-		line-height: 29px;
-	}
-}
-
-.landing-hero{
-	min-height: calc(100% - 57px);
-	background: #fff url(../img/hero-landing.jpg) no-repeat center center scroll;
-	background-size: cover;
-	position: relative;
-	color: #fff;
-	padding: 30px 0;
-
-	@media screen and (max-width: 767px){
-		min-height: calc(100% - 50px);
-	}
-
-	&:before{
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0,0,0,0.30);
-	}
-
-	& h1{
-		font-weight: 700;
-		font-size: 48px;
-		color: #FFFFFF;
-		line-height: 53px;
-		text-shadow: 0px 2px 11px rgba(0,0,0,0.26);
-		margin-bottom: 30px;
-
-		@media screen and (max-width: 767px){
-			font-size: 27px;
-			line-height: 35px;
+	& .hero-h1{
+		font-size: $hero-size;
+		line-height: 1;
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: $hero-size-mobile;
 		}
 	}
-}
-
-.landing-hero-content{
-	bottom: 0;
-	height: 50%;
-	left: 0;
-	margin: auto;
-	overflow: visible;
-	position: absolute;
-	right: 0;
-	top: 0;
-	@media screen and (max-width: 767px){
-		height: auto;
-		padding-top: 100px;
-		position: relative;
-		margin-bottom: 100px;
-	}
-
 }

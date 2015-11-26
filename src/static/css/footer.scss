@@ -1,57 +1,98 @@
 .footer{
-	background: #8C1221;
-	color: #fff;
-	padding: 40px 20px 95px;
-	@media screen and (max-width: 767px){
-		padding: 25px 0;
+	background-color: $footer-bg-color;
+	color: $footer-text-color;
+	padding-top: $footer-padding;
+	padding-bottom: $footer-padding;
+}
+
+.footer-list{
+	list-style-type: none;
+	font-size: $footer-text-size;
+
+	@media all and (max-width: $breakpoint-mobile){
+		margin-bottom: 30px;
+	}
+}
+
+.footer-list-item{
+	margin-bottom: 7px;
+}
+
+.footer-list-link{
+	color: $footer-link-color;
+	
+
+	&:hover{
+		color: $footer-hover-color;
+	}
+}
+
+.footer-h4{
+	font-size: $footer-header-size;
+	font-weight: $footer-header-weight;
+	color: $footer-header-color;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.footer-form{
+	@media all and (max-width: $breakpoint-mobile){
+		margin-bottom: 30px;
+	}
+}
+
+.footer-form-wrapper{
+	position: relative;
+	height: 33px;
+}
+
+.footer-form-field{
+	background-color: $footer-form-bg-color;
+	border: 1px solid $footer-form-line-color;
+	padding: 5px 10px;
+	color: $footer-form-input-color;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	cursor: default;
+	z-index: 1;
+
+	&::-webkit-input-placeholder{
+		color: #fff;
 	}
 
-	& a{
-		opacity: 0.52;
-		font-size: 15px;
-		color: #FFFFFF;
-		letter-spacing: 0.1px;
-		line-height: 23px;
-		transition: opacity .2s ease-in-out .0s;
-		-webkit-transition: opacity .2s ease-in-out .0s;
-		-moz-transition: opacity .2s ease-in-out .0s;
-		-o-transition: opacity .2s ease-in-out .0s;
-
-		&:hover{
-			opacity: 1;
-		}
+	&::-moz-placeholder { /* Firefox 18- */
+		color: #fff;
 	}
+}
 
-	& .copyright{
+.footer-form-submit{
+	border: none;
+	background-color: $footer-form-submit-bg-color;
+	color: $footer-form-submit-color;
+	font-family: $primary-font;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 900;
+	width: 50px;
+	border-left: 1px solid $footer-form-line-color;
+	height: 43px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	line-height: 43px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 2;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
 
-		font-weight: 700;
-		font-size: 15px;
-		color: #FFFFFF;
-		letter-spacing: 0.1px;
-		line-height: 23px;
-	}
-
-	& .footer-list{
-		list-style-type: none;
-		float: right;
-		@media screen and (max-width: 767px){
-			float: none;
-			margin: 10px 0 10px;
-		}
-
-		& li{
-			float: left;
-
-			&:after{
-				display: inline-block;
-				content: "|";
-				opacity: 0.52;
-				margin: 0 10px;
-			}
-
-			&:last-child:after{
-				display: none;
-			}
-		}
+	&:hover{
+		background-color: $footer-form-submit-color;
+		color: $footer-form-submit-bg-color;
 	}
 }

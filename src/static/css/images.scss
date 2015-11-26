@@ -1,12 +1,9 @@
 .img-container{
-	background-color: #051039;
+	background-color: #000;
 	height: 0;
 	overflow: hidden;
 	position: relative;
 	display: block;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .15);
-	-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, .15);
-	box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, .15);
 
 	& img, & iframe{
 		position: absolute;
@@ -27,9 +24,13 @@
 			-ms-transform: scale(1.1,1.1);
 			-webkit-transform: scale(1.1,1.1);
 			transform: scale(1.1,1.1);
-			opacity: .8;
+			opacity: .5;
 		}
 	}
+}
+
+.img-responsive{
+	width: 100%;
 }
 
 .img-ratio-2-1{

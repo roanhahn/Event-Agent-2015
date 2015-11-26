@@ -1,28 +1,71 @@
-$text-color: #2f2f2f;
-$heading-color: #2f2f2f;
+@font-face {
+    font-family: 'mysteryland_fontregular';
+    src: url('../font/mysterylandfont-condensedregula-webfont.eot');
+    src: url('../font/mysterylandfont-condensedregula-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/mysterylandfont-condensedregula-webfont.woff2') format('woff2'),
+         url('../font/mysterylandfont-condensedregula-webfont.woff') format('woff'),
+         url('../font/mysterylandfont-condensedregula-webfont.ttf') format('truetype'),
+         url('../font/mysterylandfont-condensedregula-webfont.svg#mysteryland_fontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$dark-color: #2f2f2f;
+$breakpoint-mobile: 767px;
 
-$accent-color: pink;
+$body-bg-color: #000;
 
-$primary-font: 'Lato';
-$secondary-font: 'Times New Roman',serif;
+$theme-folder: ml;
+
+// FONTS
+
+$primary-font: 'Lato', Arial, sans-serif;
+$primary-text-color: #000;
+$primary-link-color: #000;
+
+$secondary-font: 'mysteryland_fontregular', Arial, sans-serif;
+
+// HEADER STYLING
+$header-height: 80px;
+$header-height-mobile: 50px;
+$logo-width: 123px;
+$logo-height: 50px;
+$logo-width-mobile: 100px;
+$logo-height-mobile: 40px;
+$header-border-color: #f2f2f2;
+$header-link-color: #000;
+$header-link-size: 30px;
+$header-hover-color: #dc2d50;
+
+// HERO STYLING
+
+$hero-bg-color: #dc2d50;
+$hero-color: #fff;
+$hero-size: 70px;
+$hero-size-mobile: 35px;
+
+// FOOTER STYLING
+
+$footer-bg-color: #000;
+$footer-padding: 35px;
+$footer-text-color: #444;
+$footer-link-color: #444;
+$footer-hover-color: #fff;
+$footer-header-color: #fff;
+$footer-header-size: 16px;
+$footer-header-weight: 700;
+$footer-text-size: 13px;
+$footer-form-bg-color: #000;
+$footer-form-line-color: #444;
+$footer-form-input-color: #fff;
+$footer-form-submit-bg-color: #444;
+$footer-form-submit-color: #000;
 
 
-/***** BUTTONS ****/
-$btn-bg-color: transparent;
+// LOCATION STYLING
 
-$primary-btn-color: #202020;
-$primary-btn-hover-color: #fff;
+$date-bg-color: #f1f1f2;
+$date-color: #000;
 
-$secondary-btn-color: #323436;
-$secondary-btn-hover-color: #fff;
+// CONTENT STYLING
 
-$tertiary-btn-color: #d49c16;
-$tertiary-btn-hover-color: #fff;
-
-/***** BACKGROUND ****/
-$primary-bg-color: #fff;
-$secondary-bg-color: #f4f4f4;
-$tertiary-bg-color: #d49c16;
-$light-bg-color: #f4f4f4;
+$section-bg-color: #fff;
