@@ -1,0 +1,19 @@
+---
+title: test
+layout: docs.hbs
+---
+
+<section class="docs">
+	<div class="container">
+		<div class="row">
+			<h1 class="h1-docs">{{site.title}}<small>Subtitle</h1>
+			<div class="col-sm-4">
+				{{#each pages}}
+				{{#isnt data.title 'Preview'}}
+					<li{{#if this.isCurrentPage}} class="active"{{/if}}><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
+				{{/isnt}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</section>

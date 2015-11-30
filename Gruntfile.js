@@ -92,47 +92,48 @@ connect: {
 
 		sass: {
 			dist: {
-					files: {
-						'<%= config.src %>/static/css/styles.css': '<%= config.src %>/static/css/base.scss'
-					}
+				files: {
+					'<%= config.src %>/static/css/styles.css': '<%= config.src %>/static/css/base.scss',
+					'<%= config.src %>/static/css/docs.css': '<%= config.src %>/static/css/docs.scss',
 				}
+			}
+		},
+
+		cssmin: {
+			my_target: {
+				files: [{
+					expand: true,
+					cwd: '<%= config.src %>/static/css/',
+					src: ['*.css', '!*.min.css'],
+					dest: '<%= config.dist %>/assets/css/',
+					ext: '.min.css'
+				}]
+			}
+		},
+
+
+		'gh-pages': {
+			options: {
+				base: 'dist'
 			},
+			src: ['**']
+		},
 
-			cssmin: {
-				my_target: {
-					files: [{
-						expand: true,
-						cwd: '<%= config.src %>/static/css/',
-						src: ['styles.css'],
-						dest: '<%= config.dist %>/assets/css/',
-						ext: '.min.css'
-					}]
-				}
-			},
-
-
-			'gh-pages': {
+		assemble: {
+			pages: {
 				options: {
-					base: 'dist'
+					flatten: true,
+					assets: '<%= config.dist %>/assets',
+					layoutdir: '<%= config.src %>/templates/layouts',
+					layout: 'default.hbs',
+					data: '<%= config.src %>/data/*.{json,yml}',
+					partials: '<%= config.src %>/templates/partials/**/*.hbs'
 				},
-				src: ['**']
-			},
-
-			assemble: {
-				pages: {
-					options: {
-						flatten: true,
-						assets: '<%= config.dist %>/assets',
-						layoutdir: '<%= config.src %>/templates/layouts',
-						layout: 'default.hbs',
-						data: '<%= config.src %>/data/*.{json,yml}',
-						partials: '<%= config.src %>/templates/partials/**/*.hbs'
-					},
-					files: {
-						'<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
-					}
+				files: {
+					'<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
 				}
-			},
+			}
+		},
 
 		// Before generating any new files,
 		// remove any previously-created files.
