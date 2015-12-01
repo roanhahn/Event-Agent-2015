@@ -4,14 +4,15 @@
 	padding: 15px 30px;
 	text-transform: uppercase;
 	white-space: nowrap;
+	line-height: 1;
 
-	&--outline{
-		border: 3px solid #fff;
+	&--location{
+		border: 2px solid #fff;
 		color: #fff;
 		font-weight: 900;
 		font-size: 25px;
 		display: block;
-		width: 70%;
+		width: 80%;
 		margin: 10px auto;
 
 		&:hover{
@@ -19,16 +20,54 @@
 			color: #000;
 		}
 
-		@media all and (max-width: $breakpoint-mobile){
+		@media all and (max-width: $breakpoint-desktop){
 			width: 100%;
 			font-size: 18px;
 		}
 	}
+
+	&--outline{
+		background-color: transparent;
+		border: 2px solid #fff;
+		color: #fff;
+
+		&:hover{
+			background-color: #fff;
+			color: #000;
+		}
+	}
+
+	&--hero{
+		background-color: rgba(0,0,0,.2);
+		font-weight: 900;
+		font-size: 35px;
+		margin: 0 15px;
+		padding: 20px 50px;
+
+
+		& span{
+			display: block;
+			font-size: 50%;
+			padding-top: 5px;
+		}
+
+		@media all and (max-width: $breakpoint-tablet){
+			display: block;
+			margin: 0 0 15px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			padding: 15px 30px;
+			font-size: 30px;
+		}
+	}
+
+
 
 	&-explain{
 		display: block;
 		font-size: 13px;
 		text-transform: none;
 		font-weight: 400;
+		padding-top: 5px;
 	}
 }

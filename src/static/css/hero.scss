@@ -1,0 +1,43 @@
+.event-hero{
+	height: 100%;
+	background: $body-bg-color url(../img/#{$theme-folder}/hero.jpg) no-repeat center center scroll;
+	background-size: cover;
+	text-align: center;
+	min-height: 300px;
+	padding: 30px 0;
+	position: relative;
+
+	&:before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		background: rgba(50,50,50,.2);
+		content: "";
+	}
+
+
+	& h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 90px;
+		text-shadow: 2px 2px 5px rgba(50,50,50,.2);
+		margin-bottom: 40px;
+
+		& small{
+			display: block;
+			color: #fff;
+			font-weight: 700;
+			margin-top: 5px;
+		}
+
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 60px;
+		}
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 30px;
+		}
+	}
+}

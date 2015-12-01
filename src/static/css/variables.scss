@@ -9,7 +9,8 @@
     font-weight: normal;
     font-style: normal;
 }
-
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
 $breakpoint-mobile: 767px;
 
 $body-bg-color: #000;
@@ -50,7 +51,7 @@ $footer-padding: 35px;
 $footer-text-color: #444;
 $footer-link-color: #444;
 $footer-hover-color: #fff;
-$footer-header-color: #fff;
+$footer-header-color: #444;
 $footer-header-size: 16px;
 $footer-header-weight: 700;
 $footer-text-size: 13px;
@@ -65,6 +66,9 @@ $footer-form-submit-color: #000;
 
 $date-bg-color: #f1f1f2;
 $date-color: #000;
+$location-color: #fff;
+$location-title-color: #000;
+$location-subtitle-color: #444;
 
 // CONTENT STYLING
 
