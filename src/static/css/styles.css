@@ -55,12 +55,9 @@ body {
 
 a {
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out 0s;
-  -moz-transition: color 0.2s ease-in-out 0s;
-  -o-transition: color 0.2s ease-in-out 0s;
-  -webkit-transition: background-color 0.2s ease-in-out 0s;
-  -moz-transition: background-color 0.2s ease-in-out 0s;
-  -o-transition: background-color 0.2s ease-in-out 0s; }
+  -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+  -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .location-h3 {
   text-transform: uppercase;
@@ -82,11 +79,12 @@ body {
   height: 100%; }
 
 .content-wrapper {
-  padding-top: 80px;
-  height: 100%; }
+  margin-top: 80px;
+  height: calc(100% - 80px); }
   @media all and (max-width: 767px) {
     .content-wrapper {
-      padding-top: 50px; } }
+      margin-top: 50px;
+      height: calc(100% - 50px); } }
 
 .no-padding {
   padding: 0px; }
@@ -263,6 +261,63 @@ body {
     font-weight: 400;
     padding-top: 5px; }
 
+.form-field-wrapper {
+  position: relative; }
+
+.event-registration-form-field {
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  cursor: default; }
+  .event-registration-form-field:focus {
+    background-color: #000; }
+  .event-registration-form-field::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1; }
+  .event-registration-form-field::-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    opacity: 1; }
+  @media all and (max-width: 991px) {
+    .event-registration-form-field {
+      font-size: 18px;
+      padding: 15px; } }
+  @media all and (max-width: 767px) {
+    .event-registration-form-field {
+      font-size: 13px;
+      padding: 10px; } }
+
+.event-registration-form-submit {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 20px;
+  border-left: 3px solid #fff; }
+  .event-registration-form-submit:hover {
+    background-color: #fff;
+    color: #000; }
+  @media all and (max-width: 991px) {
+    .event-registration-form-submit {
+      font-size: 18px;
+      padding: 15px; } }
+  @media all and (max-width: 767px) {
+    .event-registration-form-submit {
+      font-size: 13px;
+      padding: 10px; } }
+
 .header {
   background-color: #fff;
   height: 80px;
@@ -412,10 +467,12 @@ body {
   cursor: default;
   z-index: 1; }
   .footer-form-field::-webkit-input-placeholder {
-    color: #fff; }
+    color: #444;
+    opacity: 1; }
   .footer-form-field::-moz-placeholder {
     /* Firefox 18- */
-    color: #fff; }
+    color: #444;
+    opacity: 1; }
 
 .footer-form-submit {
   border: none;

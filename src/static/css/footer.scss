@@ -61,11 +61,13 @@
 	z-index: 1;
 
 	&::-webkit-input-placeholder{
-		color: #fff;
+		color: $footer-form-line-color;
+		opacity: 1;
 	}
 
 	&::-moz-placeholder { /* Firefox 18- */
-		color: #fff;
+		color: $footer-form-line-color;
+		opacity: 1;
 	}
 }
 

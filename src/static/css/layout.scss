@@ -4,11 +4,12 @@ body{
 }
 
 .content-wrapper{
-	padding-top: $header-height;
-	height: 100%;
+	margin-top: $header-height;
+	height: calc(100% - #{$header-height});
 
 	@media all and (max-width: $breakpoint-mobile){
-		padding-top: $header-height-mobile;
+		margin-top: $header-height-mobile;
+		height: calc(100% - #{$header-height-mobile});
 	}
 }
 
