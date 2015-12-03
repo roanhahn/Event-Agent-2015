@@ -504,13 +504,16 @@ body {
 .facilities-list {
   list-style-type: none;
   font-size: 13px;
-  color: #666; }
+  color: #666;
+  margin-bottom: 11px; }
   @media all and (max-width: 767px) {
     .facilities-list {
       margin-bottom: 11px; } }
   .facilities-list li {
     padding: 0 0 4px 23px;
-    position: relative; }
+    position: relative;
+    float: left;
+    width: 50%; }
     @media all and (max-width: 767px) {
       .facilities-list li {
         float: left;

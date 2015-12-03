@@ -81,6 +81,7 @@
 	list-style-type: none;
 	font-size: 13px;
 	color: $tertiary-text-color;
+	margin-bottom: 11px;
 	@media all and(max-width: $breakpoint-mobile){
 		margin-bottom: 11px;
 	}
@@ -88,6 +89,8 @@
 	& li{
 		padding: 0 0 4px 23px;
 		position: relative;
+		float: left;
+			width: 50%;
 		@media all and(max-width: $breakpoint-mobile){
 			float: left;
 			width: 50%;
