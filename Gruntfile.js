@@ -104,7 +104,7 @@ connect: {
 				files: [{
 					expand: true,
 					cwd: '<%= config.src %>/static/css/',
-					src: ['*.css', '!*.min.css'],
+					src: ['styles.css', 'docs.css'],
 					dest: '<%= config.dist %>/assets/css/',
 					ext: '.min.css'
 				}]
