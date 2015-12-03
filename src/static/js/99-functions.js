@@ -1,20 +1,37 @@
-$(".showmenu").click(function() 
-{
-	$('.select-language').fadeToggle(300);
-	$('.showmenu').toggleClass("menu-open");
-}); 
+$( document ).ready(function() {
 
-//Check to see if the window is top if not then display button
-$(window).scroll(function(){
-	if ($(this).scrollTop() > 100) {
-		$('.back-to-top').fadeIn();
-	} else {
-		$('.back-to-top').fadeOut();
-	}
+
+// MAKING HOTEL INFO VISIBLE
+var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
+var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
+
+$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
+
+
+$(window).resize(function(){
+	hotelgridbody = $(".hotel-item-grid-body").outerHeight();
+	hotelgridimg = $(".hotel-item-grid-image").outerHeight();
+
+	$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
 });
 
-//Click event to scroll to top
-$('.back-to-top').click(function(){
-	$('html, body').animate({scrollTop : 0},800);
-	return false;
-}); 
+$(".hotel-item-grid-wrapper").hover
+(
+	function()
+	{
+		$(this).find(".hotel-item-grid-slide").css("top",-hotelgridimg);
+	},
+	function()
+	{
+		$(this).find(".hotel-item-grid-slide").css("top","0");
+	}
+);
+
+// Lazyloading the images
+$("img.lazyimage").unveil(200, function() {
+	$(this).load(function() {
+		this.style.opacity = 1;
+	});
+});
+
+});

@@ -1,0 +1,122 @@
+.hotel-item-grid{
+	position: relative;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.hotel-item-grid-wrapper{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-top:  1px solid #ddd;
+}
+
+.hotel-item-grid-image{
+	border-bottom:  1px solid #ddd;
+}
+
+.hotel-item-grid-slide{
+	position: relative;
+	top: 0;
+	background-color: #fff;
+	-webkit-transition: top .3s ease-in-out .1s;
+	-moz-transition: top .3s ease-in-out .1s;
+	-o-transition: top .3s ease-in-out .1s;
+	transition: top .3s ease-in-out .1s;
+}
+
+.hotel-item-grid-price{
+	color: $primary-link-color;
+	padding: 10px 15px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.hotel-item-grid-content{
+	padding: 15px;
+
+	& .title{
+		font-weight: 700;
+		font-size: 17px;
+		color: $primary-link-color;
+	}
+
+	& .rating{
+		color: $secondary-text-color;
+		margin: 5px 0 10px;
+		font-size: 15px;
+		line-height: 1;
+	}
+
+	& .more-info{
+		color: $secondary-link-color;
+		font-size: 12px;
+		font-weight: 700;
+		display: none;
+		margin-top: 2px;
+
+		&:hover{
+			color: $secondary-text-color;
+		}
+
+		@media all and(max-width: $breakpoint-mobile){
+			display: block;
+		}
+	}
+
+	& .intro{
+		color: $tertiary-text-color;
+		overflow: hidden;
+		height: 65px;
+		line-height: 1.4;
+	}
+}
+
+.facilities{
+	padding: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.facilities-list{
+	list-style-type: none;
+	font-size: 13px;
+	color: $tertiary-text-color;
+	@media all and(max-width: $breakpoint-mobile){
+		margin-bottom: 11px;
+	}
+
+	& li{
+		padding: 0 0 4px 23px;
+		position: relative;
+		@media all and(max-width: $breakpoint-mobile){
+			float: left;
+			width: 50%;
+		}
+	}
+
+	& li:before{
+		width: 20px;
+		text-align: left;
+		position: absolute;
+		left: 0;
+		font-family: "FontAwesome";
+		display: inline-block;
+		color: $primary-link-color;
+	}
+
+	& .wifi:before{
+		content: "\f1eb";
+	}
+
+	& .bar:before{
+		content: "\f000";
+	}
+
+	& .restaurant:before{
+		content: "\f0f5";
+	}
+
+	& .transfers:before{
+		content: "\f1b9";
+	}
+}

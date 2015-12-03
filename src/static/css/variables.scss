@@ -22,6 +22,10 @@ $theme-folder: ml;
 $primary-font: 'Lato', Arial, sans-serif;
 $primary-text-color: #000;
 $primary-link-color: #000;
+$secondary-text-color: #dc2d50;
+$secondary-link-color: #dc2d50;
+$tertiary-text-color: #666;
+$tertiary-link-color: #666;
 
 $secondary-font: 'mysteryland_fontregular', Arial, sans-serif;
 
@@ -62,6 +66,10 @@ $footer-form-submit-bg-color: #444;
 $footer-form-submit-color: #000;
 
 
+// BUTTON STYLING
+$primary-btn-bg-color: #000;
+$primary-btn-text-color: #fff;
+
 // LOCATION STYLING
 
 $date-bg-color: #f1f1f2;
@@ -73,3 +81,8 @@ $location-subtitle-color: #444;
 // CONTENT STYLING
 
 $section-bg-color: #fff;
+
+// RIBBON STYLING
+
+$ribbon-color: #dc2d50;
+$ribbon-shadow-color: #231f20;

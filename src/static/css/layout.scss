@@ -19,6 +19,12 @@ body{
 
 .section{
 	background-color: $section-bg-color;
+	padding: 60px 0;
+	overflow: hidden;
+
+	&--grey{
+		background-color: #f6f6f6;
+	}
 }
 
 
