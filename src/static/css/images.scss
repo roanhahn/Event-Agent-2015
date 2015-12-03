@@ -18,15 +18,6 @@
 		-moz-transition: all 0.2s ease-in-out 0s;
 		-o-transition: all 0.2s ease-in-out 0s;
 	}
-
-	&:hover{
-		img{
-			-ms-transform: scale(1.1,1.1);
-			-webkit-transform: scale(1.1,1.1);
-			transform: scale(1.1,1.1);
-			opacity: .5;
-		}
-	}
 }
 
 .lazyimage{

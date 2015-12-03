@@ -182,11 +182,6 @@ body {
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s; }
-  .img-container:hover img {
-    -ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-    opacity: .5; }
 
 .lazyimage {
   opacity: 0;
@@ -448,6 +443,7 @@ body {
 .hotel-item-grid-wrapper {
   position: relative;
   overflow: hidden;
+  height: auto;
   z-index: 1;
   border-top: 1px solid #ddd; }
 

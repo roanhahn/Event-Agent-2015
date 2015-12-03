@@ -1,12 +1,8 @@
-$( document ).ready(function() {
-
-
-// MAKING HOTEL INFO VISIBLE
 var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
-
-$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
-
+$(function() {
+	$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
+});
 
 $(window).resize(function(){
 	hotelgridbody = $(".hotel-item-grid-body").outerHeight();
@@ -34,4 +30,3 @@ $("img.lazyimage").unveil(200, function() {
 	});
 });
 
-});
