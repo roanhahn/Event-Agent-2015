@@ -1,3 +1,7 @@
+html, body{
+	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+}
+
 body{
 	background-color: $body-bg-color;
 	height: 100%;

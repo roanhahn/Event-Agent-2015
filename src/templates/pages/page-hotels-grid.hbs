@@ -4,7 +4,7 @@ layout: default.hbs
 ---
 
 {{> header }}
-
+<!--{{> event-hero }}-->
 <section class="section section--grey">
 	<div class="container">
 		<div class="row">
@@ -26,25 +26,25 @@ layout: default.hbs
 		</div>
 		<div class="row">
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 			<div class="col-sm-6 col-md-4">
-				{{> partial-hotel-list-item }}
+				{{> partial-hotel-grid-item }}
 			</div>
 		</div>
+		{{> partial-pager }}
 	</div>
 </section>
-
 {{> footer }}

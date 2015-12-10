@@ -147,6 +147,16 @@
 	}
 }
 
+.form-wrapper{
+
+	&--inline{
+		@media all and(max-width: $breakpoint-tablet){
+			display: inline;
+			margin-right: 10px;
+		}
+	}
+}
+
 .form-number{
 	width: 60px;
 	display: inline-block;
