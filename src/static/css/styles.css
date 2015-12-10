@@ -999,8 +999,7 @@ body {
   @media all and (max-width: 991px) {
     .hotel-item-list-price {
       padding: 0 15px;
-      float: left;
-      font-size: 28px; } }
+      float: left; } }
   @media all and (max-width: 767px) {
     .hotel-item-list-price {
       padding: 0;
