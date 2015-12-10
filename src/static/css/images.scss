@@ -20,6 +20,13 @@
 	}
 }
 
+.location-visual-wrapper:hover img{
+	opacity: 0.5;
+	-ms-transform: scale(1.2,1.2) rotate(-2deg);
+	-webkit-transform: scale(1.2,1.2) rotate(-2deg);
+	transform: scale(1.2,1.2) rotate(-2deg);
+}
+
 .lazyimage{
 	opacity: 0;
 	-webkit-transition: opacity 0.2s ease-in 0s;
