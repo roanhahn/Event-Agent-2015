@@ -63,6 +63,32 @@ a {
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
+.h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 10px 0 10px;
+  font-size: 36px; }
+  @media all and (max-width: 767px) {
+    .h1 {
+      font-size: 26px; } }
+
+.h3 {
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 15px;
+  font-size: 21px; }
+
+.h4 {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 400; }
+
+.p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px; }
+
 .location-h3 {
   text-transform: uppercase;
   font-weight: 900;
@@ -86,6 +112,9 @@ a {
   font-weight: 900;
   font-size: 20px;
   text-transform: uppercase; }
+  @media all and (max-width: 767px) {
+    .fold-h3 {
+      font-size: 16px; } }
 
 html, body {
   -webkit-overflow-scrolling: touch;
@@ -392,6 +421,64 @@ body {
   .my-pager-link--active, .my-pager-link--active:hover {
     background-color: #dc2d50;
     color: #fff; }
+
+.manage-rooms {
+  border: 1px solid #cbcbcb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative; }
+  @media all and (max-width: 991px) {
+    .manage-rooms {
+      float: right; } }
+  @media all and (max-width: 767px) {
+    .manage-rooms {
+      float: none;
+      margin-bottom: 10px; } }
+  .manage-rooms .manage-button {
+    -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    border: none; }
+    .manage-rooms .manage-button:active {
+      -webkit-box-shadow: inset 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: inset 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: inset 1px 1px 4px 0px rgba(50, 50, 50, 0.75); }
+    .manage-rooms .manage-button:before {
+      font-family: "FontAwesome";
+      color: #fff;
+      line-height: 40px; }
+    .manage-rooms .manage-button:hover {
+      background-color: #666; }
+  .manage-rooms .minus {
+    background-color: #000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    cursor: pointer; }
+    .manage-rooms .minus:before {
+      content: "\f068"; }
+  .manage-rooms .amount {
+    float: left;
+    width: 66px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px; }
+  .manage-rooms .plus {
+    background-color: #000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    cursor: pointer; }
+    .manage-rooms .plus:before {
+      content: "\f067"; }
 
 .form-field-wrapper {
   position: relative; }
@@ -881,6 +968,20 @@ body {
       .hotel-item-list-content .intro {
         font-size: 13px;
         height: 40px; } }
+  .hotel-item-list-content .room-details {
+    margin-top: 10px; }
+    .hotel-item-list-content .room-details ul {
+      margin-left: 15px;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.4;
+      margin-bottom: 20px; }
+      @media all and (max-width: 767px) {
+        .hotel-item-list-content .room-details ul {
+          font-size: 13px;
+          line-height: 1.2; } }
+    .hotel-item-list-content .room-details li {
+      margin-bottom: 5px; }
 
 .hotel-item-list-price {
   color: #000;
@@ -920,6 +1021,29 @@ body {
     display: block;
     float: none;
     text-align: center; } }
+
+.hotel-details .rating {
+  color: #dc2d50;
+  margin: 10px 20px 10px 0;
+  font-size: 20px;
+  line-height: 1;
+  float: right; }
+  @media all and (max-width: 767px) {
+    .hotel-details .rating {
+      float: none;
+      font-size: 16px; } }
+.hotel-details .carousel {
+  margin: 10px 0; }
+
+.owl-theme .owl-controls .owl-page span {
+  width: 9px;
+  height: 9px;
+  opacity: 1;
+  background-color: #cbcbcb; }
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background-color: #dc2d50;
+  opacity: 1; }
 
 /* RIBBON BANNERS */
 .ribbon {

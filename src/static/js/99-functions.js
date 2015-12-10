@@ -80,11 +80,14 @@ var owl = $(".carousel");
 owl.owlCarousel({
 	items : 3, //10 items above 1000px browser width
 	itemsDesktop : [1000,3], //5 items between 1000px and 901px
-	itemsDesktopSmall : [900,3], // betweem 900px and 601px
+	itemsDesktopSmall : [900,2], // betweem 900px and 601px
 	itemsTablet: [600,2], //2 items between 600 and 0
 	itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
 	mouseDrag: true,
 	touchdrag: true,
 	lazyLoad : true,
+	responsive: true,
+	autoPlay: 5000,
+	stopOnHover: true,
 });
 

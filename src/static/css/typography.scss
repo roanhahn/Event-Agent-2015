@@ -27,6 +27,36 @@ a{
 	-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 }
 
+.h1{
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 10px 0 10px;
+	font-size: 36px;
+
+	@media all and(max-width: $breakpoint-mobile){
+		font-size: 26px;
+	}
+}
+
+.h3{
+	margin: 0;
+	font-weight: 700;
+	padding-bottom: 15px;
+	font-size: 21px;
+}
+
+.h4{
+	color: $tertiary-text-color;
+	font-size: 16px;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+
+.p{
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
 
 
 .location-h3{
@@ -57,4 +87,7 @@ a{
 	font-weight: 900;
 	font-size: 20px;
 	text-transform: uppercase;
+	@media all and(max-width: $breakpoint-mobile){
+		font-size: 16px;
+	}
 }

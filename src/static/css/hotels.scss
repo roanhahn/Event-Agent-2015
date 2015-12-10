@@ -276,6 +276,26 @@
 			height: 40px;
 		}
 	}
+
+	& .room-details{
+		margin-top: 10px;
+
+		& ul{
+			margin-left: 15px;
+			color: $tertiary-text-color;
+			font-size: 15px;
+			line-height: 1.4;
+			margin-bottom: 20px;
+			@media all and(max-width: $breakpoint-mobile){
+				font-size: 13px;
+				line-height: 1.2;
+			}
+		}
+
+		& li{
+			margin-bottom: 5px;
+		}
+	}
 }
 
 .hotel-item-list-price{
@@ -324,4 +344,41 @@
 		float: none;
 		text-align: center;
 	}
+}
+
+.hotel-details{
+
+	& .rating{
+		color: $secondary-text-color;
+		margin: 10px 20px 10px 0; 
+		font-size: 20px;
+		line-height: 1;
+		float: right;
+
+		@media all and(max-width: $breakpoint-mobile){
+			float: none;
+			font-size: 16px;
+		}
+	}
+
+	& .carousel{
+		margin: 10px 0;
+	}
+
+	& .facilities-list{
+
+		
+	}
+}
+
+.owl-theme .owl-controls .owl-page span{
+	width: 9px;
+	height: 9px;
+	opacity: 1;
+	background-color: $border-color;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+	background-color: $secondary-text-color;
+	opacity: 1;
 }
