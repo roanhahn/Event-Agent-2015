@@ -6,6 +6,8 @@ body{
 	line-height: 1.5;
 	color: $primary-text-color;
 	cursor: default;
+	font-smooth: auto ;
+	-webkit-font-smoothing : subpixel-antialiased;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -25,6 +27,8 @@ a{
 	-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 }
 
+
+
 .location-h3{
 	text-transform: uppercase;
 	font-weight: 900;
@@ -42,4 +46,15 @@ a{
 	@media all and (max-width: $breakpoint-mobile){
 		font-size: 18px;
 	}
+}
+
+.fold-h2{
+	color: $primary-text-color;
+	font-size: 30px;
+}
+
+.fold-h3{
+	font-weight: 900;
+	font-size: 20px;
+	text-transform: uppercase;
 }

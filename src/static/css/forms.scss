@@ -72,3 +72,127 @@
 		padding: 10px;
 	}
 }
+
+.ticket-form{
+	border-bottom: 1px solid $border-color;
+	margin: 0 0 30px;
+	padding: 0 0 30px;
+}
+
+
+// FORM ELEMENTS
+
+.form-label{
+	display: block;
+	text-transform: uppercase;
+	color: $primary-text-color;
+	font-weight: 700;
+	font-size: 15px;
+
+	&--small{
+		display: inline-block;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin-right: 10px;
+	}
+}
+.form-field{
+	display: block;
+	width: 100%;
+	outline: none!important;
+	border: none;
+	background-color: $select-bg-color;
+	padding: 10px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	appearance:none;
+	margin-bottom: 8px;
+	cursor: default;
+	color: #666;
+
+	&:focus{
+		-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+	}
+}
+.ticket-form-submit{
+	padding-top: 28px;
+}
+
+.form-persons{
+	color: #000;
+	margin: 16px 0 0;
+
+	@media all and(max-width: $breakpoint-tablet){
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	& span{
+		display: inline-block;
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 20px;
+	}
+
+	&:before{
+		content: "\f0f2";
+		font-family: "FontAwesome";
+		font-size: 24px;
+		color: #000;
+		margin-right: 4px;
+		display: inline-block;
+		line-height: 20px;
+	}
+}
+
+.form-number{
+	width: 60px;
+	display: inline-block;
+}
+
+
+.form-select{
+	display: block;
+	width: 100%;
+	outline: none!important;
+	border: none;
+	color: rgba(0,0,0,0);
+	background-color: $select-bg-color;
+	padding: 8px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	appearance:none;
+	background: #fff url(../img/form-select-bg.png) no-repeat right center;
+	margin-bottom: 8px;
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	text-shadow: 0 0 0 #666;
+
+	&:focus{
+		-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+	}
+
+	&--inline{
+		display: inline-block;
+		width: auto;
+		min-width: 60px;
+	}
+}
+
+.form-text-message{
+	margin-bottom: 15px;
+}
+
+.form-option{
+	color: #666;
+	text-shadow: none;
+	padding: 3px 8px;
+
+	&:focus{
+		background-color: #000;
+	}
+}
