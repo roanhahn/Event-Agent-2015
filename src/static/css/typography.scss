@@ -72,6 +72,10 @@ a{
 	}
 }
 
+.strong{
+	font-weight: 700;
+}
+
 .accordion-h3{
 	font-family: $secondary-font;
 	display: block;
@@ -82,6 +86,11 @@ a{
 	-moz-transition: color 0.2s ease-in-out 0s;
 	-o-transition: color 0.2s ease-in-out 0s;
 	transition: color 0.2s ease-in-out 0s;
+
+	@media all and(max-width: $breakpoint-mobile){
+		font-size: 30px;
+		line-height: 30px;
+	}
 
 	& small{
 		text-align: right;
@@ -95,6 +104,10 @@ a{
 		font-family: $primary-font;
 		text-transform: uppercase;
 		border-right: 1px solid #ddd;
+
+		@media all and(max-width: $breakpoint-mobile){
+			display: none;
+		}
 	}
 
 	&:after{
@@ -144,4 +157,21 @@ a{
 	@media all and(max-width: $breakpoint-mobile){
 		font-size: 16px;
 	}
+}
+
+.summary-section{
+	border-bottom: 1px solid #cbcbcb;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+
+	&--total{
+		border-color: #000;
+		border-width: 2px;
+	}
+}
+
+.summary-total{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
 }

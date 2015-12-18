@@ -131,3 +131,13 @@ body{
 		right: 0;
 	}
 }
+@media all and (max-width: $breakpoint-tablet){
+	.col-sm-margin-30{
+		margin-bottom: 30px;
+	}
+}
+@media all and (max-width: $breakpoint-mobile){
+	.col-xs-margin-30{
+		margin-bottom: 30px;
+	}
+}

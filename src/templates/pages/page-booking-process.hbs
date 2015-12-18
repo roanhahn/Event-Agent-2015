@@ -14,7 +14,7 @@ layout: default.hbs
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="accordion-h3">1: ticket<small>Some text goes here</small></h3>
+							<h3 class="accordion-h3">1: ticket<small>Select the best ticket</small></h3>
 						</div>
 					</div>
 				</div>
@@ -32,7 +32,7 @@ layout: default.hbs
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="accordion-h3">2: hotel<small>Some text goes here</small></h3>
+							<h3 class="accordion-h3">2: hotel<small>Select your room</small></h3>
 						</div>
 					</div>
 				</div>
@@ -52,7 +52,7 @@ layout: default.hbs
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="accordion-h3">3: customize<small>Some text goes here</small></h3>
+							<h3 class="accordion-h3">3: customize<small>Customize your package</small></h3>
 						</div>
 					</div>
 				</div>
@@ -63,12 +63,12 @@ layout: default.hbs
 		</section>
 
 		<!-- Personal info -->
-		<section data-accordion class="open">
+		<section data-accordion>
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="accordion-h3">4: personal info<small>Some text goes here</small></h3>
+							<h3 class="accordion-h3">4: personal info<small>Your contact details</small></h3>
 						</div>
 					</div>
 				</div>
@@ -81,18 +81,20 @@ layout: default.hbs
 		</section>
 
 		<!-- Summary -->
-		<section data-accordion>
+		<section data-accordion class="open">
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="accordion-h3">5: summary<small>Some text goes here</small></h3>
+							<h3 class="accordion-h3">5: summary<small>Check and pay</small></h3>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div data-content>
-				<article>Item</article>
+				<article>
+					{{> partial-page-summary }}
+				</article>
 			</div>
 		</section>
 	</section>

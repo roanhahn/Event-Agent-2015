@@ -42,7 +42,7 @@ $('#single[data-accordion]').accordion({
 });
 
 // Show/hide cart
-$('.cart-total').click(function()
+$('.show-cart').click(function()
 {
 	$('.cart').toggleClass("cart-open");
 });
