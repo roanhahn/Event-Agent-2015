@@ -33,8 +33,15 @@ body{
 	&--grey{
 		background-color: #f6f6f6;
 	}
+
+	&--white{
+		background-color: #fff;
+	}
 }
 
+.margin-top-10{
+	margin-top: 10px;
+}
 
 .vertical-align{
 	display: table-cell;

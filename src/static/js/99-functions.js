@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
 $(function() {
@@ -21,7 +23,7 @@ $(".hotel-item-grid-wrapper").hover
 	{
 		$(this).find(".hotel-item-grid-slide").css("top","0");
 	}
-);
+	);
 
 // Lazyloading the images
 $("img.lazyimage").unveil(200, function() {
@@ -29,6 +31,26 @@ $("img.lazyimage").unveil(200, function() {
 		this.style.opacity = 1;
 	});
 });
+
+// Accordion
+
+$('#only-one [data-accordion]').accordion();
+
+$('#single[data-accordion]').accordion({
+  transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+  transitionSpeed: 200
+});
+
+// Show/hide cart
+$('.cart-total').click(function()
+{
+	$('.cart').toggleClass("cart-open");
+});
+$('.close-cart').click(function()
+{
+	$('.cart').removeClass("cart-open");
+});
+
 
 
 // Paralax effect
@@ -85,9 +107,10 @@ owl.owlCarousel({
 	itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
 	mouseDrag: true,
 	touchdrag: true,
-	lazyLoad : true,
+	lazyLoad : false,
 	responsive: true,
 	autoPlay: 5000,
 	stopOnHover: true,
 });
 
+});

@@ -4,33 +4,5 @@ layout: default.hbs
 ---
 
 {{> header }}
-<!--{{> event-hero }}-->
-<section class="section section--grey">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				{{> partial-ticket-form }}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-8">
-				<h3 class="fold-h3">Pick your hotel</h3>
-			</div>
-			<div class="col-sm-4 text-right">
-				<ul class="switch-display clearfix">
-					<li class="display-options-map"></li>
-					<li class="display-options-grid"></li>
-					<li class="display-options-list active"></li>
-				</ul> 
-			</div>
-		</div>
-		{{> partial-hotel-list-item }}
-		{{> partial-hotel-list-item }}
-		{{> partial-hotel-list-item }}
-		{{> partial-hotel-list-item }}
-		{{> partial-hotel-list-item }}
-		{{> partial-hotel-list-item }}
-		{{> partial-pager }}
-	</div>
-</section>
+{{> partial-page-hotel-list }}
 {{> footer }}

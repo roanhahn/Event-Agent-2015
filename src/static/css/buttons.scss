@@ -1,3 +1,8 @@
+
+
+
+
+
 .button{
 	display: inline-block;
 	text-align: center;
@@ -33,6 +38,10 @@
 			background-color: $secondary-btn-text-color;
 			color: $secondary-btn-bg-color;
 		}
+	}
+
+	&--small{
+		font-size: 11px;
 	}
 
 	&--prev{

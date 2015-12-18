@@ -12,12 +12,12 @@ body{
 
 ::-moz-selection { /* Code for Firefox */
 	color: #fff;
-	background: #52b7e8;
+	background: $secondary-link-color;
 }
 
 ::selection {
 	color: #fff;
-	background: #52b7e8;
+	background: $secondary-link-color;
 }
 
 a{
@@ -25,6 +25,7 @@ a{
 	-webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 	-moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 	-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+	transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 }
 
 .h1{
@@ -58,7 +59,60 @@ a{
 	margin-bottom: 15px;
 }
 
+.accordion-row{
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+	position: relative;
+	cursor: pointer;
 
+	&:hover{
+		.accordion-h3{
+			color: $secondary-link-color
+		}
+	}
+}
+
+.accordion-h3{
+	font-family: $secondary-font;
+	display: block;
+	font-size: 40px;
+	line-height: 40px;
+	position: relative;
+	-webkit-transition: color 0.2s ease-in-out 0s;
+	-moz-transition: color 0.2s ease-in-out 0s;
+	-o-transition: color 0.2s ease-in-out 0s;
+	transition: color 0.2s ease-in-out 0s;
+
+	& small{
+		text-align: right;
+		position: absolute;
+		right: 40px;
+		padding-right: 30px;
+		line-height: 40px;
+		color: #000;
+		font-size: 15px;
+		font-weight: 900;
+		font-family: $primary-font;
+		text-transform: uppercase;
+		border-right: 1px solid #ddd;
+	}
+
+	&:after{
+		content: "\f078";
+		font-family: "FontAwesome";
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		font-size: 18px;
+		font-weight: normal;
+	}
+}
+.open .accordion-h3{
+	color: $secondary-link-color;
+}
+.open .accordion-h3:after{
+	content: "\f077";
+}
 .location-h3{
 	text-transform: uppercase;
 	font-weight: 900;

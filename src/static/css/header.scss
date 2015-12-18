@@ -39,23 +39,27 @@
 
 .header-menu-list{
 	float: right;
-	border-right: 1px solid $header-border-color;
+	/*border-right: 1px solid $header-border-color;*/
 }
 
 .header-menu-item{
 	list-style-type: none;
 	float: left;
-	border-left: 1px solid $header-border-color;
+	/*border-left: 1px solid $header-border-color;*/
 	line-height: $header-height;
 }
 
 .header-menu-link{
 	display: block;
-	padding: 0 40px;
+	margin-left: 40px;
 	color: $header-link-color;
 	font-family: $secondary-font;
 	font-size: $header-link-size;
 	font-weight: normal;
+	cursor: pointer;
+	-webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+	-moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+	-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 
 	&:hover{
 		color: $header-hover-color;
@@ -75,4 +79,95 @@
 			font-size: $hero-size-mobile;
 		}
 	}
+}
+
+.cart-total{
+	display: inline-block;
+	float: right;
+	margin-left: 20px;
+	position: relative;
+
+
+	&:after{
+		content: "\f07a";
+		font-family: "FontAwesome";
+		display: inline-block;
+		font-weight: normal;
+		font-size: 18px;
+		border-left: 1px solid $header-border-color;
+		padding-left: 15px;
+		margin-left: 15px;
+		line-height: 40px;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.cart{
+	position: absolute;
+	top: $header-height;
+	width: 320px;
+	right: 15px;
+	z-index: 998;
+	background-color: #fff;
+	padding: 20px;
+	line-height: 1.4;
+	border: 1px solid $header-border-color;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	right: -500px;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.cart-open{
+	right: 15px;
+}
+
+.close-cart{
+	
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: $secondary-link-color;
+
+	&:hover{
+		color: $primary-link-color;
+	}
+
+	&:before{
+		content: "\f00d";
+		font-family: "FontAwesome";
+		margin-right: 5px;
+	}
+
+}
+
+.cart-section{
+	border-top: 1px solid $header-border-color;
+	padding: 15px 0 15px;
+
+	& strong{
+		font-weight: 900;
+	}
+
+	&--noborder{
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.cart-total-price{
+	font-weight: 700;
+	border-top: 2px solid #000;
+	padding-top: 10px;
+	font-size: 17px;
+	text-transform: uppercase;
 }

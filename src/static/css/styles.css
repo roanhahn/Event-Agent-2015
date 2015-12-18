@@ -2,6 +2,10 @@
 @import url(bootstrap.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.css);
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
 html, body {
   height: 100%;
   position: relative;
@@ -30,7 +34,7 @@ a, a:visited, a:active {
   text-decoration: none; }
 
 /* [data-sr] { 
-    visibility: hidden; 
+	visibility: hidden; 
 } */
 @font-face {
   font-family: 'mysteryland_fontregular';
@@ -51,17 +55,18 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #52b7e8; }
+  background: #dc2d50; }
 
 ::selection {
   color: #fff;
-  background: #52b7e8; }
+  background: #dc2d50; }
 
 a {
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
-  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
+  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .h1 {
   font-weight: 900;
@@ -88,6 +93,51 @@ a {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 15px; }
+
+.accordion-row {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: relative;
+  cursor: pointer; }
+  .accordion-row:hover .accordion-h3 {
+    color: #dc2d50; }
+
+.accordion-h3 {
+  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  display: block;
+  font-size: 40px;
+  line-height: 40px;
+  position: relative;
+  -webkit-transition: color 0.2s ease-in-out 0s;
+  -moz-transition: color 0.2s ease-in-out 0s;
+  -o-transition: color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s; }
+  .accordion-h3 small {
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    padding-right: 30px;
+    line-height: 40px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "Lato", Arial, sans-serif;
+    text-transform: uppercase;
+    border-right: 1px solid #ddd; }
+  .accordion-h3:after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    font-size: 18px;
+    font-weight: normal; }
+
+.open .accordion-h3 {
+  color: #dc2d50; }
+
+.open .accordion-h3:after {
+  content: "\f077"; }
 
 .location-h3 {
   text-transform: uppercase;
@@ -144,6 +194,11 @@ body {
       padding: 30px 0; } }
   .section--grey {
     background-color: #f6f6f6; }
+  .section--white {
+    background-color: #fff; }
+
+.margin-top-10 {
+  margin-top: 10px; }
 
 .vertical-align {
   display: table-cell;
@@ -303,6 +358,8 @@ body {
     .button--secondary:hover {
       background-color: #fff;
       color: #dc2d50; }
+  .button--small {
+    font-size: 11px; }
   .button--prev {
     background-color: #fff;
     color: 000;
@@ -687,21 +744,25 @@ body {
 
 .header-menu-list {
   float: right;
-  border-right: 1px solid #f2f2f2; }
+  /*border-right: 1px solid $header-border-color;*/ }
 
 .header-menu-item {
   list-style-type: none;
   float: left;
-  border-left: 1px solid #f2f2f2;
+  /*border-left: 1px solid $header-border-color;*/
   line-height: 80px; }
 
 .header-menu-link {
   display: block;
-  padding: 0 40px;
+  margin-left: 40px;
   color: #000;
   font-family: "mysteryland_fontregular", Arial, sans-serif;
   font-size: 30px;
-  font-weight: normal; }
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+  -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
   .header-menu-link:hover {
     color: #dc2d50; }
 
@@ -716,6 +777,78 @@ body {
     @media all and (max-width: 767px) {
       .hero .hero-h1 {
         font-size: 35px; } }
+
+.cart-total {
+  display: inline-block;
+  float: right;
+  margin-left: 20px;
+  position: relative; }
+  .cart-total:after {
+    content: "\f07a";
+    font-family: "FontAwesome";
+    display: inline-block;
+    font-weight: normal;
+    font-size: 18px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 40px;
+    position: relative;
+    top: -3px; }
+
+.cart {
+  position: absolute;
+  top: 80px;
+  width: 320px;
+  right: 15px;
+  z-index: 998;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.4;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+  right: -500px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+
+.cart-open {
+  right: 15px; }
+
+.close-cart {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #dc2d50; }
+  .close-cart:hover {
+    color: #000; }
+  .close-cart:before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    margin-right: 5px; }
+
+.cart-section {
+  border-top: 1px solid #ddd;
+  padding: 15px 0 15px; }
+  .cart-section strong {
+    font-weight: 900; }
+  .cart-section--noborder {
+    border-top: none;
+    padding-top: 0; }
+
+.cart-total-price {
+  font-weight: 700;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  font-size: 17px;
+  text-transform: uppercase; }
 
 .event-hero {
   height: 100%;

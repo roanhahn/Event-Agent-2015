@@ -1,0 +1,100 @@
+---
+title: Booking Process
+layout: default.hbs
+---
+
+{{> header }}
+{{> event-hero }}
+<section class="section--white">
+	<section id="only-one" data-accordion-group>
+
+		<!-- Ticket -->
+		<section data-accordion>
+			<div class="accordion-row" data-control>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="accordion-h3">1: ticket<small>Some text goes here</small></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-content>
+				<article>
+					
+				</article>
+			</div>
+		</section>
+
+		<!-- Hotels -->
+		<section data-accordion>
+			<div class="accordion-row" data-control>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="accordion-h3">2: hotel<small>Some text goes here</small></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-content>
+				<article>
+					{{> partial-page-hotel-grid }}
+					{{> partial-page-hotel-list }}
+					{{> partial-page-hotel-details }}
+				</article>
+			</div>
+		</section>
+
+		<!-- Customize -->
+		<section data-accordion>
+			<div class="accordion-row" data-control>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="accordion-h3">3: customize<small>Some text goes here</small></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-content>
+				<article>Item</article>
+			</div>
+		</section>
+
+		<!-- Personal info -->
+		<section data-accordion class="open">
+			<div class="accordion-row" data-control>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="accordion-h3">4: personal info<small>Some text goes here</small></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-content>
+				<article>
+					{{> partial-page-personal-info }}
+				</article>
+			</div>
+		</section>
+
+		<!-- Summary -->
+		<section data-accordion>
+			<div class="accordion-row" data-control>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="accordion-h3">5: summary<small>Some text goes here</small></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-content>
+				<article>Item</article>
+			</div>
+		</section>
+	</section>
+</section>
+{{> footer }}
