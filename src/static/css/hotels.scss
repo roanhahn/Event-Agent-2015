@@ -396,7 +396,7 @@
 	position: relative;
 	height: 700px;
 	@media all and(max-width: $breakpoint-mobile){
-		height: 350px;
+		height: 400px;
 	}
 }
 #gmap{
@@ -413,6 +413,9 @@
 	right: 140px;
 	top: 30px;
 	width: 300px;
+	@media all and(max-width: $breakpoint-mobile){
+		right: 10px;
+	}
 }
 
 .hotel-map-close{

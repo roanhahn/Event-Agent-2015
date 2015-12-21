@@ -1376,7 +1376,7 @@ input[type="checkbox"]:checked + label span {
   height: 700px; }
   @media all and (max-width: 767px) {
     .gmap-wrapper {
-      height: 350px; } }
+      height: 400px; } }
 
 #gmap {
   position: absolute;
@@ -1391,6 +1391,9 @@ input[type="checkbox"]:checked + label span {
   right: 140px;
   top: 30px;
   width: 300px; }
+  @media all and (max-width: 767px) {
+    .gmap-hotel {
+      right: 10px; } }
 
 .hotel-map-close {
   float: right;

@@ -2539,11 +2539,11 @@ $(".hotel-item-grid-wrapper").hover
 (
 	function()
 	{
-		$(this).find(".hotel-item-grid-slide").css("top",-hotelgridimg);
+		$(this).parent().find(".hotel-item-grid-slide").css("top",-hotelgridimg);
 	},
 	function()
 	{
-		$(this).find(".hotel-item-grid-slide").css("top","0");
+		$(this).parent().find(".hotel-item-grid-slide").css("top","0");
 	}
 	);
 
@@ -2652,7 +2652,7 @@ owl.owlCarousel({
 	itemsDesktop : [1000,3], //5 items between 1000px and 901px
 	itemsDesktopSmall : [900,2], // betweem 900px and 601px
 	itemsTablet: [600,2], //2 items between 600 and 0
-	itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
+	itemsMobile : [480,2], // itemsMobile disabled - inherit from itemsTablet option
 	mouseDrag: true,
 	touchdrag: true,
 	lazyLoad : false,
