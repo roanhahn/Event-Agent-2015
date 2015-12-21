@@ -2573,6 +2573,21 @@ $('.close-cart').click(function()
 	$('.cart').removeClass("cart-open");
 });
 
+// Show/hide tell me more
+$('.show-tell').click(function()
+{
+    $('.tell-me-more-wrapper').slideToggle("fast");
+});
+$('.close-tell-me-more').click(function()
+{
+    $('.tell-me-more-wrapper').slideToggle("fast");
+});
+
+// Show more info at tickets
+/* $('.show-more-info').click(function()
+{
+    $(this).parent().find(".more-info").toggle("fast");
+});*/
 
 
 // Paralax effect

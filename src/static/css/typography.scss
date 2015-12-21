@@ -175,3 +175,42 @@ a{
 	text-transform: uppercase;
 	padding-bottom: 30px;
 }
+
+.show-more-info{
+	display: inline-block;
+	color: $secondary-link-color;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:before{
+		display: inline-block;
+		font-weight: normal;
+		content: "\f059";
+		font-family: "FontAwesome";
+		color: $primary-text-color;
+		margin-right: 5px;
+		margin-top: 15px;
+	}
+}
+
+.more-info{
+	display: block;
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+.tell-me-more{
+
+	& h3{
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+	}
+
+	& p{
+		margin-bottom: 10px;
+	}
+}
