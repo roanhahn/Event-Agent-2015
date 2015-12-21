@@ -642,7 +642,8 @@ body {
   width: 100%;
   z-index: 1;
   cursor: default;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  border-radius: 0px; }
   .event-registration-form-field:focus {
     background-color: #000; }
   .event-registration-form-field::-webkit-input-placeholder {
@@ -674,7 +675,8 @@ body {
   font-weight: 900;
   padding: 20px;
   border-left: 3px solid #fff;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  border-radius: 0px; }
   .event-registration-form-submit:hover {
     background-color: #fff;
     color: #000; }

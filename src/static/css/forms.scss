@@ -18,7 +18,7 @@
 	z-index: 1;
 	cursor: default;
 	-webkit-appearance: none;
-	border-radius: 0;
+	border-radius: 0px;
 
 	&:focus{
 		background-color: #000;
@@ -59,7 +59,7 @@
 	padding: 20px;
 	border-left: 3px solid #fff;
 	-webkit-appearance: none;
-	border-radius: 0;
+	border-radius: 0px;
 
 	&:hover{
 		background-color: #fff;
