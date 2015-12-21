@@ -2554,6 +2554,9 @@ $("img.lazyimage").unveil(200, function() {
 	});
 });
 
+// Message
+$( ".message" ).delay( 2000 ).fadeOut( 400 );
+
 // Accordion
 
 $('#only-one [data-accordion]').accordion();
@@ -2573,6 +2576,29 @@ $('.close-cart').click(function()
 	$('.cart').removeClass("cart-open");
 });
 
+// Hide hotel on map
+
+$('.hotel-map-close').click(function()
+{
+    $('.gmap-hotel').fadeToggle("fast");
+});
+
+
+// Show/hide tell me more
+$('.show-tell').click(function()
+{
+    $('.tell-me-more-wrapper').slideToggle("fast");
+});
+$('.close-tell-me-more').click(function()
+{
+    $('.tell-me-more-wrapper').slideToggle("fast");
+});
+
+// Show more info at tickets
+/* $('.show-more-info').click(function()
+{
+    $(this).parent().find(".more-info").toggle("fast");
+});*/
 
 
 // Paralax effect
@@ -2634,5 +2660,7 @@ owl.owlCarousel({
 	autoPlay: 5000,
 	stopOnHover: true,
 });
+
+
 
 });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Booking Process</title>
+		<title>Complete booking process with harmonica</title>
 		<link href="assets/css/styles.min.css" rel="stylesheet">
 		<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/ico" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,9 +10,10 @@
 		<meta name="description" content="description" />
 		<meta property="og:url" content="url" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Booking Process" />
+		<meta property="og:title" content="Complete booking process with harmonica" />
 		<meta property="og:description" content="description" />
 		<meta property="og:image" content="ogimage.jpg" />
+		<meta name="format-detection" content="telephone=no">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,52 +27,108 @@
 
 
 <header class="header">
-	<div class="container">
+	<div class="container" style="position: relative;">
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="/" class="header-logo"></a>
+				<div class="mobile-cart show-cart">
+					<div class="cart-total">&euro; 4.765,95</div>
+				</div>
 				<nav class="header-menu">
 					<ul class="header-menu-list">
 						<li class="header-menu-item">
-							<a href="#" class="header-menu-link">tell me more</a>
+							<a class="header-menu-link show-tell">tell me more</a>
 						</li>
 						<li class="header-menu-item">
 							<div href="#" class="header-menu-link show-cart">
 								your booking
 								<div class="cart-total">&euro; 4.765,95</div>
 							</div>
-							<div class="cart">
-								<div class="close-cart"></div>
-								<div class="cart-section cart-section--noborder">
-									<strong>Hotel Ibis Amsterdam Airport</strong>
-									<div>135 Avenue of The Americas, New York NY</div>
-								</div>
-								<div class="cart-section">
-									<div><strong>Check in: donderdag 24 nov</strong></div>
-									<div><strong>Check out: maandag 27 nov</strong></div>
-								</div>
-								<div class="cart-section">
-									<div><strong>Kamer 1: Presidential Suite</strong></div>
-									<div class="row">
-										<div class="col-xs-8">2 volwassenen, 3 nachten</div>
-										<div class="col-xs-4 text-right">€ 2.667,50</div>
-									</div>
-									<a href="" class="button button--small button--block button--secondary margin-top-10">PLEASE BOOK A SECOND ROOM</a>
-								</div>
-								<div class="cart-total-price">
-									<div class="row">
-										<div class="col-xs-6">Total</div>
-										<div class="col-xs-6 text-right">&euro; 3.567,50</div>
-									</div>
-								</div>
-							</div>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
+		<!-- Cart -->
+		<div class="cart">
+			<div class="close-cart"></div>
+			<div class="cart-section cart-section--noborder">
+				<strong>Hotel Ibis Amsterdam Airport</strong>
+				<div>135 Avenue of The Americas, New York NY</div>
+			</div>
+			<div class="cart-section">
+				<div><strong>Check in: donderdag 24 nov</strong></div>
+				<div><strong>Check out: maandag 27 nov</strong></div>
+			</div>
+			<div class="cart-section">
+				<div><strong>Kamer 1: Presidential Suite</strong></div>
+				<div class="row">
+					<div class="col-xs-8">2 volwassenen, 3 nachten</div>
+					<div class="col-xs-4 text-right">€ 2.667,50</div>
+				</div>
+				<a href="" class="button button--small button--block button--secondary margin-top-10">PLEASE BOOK A SECOND ROOM</a>
+			</div>
+			<div class="cart-total-price">
+				<div class="row">
+					<div class="col-xs-6">Total</div>
+					<div class="col-xs-6 text-right">&euro; 3.567,50</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>
+
+<!-- Message -->
+<div class="message">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<i class="fa fa-check"></i> 2 Tickets added to your booking
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Tell me more -->
+<section class="tell-me-more-wrapper">
+	<div class="tell-me-more">
+		<div class="close-tell-me-more"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-margin-30">
+					<h3>General</h3>
+					<p>
+						Saturday 1<sup>st</sup> of july 2014
+					</p>
+					<p>
+						Beatae vitae dicta sunt explicabo. Nemo enim
+						ipsam voluptatem quia voluptas sit aspernatur
+						aut odit aut fugit, sed quia consequuntur magni
+						dolores eos qui ratione volupt
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<h3>Date & time</h3>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit
+						voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo
+						inventore veritatis et quasi architecto beatae
+						vitae dicta sunt explicabo. Nemo enim ipsam
+						voluptatem quia voluptas sit aspernatur aut odit
+						aut fugit, sed quia consequuntur magni dolores
+						eos qui ratione voluptatem sequi nesciunt. Neque
+						porro quisquia non.atem
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Start content -->
 <div class="content-wrapper">
 <section class="event-hero" data-stellar-background-ratio="0.2">
 	<div class="table">
@@ -102,9 +159,95 @@
 					</div>
 				</div>
 			</div>
-			<div data-content>
+			<div data-content class="data-content">
 				<article>
-					
+					<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="fold-description clearfix">
+					<h3 class="fold-h3">Select your tickets</h3>
+				</div>
+			</div>
+		</div>
+		<form action="" method="" class="">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+					<label for="" class="form-label">Package without ticket</label>
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="form-wrapper">
+								<select name="" id="checkin" class="form-select" required="required">
+									<option value="1" class="form-option">1 Ticket</option>
+									<option value="2" class="form-option">2 Tickets</option>
+									<option value="3" class="form-option">3 Tickets</option>
+									<option value="4" class="form-option">4 Tickets</option>
+									<option value="5" class="form-option">5 Tickets</option>
+									<option value="6" class="form-option">6 Tickets</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-4 no-padding">
+							<input type="submit" class="button button--secondary button--submit" value="ok">
+						</div>
+					</div>
+					<span class="show-more-info">More info about this ticket</span>
+					<div class="more-info">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					</div>
+				</div>
+				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+					<label for="" class="form-label">Sensation entrance ticket</label>
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="form-wrapper">
+								<select name="" id="checkin" class="form-select" required="required">
+									<option value="1" class="form-option">1 Ticket</option>
+									<option value="2" class="form-option">2 Tickets</option>
+									<option value="3" class="form-option">3 Tickets</option>
+									<option value="4" class="form-option">4 Tickets</option>
+									<option value="5" class="form-option">5 Tickets</option>
+									<option value="6" class="form-option">6 Tickets</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-4 no-padding">
+							<input type="submit" class="button button--secondary button--submit" value="ok">
+						</div>
+					</div>
+					<span class="show-more-info">More info about this ticket</span>
+					<div class="more-info">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					</div>
+				</div>
+				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+					<label for="" class="form-label">Deluxe entrance ticket</label>
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="form-wrapper">
+								<select name="" id="checkin" class="form-select" required="required">
+									<option value="1" class="form-option">1 Ticket</option>
+									<option value="2" class="form-option">2 Tickets</option>
+									<option value="3" class="form-option">3 Tickets</option>
+									<option value="4" class="form-option">4 Tickets</option>
+									<option value="5" class="form-option">5 Tickets</option>
+									<option value="6" class="form-option">6 Tickets</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-4 no-padding">
+							<input type="submit" class="button button--secondary button--submit" value="ok">
+						</div>
+					</div>
+					<span class="show-more-info">More info about this ticket</span>
+					<div class="more-info">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
 				</article>
 			</div>
 		</section>
@@ -654,7 +797,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -701,7 +844,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -748,7 +891,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -795,7 +938,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -842,7 +985,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -889,7 +1032,7 @@
 				</div>
 			</div>
 			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="http://dummyimage.com/400x400/000/fff.png" alt="" class="img-responsive lazyimage">
+				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 			</div>
 		</div>
 		<div class="col-sm-7 col-md-8 col-lg-9">
@@ -937,6 +1080,205 @@
 </nav>
     </div>
 </section>
+					<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="fold-description clearfix">
+	<div class="fold-navigation">
+		<button class="button button--prev">Back</button>
+		<button class="button button--next">Next</button>
+	</div>
+	<h3 class="fold-h3">Your booking preferences</h3>
+</div>
+
+
+<form action="" method="" class="ticket-form">
+
+	<div class="row">
+		<div class="col-sm-12 col-md-2">
+			<label for="" class="form-label">Persons</label>
+			<div class="form-persons">
+				<span>3</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-2">
+			<label for="" class="form-label">Check in</label>
+			<div class="form-wrapper">
+				<select name="" id="checkin" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-sm-6 col-md-2">
+			<label for="" class="form-label">Check out</label>
+			<div class="form-wrapper">
+				<select name="" id="checkout" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		
+		<div class="col-sm-6 col-md-2">
+			<label for="" class="form-label">Rooms</label>
+			<div class="form-wrapper">
+				<select name="" id="rooms" class="form-select" required="required">
+					<option value="1" class="form-option">2</option>
+					<option value="2" class="form-option">3</option>
+					<option value="3" class="form-option">4</option>
+				</select>
+			</div>
+			<div class="form-text-message"></div>
+		</div>
+		<div class="col-sm-6 col-md-2">
+			<label class="form-label">Guests</label>
+			<div class="form-wrapper form-wrapper--inline">
+				<label for="" class="form-label--small">Room 1</label>
+				<select name="" id="checkout" class="form-select form-select--inline" required="required">
+					<option value="1" class="form-option">1</option>
+					<option value="1" class="form-option">2</option>
+					<option value="1" class="form-option">3</option>
+					<option value="1" class="form-option">4</option>
+				</select>
+			</div>
+			<div class="form-wrapper form-wrapper--inline">
+				<label for="" class="form-label--small">Room 2</label>
+				<select name="" id="checkout" class="form-select form-select--inline" required="required">
+					<option value="1" class="form-option">1</option>
+					<option value="1" class="form-option">2</option>
+					<option value="1" class="form-option">3</option>
+					<option value="1" class="form-option">4</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">
+			<input type="submit" value="Confirm" class="button button--secondary button--block-mobile">
+		</div>
+	</div>
+
+</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8">
+				<h3 class="fold-h3">Pick your hotel</h3>
+			</div>
+			<div class="col-sm-4 text-right">
+				<ul class="switch-display clearfix">
+					<li class="display-options-map active"></li>
+					<li class="display-options-grid"></li>
+					<li class="display-options-list"></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="gmap-wrapper">
+		<div id="gmap"></div>
+		<div class="gmap-hotel">
+			<div class="hotel-item-map">
+				<div class="hotel-map-close"></div>
+				<div class="hotel-item-grid-price">From &euro; 229,- p.p.</div>
+				<div class="hotel-item-grid-body">
+					<div class="hotel-item-grid-image">
+						<div class="img-container img-ratio-2-1">
+							<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+						</div>
+					</div>
+					<div class="hotel-item-grid-content">
+						<div class="title">Hilton Hotel</div>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<div class="intro">
+							The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
+						</div>
+					</div>
+				</div>
+				<div class="row facilities">
+					<div class="col-sm-12">
+						<ul class="facilities-list clearfix">
+							<li class="wifi">Wifi</li>
+							<li class="bar">Bar</li>
+							<li class="restaurant">Restaurant</li>
+							<li class="transfers">Transfer</li>
+							<li class="restaurant">Spa</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<a href="" class="button button--primary button--block">select hotel</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<!-- GOGGLE MAPS CONFIGURATION -->
+	<!-- ref: http://maplacejs.com/ -->
+	<script>
+		var gmap_options = {
+			generate_controls : false,
+			locations : [{
+				lat : 52.3702160,
+				lon : 4.8951680,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3681198,
+				lon : 4.8998029,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3694823,
+				lon : 4.8901898,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3688535,
+				lon : 4.9121625,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map-ml.png",
+			}
+
+			],
+			map_options : {
+				scrollwheel : false,
+				mapTypeControl : false,
+				streetViewControl : false,
+				zoomControlOptions : {
+					style : google.maps.ZoomControlStyle.SMALL,
+				},
+				zoom : 14,
+			},
+			styles : {
+				// source: https://snazzymaps.com
+				'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+			},
+		};
+	</script>
+</section>
+
 					<section class="section section--grey hotel-details">
     <div class="container">
         <div class="row">
@@ -1203,7 +1545,113 @@
 				</div>
 			</div>
 			<div data-content>
-				<article>Item</article>
+				<article><section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="fold-description clearfix">
+					<div class="fold-navigation">
+						<button class="button button--prev">Back</button>
+						<button class="button button--next">Next</button>
+					</div>
+					<h3 class="fold-h3">Customize your booking</h3>
+				</div>
+			</div>
+		</div>
+		<div class="customize-item clearfix">
+    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
+        </div>
+    </div>
+    <div class="col-sm-7 col-md-8 col-lg-9">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="hotel-item-list-content">
+                    <div class="title">Transfer by limousine</div>
+                    <ul class="list">
+                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
+                        <li class="list-item">Great start of the night</li>
+                        <li class="list-item">Good food, new friends great atmosphere</li>
+                        <li class="list-item">Different international foodshops</li>
+                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
+                        <li class="list-item">Starts at 19h00 till 21h00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="clearfix">
+                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
+                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="customize-item clearfix">
+    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
+        </div>
+    </div>
+    <div class="col-sm-7 col-md-8 col-lg-9">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="hotel-item-list-content">
+                    <div class="title">Transfer by limousine</div>
+                    <ul class="list">
+                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
+                        <li class="list-item">Great start of the night</li>
+                        <li class="list-item">Good food, new friends great atmosphere</li>
+                        <li class="list-item">Different international foodshops</li>
+                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
+                        <li class="list-item">Starts at 19h00 till 21h00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="clearfix">
+                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
+                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="customize-item clearfix">
+    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
+        </div>
+    </div>
+    <div class="col-sm-7 col-md-8 col-lg-9">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="hotel-item-list-content">
+                    <div class="title">Transfer by limousine</div>
+                    <ul class="list">
+                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
+                        <li class="list-item">Great start of the night</li>
+                        <li class="list-item">Good food, new friends great atmosphere</li>
+                        <li class="list-item">Different international foodshops</li>
+                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
+                        <li class="list-item">Starts at 19h00 till 21h00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="clearfix">
+                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
+                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+</section>
+
+</article>
 			</div>
 		</section>
 
@@ -1258,8 +1706,8 @@
 						<input type="text" name="" id="zip" value="1234 AB" maxlength="" placeholder="" class="form-field">
 					</div>
 					<div class="col-sm-6">
-						<label for="phonenumber" class="form-label">Phone number</label>
-						<input type="text" name="" id="phonenumber" value="+31(0)612345678" maxlength="" placeholder="" class="form-field">
+						<label for="phonenumber" class="form-label form-label--error">Phone number</label>
+						<input type="text" name="" id="phonenumber" value="+31(0)612345678" maxlength="" placeholder="" class="form-field form-field--error">
 					</div>
 					<div class="col-sm-6">
 						<label for="email" class="form-label">E-mail</label>
@@ -1321,7 +1769,7 @@
 		</section>
 
 		<!-- Summary -->
-		<section data-accordion class="open">
+		<section data-accordion>
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
@@ -1339,7 +1787,7 @@
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
 					<div class="fold-navigation">
-						<button class="button button--prev">Back</button>
+						<button class="button button--prev button--nomargin">Back</button>
 					</div>
 					<h3 class="fold-h3">Check your entered information</h3>
 				</div>
@@ -1357,6 +1805,7 @@
 					<div class="col-xs-7 col-sm-6">jurgen@thisisloco.com</div>
 					<div class="col-xs-5 col-sm-6 strong">Phonenumber:</div>
 					<div class="col-xs-7 col-sm-6">+31(0)646255387</div>
+
 					<div class="col-xs-5 col-sm-6 strong">Address:</div>
 					<div class="col-xs-7 col-sm-6">Ruysdaelhof Oost 9c</div>
 					<div class="col-xs-5 col-sm-6 strong">Zipcode:</div>
@@ -1372,7 +1821,7 @@
 			<div class="col-md-7">
 				<label class="form-label">Your Booking</label>
 				<div class="row">
-					<div class="col-xs-4 col-sm-3 strong">Ticket:</div>
+					<div class="col-xs-12 col-sm-3 strong">Ticket:</div>
 					<div class="col-xs-8 col-sm-5">2 x premium ticket</div>
 					<div class="col-sm-4 text-right">&euro; 150,00</div>
 				</div>
@@ -1445,64 +1894,77 @@
 		</section>
 	</section>
 </section>
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Contact</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						+31(0)6 52 382 38
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">travel@eventagent.com</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">General</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">General conditions</a>
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Disclaimer</a>
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Privacy policy</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Login</h4>
-				<form class="footer-form">
-					<fieldset class="">
-						<div class="footer-form-wrapper">
-							<input type="text" placeholder="Type login code here" class="footer-form-field">
-							<input type="submit" value="ok" class="footer-form-submit">
-						</div>
-					</fieldset>
-				</form>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Legals</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						Copyright Event Agent.
-					</li>
-					<li class="footer-list-item">
-						All Rights reserved.
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Webdesign by Loco</a>
-					</li>
-				</ul>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Contact</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							+31(0)6 52 382 38
+						</li>
+						<li class="footer-list-item">
+							<a href="mailto:&#116;&#114;&#097;&#118;&#101;&#108;&#064;&#101;&#118;&#101;&#110;&#116;&#097;&#103;&#101;&#110;&#116;&#046;&#099;&#111;&#109;" class="footer-list-link">travel@eventagent.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">General</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">General conditions</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">Disclaimer</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">Privacy policy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Login</h4>
+					<form class="footer-form">
+						<fieldset class="">
+							<div class="footer-form-wrapper">
+								<input type="text" placeholder="Type login code here" class="footer-form-field">
+								<input type="submit" value="ok" class="footer-form-submit">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Legals</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							Copyright Event Agent.
+						</li>
+						<li class="footer-list-item">
+							All Rights reserved.
+						</li>
+						<li class="footer-list-item">
+							<a href="http://www.loco-creations.nl/" target="_blank" class="footer-list-link">Webdesign by Loco</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 </div>
 
 		<script src="assets/js/app.js"></script>
+
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
+				new Maplace( gmap_options ).Load();
+				};
+			});
+		</script>
+		<script src="assets/js/plugins/maplace-0.1.3.min.js"></script>
+		
+
+
 	</body>
 </html>
