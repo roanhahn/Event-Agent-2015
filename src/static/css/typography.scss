@@ -39,6 +39,14 @@ a{
 	}
 }
 
+.plain h1{
+	font-family: $secondary-font;
+	font-size: 50px;
+	border-bottom: 1px solid #cbcbcb;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+}
+
 .h3{
 	margin: 0;
 	font-weight: 700;
@@ -53,10 +61,27 @@ a{
 	font-weight: 400;
 }
 
-.p{
+.plain h4{
+	font-weight: 700;
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+
+.p, .plain p{
 	font-size: 15px;
 	line-height: 1.5;
 	margin-bottom: 15px;
+}
+
+.plain ul{
+	margin: 0 0 15px 15px;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.plain a{
+	color: $secondary-link-color;
+	text-decoration: underline;
 }
 
 .accordion-row{

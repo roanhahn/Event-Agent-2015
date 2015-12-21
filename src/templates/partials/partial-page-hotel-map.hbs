@@ -1,0 +1,114 @@
+<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				{{> partial-ticket-form }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8">
+				<h3 class="fold-h3">Pick your hotel</h3>
+			</div>
+			<div class="col-sm-4 text-right">
+				<ul class="switch-display clearfix">
+					<li class="display-options-map active"></li>
+					<li class="display-options-grid"></li>
+					<li class="display-options-list"></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="gmap-wrapper">
+		<div id="gmap"></div>
+		<div class="gmap-hotel">
+			<div class="hotel-item-map">
+				<div class="hotel-map-close"></div>
+				<div class="hotel-item-grid-price">From &euro; 229,- p.p.</div>
+				<div class="hotel-item-grid-body">
+					<div class="hotel-item-grid-image">
+						<div class="img-container img-ratio-2-1">
+							<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+						</div>
+					</div>
+					<div class="hotel-item-grid-content">
+						<div class="title">Hilton Hotel</div>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<div class="intro">
+							The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
+						</div>
+					</div>
+				</div>
+				<div class="row facilities">
+					<div class="col-sm-12">
+						<ul class="facilities-list clearfix">
+							<li class="wifi">Wifi</li>
+							<li class="bar">Bar</li>
+							<li class="restaurant">Restaurant</li>
+							<li class="transfers">Transfer</li>
+							<li class="restaurant">Spa</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<a href="" class="button button--primary button--block">select hotel</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<!-- GOGGLE MAPS CONFIGURATION -->
+	<!-- ref: http://maplacejs.com/ -->
+	<script>
+		var gmap_options = {
+			generate_controls : false,
+			locations : [{
+				lat : 52.3702160,
+				lon : 4.8951680,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3681198,
+				lon : 4.8998029,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3694823,
+				lon : 4.8901898,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3688535,
+				lon : 4.9121625,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map-ml.png",
+			}
+
+			],
+			map_options : {
+				scrollwheel : false,
+				mapTypeControl : false,
+				streetViewControl : false,
+				zoomControlOptions : {
+					style : google.maps.ZoomControlStyle.SMALL,
+				},
+				zoom : 14,
+			},
+			styles : {
+				// source: https://snazzymaps.com
+				'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+			},
+		};
+	</script>
+</section>

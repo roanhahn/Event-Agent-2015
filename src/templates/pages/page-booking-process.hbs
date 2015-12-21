@@ -1,6 +1,7 @@
 ---
 title: Booking Process
 layout: default.hbs
+map: true
 ---
 
 {{> header }}
@@ -9,7 +10,7 @@ layout: default.hbs
 	<section id="only-one" data-accordion-group>
 
 		<!-- Ticket -->
-		<section data-accordion  class="open">
+		<section data-accordion>
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
@@ -41,6 +42,7 @@ layout: default.hbs
 				<article>
 					{{> partial-page-hotel-grid }}
 					{{> partial-page-hotel-list }}
+					{{> partial-page-hotel-map }}
 					{{> partial-page-hotel-details }}
 				</article>
 			</div>

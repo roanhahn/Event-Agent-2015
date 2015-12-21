@@ -59,6 +59,8 @@
 	width: 100%;
 	cursor: default;
 	z-index: 1;
+	border-radius: 0;
+	-webkit-appearance: none;
 
 	&::-webkit-input-placeholder{
 		color: $footer-form-line-color;
@@ -92,6 +94,8 @@
 	-webkit-transition: all 0.2s ease-in-out 0s;
 	-moz-transition: all 0.2s ease-in-out 0s;
 	-o-transition: all 0.2s ease-in-out 0s;
+	-webkit-appearance: none;
+	border-radius: 0;
 
 	&:hover{
 		background-color: $footer-form-submit-color;

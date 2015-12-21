@@ -2554,6 +2554,9 @@ $("img.lazyimage").unveil(200, function() {
 	});
 });
 
+// Message
+$( ".message" ).delay( 2000 ).fadeOut( 400 );
+
 // Accordion
 
 $('#only-one [data-accordion]').accordion();
@@ -2572,6 +2575,14 @@ $('.close-cart').click(function()
 {
 	$('.cart').removeClass("cart-open");
 });
+
+// Hide hotel on map
+
+$('.hotel-map-close').click(function()
+{
+    $('.gmap-hotel').fadeToggle("fast");
+});
+
 
 // Show/hide tell me more
 $('.show-tell').click(function()
@@ -2649,5 +2660,7 @@ owl.owlCarousel({
 	autoPlay: 5000,
 	stopOnHover: true,
 });
+
+
 
 });

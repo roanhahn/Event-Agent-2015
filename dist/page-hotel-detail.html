@@ -13,6 +13,7 @@
 		<meta property="og:title" content="Hotel details" />
 		<meta property="og:description" content="description" />
 		<meta property="og:image" content="ogimage.jpg" />
+		<meta name="format-detection" content="telephone=no">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,10 +28,13 @@
 
 
 <header class="header">
-	<div class="container">
+	<div class="container" style="position: relative;">
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="/" class="header-logo"></a>
+				<div class="mobile-cart show-cart">
+					<div class="cart-total">&euro; 4.765,95</div>
+				</div>
 				<nav class="header-menu">
 					<ul class="header-menu-list">
 						<li class="header-menu-item">
@@ -41,74 +45,92 @@
 								your booking
 								<div class="cart-total">&euro; 4.765,95</div>
 							</div>
-							<div class="cart">
-								<div class="close-cart"></div>
-								<div class="cart-section cart-section--noborder">
-									<strong>Hotel Ibis Amsterdam Airport</strong>
-									<div>135 Avenue of The Americas, New York NY</div>
-								</div>
-								<div class="cart-section">
-									<div><strong>Check in: donderdag 24 nov</strong></div>
-									<div><strong>Check out: maandag 27 nov</strong></div>
-								</div>
-								<div class="cart-section">
-									<div><strong>Kamer 1: Presidential Suite</strong></div>
-									<div class="row">
-										<div class="col-xs-8">2 volwassenen, 3 nachten</div>
-										<div class="col-xs-4 text-right">€ 2.667,50</div>
-									</div>
-									<a href="" class="button button--small button--block button--secondary margin-top-10">PLEASE BOOK A SECOND ROOM</a>
-								</div>
-								<div class="cart-total-price">
-									<div class="row">
-										<div class="col-xs-6">Total</div>
-										<div class="col-xs-6 text-right">&euro; 3.567,50</div>
-									</div>
-								</div>
-							</div>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	</div>
-</header>
-<div class="content-wrapper">
-	<div class="tell-me-more-wrapper">
-		<div class="tell-me-more">
-			<div class="close-tell-me-more"></div>
-			<div class="container">
+		<!-- Cart -->
+		<div class="cart">
+			<div class="close-cart"></div>
+			<div class="cart-section cart-section--noborder">
+				<strong>Hotel Ibis Amsterdam Airport</strong>
+				<div>135 Avenue of The Americas, New York NY</div>
+			</div>
+			<div class="cart-section">
+				<div><strong>Check in: donderdag 24 nov</strong></div>
+				<div><strong>Check out: maandag 27 nov</strong></div>
+			</div>
+			<div class="cart-section">
+				<div><strong>Kamer 1: Presidential Suite</strong></div>
 				<div class="row">
-					<div class="col-sm-6 col-sm-margin-30">
-						<h3>General</h3>
-						<p>
-							Saturday 1<sup>st</sup> of july 2014
-						</p>
-						<p>
-							Beatae vitae dicta sunt explicabo. Nemo enim
-							ipsam voluptatem quia voluptas sit aspernatur
-							aut odit aut fugit, sed quia consequuntur magni
-							dolores eos qui ratione volupt
-						</p>
-					</div>
-					<div class="col-sm-6">
-						<h3>Date & time</h3>
-						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit
-							voluptatem accusantium doloremque laudantium,
-							totam rem aperiam, eaque ipsa quae ab illo
-							inventore veritatis et quasi architecto beatae
-							vitae dicta sunt explicabo. Nemo enim ipsam
-							voluptatem quia voluptas sit aspernatur aut odit
-							aut fugit, sed quia consequuntur magni dolores
-							eos qui ratione voluptatem sequi nesciunt. Neque
-							porro quisquia non.atem
-						</p>
-					</div>
+					<div class="col-xs-8">2 volwassenen, 3 nachten</div>
+					<div class="col-xs-4 text-right">€ 2.667,50</div>
+				</div>
+				<a href="" class="button button--small button--block button--secondary margin-top-10">PLEASE BOOK A SECOND ROOM</a>
+			</div>
+			<div class="cart-total-price">
+				<div class="row">
+					<div class="col-xs-6">Total</div>
+					<div class="col-xs-6 text-right">&euro; 3.567,50</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</header>
+
+<!-- Message -->
+<div class="message">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<i class="fa fa-check"></i> 2 Tickets added to your booking
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Tell me more -->
+<section class="tell-me-more-wrapper">
+	<div class="tell-me-more">
+		<div class="close-tell-me-more"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-margin-30">
+					<h3>General</h3>
+					<p>
+						Saturday 1<sup>st</sup> of july 2014
+					</p>
+					<p>
+						Beatae vitae dicta sunt explicabo. Nemo enim
+						ipsam voluptatem quia voluptas sit aspernatur
+						aut odit aut fugit, sed quia consequuntur magni
+						dolores eos qui ratione volupt
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<h3>Date & time</h3>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit
+						voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo
+						inventore veritatis et quasi architecto beatae
+						vitae dicta sunt explicabo. Nemo enim ipsam
+						voluptatem quia voluptas sit aspernatur aut odit
+						aut fugit, sed quia consequuntur magni dolores
+						eos qui ratione voluptatem sequi nesciunt. Neque
+						porro quisquia non.atem
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Start content -->
+<div class="content-wrapper">
 <section class="section section--grey hotel-details">
     <div class="container">
         <div class="row">
@@ -359,67 +381,71 @@
         </div>
     </div>
 </section>
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Contact</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						+31(0)6 52 382 38
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">travel@eventagent.com</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">General</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">General conditions</a>
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Disclaimer</a>
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Privacy policy</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Login</h4>
-				<form class="footer-form">
-					<fieldset class="">
-						<div class="footer-form-wrapper">
-							<input type="text" placeholder="Type login code here" class="footer-form-field">
-							<input type="submit" value="ok" class="footer-form-submit">
-						</div>
-					</fieldset>
-				</form>
-			</div>
-			<div class="col-sm-3">
-				<h4 class="footer-h4">Legals</h4>
-				<ul class="footer-list">
-					<li class="footer-list-item">
-						Copyright Event Agent.
-					</li>
-					<li class="footer-list-item">
-						All Rights reserved.
-					</li>
-					<li class="footer-list-item">
-						<a href="" class="footer-list-link">Webdesign by Loco</a>
-					</li>
-				</ul>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Contact</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							+31(0)6 52 382 38
+						</li>
+						<li class="footer-list-item">
+							<a href="mailto:&#116;&#114;&#097;&#118;&#101;&#108;&#064;&#101;&#118;&#101;&#110;&#116;&#097;&#103;&#101;&#110;&#116;&#046;&#099;&#111;&#109;" class="footer-list-link">travel@eventagent.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">General</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">General conditions</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">Disclaimer</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="/page-disclaimer.html" class="footer-list-link">Privacy policy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Login</h4>
+					<form class="footer-form">
+						<fieldset class="">
+							<div class="footer-form-wrapper">
+								<input type="text" placeholder="Type login code here" class="footer-form-field">
+								<input type="submit" value="ok" class="footer-form-submit">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-sm-3">
+					<h4 class="footer-h4">Legals</h4>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							Copyright Event Agent.
+						</li>
+						<li class="footer-list-item">
+							All Rights reserved.
+						</li>
+						<li class="footer-list-item">
+							<a href="http://www.loco-creations.nl/" target="_blank" class="footer-list-link">Webdesign by Loco</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 </div>
 
 
 
 
 		<script src="assets/js/app.js"></script>
+
+		
+
+
 	</body>
 </html>

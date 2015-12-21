@@ -77,6 +77,13 @@ a {
     .h1 {
       font-size: 26px; } }
 
+.plain h1 {
+  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-size: 50px;
+  border-bottom: 1px solid #cbcbcb;
+  margin-bottom: 30px;
+  padding-bottom: 15px; }
+
 .h3 {
   margin: 0;
   font-weight: 700;
@@ -89,10 +96,24 @@ a {
   margin-bottom: 15px;
   font-weight: 400; }
 
-.p {
+.plain h4 {
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-size: 16px; }
+
+.p, .plain p {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 15px; }
+
+.plain ul {
+  margin: 0 0 15px 15px;
+  font-size: 15px;
+  line-height: 1.5; }
+
+.plain a {
+  color: #dc2d50;
+  text-decoration: underline; }
 
 .accordion-row {
   border-bottom: 1px solid #ddd;
@@ -399,7 +420,9 @@ body {
   letter-spacing: 1px;
   -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
-  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s; }
+  -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
+  -webkit-appearance: none;
+  border-radius: 0; }
   .button--primary {
     background-color: #000;
     color: #fff;
@@ -618,7 +641,8 @@ body {
   padding: 20px;
   width: 100%;
   z-index: 1;
-  cursor: default; }
+  cursor: default;
+  -webkit-appearance: none; }
   .event-registration-form-field:focus {
     background-color: #000; }
   .event-registration-form-field::-webkit-input-placeholder {
@@ -649,7 +673,8 @@ body {
   font-size: 25px;
   font-weight: 900;
   padding: 20px;
-  border-left: 3px solid #fff; }
+  border-left: 3px solid #fff;
+  -webkit-appearance: none; }
   .event-registration-form-submit:hover {
     background-color: #fff;
     color: #000; }
@@ -678,6 +703,8 @@ body {
     font-size: 13px;
     text-transform: uppercase;
     margin-right: 10px; }
+  .form-label--error {
+    color: #dc2d50; }
 
 .form-field {
   display: block;
@@ -693,11 +720,15 @@ body {
   appearance: none;
   margin-bottom: 10px;
   cursor: default;
-  color: #666; }
+  color: #666;
+  -webkit-appearance: none; }
   .form-field:focus {
     -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3); }
+  .form-field--error {
+    background-color: #dc2d50;
+    color: #fff; }
 
 .ticket-form-submit {
   padding-top: 28px; }
@@ -749,7 +780,8 @@ body {
   margin-bottom: 8px;
   cursor: pointer;
   color: transparent;
-  text-shadow: 0 0 0 #666; }
+  text-shadow: 0 0 0 #666;
+  border-radius: 0; }
   .form-select:focus {
     -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
@@ -813,12 +845,25 @@ input[type="checkbox"]:checked + label span {
       width: 100px;
       background-size: 100px;
       margin-top: 5px;
-      margin: 5px auto;
-      float: none; } }
+      margin: 5px 0;
+      float: left; } }
 
 @media all and (max-width: 767px) {
   .header-menu {
     display: none; } }
+
+.mobile-cart {
+  float: right;
+  display: none;
+  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 12px; }
+  @media all and (max-width: 767px) {
+    .mobile-cart {
+      display: block; } }
+  .mobile-cart .cart-total:after {
+    line-height: 20px;
+    top: -2px; }
 
 .header-menu-list {
   float: right;
@@ -879,11 +924,11 @@ input[type="checkbox"]:checked + label span {
   top: 80px;
   width: 320px;
   right: 15px;
-  z-index: 998;
+  z-index: -10;
   background-color: #fff;
   padding: 20px;
   line-height: 1.4;
-  border: 1px solid #ddd;
+  border: 1px solid #f6f6f6;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
@@ -892,9 +937,15 @@ input[type="checkbox"]:checked + label span {
   -moz-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
+  @media all and (max-width: 767px) {
+    .cart {
+      top: 50px; } }
 
 .cart-open {
   right: 15px; }
+  @media all and (max-width: 767px) {
+    .cart-open {
+      right: 0px; } }
 
 .close-cart {
   display: inline-block;
@@ -927,6 +978,20 @@ input[type="checkbox"]:checked + label span {
   padding-top: 10px;
   font-size: 17px;
   text-transform: uppercase; }
+
+.message {
+  background-color: #dc2d50;
+  color: #fff;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 15px 0; }
+  @media all and (max-width: 767px) {
+    .message {
+      top: 50px; } }
 
 .tell-me-more {
   background-color: #dc2d50;
@@ -1075,7 +1140,7 @@ input[type="checkbox"]:checked + label span {
     .switch-display li.active {
       color: #a7a9ac; }
 
-.hotel-item-grid {
+.hotel-item-grid, .hotel-item-map {
   position: relative;
   background-color: #fff;
   margin-bottom: 30px; }
@@ -1304,6 +1369,40 @@ input[type="checkbox"]:checked + label span {
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
   background-color: #dc2d50;
   opacity: 1; }
+
+.gmap-wrapper {
+  position: relative;
+  height: 700px; }
+  @media all and (max-width: 767px) {
+    .gmap-wrapper {
+      height: 350px; } }
+
+#gmap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1; }
+
+.gmap-hotel {
+  position: absolute;
+  z-index: 10;
+  right: 140px;
+  top: 30px;
+  width: 300px; }
+
+.hotel-map-close {
+  float: right;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer; }
+  .hotel-map-close:before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    line-height: 1;
+    font-size: 20px; }
+  .hotel-map-close:hover {
+    color: #dc2d50; }
 
 /* RIBBON BANNERS */
 .ribbon {
@@ -1553,7 +1652,9 @@ input[type="checkbox"]:checked + label span {
   line-height: 45px;
   width: 100%;
   cursor: default;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 0;
+  -webkit-appearance: none; }
   .footer-form-field::-webkit-input-placeholder {
     color: #444;
     opacity: 1; }
@@ -1582,7 +1683,9 @@ input[type="checkbox"]:checked + label span {
   z-index: 2;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s; }
+  -o-transition: all 0.2s ease-in-out 0s;
+  -webkit-appearance: none;
+  border-radius: 0; }
   .footer-form-submit:hover {
     background-color: #000;
     color: #444; }

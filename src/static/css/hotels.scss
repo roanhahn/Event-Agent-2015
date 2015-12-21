@@ -87,7 +87,7 @@
 	}
 }
 
-.hotel-item-grid{
+.hotel-item-grid, .hotel-item-map{
 	position: relative;
 	background-color: #fff;
 	margin-bottom: 30px;
@@ -391,4 +391,44 @@
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
 	background-color: $secondary-text-color;
 	opacity: 1;
+}
+.gmap-wrapper{
+	position: relative;
+	height: 700px;
+	@media all and(max-width: $breakpoint-mobile){
+		height: 350px;
+	}
+}
+#gmap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+.gmap-hotel{
+	position: absolute;
+	z-index: 10;
+	right: 140px;
+	top: 30px;
+	width: 300px;
+}
+
+.hotel-map-close{
+	float: right;
+	padding: 12px;
+	text-align: center;
+	cursor: pointer;
+
+	&:before{
+		content: "\f00d";
+		font-family: "FontAwesome";
+		line-height: 1;
+		font-size: 20px;
+	}
+
+	&:hover{
+		color: $secondary-link-color;
+	}
 }
