@@ -78,7 +78,8 @@ a {
   font-weight: 900;
   text-transform: uppercase;
   margin: 10px 0 10px;
-  font-size: 36px; }
+  font-size: 36px;
+  font-family: "oswaldbold"; }
   @media all and (max-width: 767px) {
     .h1 {
       font-size: 26px; } }
@@ -220,7 +221,8 @@ a {
 .fold-h3 {
   font-weight: 900;
   font-size: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "oswaldbold"; }
   @media all and (max-width: 767px) {
     .fold-h3 {
       font-size: 16px; } }
