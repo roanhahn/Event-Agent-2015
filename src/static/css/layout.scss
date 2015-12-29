@@ -8,11 +8,13 @@ body{
 }
 
 .content-wrapper{
-	margin-top: $header-height;
+	/*margin-top: $header-height;*/
+	position: relative;
+	top: $header-height;
 	height: calc(100% - #{$header-height});
 
 	@media all and (max-width: $breakpoint-mobile){
-		margin-top: $header-height-mobile;
+		top: $header-height-mobile;
 		height: calc(100% - #{$header-height-mobile});
 	}
 }
