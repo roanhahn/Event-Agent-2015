@@ -91,151 +91,173 @@ a{
 	cursor: pointer;
 
 	&:hover{
-		.accordion-h3{
+		background-color: #f1f1f1;
+		/*.accordion-h3{
 			color: $secondary-link-color
+			}*/
 		}
 	}
-}
 
-.strong{
-	font-weight: 700;
-}
-
-.accordion-h3{
-	font-family: $secondary-font;
-	display: block;
-	font-size: 40px;
-	line-height: 40px;
-	position: relative;
-	-webkit-transition: color 0.2s ease-in-out 0s;
-	-moz-transition: color 0.2s ease-in-out 0s;
-	-o-transition: color 0.2s ease-in-out 0s;
-	transition: color 0.2s ease-in-out 0s;
-
-	@media all and(max-width: $breakpoint-mobile){
-		font-size: 30px;
-		line-height: 30px;
+	.open .accordion-row{
+		background-color: #f1f1f1;
+		border-bottom: 1px solid #f1f1f1;
 	}
 
-	& small{
-		text-align: right;
-		position: absolute;
-		right: 40px;
-		padding-right: 30px;
+	.strong{
+		font-weight: 700;
+	}
+
+	.accordion-h3{
+		font-family: $secondary-font;
+		display: block;
+		font-size: 40px;
 		line-height: 40px;
-		color: #000;
-		font-size: 15px;
-		font-weight: 900;
-		font-family: $primary-font;
-		text-transform: uppercase;
-		border-right: 1px solid #ddd;
+		position: relative;
+		-webkit-transition: color 0.2s ease-in-out 0s;
+		-moz-transition: color 0.2s ease-in-out 0s;
+		-o-transition: color 0.2s ease-in-out 0s;
+		transition: color 0.2s ease-in-out 0s;
 
 		@media all and(max-width: $breakpoint-mobile){
-			display: none;
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		& small{
+			text-align: right;
+			position: absolute;
+			right: 40px;
+			padding-right: 30px;
+			line-height: 40px;
+			color: #000;
+			font-size: 15px;
+			font-weight: 900;
+			font-family: $primary-font;
+			text-transform: uppercase;
+			border-right: 1px solid #ddd;
+			color: #ddd;
+			-webkit-transition: color 0.2s ease-in-out 0s;
+			-moz-transition: color 0.2s ease-in-out 0s;
+			-o-transition: color 0.2s ease-in-out 0s;
+			transition: color 0.2s ease-in-out 0s;
+
+			@media all and(max-width: $breakpoint-mobile){
+				display: none;
+			}
+		}
+
+		&:after{
+			content: "\f078";
+			font-family: "FontAwesome";
+			display: inline-block;
+			position: absolute;
+			right: 0px;
+			font-size: 18px;
+			font-weight: normal;
+			color: #ddd;
+			-webkit-transition: color 0.2s ease-in-out 0s;
+			-moz-transition: color 0.2s ease-in-out 0s;
+			-o-transition: color 0.2s ease-in-out 0s;
+			transition: color 0.2s ease-in-out 0s;
+		}
+	}
+	.open .accordion-h3{
+		color: #000;
+		& small{
+			color: #000;
+		}
+	}
+	.open .accordion-h3:after{
+		content: "\f077";
+		color: #000;
+	}
+	.location-h3{
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 23px;
+		color: $location-title-color;
+		line-height: 1;
+		font-family: $tertiary-font;
+
+		& small{
+			display: block;
+			text-transform: none;
+			margin-top: 5px;
+			color: $location-subtitle-color;
+			font-family: $primary-font;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 18px;
 		}
 	}
 
-	&:after{
-		content: "\f078";
-		font-family: "FontAwesome";
-		display: inline-block;
-		position: absolute;
-		right: 0px;
-		font-size: 18px;
-		font-weight: normal;
-	}
-}
-.open .accordion-h3{
-	color: $secondary-link-color;
-}
-.open .accordion-h3:after{
-	content: "\f077";
-}
-.location-h3{
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 23px;
-	color: $location-title-color;
-	line-height: 1;
-
-	& small{
-		display: block;
-		text-transform: none;
-		margin-top: 5px;
-		color: $location-subtitle-color
-	}
-
-	@media all and (max-width: $breakpoint-mobile){
-		font-size: 18px;
-	}
-}
-
-.fold-h2{
-	color: $primary-text-color;
-	font-size: 30px;
-}
-
-.fold-h3{
-	font-weight: 900;
-	font-size: 20px;
-	text-transform: uppercase;
-	@media all and(max-width: $breakpoint-mobile){
-		font-size: 16px;
-	}
-}
-
-.summary-section{
-	border-bottom: 1px solid #cbcbcb;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-
-	&--total{
-		border-color: #000;
-		border-width: 2px;
-	}
-}
-
-.summary-total{
-	font-size: 18px;
-	text-transform: uppercase;
-	padding-bottom: 30px;
-}
-
-.show-more-info{
-	display: inline-block;
-	color: $secondary-link-color;
-	font-weight: 700;
-	cursor: pointer;
-
-	&:before{
-		display: inline-block;
-		font-weight: normal;
-		content: "\f059";
-		font-family: "FontAwesome";
+	.fold-h2{
 		color: $primary-text-color;
-		margin-right: 5px;
-		margin-top: 15px;
+		font-size: 30px;
 	}
-}
 
-.more-info{
-	display: block;
-	margin-top: 5px;
-	font-size: 13px;
-}
-
-.tell-me-more{
-
-	& h3{
+	.fold-h3{
+		font-weight: 900;
 		font-size: 20px;
-		font-weight: 700;
-		margin-bottom: 15px;
 		text-transform: uppercase;
-		padding-bottom: 10px;
-		border-bottom: 1px solid #fff;
+		@media all and(max-width: $breakpoint-mobile){
+			font-size: 16px;
+		}
 	}
 
-	& p{
+	.summary-section{
+		border-bottom: 1px solid #cbcbcb;
 		margin-bottom: 10px;
+		padding-bottom: 10px;
+
+		&--total{
+			border-color: #000;
+			border-width: 2px;
+		}
 	}
-}
+
+	.summary-total{
+		font-size: 18px;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+	}
+
+	.show-more-info{
+		display: inline-block;
+		color: $secondary-link-color;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:before{
+			display: inline-block;
+			font-weight: normal;
+			content: "\f059";
+			font-family: "FontAwesome";
+			color: $primary-text-color;
+			margin-right: 5px;
+			margin-top: 15px;
+		}
+	}
+
+	.more-info{
+		display: block;
+		margin-top: 5px;
+		font-size: 13px;
+	}
+
+	.tell-me-more{
+
+		& h3{
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #fff;
+		}
+
+		& p{
+			margin-bottom: 10px;
+		}
+	}
