@@ -123,7 +123,7 @@ a {
   text-decoration: underline; }
 
 .accordion-row {
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   padding: 10px 0;
   position: relative;
   cursor: pointer; }
@@ -135,7 +135,7 @@ a {
 
 .open .accordion-row {
   background-color: #f1f1f1;
-  border-bottom: 1px solid #f1f1f1; }
+  /*border-bottom: 1px solid #f1f1f1;*/ }
 
 .strong {
   font-weight: 700; }
@@ -738,6 +738,13 @@ body {
   border-bottom: 1px solid #cbcbcb;
   margin: 0 0 30px;
   padding: 0 0 30px; }
+
+.form-col {
+  border-right: 1px solid #cbcbcb; }
+  @media all and (max-width: 991px) {
+    .form-col {
+      min-height: 0px;
+      border-right: none; } }
 
 .form-label {
   display: block;

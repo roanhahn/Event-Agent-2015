@@ -86,7 +86,7 @@ a{
 }
 
 .accordion-row{
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	padding: 10px 0;
 	position: relative;
 	cursor: pointer;
@@ -101,7 +101,7 @@ a{
 
 	.open .accordion-row{
 		background-color: #f1f1f1;
-		border-bottom: 1px solid #f1f1f1;
+		/*border-bottom: 1px solid #f1f1f1;*/
 	}
 
 	.strong{

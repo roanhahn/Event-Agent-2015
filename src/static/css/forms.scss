@@ -83,6 +83,14 @@
 	padding: 0 0 30px;
 }
 
+.form-col{
+	border-right: 1px solid #cbcbcb;
+	@media all and (max-width: $breakpoint-tablet){
+		min-height: 0px;
+		border-right: none;
+	}
+}
+
 
 // FORM ELEMENTS
 
