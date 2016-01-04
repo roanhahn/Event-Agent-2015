@@ -129,10 +129,7 @@ a {
   position: relative;
   cursor: pointer; }
   .accordion-row:hover {
-    background-color: #f1f1f1;
-    /*.accordion-h3{
-    	color: $secondary-link-color
-    	}*/ }
+    background-color: #f1f1f1; }
 
 .open .accordion-row {
   background-color: #f1f1f1;
@@ -271,6 +268,16 @@ a {
 .tell-me-more p {
   margin-bottom: 10px;
   line-height: 25px; }
+
+.ea-offer-bigtext {
+  width: 100%;
+  font-family: "oswaldbold";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 36px; }
+  .ea-offer-bigtext small {
+    font-size: 50%;
+    font-weight: normal; }
 
 html, body {
   -webkit-overflow-scrolling: touch;

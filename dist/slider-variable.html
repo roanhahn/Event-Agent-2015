@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Customize your booking</title>
+	<title>Slider with variable content</title>
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,7 +10,7 @@
 	<meta name="description" content="description" />
 	<meta property="og:url" content="url" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Customize your booking" />
+	<meta property="og:title" content="Slider with variable content" />
 	<meta property="og:description" content="description" />
 	<meta property="og:image" content="ogimage.jpg" />
 	<meta name="format-detection" content="telephone=no">
@@ -131,116 +131,25 @@
 
 <!-- Start content -->
 <div class="content-wrapper">
-<section class="section section--grey">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="fold-description clearfix">
-					<div class="fold-navigation">
-						<button class="button button--prev">Back</button>
-						<button class="button button--next">Next</button>
-					</div>
-					<h3 class="fold-h3">Customize your booking</h3>
-				</div>
-			</div>
-		</div>
-		<div class="customize-item clearfix">
-    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
-        <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 89,- p.p.</div>
-        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
+<section class="event-hero event-hero--slider">
+    
+    <!-- slider -->
+    <div class="ea-detail-slider text-center">
+        <div id="layerslider" class="layerslider" style="width:100%; height:100%;">     
+            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
+                <img src="assets/img/slide1.jpg" class="ls-bg" alt="">
+                <h1 class="ls-l ea-offer-bigtext" style="top: 40%;" data-ls="offsetxin:0;durationin:2000;delayin:200;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">15 years of unity<small>Come celebrate with us</small></h1>
+            </div>
+
+            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
+                <img src="assets/img/slide2.jpg" class="ls-bg" alt="">
+                <h1 class="ls-l ea-offer-bigtext" style="top: 40%;" data-ls="offsetxin:0;durationin:2000;delayin:200;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:200;durationout:1000;">Text goes here<small>Effect no.3</small></h1>
+            </div>
+
         </div>
     </div>
-    <div class="col-sm-7 col-md-8 col-lg-9">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="hotel-item-list-content">
-                    <div class="title">Transfer by limousine</div>
-                    <ul class="list">
-                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
-                        <li class="list-item">Great start of the night</li>
-                        <li class="list-item">Good food, new friends great atmosphere</li>
-                        <li class="list-item">Different international foodshops</li>
-                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
-                        <li class="list-item">Starts at 19h00 till 21h00</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="clearfix">
-                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
-                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-		<div class="customize-item clearfix">
-    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
-        <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 89,- p.p.</div>
-        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
-        </div>
-    </div>
-    <div class="col-sm-7 col-md-8 col-lg-9">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="hotel-item-list-content">
-                    <div class="title">Transfer by limousine</div>
-                    <ul class="list">
-                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
-                        <li class="list-item">Great start of the night</li>
-                        <li class="list-item">Good food, new friends great atmosphere</li>
-                        <li class="list-item">Different international foodshops</li>
-                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
-                        <li class="list-item">Starts at 19h00 till 21h00</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="clearfix">
-                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
-                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-		<div class="customize-item clearfix">
-    <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
-        <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 89,- p.p.</div>
-        <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
-        <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/limo.jpg" alt="" class="img-responsive lazyimage">
-        </div>
-    </div>
-    <div class="col-sm-7 col-md-8 col-lg-9">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="hotel-item-list-content">
-                    <div class="title">Transfer by limousine</div>
-                    <ul class="list">
-                        <li class="list-item">Official pre diner in the Amsterdam ArenA</li>
-                        <li class="list-item">Great start of the night</li>
-                        <li class="list-item">Good food, new friends great atmosphere</li>
-                        <li class="list-item">Different international foodshops</li>
-                        <li class="list-item">Early Amsterdam ArenA transfer at 18h30</li>
-                        <li class="list-item">Starts at 19h00 till 21h00</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="clearfix">
-                    <div class="hotel-item-list-price">&euro; 89,- p.p.</div>
-                    <a href="" class="button button--primary hotel-item-list-button">select option</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-	</div>
+    <!-- end slider -->
 </section>
-
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -298,7 +207,6 @@
 		</div>
 	</footer>
 </div>
-
 		<script src="assets/js/app.js"></script>
 
 		
