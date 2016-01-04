@@ -2,15 +2,22 @@ $(document).ready(function() {
 
 var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
+var hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
+var hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
+
 $(function() {
-	$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
+	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
+	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
 });
 
 $(window).resize(function(){
 	hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 	hotelgridimg = $(".hotel-item-grid-image").outerHeight();
+	hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
+	hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
 
-	$(".hotel-item-grid-wrapper").css("height",hotelgridbody); 
+	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
+	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
 });
 
 $(".hotel-item-grid-wrapper").hover
@@ -58,24 +65,24 @@ $('.close-cart').click(function()
 
 $('.hotel-map-close').click(function()
 {
-    $('.gmap-hotel').fadeToggle("fast");
+	$('.gmap-hotel').fadeToggle("fast");
 });
 
 
 // Show/hide tell me more
 $('.show-tell').click(function()
 {
-    $('.tell-me-more-wrapper').slideToggle("fast");
+	$('.tell-me-more-wrapper').slideToggle("fast");
 });
 $('.close-tell-me-more').click(function()
 {
-    $('.tell-me-more-wrapper').slideToggle("fast");
+	$('.tell-me-more-wrapper').slideToggle("fast");
 });
 
 // Show more info at tickets
 /* $('.show-more-info').click(function()
 {
-    $(this).parent().find(".more-info").toggle("fast");
+	$(this).parent().find(".more-info").toggle("fast");
 });*/
 
 
