@@ -199,7 +199,7 @@ a {
 
 .location-h3 {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 23px;
   color: #000;
   line-height: 1;
@@ -348,7 +348,7 @@ body {
   line-height: 1;
   font-family: "oswaldbold"; }
   .location-date .day {
-    font-weight: 900;
+    font-weight: normal;
     font-size: 35px; }
   .location-date .month {
     text-transform: uppercase;
@@ -529,7 +529,7 @@ body {
   .button--location {
     border: 2px solid #fff;
     color: #fff;
-    font-weight: 900;
+    font-weight: normal;
     font-size: 25px;
     height: auto;
     overflow: visible;
@@ -1313,10 +1313,6 @@ input[type="checkbox"]:checked + label span {
   .facilities-list .transfers:before {
     content: "\f1b9"; }
 
-.hotel-item-list .facilities-list li {
-  float: left;
-  width: 50%; }
-
 .hotel-item-list, .customize-item {
   background-color: #fff;
   margin-bottom: 30px; }
@@ -1490,7 +1486,7 @@ input[type="checkbox"]:checked + label span {
   position: absolute;
   right: -5px;
   top: -5px;
-  z-index: 400;
+  z-index: 80;
   overflow: hidden;
   width: 200px;
   height: 200px;
