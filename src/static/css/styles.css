@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(bootstrap.css);
+@import url(layerslider/layerslider.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.css);
 html {
@@ -1111,6 +1112,8 @@ input[type="checkbox"]:checked + label span {
   min-height: 300px;
   padding: 30px 0;
   position: relative; }
+  .event-hero--slider {
+    background: none; }
   .event-hero:before {
     position: absolute;
     top: 0;
@@ -1146,6 +1149,24 @@ input[type="checkbox"]:checked + label span {
   min-height: 300px;
   padding: 30px 0;
   position: relative; }
+
+.event-hero-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+.ea-detail-slider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1; }
 
 .fold {
   border-top: 2px solid #cbcbcb;

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Regular or Premium package</title>
-		<link href="assets/css/styles.min.css" rel="stylesheet">
-		<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/ico" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<meta name="description" content="description" />
-		<meta property="og:url" content="url" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Regular or Premium package" />
-		<meta property="og:description" content="description" />
-		<meta property="og:image" content="ogimage.jpg" />
-		<meta name="format-detection" content="telephone=no">
+<head>
+	<title>Regular or Premium package</title>
+	<link href="assets/css/styles.min.css" rel="stylesheet">
+	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="description" />
+	<meta property="og:url" content="url" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Regular or Premium package" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="ogimage.jpg" />
+	<meta name="format-detection" content="telephone=no">
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -24,7 +24,7 @@
 
 	</head>
 	<body>
-
+		
 
 <header class="header">
 	<div class="container" style="position: relative;">
@@ -208,6 +208,32 @@
 
 		
 
+		
+		<script src="assets/js/plugins/layerslider/greensock.js" type="text/javascript"></script>
+		<script src="assets/js/plugins/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+		<script src="assets/js/plugins/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#layerslider').layerSlider({
+					autoStart: true,
+					firstLayer: 1,
+					navPrevNext: true,
+					navButtons: false,
+					navStartStop: false,
+					pauseOnHover: false,
+					imgPreload: true,
+					lazyLoad: true,
+					touchNav: true,
+					thumbnailNavigation: 'disabled',
+					skin: 'fullwidth',
+					skinsPath: '/assets/js/plugins/layerslider/skins/'
+					// Slider options goes here,
+					// please check the 'List of slider options' section in the documentation
+				});
+			});
+		</script>
+		
+
 
 	</body>
-</html>
+	</html>
