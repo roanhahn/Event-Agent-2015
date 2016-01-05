@@ -1059,7 +1059,7 @@ input[type="checkbox"]:checked + label span {
   background-color: #dc2d50;
   color: #fff;
   position: fixed;
-  top: 80px;
+  /*top: $header-height;*/
   top: 0px;
   height: 80px;
   left: 0;
@@ -1070,9 +1070,9 @@ input[type="checkbox"]:checked + label span {
   line-height: 80px; }
   @media all and (max-width: 767px) {
     .message {
-      top: 50px;
+      /*top: $header-height-mobile;*/
       padding: 15px;
-      height: auto;
+      height: 50px;
       line-height: normal;
       font-size: 14px; } }
 
@@ -1165,6 +1165,14 @@ input[type="checkbox"]:checked + label span {
   top: 0;
   right: 0;
   z-index: 10; }
+
+.event-hero-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 20%; }
 
 .ea-detail-slider {
   height: 100%;

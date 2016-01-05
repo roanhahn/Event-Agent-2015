@@ -200,7 +200,7 @@
 	background-color: $hero-bg-color;
 	color: #fff;
 	position: fixed;
-	top: $header-height;
+	/*top: $header-height;*/
 	top: 0px;
 	height: $header-height;
 	left: 0;
@@ -210,9 +210,9 @@
 	text-align: center;
 	line-height: $header-height;
 	@media all and (max-width: $breakpoint-mobile){
-		top: $header-height-mobile;
+		/*top: $header-height-mobile;*/
 		padding: 15px;
-		height: auto;
+		height: $header-height-mobile;
 		line-height: normal;
 		font-size: 14px;
 	}
