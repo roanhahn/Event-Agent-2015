@@ -234,7 +234,7 @@
 	width: 100%;
 	height: 45px;
 	outline: none!important;
-	border: none;
+	border: 1px solid #fff;
 	color: rgba(0,0,0,0);
 	background-color: $select-bg-color;
 	padding: 8px;
@@ -259,6 +259,26 @@
 		width: auto;
 		min-width: 60px;
 		margin-right: 4px;
+	}
+
+	&--error{
+		background-color: $secondary-link-color;
+		border-color: $secondary-link-color;
+		color: #fff;
+
+		& option{
+			color: #fff;
+		}
+	}
+
+	&--ok{
+		border-color: #58d68d;
+		background-color: #eafaf1;
+	}
+
+	&--no-ok{
+		border-color: #e35773;
+		background-color: #fbeaed;
 	}
 }
 
