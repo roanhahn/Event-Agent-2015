@@ -147,13 +147,21 @@
 		<form class="form-personal-info">
 			<fieldset>
 				<div class="row">
+					<div class="col-sm-12">
+						<ul class="form-error-list">
+							<li>Please use the correct pattern AZ-az</li>
+							<li>A valid phonenumber is required</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-sm-6">
 						<label for="firstname" class="form-label">First name</label>
-						<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field">
+						<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field form-field--ok">
 					</div>
 					<div class="col-sm-6">
 						<label for="lastname" class="form-label">Last name</label>
-						<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field">
+						<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field form-field--no-ok">
 					</div>
 					
 					<div class="col-sm-6">
