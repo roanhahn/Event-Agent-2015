@@ -29,10 +29,11 @@ a{
 }
 
 .h1{
-	font-weight: 900;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin: 10px 0 10px;
-	font-size: 36px;
+	font-size: 30px;
+	font-family: $tertiary-font;
 
 	@media all and(max-width: $breakpoint-mobile){
 		font-size: 26px;
@@ -69,7 +70,7 @@ a{
 
 .p, .plain p{
 	font-size: 15px;
-	line-height: 1.5;
+	line-height: 25px;
 	margin-bottom: 15px;
 }
 
@@ -85,16 +86,19 @@ a{
 }
 
 .accordion-row{
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	padding: 10px 0;
 	position: relative;
 	cursor: pointer;
 
 	&:hover{
-		.accordion-h3{
-			color: $secondary-link-color
-		}
+		background-color: #f1f1f1;
 	}
+}
+
+.open .accordion-row{
+	background-color: #f1f1f1;
+	/*border-bottom: 1px solid #f1f1f1;*/
 }
 
 .strong{
@@ -129,6 +133,11 @@ a{
 		font-family: $primary-font;
 		text-transform: uppercase;
 		border-right: 1px solid #ddd;
+		color: #ddd;
+		-webkit-transition: color 0.2s ease-in-out 0s;
+		-moz-transition: color 0.2s ease-in-out 0s;
+		-o-transition: color 0.2s ease-in-out 0s;
+		transition: color 0.2s ease-in-out 0s;
 
 		@media all and(max-width: $breakpoint-mobile){
 			display: none;
@@ -143,26 +152,37 @@ a{
 		right: 0px;
 		font-size: 18px;
 		font-weight: normal;
+		color: #ddd;
+		-webkit-transition: color 0.2s ease-in-out 0s;
+		-moz-transition: color 0.2s ease-in-out 0s;
+		-o-transition: color 0.2s ease-in-out 0s;
+		transition: color 0.2s ease-in-out 0s;
 	}
 }
 .open .accordion-h3{
-	color: $secondary-link-color;
+	color: #000;
+	& small{
+		color: #000;
+	}
 }
 .open .accordion-h3:after{
 	content: "\f077";
+	color: #000;
 }
 .location-h3{
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: normal;
 	font-size: 23px;
 	color: $location-title-color;
 	line-height: 1;
+	font-family: $tertiary-font;
 
 	& small{
 		display: block;
 		text-transform: none;
 		margin-top: 5px;
-		color: $location-subtitle-color
+		color: $location-subtitle-color;
+		font-family: $primary-font;
 	}
 
 	@media all and (max-width: $breakpoint-mobile){
@@ -177,8 +197,10 @@ a{
 
 .fold-h3{
 	font-weight: 900;
-	font-size: 20px;
+	font-weight: normal;
+	font-size: 30px;
 	text-transform: uppercase;
+	font-family: $tertiary-font;
 	@media all and(max-width: $breakpoint-mobile){
 		font-size: 16px;
 	}
@@ -237,5 +259,21 @@ a{
 
 	& p{
 		margin-bottom: 10px;
+		line-height: 25px;
 	}
 }
+
+
+.ea-offer-bigtext{
+	width: 100%;
+	font-family: $tertiary-font;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 36px;
+
+	& small{
+		font-size: 50%;
+		font-weight: normal;
+	}
+}
+

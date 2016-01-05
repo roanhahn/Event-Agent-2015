@@ -83,6 +83,14 @@
 	padding: 0 0 30px;
 }
 
+.form-col{
+	border-right: 1px solid #cbcbcb;
+	@media all and (max-width: $breakpoint-tablet){
+		min-height: 0px;
+		border-right: none;
+	}
+}
+
 
 // FORM ELEMENTS
 
@@ -104,11 +112,39 @@
 		color: $secondary-link-color;
 	}
 }
+.form-error-list{
+	background-color: $secondary-link-color;
+	color: #fff;
+	border: 1px solid $secondary-link-color;
+	padding: 10px 15px;
+	margin-bottom: 30px;
+
+	& li{
+		list-style-type: none;
+		margin-bottom: 5px;
+		font-size: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before{
+			display: inline-block;
+			content: "\f071";
+			font-family: "FontAwesome";
+			color: #fff;
+			margin-right: 10px;
+			line-height: 1;
+		}
+	}
+}
+
 .form-field{
 	display: block;
 	width: 100%;
+	height: 45px;
 	outline: none!important;
-	border: none;
+	border: 1px solid #fff;
 	background-color: $select-bg-color;
 	padding: 10px;
 	-webkit-appearance: none;  /*Removes default chrome and safari style*/
@@ -128,8 +164,23 @@
 
 	&--error{
 		background-color: $secondary-link-color;
+		border-color: $secondary-link-color;
 		color: #fff;
 	}
+
+	&--ok{
+		border-color: #58d68d;
+		background-color: #eafaf1;
+	}
+
+	&--no-ok{
+		border-color: #e35773;
+		background-color: #fbeaed;
+	}
+}
+.form-personal-info .form-field{
+	margin-bottom: 20px;
+	padding-left: 15px;
 }
 .ticket-form-submit{
 	padding-top: 28px;
@@ -181,6 +232,7 @@
 .form-select{
 	display: block;
 	width: 100%;
+	height: 45px;
 	outline: none!important;
 	border: none;
 	color: rgba(0,0,0,0);
@@ -208,6 +260,12 @@
 		min-width: 60px;
 		margin-right: 4px;
 	}
+}
+
+.form-personal-info .form-select{
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 input[type="checkbox"] {

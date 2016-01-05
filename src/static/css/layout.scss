@@ -8,11 +8,13 @@ body{
 }
 
 .content-wrapper{
-	margin-top: $header-height;
+	/*margin-top: $header-height;*/
+	position: relative;
+	top: $header-height;
 	height: calc(100% - #{$header-height});
 
 	@media all and (max-width: $breakpoint-mobile){
-		margin-top: $header-height-mobile;
+		top: $header-height-mobile;
 		height: calc(100% - #{$header-height-mobile});
 	}
 }
@@ -31,7 +33,7 @@ body{
 	}
 
 	&--grey{
-		background-color: #f6f6f6;
+		background-color: #f1f1f1;
 	}
 
 	&--white{
@@ -95,15 +97,16 @@ body{
 	padding: 10px;
 	color: $date-color;
 	line-height: 1;
+	font-family: $tertiary-font;
 
 	& .day{
-		font-weight: 900;
-		font-size: 40px;
+		font-weight: normal;
+		font-size: 35px;
 	}
 
 	& .month{
 		text-transform: uppercase;
-		font-size: 15px;
+		font-size: 20px;
 	}
 }
 

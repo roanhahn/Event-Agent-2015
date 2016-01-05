@@ -1,232 +1,57 @@
-/* RIBBON BANNERS */
-
 .ribbon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 50;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-} 
-
-/* reset certain elements (in case of conflicting CSS for classes, links, etc.) */
-.ribbon .text,
-.ribbon .banner,
-.ribbon a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+	position: absolute;
+	right: -5px; top: -5px;
+	z-index: 80;
+	overflow: hidden;
+	width: 200px; height: 200px;
+	text-align: right;
 }
-
-.ribbon a {
-    color: #fff;
-    text-decoration: none;
+.ribbon span{
+	display: block;
+	position: relative;
+	top: 2px;
 }
-
-.no-css-transforms .ribbon {
-    font-size: 1em;
-    position: relative;
-    width: 100%;
-}
-
-.ribbon .banner {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    display: block;
-    float: right;
-    position: relative;
-    right: -7px;
-    top: 27px;
-    width: 100px;
-}
-
-.ribbon-small .banner {
-    right: -8px;
-    top: 15px;
-    width: 65px;
-}
-
-.ribbon-large .banner {
-    right: -20px;
-    top: 32px;
-    width: 150px;
-}
-
-.ribbon .banner::after,
-.ribbon .banner::before {
-    content: '';
-    display: block;
-    height: 6px;
-    position: absolute;
-    width: 15px;
-}
-
-.ribbon-small .banner::after,
-.ribbon-small .banner::before {
-    height: 6px;
-    width: 20px;
-}
-
-.ribbon-large .banner::after,
-.ribbon-large .banner::before {
-    height: 18px;
-    width: 45px;
-}
-
-.ribbon .banner::before {
-    -webkit-transform: skewY(-45deg) translate(9px,25px);
-    -moz-transform: skewY(-45deg) translate(9px,25px);
-    -ms-transform: skewY(-45deg) translate(9px,25px);
-    -o-transform: skewY(-45deg) translate(9px,25px);
-    -webkit-transform-origin: 100% center;
-    -moz-transform-origin: 100% center;
-    -ms-transform-origin: 100% center;
-    -o-transform-origin: 100% center;
-    left: -40px;
-}
-
-.ribbon-small .banner::before {
-    top: -5px;
-    left: -30px;
-}
-
-.ribbon-large .banner::before {
-    top: 9px;
-    left: -68px;
-}
-
-.ribbon .banner::after {
-    -webkit-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
-    -moz-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
-    -ms-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
-    -o-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
-    -webkit-transform-origin: 0 center;
-    -moz-transform-origin: 0 center;
-    -ms-transform-origin: 0 center;
-    -o-transform-origin: 0 center;
-    right: -24px;
-}
-
-.ribbon-small .banner::after {
-    top: 18px;
-    right: -12px;
-}
-
-.ribbon-large .banner::after {
-    top: 45px;
-    right: -26px;
-}
-
-
-.no-css-transforms .ribbon .banner {
-    position: static;
-    width: 100%;
-    float: none;
-    font-size: 10px;
-}
-
 .ribbon .text {
-    position: relative;
-    z-index: 2;
-    padding: 6px 0;
-    font-size: 12px;
-    min-height: 18px;
-    line-height: 18px;
-    white-space: nowrap;
-    font-size: 15px;
-    text-overflow: ellipsis;
-}
-
-/* small text */
-.ribbon-small .text {
-    padding: 3px 0;
-    font-size: 8px;
-    min-height: 14px;
-    line-height: 14px;
-}
-
-/* large text */
-.ribbon-large .text {
-    padding: 9px 0;
-    font-size: 18px;
-    min-height: 28px;
-    line-height: 28px;
-}
-
-
-.ribbon .text::before,
-.ribbon .text::after {
-    content: '';
-    display: block;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-/* small text */
-.ribbon.ribbon-small .text::before,
-.ribbon.ribbon-small .text::after {
-    height: 20px;
-}
-
-/* large text */
-.ribbon.ribbon-large .text::before,
-.ribbon.ribbon-large .text::after {
-    height: 46px;
+	font-size: 15px;
+	color: #fff; 
+	text-transform: uppercase; 
+	font-family: $tertiary-font;
+	text-align: center;
+	line-height: 30px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); /* Needed for Safari */
+	width: 155px; display: block;
+	background: $ribbon-color;
+	box-shadow: 0 1px 2px 0px rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 30px; right: -32px;
 }
 
 .ribbon .text::before {
-    -webkit-transform: translateX(-15%) skewX(-45deg);
-    -moz-transform: translateX(-15%) skewX(-45deg);
-    -ms-transform: translateX(-15%) skewX(-45deg);
-    -o-transform: translateX(-15%) skewX(-45deg);
+	content: '';
+	position: absolute; 
+	left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid $ribbon-shadow-color;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid $ribbon-shadow-color;
 }
-
 .ribbon .text::after {
-    -webkit-transform: translateX(15%) skewX(45deg);
-    -moz-transform: translateX(15%) skewX(45deg);
-    -ms-transform: translateX(15%) skewX(45deg);
-    -o-transform: translateX(15%) skewX(45deg);
+	content: '';
+	position: absolute; 
+	right: 0%; top: 100%;
+	z-index: -1;
+	border-right: 3px solid $ribbon-shadow-color;
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid $ribbon-shadow-color;
 }
 
-.no-css-transforms .ribbon .text {
-    height: 25px;
-    padding: 3px;
-}
+.red span {background: linear-gradient(#F70505 0%, #8F0808 100%);}
+.red span::before {border-left-color: #8F0808; border-top-color: #8F0808;}
+.red span::after {border-right-color: #8F0808; border-top-color: #8F0808;}
 
-
-/*--- RIBBON COLORS ---*/
-
-/* default */
-.ribbon .banner::after,
-.ribbon .banner::before {
-    background-color: $ribbon-shadow-color;
-}
-.ribbon .text::before,
-.ribbon .text::after,
-.no-css-transforms .ribbon .text {
-    background-color: $ribbon-color;
-}
-
-/* green */
-.ribbon-green .banner::after,
-.ribbon-green .banner::before {
-    background-color: $ribbon-color;
-}
-.ribbon-green .text::before,
-.ribbon-green .text::after,
-.no-css-transforms .ribbon-green .text {
-    background-color: #62c462;
-}
+.blue span {background: linear-gradient(#2989d8 0%, #1e5799 100%);}
+.blue span::before {border-left-color: #1e5799; border-top-color: #1e5799;}
+.blue span::after {border-right-color: #1e5799; border-top-color: #1e5799;}

@@ -9,6 +9,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../font/oswald-bold-webfont.eot');
+    src: url('../font/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/oswald-bold-webfont.woff2') format('woff2'),
+         url('../font/oswald-bold-webfont.woff') format('woff'),
+         url('../font/oswald-bold-webfont.ttf') format('truetype'),
+         url('../font/oswald-bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $breakpoint-desktop: 1199px;
 $breakpoint-tablet: 991px;
 $breakpoint-mobile: 767px;
@@ -28,6 +40,8 @@ $tertiary-text-color: #666;
 $tertiary-link-color: #666;
 
 $secondary-font: 'mysteryland_fontregular', Arial, sans-serif;
+$tertiary-font: 'oswaldbold';
+
 
 // HEADER STYLING
 $header-height: 80px;
@@ -55,7 +69,7 @@ $footer-padding: 35px;
 $footer-text-color: #444;
 $footer-link-color: #444;
 $footer-hover-color: #fff;
-$footer-header-color: #777;
+$footer-header-color: #444;
 $footer-header-size: 16px;
 $footer-header-weight: 700;
 $footer-text-size: 13px;
@@ -64,11 +78,15 @@ $footer-form-line-color: #444;
 $footer-form-input-color: #fff;
 $footer-form-submit-bg-color: #444;
 $footer-form-submit-color: #000;
+$footer-form-submit-hover-bg-color: #fff;
+$footer-form-submit-hover-color: #000;
 
 
 // BUTTON STYLING
 $primary-btn-bg-color: #000;
 $primary-btn-text-color: #fff;
+$primary-btn-bg-hover-color: #dc2d50;
+$primary-btn-hover-text-color: #fff;
 
 $secondary-btn-bg-color: #dc2d50;
 $secondary-btn-text-color: #fff;

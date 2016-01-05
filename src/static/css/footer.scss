@@ -9,13 +9,13 @@
 	list-style-type: none;
 	font-size: $footer-text-size;
 
-	@media all and (max-width: $breakpoint-mobile){
+	@media all and (max-width: $breakpoint-tablet){
 		margin-bottom: 30px;
 	}
 }
 
 .footer-list-item{
-	margin-bottom: 7px;
+	margin-bottom: 4px;
 }
 
 .footer-list-link{
@@ -35,6 +35,15 @@
 	margin-bottom: 10px;
 }
 
+.footer-col{
+	border-right: 1px solid $footer-form-line-color;
+	min-height: 100px;
+	@media all and (max-width: $breakpoint-tablet){
+		min-height: 0px;
+		border-right: none;
+	}
+}
+
 .footer-form{
 	@media all and (max-width: $breakpoint-mobile){
 		margin-bottom: 30px;
@@ -43,7 +52,7 @@
 
 .footer-form-wrapper{
 	position: relative;
-	height: 33px;
+	height: 45px;
 }
 
 .footer-form-field{
@@ -56,7 +65,7 @@
 	top: 0;
 	height: 45px;
 	line-height: 45px;
-	width: 100%;
+	width: calc(100% - 60px);
 	cursor: default;
 	z-index: 1;
 	border-radius: 0;
@@ -82,11 +91,10 @@
 	display: inline-block;
 	font-weight: 900;
 	width: 50px;
-	border-left: 1px solid $footer-form-line-color;
-	height: 43px;
+	height: 45px;
 	position: absolute;
-	top: 1px;
-	right: 1px;
+	top: 0px;
+	right: 0px;
 	line-height: 43px;
 	text-align: center;
 	cursor: pointer;
@@ -98,7 +106,7 @@
 	border-radius: 0;
 
 	&:hover{
-		background-color: $footer-form-submit-color;
-		color: $footer-form-submit-bg-color;
+		background-color: $footer-form-submit-hover-bg-color;
+		color: $footer-form-submit-hover-color;
 	}
 }

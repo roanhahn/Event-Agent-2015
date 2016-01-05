@@ -38,7 +38,7 @@
 		display: inline-block;
 		float: left;
 		margin-left: 5px;
-		border-bottom: 1px solid #e0e1e2;
+		/*border-bottom: 1px solid #e0e1e2;*/
 		border-radius: 2px;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
@@ -65,7 +65,8 @@
 
 		&:hover{
 			cursor: pointer;
-			background-color: #ddd;
+			background-color: $primary-link-color;
+			color: #fff;
 		}
 
 		&.display-options-list:before{
@@ -81,7 +82,9 @@
 		}
 
 		&.active{
-			color: #a7a9ac;
+			color: #fff;
+			background-color: $primary-link-color;
+			border-color: $primary-link-color;
 			
 		}
 	}
@@ -119,11 +122,12 @@
 	color: $primary-link-color;
 	padding: 10px 15px;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .hotel-item-grid-content{
 	padding: 15px;
+	overflow: hidden;
 
 	& .title{
 		font-weight: 700;
@@ -156,8 +160,6 @@
 
 	& .intro{
 		color: $tertiary-text-color;
-		overflow: hidden;
-		height: 65px;
 		line-height: 1.4;
 	}
 }
@@ -179,9 +181,9 @@
 	& li{
 		padding: 0 0 4px 23px;
 		position: relative;
-		float: left;
-		width: 50%;
-		@media all and(max-width: $breakpoint-mobile){
+		/*float: left;
+		width: 50%;*/
+		@media all and(max-width: $breakpoint-tablet){
 			float: left;
 			width: 50%;
 		}
@@ -214,18 +216,26 @@
 	}
 }
 
+.hotel-item-list .facilities-list{
+	& li{
+		
+	}
+}
+
 .hotel-item-list, .customize-item{
 	background-color: #fff;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .hotel-item-list-content{
 	margin: 15px 0 0;
 	border-right: 1px solid $border-color;
+	min-height: 200px;
 	padding: 0 15px;
 
 	@media all and(max-width: $breakpoint-tablet){
 		border-right: none;
+		min-height: 0px;
 	}
 	@media all and(max-width: $breakpoint-mobile){
 		padding: 15px 0 0;
@@ -267,20 +277,19 @@
 	& .intro{
 		color: $tertiary-text-color;
 		overflow: hidden;
-		height: 65px;
-		line-height: 1.4;
+		height: 75px;
+		line-height: 25px;
 		font-size: 15px;
 		margin-bottom: 10px;
 		@media all and(max-width: $breakpoint-tablet){
 			font-size: 13px;
-			height: 40px;
+			height: 50px;
 		}
 	}
 
-	& .list{
-		list-style-type: square;
+	& .list{;
 		color: $tertiary-text-color;
-		line-height: 1.4;
+		line-height: 25px;
 		font-size: 15px;
 		margin: 10px 0 10px 15px;
 		@media all and(max-width: $breakpoint-tablet){
@@ -313,7 +322,7 @@
 	color: $primary-link-color;
 	padding: 15px 0;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 25px;
 
 	&--mobile{
 		display: none;
@@ -339,9 +348,6 @@
 	}
 }
 
-.hotel-item-list .ribbon{
-	right: -1px;
-}
 
 .hotel-item-list-button{
 	@media all and(max-width: $breakpoint-tablet){
