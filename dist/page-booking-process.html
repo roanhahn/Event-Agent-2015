@@ -166,7 +166,7 @@
 	<section id="only-one" data-accordion-group>
 
 		<!-- Ticket -->
-		<section data-accordion class="open">
+		<section data-accordion>
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
@@ -183,7 +183,10 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
-					<h3 class="fold-h3">Select your tickets</h3>
+					<!--div class="fold-navigation">
+						<button class="button button--prev button--nomargin">Back</button>
+					</div>
+					<h3 class="fold-h3">Check your entered information</h3-->
 				</div>
 			</div>
 		</div>
@@ -271,12 +274,16 @@
 		</section>
 
 		<!-- Hotels -->
-		<section data-accordion>
+		<section data-accordion class="open">
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<h3 class="accordion-h3">2: hotel<small>Select your room</small></h3>
+							<div class="fold-navigation">
+								<button class="button button--prev">Back</button>
+								<button class="button button--next">Next</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -288,24 +295,19 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="fold-description clearfix">
-	<div class="fold-navigation">
+	<!--<div class="fold-navigation">
 		<button class="button button--prev">Back</button>
 		<button class="button button--next">Next</button>
-	</div>
-	<h3 class="fold-h3">Your booking preferences</h3>
+	</div>-->
+	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
 </div>
 
 
 <form action="" method="" class="ticket-form">
 
 	<div class="row">
-		<div class="col-sm-12 col-md-2">
-			<label for="" class="form-label">Persons</label>
-			<div class="form-persons">
-				<span>3</span>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-2">
+		
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-wrapper">
 				<select name="" id="checkin" class="form-select" required="required">
@@ -319,7 +321,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-wrapper">
 				<select name="" id="checkout" class="form-select" required="required">
@@ -333,11 +335,16 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-12 col-md-1">
+			<label for="" class="form-label">&nbsp;</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-wrapper">
-				<select name="" id="rooms" class="form-select" required="required">
+				<select name="" id="rooms" class="form-select form-select--inline" required="required">
 					<option value="1" class="form-option">2</option>
 					<option value="2" class="form-option">3</option>
 					<option value="3" class="form-option">4</option>
@@ -677,24 +684,19 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="fold-description clearfix">
-	<div class="fold-navigation">
+	<!--<div class="fold-navigation">
 		<button class="button button--prev">Back</button>
 		<button class="button button--next">Next</button>
-	</div>
-	<h3 class="fold-h3">Your booking preferences</h3>
+	</div>-->
+	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
 </div>
 
 
 <form action="" method="" class="ticket-form">
 
 	<div class="row">
-		<div class="col-sm-12 col-md-2">
-			<label for="" class="form-label">Persons</label>
-			<div class="form-persons">
-				<span>3</span>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-2">
+		
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-wrapper">
 				<select name="" id="checkin" class="form-select" required="required">
@@ -708,7 +710,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-wrapper">
 				<select name="" id="checkout" class="form-select" required="required">
@@ -722,11 +724,16 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-12 col-md-1">
+			<label for="" class="form-label">&nbsp;</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-wrapper">
-				<select name="" id="rooms" class="form-select" required="required">
+				<select name="" id="rooms" class="form-select form-select--inline" required="required">
 					<option value="1" class="form-option">2</option>
 					<option value="2" class="form-option">3</option>
 					<option value="3" class="form-option">4</option>
@@ -1043,24 +1050,19 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
-	<div class="fold-navigation">
+	<!--<div class="fold-navigation">
 		<button class="button button--prev">Back</button>
 		<button class="button button--next">Next</button>
-	</div>
-	<h3 class="fold-h3">Your booking preferences</h3>
+	</div>-->
+	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
 </div>
 
 
 <form action="" method="" class="ticket-form">
 
 	<div class="row">
-		<div class="col-sm-12 col-md-2">
-			<label for="" class="form-label">Persons</label>
-			<div class="form-persons">
-				<span>3</span>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-2">
+		
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-wrapper">
 				<select name="" id="checkin" class="form-select" required="required">
@@ -1074,7 +1076,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-wrapper">
 				<select name="" id="checkout" class="form-select" required="required">
@@ -1088,11 +1090,16 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-12 col-md-1">
+			<label for="" class="form-label">&nbsp;</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-wrapper">
-				<select name="" id="rooms" class="form-select" required="required">
+				<select name="" id="rooms" class="form-select form-select--inline" required="required">
 					<option value="1" class="form-option">2</option>
 					<option value="2" class="form-option">3</option>
 					<option value="3" class="form-option">4</option>
@@ -1241,11 +1248,11 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="fold-description clearfix">
-	<div class="fold-navigation">
+	<!--<div class="fold-navigation">
 		<button class="button button--prev">Back</button>
 		<button class="button button--next">Next</button>
 	</div>
-	<h3 class="fold-h3">Your booking preferences</h3>
+	<h3 class="fold-h3">Your booking preferences</h3>-->
 </div>
 
 
@@ -1276,7 +1283,7 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">
-			<input type="submit" value="Change" class="button button--secondary button--block-mobile">
+			<input type="submit" value="Change" class="button button--primary button--block-mobile">
 		</div>
 	</div>
 
@@ -1341,7 +1348,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <h4 class="h4">Select roomtype</h4>
+                <h4 class="h4 margin-top-40">Select roomtype</h4>
                 <div class="hotel-item-list">
     <div class="clearfix">
         <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
@@ -1407,7 +1414,7 @@
                 <div class="col-md-4">
                     <div class="clearfix">
                         <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
-                        <a href="" class="button button--secondary hotel-item-list-button">book now</a>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
                     </div>
                 </div>
             </div>
@@ -1441,7 +1448,7 @@
                 <div class="col-md-4">
                     <div class="clearfix">
                         <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
-                        <a href="" class="button button--secondary hotel-item-list-button">book now</a>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
                     </div>
                 </div>
             </div>
@@ -1475,7 +1482,7 @@
                 <div class="col-md-4">
                     <div class="clearfix">
                         <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
-                        <a href="" class="button button--secondary hotel-item-list-button">book now</a>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
                     </div>
                 </div>
             </div>
@@ -1497,6 +1504,10 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<h3 class="accordion-h3">3: customize<small>Customize your package</small></h3>
+							<div class="fold-navigation">
+								<button class="button button--prev">Back</button>
+								<button class="button button--next">Next</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1507,11 +1518,11 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
-					<div class="fold-navigation">
+					<!--div class="fold-navigation">
 						<button class="button button--prev">Back</button>
 						<button class="button button--next">Next</button>
 					</div>
-					<h3 class="fold-h3">Customize your booking</h3>
+					<h3 class="fold-h3">Customize your booking</h3-->
 				</div>
 			</div>
 		</div>
@@ -1622,6 +1633,10 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<h3 class="accordion-h3">4: personal info<small>Your contact details</small></h3>
+							<div class="fold-navigation">
+								<button class="button button--prev">Back</button>
+								<button class="button button--next">Next</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1633,11 +1648,11 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
-					<div class="fold-navigation">
+					<!--div class="fold-navigation">
 						<button class="button button--prev">Back</button>
 						<button class="button button--next">Next</button>
 					</div>
-					<h3 class="fold-h3">Your personal details</h3>
+					<h3 class="fold-h3">Your personal details</h3-->
 				</div>
 			</div>
 		</div>
@@ -1747,6 +1762,10 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<h3 class="accordion-h3">5: summary<small>Check and pay</small></h3>
+							<div class="fold-navigation">
+								<button class="button button--prev">Back</button>
+								<button class="button button--next">Next</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1758,10 +1777,10 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fold-description clearfix">
-					<div class="fold-navigation">
+					<!--div class="fold-navigation">
 						<button class="button button--prev button--nomargin">Back</button>
 					</div>
-					<h3 class="fold-h3">Check your entered information</h3>
+					<h3 class="fold-h3">Check your entered information</h3-->
 				</div>
 			</div>
 		</div>

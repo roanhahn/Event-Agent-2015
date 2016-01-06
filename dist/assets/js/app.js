@@ -2542,7 +2542,7 @@ $(window).resize(function(){
 	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
 });
 
-$(".hotel-item-grid-wrapper").hover
+$(".hotel-item-grid").hover
 (
 	function()
 	{

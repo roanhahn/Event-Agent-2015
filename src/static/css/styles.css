@@ -125,7 +125,7 @@ a {
 
 .accordion-row {
   border-top: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
   cursor: pointer; }
   .accordion-row:hover {
@@ -186,14 +186,23 @@ a {
     -o-transition: color 0.2s ease-in-out 0s;
     transition: color 0.2s ease-in-out 0s; }
 
+.fold-navigation {
+  display: none; }
+
+.open .fold-navigation {
+  display: block; }
+
 .open .accordion-h3 {
-  color: #000; }
+  color: #000;
+  display: inline-block; }
   .open .accordion-h3 small {
-    color: #000; }
+    color: #000;
+    display: none; }
 
 .open .accordion-h3:after {
   content: "\f077";
-  color: #000; }
+  color: #000;
+  content: ""; }
 
 .location-h3 {
   text-transform: uppercase;
@@ -302,7 +311,7 @@ body {
 
 .section {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 0px 0 60px;
   overflow: hidden; }
   @media all and (max-width: 767px) {
     .section {
@@ -314,6 +323,12 @@ body {
 
 .margin-top-10 {
   margin-top: 10px; }
+
+.margin-top-30 {
+  margin-top: 30px; }
+
+.margin-top-40 {
+  margin-top: 40px; }
 
 .vertical-align {
   display: table-cell;
@@ -460,20 +475,20 @@ body {
   line-height: 45px;
   text-transform: uppercase;
   white-space: nowrap;
-  line-height: 45px;
-  font-size: 18px;
+  line-height: 43px;
+  font-size: 15px;
   letter-spacing: 0px;
   -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -webkit-appearance: none;
   border-radius: 0;
-  font-family: "oswaldbold"; }
+  font-family: "Lato", Arial, sans-serif; }
   .button--primary {
     background-color: #000;
     color: #fff;
     border: 2px solid #000;
-    font-weight: normal; }
+    font-weight: 900; }
     .button--primary:hover {
       background-color: #dc2d50;
       color: #fff;
@@ -482,7 +497,7 @@ body {
     background-color: #dc2d50;
     color: #fff;
     border: 2px solid #dc2d50;
-    font-weight: normal; }
+    font-weight: 900; }
     .button--secondary:hover {
       background-color: #fff;
       color: #dc2d50; }
@@ -494,7 +509,7 @@ body {
     background-color: #fff;
     color: 000;
     border: 2px solid #fff;
-    font-weight: normal;
+    font-weight: 900;
     padding: 0px 20px;
     margin-right: 5px; }
     .button--prev:hover {
@@ -511,7 +526,7 @@ body {
     background-color: #fff;
     color: 000;
     border: 2px solid #fff;
-    font-weight: normal;
+    font-weight: 900;
     padding: 0px 20px; }
     .button--next:hover {
       background-color: #000;
@@ -537,7 +552,7 @@ body {
   .button--location {
     border: 2px solid #fff;
     color: #fff;
-    font-weight: normal;
+    font-weight: 900;
     font-size: 25px;
     height: auto;
     overflow: visible;
@@ -562,7 +577,7 @@ body {
       color: #000; }
   .button--hero {
     background-color: rgba(0, 0, 0, 0.2);
-    font-weight: normal;
+    font-weight: 900;
     font-size: 35px;
     margin: 0 15px;
     padding: 20px 50px;
@@ -585,7 +600,7 @@ body {
     font-size: 13px;
     text-transform: none;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
     padding-top: 5px; }
 
 .my-pager-list {
@@ -593,16 +608,19 @@ body {
   text-align: center; }
 
 .my-pager-item {
-  display: inline-block; }
+  display: inline-block;
+  border-right: 1px solid #cbcbcb;
+  margin-right: -2px; }
+  .my-pager-item:last-child {
+    border-right: none; }
 
 .my-pager-link {
   display: block;
-  padding: 10px 15px;
-  font-size: 13px;
-  background-color: #fff;
+  padding: 10px 18px;
+  font-size: 14px;
+  background-color: transparent;
   display: inline-block;
   float: left;
-  margin-left: 5px;
   /*border-bottom: 1px solid #e0e1e2;*/
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -611,19 +629,17 @@ body {
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
-  color: #6d6e71;
+  color: #cbcbcb;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 900; }
   @media all and (max-width: 767px) {
     .my-pager-link {
       padding: 5px 10px;
       font-size: 12px; } }
   .my-pager-link:hover {
-    background-color: #000;
-    color: #fff; }
+    color: #000; }
   .my-pager-link--active, .my-pager-link--active:hover {
-    background-color: #000;
-    color: #fff; }
+    color: #000; }
 
 .manage-rooms {
   border: 1px solid #cbcbcb;
@@ -760,12 +776,13 @@ body {
   display: block;
   text-transform: uppercase;
   color: #000;
-  font-weight: 700;
-  font-size: 15px; }
+  font-family: "oswaldbold";
+  font-weight: normal;
+  font-size: 17px; }
   .form-label--small {
     display: inline-block;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-right: 10px; }
   .form-label--error {
     color: #dc2d50; }
@@ -832,24 +849,30 @@ body {
 
 .form-persons {
   color: #000;
-  margin: 16px 0 0; }
+  margin: 0;
+  position: relative; }
   @media all and (max-width: 991px) {
     .form-persons {
       margin-top: 0;
       margin-bottom: 15px; } }
   .form-persons span {
     display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px; }
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 20px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    text-align: center;
+    width: 45px; }
   .form-persons:before {
-    content: "\f0f2";
-    font-family: "FontAwesome";
-    font-size: 24px;
-    color: #000;
-    margin-right: 4px;
-    display: inline-block;
-    line-height: 20px; }
+    content: "";
+    display: block;
+    background-image: url("../img/case.png");
+    background-size: 45px;
+    width: 45px;
+    height: 37px; }
 
 @media all and (max-width: 991px) {
   .form-wrapper--inline {
@@ -868,13 +891,14 @@ body {
   border: 1px solid #fff;
   color: transparent;
   background-color: #fff;
-  padding: 8px;
+  padding: 8px 15px;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
   appearance: none;
   background: #fff url(../img/form-select-bg.png) no-repeat right center;
+  background-size: 25px;
   margin-bottom: 8px;
   cursor: pointer;
   color: transparent;
@@ -887,13 +911,13 @@ body {
   .form-select--inline {
     display: inline-block;
     width: auto;
-    min-width: 60px;
+    min-width: 80px;
     margin-right: 4px; }
   .form-select--error {
     background-color: #dc2d50;
     border-color: #dc2d50;
     color: #fff; }
-    .form-select--error option {
+    .form-select--error .form-option {
       color: #fff; }
   .form-select--ok {
     border-color: #58d68d;
@@ -1229,12 +1253,14 @@ input[type="checkbox"]:checked + label span {
 .fold-description {
   border-bottom: 1px solid #cbcbcb;
   margin-bottom: 30px;
-  padding: 0 0 10px; }
+  padding: 0 0 10px;
+  padding: 0; }
 
 .fold-navigation {
   float: right;
   position: relative;
-  top: -10px; }
+  /*top: -10px;*/
+  top: -2px; }
   @media all and (max-width: 767px) {
     .fold-navigation {
       float: none;

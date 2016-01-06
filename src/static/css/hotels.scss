@@ -8,12 +8,14 @@
 	border-bottom: 1px solid $border-color;
 	margin-bottom: 30px;
 	padding: 0 0 10px;
+	padding: 0;
 }
 
 .fold-navigation{
 	float: right;
 	position: relative;
-	top: -10px;
+	/*top: -10px;*/
+	top: -2px;
 
 	@media all and (max-width: $breakpoint-mobile){
 		float: none;

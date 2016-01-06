@@ -87,7 +87,7 @@ a{
 
 .accordion-row{
 	border-top: 1px solid #ddd;
-	padding: 10px 0;
+	padding: 15px 0;
 	position: relative;
 	cursor: pointer;
 
@@ -159,15 +159,26 @@ a{
 		transition: color 0.2s ease-in-out 0s;
 	}
 }
+.fold-navigation
+{
+	display: none;
+}
+.open .fold-navigation{
+	display: block;
+}
+
 .open .accordion-h3{
 	color: #000;
+	display: inline-block;
 	& small{
 		color: #000;
+		display: none;
 	}
 }
 .open .accordion-h3:after{
 	content: "\f077";
 	color: #000;
+	content: "";
 }
 .location-h3{
 	text-transform: uppercase;
