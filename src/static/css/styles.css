@@ -1121,8 +1121,7 @@ input[type="checkbox"]:checked + label span {
   z-index: 800; }
   @media all and (max-width: 767px) {
     .cart {
-      top: 50px;
-      position: absolute; } }
+      top: 50px; } }
   .cart .extra-info {
     display: inline-block;
     /*line-height: 1.2;*/
@@ -1230,7 +1229,6 @@ input[type="checkbox"]:checked + label span {
   display: none; }
   @media all and (max-width: 767px) {
     .tell-me-more-wrapper {
-      position: absolute;
       top: 50px; } }
 
 .close-tell-me-more {

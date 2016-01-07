@@ -148,7 +148,6 @@
 	
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
-		position: absolute;
 	}
 
 	& .extra-info{
@@ -274,7 +273,6 @@
 	z-index: 100;
 	display: none;
 	@media all and (max-width: $breakpoint-mobile){
-		position: absolute;
 		top: $header-height-mobile;
 	}
 }

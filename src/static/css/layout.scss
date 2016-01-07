@@ -11,7 +11,7 @@ body{
 	/*margin-top: $header-height;*/
 	position: relative;
 	top: $header-height;
-	height: calc(100% - #{$header-height});
+	height: calc(100% - #{$header-height}); 
 
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
