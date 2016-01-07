@@ -124,6 +124,9 @@
 		list-style-type: none;
 		margin-bottom: 5px;
 		font-size: 15px;
+		position: relative;
+		line-height: normal;
+		padding-left: 25px;
 
 		&:last-child{
 			margin-bottom: 0;
@@ -136,6 +139,9 @@
 			color: #fff;
 			margin-right: 10px;
 			line-height: 1;
+			position: absolute;
+			left: 0px;
+			top: 2px;
 		}
 	}
 }

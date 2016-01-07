@@ -165,6 +165,9 @@ a{
 }
 .open .fold-navigation{
 	display: block;
+	@media all and(max-width: $breakpoint-mobile){
+		display: none;
+	}
 }
 
 .open .accordion-h3{

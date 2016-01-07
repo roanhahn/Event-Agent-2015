@@ -41,8 +41,8 @@
 						</li>
 						<li class="header-menu-item">
 							<div href="#" class="header-menu-link show-cart">
-								your booking
-								<div class="cart-total">&euro; 4.765,95</div>
+								
+								<div class="cart-total">your booking</div>
 							</div>
 						</li>
 					</ul>
@@ -85,13 +85,13 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-3 strong">Room 1:</div>
-							<div class="col-xs-6 col-sm-5">Presidential Suite, 2 adults, 3 nights</div>
+							<div class="col-xs-6 col-sm-5">Presidential Suite: <span class="extra-info">2 adults, 3 nights</span></div>
 							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
 							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
 						</div>
 						<div class="row">
 							<div class="col-sm-3 strong">Room 2:</div>
-							<div class="col-xs-6 col-sm-5">Suite, rolstoeltoegankelijk, 2 adults, 3 nights</div>
+							<div class="col-xs-6 col-sm-5">Suite: <span class="extra-info">rolstoeltoegankelijk, 2 adults, 3 nights</span></div>
 							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
 							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
 						</div>
@@ -116,15 +116,6 @@
 						<div class="row summary-total">
 							<div class="col-xs-6 strong">Total price</div>
 							<div class="col-xs-6 text-right strong">&euro; 4.765,95</div>
-						</div>
-
-						<div class="row summary-agree">
-							<div class="col-sm-6">
-								<input type="checkbox" name="" id="conditions" value="" class="form-checkbox"><label for="conditions"><span></span>I agree with the general conditions</label>
-							</div>
-							<div class="col-sm-6 text-right">
-								<a href=""class="button button--primary button--block-mobile button-payment">Make payment</a>
-							</div>
 						</div>
 					</form>
 				</div>
@@ -348,7 +339,7 @@
 		</section>
 
 		<!-- Hotels -->
-		<section data-accordion class="open">
+		<section data-accordion class="">
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
@@ -409,7 +400,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-12 col-md-1">
+		<div class="col-md-1">
 			<label for="" class="form-label">&nbsp;</label>
 			<div class="form-persons">
 				<span>12</span>
@@ -456,14 +447,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
             </div>
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-6 text-right">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map"></li>
-                    <li class="display-options-grid active"></li>
-                    <li class="display-options-list"></li>
+                    <li class="display-options-map">Show on map</li>
+                    <li class="display-options-grid active">Show as grid</li>
                 </ul> 
             </div>
         </div>
@@ -798,7 +788,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-12 col-md-1">
+		<div class="col-md-1">
 			<label for="" class="form-label">&nbsp;</label>
 			<div class="form-persons">
 				<span>12</span>
@@ -845,14 +835,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
             </div>
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-6 text-right">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map"></li>
-                    <li class="display-options-grid"></li>
-                    <li class="display-options-list active"></li>
+                    <li class="display-options-map">Show on map</li>
+                    <li class="display-options-list active">Show as list</li>
                 </ul> 
             </div>
         </div>
@@ -1164,7 +1153,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-12 col-md-1">
+		<div class="col-md-1">
 			<label for="" class="form-label">&nbsp;</label>
 			<div class="form-persons">
 				<span>12</span>
@@ -1211,16 +1200,15 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-6">
 				<h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
 			</div>
-			<div class="col-sm-4 text-right">
-				<ul class="switch-display clearfix">
-					<li class="display-options-map active"></li>
-					<li class="display-options-grid"></li>
-					<li class="display-options-list"></li>
-				</ul> 
-			</div>
+			<div class="col-sm-6 text-right">
+                <ul class="switch-display clearfix">
+                    <li class="display-options-map active">Show on map</li>
+                    <li class="display-options-grid">Show as grid</li>
+                </ul> 
+            </div>
 		</div>
 	</div>
 	<div class="gmap-wrapper">
@@ -1333,24 +1321,26 @@
 <div class="ticket-form">
 
 	<div class="row">
-		<div class="col-sm-12 col-md-2">
-			<label for="" class="form-label">Persons</label>
-			<div class="form-text-message">3</div>
-		</div>
-		<div class="col-sm-6 col-md-2">
+		
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-text-message">Thur 24-11-2015</div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-sm-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-text-message">Mon 24-11-2015</div>
 		</div>
-		
+		<div class="col-md-1">
+			<label for="" class="form-label">Persons</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
 		<div class="col-sm-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-text-message">2</div>
 		</div>
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-2">
 			<label class="form-label">Guests</label>
 			<div class="form-wrapper form-wrapper--inline">
 				<div class="form-text-message">Room 1:&nbsp;&nbsp;&nbsp;<strong>2</strong><br />Room 2:&nbsp;&nbsp;&nbsp;<strong>1</strong></div>
@@ -1743,11 +1733,11 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<label for="firstname" class="form-label">First name</label>
-						<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field form-field--ok">
+						<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field">
 					</div>
 					<div class="col-sm-6">
 						<label for="lastname" class="form-label">Last name</label>
-						<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field form-field--no-ok">
+						<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field">
 					</div>
 					
 					<div class="col-sm-6">
@@ -1772,7 +1762,7 @@
 					</div>
 					<div class="col-sm-6">
 						<label for="birthday" class="form-label">Date of birth</label>
-						<select name="" id="birthday" class="form-select form-select--ok form-select--inline" required="required">
+						<select name="" id="birthday" class="form-select form-select--inline" required="required">
 							<option value="1" class="form-option">Days</option>
 							<option value="2" class="form-option">01</option>
 							<option value="3" class="form-option">02</option>
@@ -1780,7 +1770,7 @@
 							<option value="5" class="form-option">04</option>
 							<option value="6" class="form-option">05</option>
 						</select>
-						<select name="" id="" class="form-select form-select--no-ok form-select--inline" required="required">
+						<select name="" id="" class="form-select form-select--inline" required="required">
 							<option value="1" class="form-option">Month</option>
 							<option value="2" class="form-option">January</option>
 							<option value="3" class="form-option">February</option>
@@ -1788,7 +1778,7 @@
 							<option value="5" class="form-option">April</option>
 							<option value="6" class="form-option">May</option>
 						</select>
-						<select name="" id="" class="form-select form-select--error form-select--inline" required="required">
+						<select name="" id="" class="form-select form-select--inline" required="required">
 							<option value="1" class="form-option">Year</option>
 							<option value="2" class="form-option">2000</option>
 							<option value="3" class="form-option">2000</option>
@@ -1838,7 +1828,6 @@
 							<h3 class="accordion-h3">5: summary<small>Check and pay</small></h3>
 							<div class="fold-navigation">
 								<button class="button button--prev">Back</button>
-								<button class="button button--next">Next</button>
 							</div>
 						</div>
 					</div>

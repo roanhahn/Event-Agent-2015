@@ -36,7 +36,7 @@
 
 	& li{
 		padding: 5px;
-		background-color: #fff;
+		/*background-color: #fff;*/
 		display: inline-block;
 		float: left;
 		margin-left: 5px;
@@ -54,40 +54,35 @@
 			margin: 15px 5px 0 0;
 		}
 
-		&:before{
+		&:after{
 			width: 25px;
 			height: 25px;
 			font-size: 20px;
 			text-align: center;
 			font-family: "FontAwesome";
 			line-height: 25px;
+			margin-left: 5px;
 			display: block;
+			line-height: 1;
 			position: relative;
+			display: inline-block;
 		}
 
-		&:hover{
+		&:hover, &.active{
 			cursor: pointer;
-			background-color: $primary-link-color;
-			color: #fff;
+			color: $primary-link-color;
 		}
 
-		&.display-options-list:before{
+		&.display-options-list:after{
 			content: "\f03a";
 			top: 1px;
 		}
-		&.display-options-grid:before{
+		&.display-options-grid:after{
 			content: "\f00a";
 			top: 1px;
 		}
-		&.display-options-map:before{
+		&.display-options-map:after{
 			content: "\f041";
-		}
-
-		&.active{
-			color: #fff;
-			background-color: $primary-link-color;
-			border-color: $primary-link-color;
-			
 		}
 	}
 }
