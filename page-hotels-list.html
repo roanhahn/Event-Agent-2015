@@ -41,8 +41,8 @@
 						</li>
 						<li class="header-menu-item">
 							<div href="#" class="header-menu-link show-cart">
-								your booking
-								<div class="cart-total">&euro; 4.765,95</div>
+								
+								<div class="cart-total">your booking</div>
 							</div>
 						</li>
 					</ul>
@@ -54,30 +54,76 @@
 
 <!-- Cart -->
 <div class="cart">
-	<div class="close-cart"></div>
-	<div class="cart-section cart-section--noborder">
-		<strong>Hotel Ibis Amsterdam Airport</strong>
-		<div>135 Avenue of The Americas, New York NY</div>
-	</div>
-	<div class="cart-section">
-		<div><strong>Check in: donderdag 24 nov</strong></div>
-		<div><strong>Check out: maandag 27 nov</strong></div>
-	</div>
-	<div class="cart-section">
-		<div><strong>Kamer 1: Presidential Suite</strong></div>
-		<div class="row">
-			<div class="col-xs-8">2 volwassenen, 3 nachten</div>
-			<div class="col-xs-4 text-right">€ 2.667,50</div>
-		</div>
-		<a href="" class="button button--small button--block button--secondary margin-top-10">PLEASE BOOK A SECOND ROOM</a>
-	</div>
-	<div class="cart-total-price">
-		<div class="row">
-			<div class="col-xs-6">Total</div>
-			<div class="col-xs-6 text-right">&euro; 3.567,50</div>
+	<div class="cart-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-4">
+					<div class="close-cart"></div>
+
+					<form>
+						<label class="form-label">Your Booking</label>
+						<div class="row">
+							<div class="col-sm-3 strong">Ticket:</div>
+							<div class="col-xs-6 col-sm-5">2 x premium ticket</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 150,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section"></div></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Hotel:</div>
+							<div class="col-xs-8 col-sm-5">Ibis Amsterdam Airport</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Check in:</div>
+							<div class="col-xs-8 col-sm-5">Thursday 24 nov</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Check out:</div>
+							<div class="col-xs-8 col-sm-5">Monday 05 dec</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Room 1:</div>
+							<div class="col-xs-6 col-sm-5">Presidential Suite: <span class="extra-info">2 adults, 3 nights</span></div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Room 2:</div>
+							<div class="col-xs-6 col-sm-5">Suite: <span class="extra-info">rolstoeltoegankelijk, 2 adults, 3 nights</span></div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section"></div></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Customize:</div>
+							<div class="col-xs-6 col-sm-5">Limousine transfer</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 100,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong"></div>
+							<div class="col-xs-6 col-sm-5">Safari tour</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 200,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section summary-section--total"></div></div>
+						</div>
+						<div class="row summary-total">
+							<div class="col-xs-6 strong">Total price</div>
+							<div class="col-xs-6 text-right strong">&euro; 4.765,95</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+<!-- End cart -->
 
 <!-- Message -->
 <div class="message">
@@ -95,11 +141,30 @@
 <!-- Tell me more -->
 <section class="tell-me-more-wrapper">
 	<div class="tell-me-more">
-		<div class="close-tell-me-more"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-sm-margin-30">
-					<h3>General</h3>
+				<div class="col-sm-12">
+					<div class="close-tell-me-more"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3 class="h3-tell-me-more">Why book</h3>
+					<p>
+						<strong>1. Some text goes here</strong><br />
+						Beatae vitae dicta sunt explicabo.
+					</p>
+					<p>
+						<strong>1. Some text goes here</strong><br />
+						Beatae vitae dicta sunt explicabo.
+					</p>
+					<p>
+						<strong>1. Some text goes here</strong><br />
+						Beatae vitae dicta sunt explicabo.
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<h3 class="h3-tell-me-more">General</h3>
 					<p>
 						Saturday 1<sup>st</sup> of july 2014
 					</p>
@@ -110,8 +175,8 @@
 						dolores eos qui ratione volupt
 					</p>
 				</div>
-				<div class="col-sm-6">
-					<h3>Date & time</h3>
+				<div class="col-sm-4">
+					<h3 class="h3-tell-me-more">Date & time</h3>
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit
 						voluptatem accusantium doloremque laudantium,
@@ -191,7 +256,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-12 col-md-1">
+		<div class="col-md-1">
 			<label for="" class="form-label">&nbsp;</label>
 			<div class="form-persons">
 				<span>12</span>
@@ -238,14 +303,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
             </div>
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-6 text-right">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map"></li>
-                    <li class="display-options-grid"></li>
-                    <li class="display-options-list active"></li>
+                    <li class="display-options-map">Show on map</li>
+                    <li class="display-options-list active">Show as list</li>
                 </ul> 
             </div>
         </div>
