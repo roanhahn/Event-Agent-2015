@@ -54,11 +54,13 @@ $('#single[data-accordion]').accordion({
 // Show/hide cart
 $('.show-cart').click(function()
 {
-	$('.cart').toggleClass("cart-open");
+	$('.cart').slideToggle("fast");
+    $('.show-cart').toggleClass("cart-total-open");
 });
 $('.close-cart').click(function()
 {
-	$('.cart').removeClass("cart-open");
+	$('.cart').slideToggle("fast");
+    $('.show-cart').toggleClass("cart-total-open");
 });
 
 // Hide hotel on map

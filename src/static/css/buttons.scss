@@ -314,3 +314,9 @@
 	}
 
 }
+
+.button-payment{
+	@media all and (max-width: $breakpoint-mobile){
+		margin-top: 20px;
+	}
+}

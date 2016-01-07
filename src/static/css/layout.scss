@@ -41,6 +41,13 @@ body{
 	}
 }
 
+.plain{
+	padding: 60px 0;
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 30px 0;
+	}
+}
+
 .margin-top-10{
 	margin-top: 10px;
 }

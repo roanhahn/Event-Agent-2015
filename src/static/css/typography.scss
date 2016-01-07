@@ -53,8 +53,8 @@ a{
 	font-weight: 700;
 	padding-bottom: 15px;
 	font-size: 21px;
+	font-family: $tertiary-font;
 }
-
 .h4{
 	color: $tertiary-text-color;
 	font-size: 16px;
@@ -232,6 +232,9 @@ a{
 	font-size: 18px;
 	text-transform: uppercase;
 	padding-bottom: 30px;
+	@media all and(max-width: $breakpoint-mobile){
+		padding-bottom: 15px;
+	}
 }
 
 .show-more-info{
@@ -257,15 +260,20 @@ a{
 	font-size: 13px;
 }
 
+.line-height{
+	line-height: 25px;
+}
+
 .tell-me-more{
 
 	& h3{
 		font-size: 20px;
-		font-weight: 700;
+		font-weight: normal;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #fff;
+		font-family: $tertiary-font;
 	}
 
 	& p{
