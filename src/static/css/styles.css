@@ -484,6 +484,32 @@ body {
   .xs-img-ratio-2-1 {
     padding-bottom: 50%;
     /* 1:4*100 */ } }
+#loading-data {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+svg {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+#loader {
+  fill: #fff;
+  fill-opacity: 0.5; }
+
+#border {
+  fill: #485b6e;
+  fill-opacity: 0.5; }
+
 .button {
   display: inline-block;
   text-align: center;
@@ -1355,14 +1381,14 @@ input[type="checkbox"]:checked + label span {
   .switch-display li {
     padding: 5px;
     /*background-color: #fff;*/
-    display: inline-block;
     float: left;
     margin-left: 5px;
-    /*border-bottom: 1px solid #e0e1e2;*/
+    border-left: 1px solid #e0e1e2;
+    /*
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px;*/
     -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
     -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
     -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
@@ -1370,29 +1396,16 @@ input[type="checkbox"]:checked + label span {
     @media all and (max-width: 767px) {
       .switch-display li {
         margin: 15px 5px 0 0; } }
-    .switch-display li:after {
-      width: 25px;
-      height: 25px;
-      font-size: 20px;
-      text-align: center;
-      font-family: "FontAwesome";
-      line-height: 25px;
-      margin-left: 5px;
-      display: block;
-      line-height: 1;
-      position: relative;
-      display: inline-block; }
+    .switch-display li img {
+      width: 40px;
+      color: red; }
     .switch-display li:hover, .switch-display li.active {
       cursor: pointer;
       color: #000; }
-    .switch-display li.display-options-list:after {
-      content: "\f03a";
-      top: 1px; }
-    .switch-display li.display-options-grid:after {
-      content: "\f00a";
-      top: 1px; }
-    .switch-display li.display-options-map:after {
-      content: "\f041"; }
+
+svg {
+  color: red;
+  fill: blue; }
 
 .hotel-item-grid, .hotel-item-map {
   position: relative;

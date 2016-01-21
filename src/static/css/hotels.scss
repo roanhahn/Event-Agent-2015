@@ -37,14 +37,15 @@
 	& li{
 		padding: 5px;
 		/*background-color: #fff;*/
-		display: inline-block;
+		
 		float: left;
 		margin-left: 5px;
-		/*border-bottom: 1px solid #e0e1e2;*/
+		border-left: 1px solid #e0e1e2;
+		/*
 		border-radius: 2px;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
-		border-radius: 2px;
+		border-radius: 2px;*/
 		-webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 		-moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 		-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
@@ -54,37 +55,25 @@
 			margin: 15px 5px 0 0;
 		}
 
-		&:after{
-			width: 25px;
-			height: 25px;
-			font-size: 20px;
-			text-align: center;
-			font-family: "FontAwesome";
-			line-height: 25px;
-			margin-left: 5px;
-			display: block;
-			line-height: 1;
-			position: relative;
-			display: inline-block;
+		& img{
+			width: 40px;
+			color: red;
 		}
+
+		
 
 		&:hover, &.active{
 			cursor: pointer;
 			color: $primary-link-color;
 		}
 
-		&.display-options-list:after{
-			content: "\f03a";
-			top: 1px;
-		}
-		&.display-options-grid:after{
-			content: "\f00a";
-			top: 1px;
-		}
-		&.display-options-map:after{
-			content: "\f041";
-		}
+		
 	}
+}
+
+svg{
+	color: red;
+	fill: blue;
 }
 
 .hotel-item-grid, .hotel-item-map{

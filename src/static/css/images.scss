@@ -61,3 +61,34 @@
 		padding-bottom: 50%; /* 1:4*100 */
 	}
 }
+
+#loading-data{
+	position: absolute;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+svg {
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	-ms-transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+#loader 
+{
+	fill: #fff;
+	fill-opacity: 0.5;
+}
+
+#border 
+{
+	fill: #485b6e;
+	fill-opacity: 0.5;
+}

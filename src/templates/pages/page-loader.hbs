@@ -1,0 +1,67 @@
+---
+title: Loading data
+layout: default.hbs
+---
+
+{{> header }}
+
+<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				{{> partial-ticket-form }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
+			</div>
+			<div class="col-sm-6 text-right">
+				<ul class="switch-display clearfix">
+					<li>Sort by</li>
+					<li>
+						<form>
+							<fieldset>
+								asd
+							</fieldset>
+						</form>
+					</li>
+					<li class="display-options-map"></li>
+					<li class="display-options-grid active"></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+			<div class="col-sm-6 col-md-4">
+				{{> partial-hotel-grid-item }}
+			</div>
+		</div>
+		{{> partial-pager }}
+	</div>
+</section>
+
+<div id="loading-data">
+	<svg width="200" height="200" viewbox="0 0 200 200">
+		<path id="border" transform="translate(100, 100)"/>
+		<path id="loader" transform="translate(100, 100) scale(.9)"/>
+	</svg>
+</div>
+
+
+
+{{> footer }}

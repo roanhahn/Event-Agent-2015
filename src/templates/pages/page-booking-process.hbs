@@ -28,7 +28,7 @@ map: true
 		</section>
 
 		<!-- Hotels -->
-		<section data-accordion class="">
+		<section data-accordion class="open" style="position: relative;">
 			<div class="accordion-row" data-control>
 				<div class="container">
 					<div class="row">
@@ -45,11 +45,19 @@ map: true
 			<div data-content>
 				<article>
 					{{> partial-page-hotel-grid }}
+					{{!--
 					{{> partial-page-hotel-list }}
 					{{> partial-page-hotel-map }}
-					{{> partial-page-hotel-details }}
+					{{> partial-page-hotel-details }}--}}
 				</article>
 			</div>
+			<div id="loading-data">
+				<svg width="200" height="200" viewbox="0 0 200 200">
+					<path id="border" transform="translate(100, 100)"/>
+					<path id="loader" transform="translate(100, 100) scale(.9)"/>
+				</svg>
+			</div>
+
 		</section>
 
 		<!-- Customize -->
