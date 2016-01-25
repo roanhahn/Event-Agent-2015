@@ -11,7 +11,7 @@
 
 	<div class="row">
 		
-		<div class="col-sm-6 col-md-3">
+		<div class="col-xs-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-wrapper">
 				<select name="" id="checkin" class="form-select" required="required">
@@ -25,7 +25,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-6 col-md-3">
+		<div class="col-xs-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-wrapper">
 				<select name="" id="checkout" class="form-select" required="required">
@@ -39,16 +39,16 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-md-1">
-			<label for="" class="form-label">&nbsp;</label>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">People</label>
 			<div class="form-persons">
 				<span>12</span>
 			</div>
 		</div>
-		<div class="col-sm-6 col-md-1">
+		<div class="col-xs-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-wrapper">
-				<select name="" id="rooms" class="form-select form-select--inline" required="required">
+				<select name="" id="rooms" class="form-select" required="required">
 					<option value="1" class="form-option">2</option>
 					<option value="2" class="form-option">3</option>
 					<option value="3" class="form-option">4</option>
@@ -56,25 +56,39 @@
 			</div>
 			<div class="form-text-message"></div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-md-2">
 			<label class="form-label">Guests</label>
-			<div class="form-wrapper form-wrapper--inline">
-				<label for="" class="form-label--small">Room 1</label>
-				<select name="" id="checkout" class="form-select form-select--inline" required="required">
-					<option value="1" class="form-option">1</option>
-					<option value="1" class="form-option">2</option>
-					<option value="1" class="form-option">3</option>
-					<option value="1" class="form-option">4</option>
-				</select>
-			</div>
-			<div class="form-wrapper form-wrapper--inline">
-				<label for="" class="form-label--small">Room 2</label>
-				<select name="" id="checkout" class="form-select form-select--inline" required="required">
-					<option value="1" class="form-option">1</option>
-					<option value="1" class="form-option">2</option>
-					<option value="1" class="form-option">3</option>
-					<option value="1" class="form-option">4</option>
-				</select>
+			<div class="row">
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 1</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 2</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">

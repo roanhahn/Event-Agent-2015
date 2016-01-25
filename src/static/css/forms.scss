@@ -106,7 +106,10 @@
 		display: inline-block;
 		font-size: 13px;
 		text-transform: capitalize;
-		margin-right: 10px;
+		line-height: 45px;
+		@media all and (max-width: $breakpoint-mobile){
+			line-height: normal;
+		}		
 	}
 
 	&--error{

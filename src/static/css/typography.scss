@@ -212,11 +212,15 @@ a{
 .fold-h3{
 	font-weight: 900;
 	font-weight: normal;
+	padding-top: 5px;
 	font-size: 30px;
+	margin-bottom: 10px;
 	text-transform: uppercase;
 	font-family: $tertiary-font;
 	@media all and(max-width: $breakpoint-mobile){
 		font-size: 16px;
+		margin-bottom: 20px;
+		
 	}
 }
 

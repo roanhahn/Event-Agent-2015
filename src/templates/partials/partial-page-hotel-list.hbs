@@ -7,14 +7,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
             </div>
-            <div class="col-sm-6 text-right">
+            <div class="col-md-6">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map"></li>
-                    <li class="display-options-grid"></li>
-                    <li class="display-options-list active"></li>
+                    <li class="switch-display-list-item switch-display-list-item--margin">Sort by</li>
+                    <li class="switch-display-list-item switch-display-list-item--margin">
+                        <form>
+                            <fieldset>
+                                <select name="" id="checkin" class="form-select">
+                                    <option value="1" class="form-option">Price low - high</option>
+                                    <option value="2" class="form-option">Price high -low</option>
+                                    <option value="3" class="form-option">Popular</option>
+                                    <option value="4" class="form-option">A-Z</option>
+                                    <option value="5" class="form-option">Z-A</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </li>
+                    <li class="switch-display-list-item"><span class="display-options-map"></span></li>
+                    <li class="switch-display-list-item active switch-display-list-item--border"><span class="display-options-list"></span></li>
+                    <li class="switch-display-list-item"><span class="display-options-grid"></span></li>
                 </ul> 
             </div>
         </div>

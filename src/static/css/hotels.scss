@@ -32,49 +32,68 @@
 	@media all and (max-width: $breakpoint-mobile){
 		float: none;
 		margin-bottom: 20px;
+		display: none;
 	}
 
-	& li{
-		padding: 5px;
-		/*background-color: #fff;*/
-		
+	& .switch-display-list-item{
 		float: left;
-		margin-left: 5px;
-		border-left: 1px solid #e0e1e2;
-		/*
-		border-radius: 2px;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;*/
-		-webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
-		-moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
-		-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+		line-height: 40px;
+		position: relative;
+		margin: 0;
 		color: #6d6e71;
 
 		@media all and (max-width: $breakpoint-mobile){
 			margin: 15px 5px 0 0;
 		}
 
-		& img{
-			width: 40px;
-			color: red;
+		&--margin{
+			margin-right: 5px;
 		}
 
-		
+		&--border{
+			border-left: 1px solid #cbcbcb;
+			border-right: 1px solid #cbcbcb;
+		}
 
-		&:hover, &.active{
+		&:hover span, &.active span{
 			cursor: pointer;
 			color: $primary-link-color;
+			opacity: 1 !important;
 		}
 
-		
+		&:first-child{
+			border-left: none;
+		}
+
+		& span{
+			display: block;
+			width: 40px;
+			height: 40px;
+			opacity: .2;
+		}
+
+		& select{
+			margin: 0!important;
+			height: 40px !important;
+		}
 	}
 }
 
-svg{
-	color: red;
-	fill: blue;
+.display-options-grid{
+	background: transparent url("../img/icon-grid.svg") no-repeat center center scroll;
+	background-size: 20px;
 }
+
+.display-options-list{
+	background: transparent url("../img/icon-list.svg") no-repeat center center scroll;
+	background-size: 20px;
+}
+
+.display-options-map{
+	background: transparent url("../img/icon-map.svg") no-repeat center center scroll;
+	background-size: 16px;
+}
+
 
 .hotel-item-grid, .hotel-item-map{
 	position: relative;
@@ -165,19 +184,21 @@ svg{
 	}
 
 	& li{
-		padding: 0 0 4px 23px;
+		padding: 0 0 4px 27px;
 		position: relative;
+		line-height: normal;
+		margin-bottom: 5px;
 		/*float: left;
 		width: 50%;*/
 		@media all and(max-width: $breakpoint-tablet){
-			float: left;
-			width: 50%;
+			/*float: left;
+			width: 50%;*/
 		}
 	}
 
 	& li:before{
 		width: 20px;
-		text-align: left;
+		text-align: center;
 		position: absolute;
 		left: 0;
 		font-family: "FontAwesome";
@@ -185,20 +206,41 @@ svg{
 		color: $primary-link-color;
 	}
 
-	& .wifi:before{
+	& .INWI:before{
 		content: "\f1eb";
 	}
-
-	& .bar:before{
-		content: "\f000";
+	& .AICO:before{
+		content: "\f1d1";
 	}
-
-	& .restaurant:before{
+	& .BRBF:before{
+		content: "\f0f4";
+	}
+	& .COBU:before{
+		content: "\f108";
+	}
+	& .CUEX:before{
+		content: "\f0d6";
+	}
+	& .EXCK:before{
+		content: "\f090";
+	}
+	& .FD24:before{
+		content: "\f017";
+	}
+	& .MEFA:before{
+		content: "\f0e6";
+	}
+	& .PARK:before{
+		content: "\f1b9";
+	}
+	& .ROSE:before{
+		content: "\f0a2";
+	}
+	& .RTNT:before{
 		content: "\f0f5";
 	}
-
-	& .transfers:before{
-		content: "\f1b9";
+	& .SAFD:before{
+		content: "\f023";
 	}
 }
 
