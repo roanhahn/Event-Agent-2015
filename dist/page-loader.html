@@ -41,7 +41,7 @@
 						</li>
 						<li class="header-menu-item">
 							<div class="header-menu-link show-cart">
-								<div class="cart-total">your booking</div>
+								<div class="cart-total cart-total--active">your booking  <span class="cart-amount">&euro;4.765,95</span></div>
 							</div>
 						</li>
 					</ul>
@@ -56,7 +56,7 @@
 	<div class="cart-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-4">
+				<div class="col-sm-12">
 					<div class="close-cart"></div>
 					<form>
 						<label class="form-label">Your Booking</label>
@@ -646,31 +646,37 @@
 		
 
 		
-		<script src="assets/js/plugins/layerslider/greensock.js" type="text/javascript"></script>
-		<script src="assets/js/plugins/layerslider/layerslider.transitions.js" type="text/javascript"></script>
-		<script src="assets/js/plugins/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('#layerslider').layerSlider({
-					autoStart: true,
-					firstLayer: 1,
-					navPrevNext: true,
-					navButtons: false,
-					navStartStop: false,
-					pauseOnHover: false,
-					imgPreload: true,
-					lazyLoad: true,
-					touchNav: true,
-					thumbnailNavigation: 'disabled',
-					skin: 'fullwidth',
-					skinsPath: '/assets/js/plugins/layerslider/skins/'
-					// Slider options goes here,
-					// please check the 'List of slider options' section in the documentation
-				});
+				// PIE loader
+				var loader = document.getElementById('loader')
+				, border = document.getElementById('border')
+				, α = 0
+				, π = Math.PI
+				, t = 10;
+
+				(function draw() {
+					α++;
+					α %= 360;
+					var r = ( α * π / 180 )
+					, x = Math.sin( r ) * 100
+					, y = Math.cos( r ) * - 100
+					, mid = ( α > 180 ) ? 1 : 0
+					, anim = 'M 0 0 v -100 A 100 100 1 ' 
+					+ mid + ' 1 ' 
+					+  x  + ' ' 
+					+  y  + ' z';
+					//[x,y].forEach(function( d ){
+					//  d = Math.round( d * 1e3 ) / 1e3;
+					//});
+				loader.setAttribute( 'd', anim );
+				border.setAttribute( 'd', anim );
+				setTimeout(draw, t); // Redraw
+				})();
 			});
 		</script>
 		
-
-
-	</body>
-	</html>
+</body>
+</html>

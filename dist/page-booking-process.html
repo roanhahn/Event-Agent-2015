@@ -41,7 +41,7 @@
 						</li>
 						<li class="header-menu-item">
 							<div class="header-menu-link show-cart">
-								<div class="cart-total">your booking</div>
+								<div class="cart-total cart-total--active">your booking  <span class="cart-amount">&euro;4.765,95</span></div>
 							</div>
 						</li>
 					</ul>
@@ -56,7 +56,7 @@
 	<div class="cart-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-4">
+				<div class="col-sm-12">
 					<div class="close-cart"></div>
 					<form>
 						<label class="form-label">Your Booking</label>
@@ -253,11 +253,12 @@
 		</div>
 		<form action="" method="" class="">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+				<div class="col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
 					<div class="form-col">
-						<label for="" class="form-label">Package without ticket</label>
+						<label for="" class="form-label">Package without ticket &euro;50,-</label>
+
 						<div class="row">
-							<div class="col-xs-8">
+							<div class="col-xs-9">
 								<div class="form-wrapper">
 									<select name="" id="checkin" class="form-select" required="required">
 										<option value="1" class="form-option">1 Ticket</option>
@@ -269,7 +270,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-xs-4 no-padding">
+							<div class="col-xs-3 no-padding">
 								<input type="submit" class="button button--primary button--submit" value="ok">
 							</div>
 						</div>
@@ -278,11 +279,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+				<div class="col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
 					<div class="form-col">
-						<label for="" class="form-label">Sensation entrance ticket</label>
+						<label for="" class="form-label">Sensation entrance ticket &euro;100,-</label>
 						<div class="row">
-							<div class="col-xs-8">
+							<div class="col-xs-9">
 								<div class="form-wrapper">
 									<select name="" id="checkin" class="form-select" required="required">
 										<option value="1" class="form-option">1 Ticket</option>
@@ -294,7 +295,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-xs-4 no-padding">
+							<div class="col-xs-3 no-padding">
 								<input type="submit" class="button button--primary button--submit" value="ok">
 							</div>
 						</div>
@@ -303,10 +304,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
-					<label for="" class="form-label">Deluxe entrance ticket</label>
+				<div class="col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-sm-margin-30 clearfix">
+					<label for="" class="form-label">Deluxe entrance ticket &euro;150,-</label>
 					<div class="row">
-						<div class="col-xs-8">
+						<div class="col-xs-9">
 							<div class="form-wrapper">
 								<select name="" id="checkin" class="form-select" required="required">
 									<option value="1" class="form-option">1 Ticket</option>
@@ -318,7 +319,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-xs-4 no-padding">
+						<div class="col-xs-3 no-padding">
 							<input type="submit" class="button button--primary button--submit" value="ok">
 						</div>
 					</div>
@@ -892,92 +893,105 @@
 						<button class="button button--next">Next</button>
 					</div>
 					<h3 class="fold-h3">Your personal details</h3-->
+					</div>
 				</div>
 			</div>
-		</div>
-		<form class="form-personal-info">
-			<fieldset>
-				<div class="row">
-					<div class="col-sm-12">
-						<ul class="form-error-list">
-							<li>Please use the correct pattern AZ-az</li>
-							<li>A valid phonenumber is required</li>
-						</ul>
+			<form class="form-personal-info">
+				<fieldset>
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="form-error-list">
+								<li>Please use the correct pattern AZ-az</li>
+								<li>A valid phonenumber is required</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<label for="firstname" class="form-label">First name</label>
-						<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="firstname" class="form-label">First name</label>
+							<input type="text" name="" id="firstname" value="John" maxlength="" placeholder="" class="form-field">
+						</div>
+						<div class="col-sm-6">
+							<label for="lastname" class="form-label">Last name</label>
+							<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field">
+						</div>
+
+						<div class="col-sm-6">
+							<label for="address" class="form-label">Address</label>
+							<input type="text" name="" id="address" value="First name" maxlength="" placeholder="" class="form-field">
+						</div>
+						<div class="col-sm-3">
+							<label for="city" class="form-label">City</label>
+							<input type="text" name="" id="city" value="Somewheretown" maxlength="" placeholder="" class="form-field">
+						</div>
+						<div class="col-sm-3">
+							<label for="zip" class="form-label">Zipcode</label>
+							<input type="text" name="" id="zip" value="1234 AB" maxlength="" placeholder="" class="form-field">
+						</div>
+						<div class="col-sm-6">
+							<label for="phonenumber" class="form-label form-label--error">Phone number</label>
+							<input type="text" name="" id="phonenumber" value="+31(0)612345678" maxlength="" placeholder="" class="form-field form-field--error">
+						</div>
+						<div class="col-sm-6">
+							<label for="email" class="form-label">E-mail</label>
+							<input type="text" name="" id="email" value="johndoe@mail.com" maxlength="" placeholder="" class="form-field">
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for="birthday" class="form-label">Date of birth</label>
+								</div>
+								<div class="col-sm-4">
+									<select name="" id="birthday" class="form-select" required="required">
+										<option value="1" class="form-option">Days</option>
+										<option value="2" class="form-option">01</option>
+										<option value="3" class="form-option">02</option>
+										<option value="4" class="form-option">03</option>
+										<option value="5" class="form-option">04</option>
+										<option value="6" class="form-option">05</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="" id="" class="form-select" required="required">
+										<option value="1" class="form-option">Month</option>
+										<option value="2" class="form-option">January</option>
+										<option value="3" class="form-option">February</option>
+										<option value="4" class="form-option">March</option>
+										<option value="5" class="form-option">April</option>
+										<option value="6" class="form-option">May</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="" id="" class="form-select" required="required">
+										<option value="1" class="form-option">Year</option>
+										<option value="2" class="form-option">2000</option>
+										<option value="3" class="form-option">2000</option>
+										<option value="4" class="form-option">2000</option>
+										<option value="5" class="form-option">2000</option>
+										<option value="6" class="form-option">2000</option>
+									</select>
+								</div>
+							</div>
+
+
+							
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<label for="country" class="form-label">Country</label>
+							<select name="" id="country" class="form-select" required="required">
+								<option value="1" class="form-option">The Netherlands</option>
+								<option value="2" class="form-option">Belgium</option>
+								<option value="3" class="form-option">France</option>
+								<option value="4" class="form-option">Italy</option>
+								<option value="5" class="form-option">India</option>
+								<option value="6" class="form-option">United Kingdom</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+							<label for="" class="form-label form-label--empty">&nbsp;</label>
+							<input type="submit" value="Confirm" class="button button--primary button--block">
+						</div>
 					</div>
-					<div class="col-sm-6">
-						<label for="lastname" class="form-label">Last name</label>
-						<input type="text" name="" id="lastname" value="Doe" maxlength="" placeholder="" class="form-field">
-					</div>
-					
-					<div class="col-sm-6">
-						<label for="address" class="form-label">Address</label>
-						<input type="text" name="" id="address" value="First name" maxlength="" placeholder="" class="form-field">
-					</div>
-					<div class="col-sm-3">
-						<label for="city" class="form-label">City</label>
-						<input type="text" name="" id="city" value="Somewheretown" maxlength="" placeholder="" class="form-field">
-					</div>
-					<div class="col-sm-3">
-						<label for="zip" class="form-label">Zipcode</label>
-						<input type="text" name="" id="zip" value="1234 AB" maxlength="" placeholder="" class="form-field">
-					</div>
-					<div class="col-sm-6">
-						<label for="phonenumber" class="form-label form-label--error">Phone number</label>
-						<input type="text" name="" id="phonenumber" value="+31(0)612345678" maxlength="" placeholder="" class="form-field form-field--error">
-					</div>
-					<div class="col-sm-6">
-						<label for="email" class="form-label">E-mail</label>
-						<input type="text" name="" id="email" value="johndoe@mail.com" maxlength="" placeholder="" class="form-field">
-					</div>
-					<div class="col-sm-6">
-						<label for="birthday" class="form-label">Date of birth</label>
-						<select name="" id="birthday" class="form-select form-select--inline" required="required">
-							<option value="1" class="form-option">Days</option>
-							<option value="2" class="form-option">01</option>
-							<option value="3" class="form-option">02</option>
-							<option value="4" class="form-option">03</option>
-							<option value="5" class="form-option">04</option>
-							<option value="6" class="form-option">05</option>
-						</select>
-						<select name="" id="" class="form-select form-select--inline" required="required">
-							<option value="1" class="form-option">Month</option>
-							<option value="2" class="form-option">January</option>
-							<option value="3" class="form-option">February</option>
-							<option value="4" class="form-option">March</option>
-							<option value="5" class="form-option">April</option>
-							<option value="6" class="form-option">May</option>
-						</select>
-						<select name="" id="" class="form-select form-select--inline" required="required">
-							<option value="1" class="form-option">Year</option>
-							<option value="2" class="form-option">2000</option>
-							<option value="3" class="form-option">2000</option>
-							<option value="4" class="form-option">2000</option>
-							<option value="5" class="form-option">2000</option>
-							<option value="6" class="form-option">2000</option>
-						</select>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<label for="country" class="form-label">Country</label>
-						<select name="" id="country" class="form-select" required="required">
-							<option value="1" class="form-option">The Netherlands</option>
-							<option value="2" class="form-option">Belgium</option>
-							<option value="3" class="form-option">France</option>
-							<option value="4" class="form-option">Italy</option>
-							<option value="5" class="form-option">India</option>
-							<option value="6" class="form-option">United Kingdom</option>
-						</select>
-					</div>
-					<div class="col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-					<label for="" class="form-label form-label--empty">&nbsp;</label>
-						<input type="submit" value="Confirm" class="button button--primary button--block">
-					</div>
-				</div>
 				<!--<div class="row">
 					<div class="col-sm-6 col-sm-offset-3 ticket-form-submit text-center">
 						<input type="submit" value="Confirm and proceed" class="button button--primary button--block-mobile">
@@ -1184,15 +1198,6 @@
 		<script src="assets/js/app.js"></script>
 
 		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
-					new Maplace( gmap_options ).Load();
-				};
-			});
-		</script>
-		<script src="assets/js/plugins/maplace-0.1.3.min.js"></script>
-		
 
 		
 		<script src="assets/js/plugins/layerslider/greensock.js" type="text/javascript"></script>
@@ -1220,6 +1225,36 @@
 		</script>
 		
 
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// PIE loader
+				var loader = document.getElementById('loader')
+				, border = document.getElementById('border')
+				, α = 0
+				, π = Math.PI
+				, t = 10;
 
-	</body>
-	</html>
+				(function draw() {
+					α++;
+					α %= 360;
+					var r = ( α * π / 180 )
+					, x = Math.sin( r ) * 100
+					, y = Math.cos( r ) * - 100
+					, mid = ( α > 180 ) ? 1 : 0
+					, anim = 'M 0 0 v -100 A 100 100 1 ' 
+					+ mid + ' 1 ' 
+					+  x  + ' ' 
+					+  y  + ' z';
+					//[x,y].forEach(function( d ){
+					//  d = Math.round( d * 1e3 ) / 1e3;
+					//});
+				loader.setAttribute( 'd', anim );
+				border.setAttribute( 'd', anim );
+				setTimeout(draw, t); // Redraw
+				})();
+			});
+		</script>
+		
+</body>
+</html>

@@ -112,8 +112,16 @@
 	/*margin-left: 20px;*/
 	position: relative;
 
+	&--active{
+		color: $secondary-link-color;
+	}
 
-	&:after{
+	& span{
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	/*&:after{
 		content: "\f078";
 		font-family: "FontAwesome";
 		display: inline-block;
@@ -125,16 +133,16 @@
 		line-height: 40px;
 		position: relative;
 		top: -3px;
-	}
+	}*/
 }
 
 .cart-total-open{
 	color: $header-hover-color;
 
 
-	& .cart-total:after{
+	/*& .cart-total:after{
 		content: "\f077";
-	}
+	}*/
 }
 
 .cart{
@@ -144,8 +152,9 @@
 	display: none;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	z-index: 800;
-	
+	background-color: #fff;
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
 	}
@@ -162,10 +171,10 @@
 	padding: 60px 0 30px;
 	background-color: #fff;
 	line-height: 25px;
-	border: 1px solid #f6f6f6;
+	/*border: 1px solid #f6f6f6;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
 	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.1);
-	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.1);*/
 	right: -999px;
 	-webkit-transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
@@ -258,7 +267,7 @@
 }
 
 .tell-me-more{
-	background-color: $hero-bg-color;
+	
 	color: #fff;
 	padding: 60px 0;
 	@media all and (max-width: $breakpoint-mobile){
@@ -268,8 +277,10 @@
 .tell-me-more-wrapper{
 	position: fixed;
 	top: $header-height;
+	background-color: $hero-bg-color;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	z-index: 100;
 	display: none;
 	@media all and (max-width: $breakpoint-mobile){

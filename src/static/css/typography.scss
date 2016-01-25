@@ -53,10 +53,10 @@ a{
 	font-weight: 700;
 	padding-bottom: 15px;
 	font-size: 21px;
-	font-family: $tertiary-font;
+	font-family: $primary-font;
 }
 .h4{
-	color: $tertiary-text-color;
+	color: $primary-text-color;
 	font-size: 16px;
 	margin-bottom: 15px;
 	font-weight: 400;
@@ -108,8 +108,8 @@ a{
 .accordion-h3{
 	font-family: $secondary-font;
 	display: block;
-	font-size: 40px;
-	line-height: 40px;
+	font-size: 45px;
+	line-height: 45px;
 	position: relative;
 	-webkit-transition: color 0.2s ease-in-out 0s;
 	-moz-transition: color 0.2s ease-in-out 0s;
@@ -126,7 +126,7 @@ a{
 		position: absolute;
 		right: 40px;
 		padding-right: 30px;
-		line-height: 40px;
+		line-height: 45px;
 		color: #000;
 		font-size: 15px;
 		font-weight: 900;
