@@ -41,7 +41,7 @@
 						</li>
 						<li class="header-menu-item">
 							<div class="header-menu-link show-cart">
-								<div class="cart-total">your booking</div>
+								<div class="cart-total cart-total--active">your booking  <span class="cart-amount">&euro;4.765,95</span></div>
 							</div>
 						</li>
 					</ul>
@@ -56,7 +56,7 @@
 	<div class="cart-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-4">
+				<div class="col-sm-12">
 					<div class="close-cart"></div>
 					<form>
 						<label class="form-label">Your Booking</label>
@@ -304,11 +304,14 @@
             </div>
             <div class="col-sm-6 text-right">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map">Show on map</li>
-                    <li class="display-options-list active">Show as list</li>
+                    <li class="display-options-map"></li>
+                    <li class="display-options-grid"></li>
+                    <li class="display-options-list active"></li>
                 </ul> 
             </div>
         </div>
+
+      
         <div class="hotel-item-list">
 	<div class="clearfix">
 		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
@@ -321,25 +324,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -363,25 +381,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -405,25 +438,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -447,25 +495,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -489,25 +552,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -531,25 +609,40 @@
 		<div class="col-sm-7 col-md-8 col-lg-9">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="hotel-item-list-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
 						</div>
-						<div class="intro">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-						</div>
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
 					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<li class="wifi">Wifi</li>
+									<li class="bar">Bar</li>
+									<li class="restaurant">Restaurant</li>
+									<li class="transfers">Transfer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-md-4">
 					<div class="clearfix">
@@ -660,6 +753,6 @@
 		</script>
 		
 
-
-	</body>
-	</html>
+		
+</body>
+</html>

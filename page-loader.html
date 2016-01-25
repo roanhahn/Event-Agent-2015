@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Hotels map weergave</title>
+	<title>Loading data</title>
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,7 +10,7 @@
 	<meta name="description" content="Book here all the official Camping packages Travel Packages" />
 	<meta property="og:url" content="http://travel.mysteryland.com/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Hotels map weergave" />
+	<meta property="og:title" content="Loading data" />
 	<meta property="og:description" content="Book here all the official Camping packages Travel Packages" />
 	<meta property="og:image" content="http://travel.mysteryland.com/media/home/schermafbeelding2015-02-04om13.17.21_1423052280.png" />
 	<meta name="format-detection" content="telephone=no">
@@ -192,6 +192,7 @@
 
 <!-- Start content -->
 <div class="content-wrapper">
+
 <section class="section section--grey">
 	<div class="container">
 		<div class="row">
@@ -288,106 +289,300 @@
 				<h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
 			</div>
 			<div class="col-sm-6 text-right">
-                <ul class="switch-display clearfix">
-                    <li class="display-options-map active">Show on map</li>
-                    <li class="display-options-grid">Show as grid</li>
-                </ul> 
-            </div>
+				<ul class="switch-display clearfix">
+					<li>Sort by</li>
+					<li>
+						<form>
+							<fieldset>
+								asd
+							</fieldset>
+						</form>
+					</li>
+					<li class="display-options-map"></li>
+					<li class="display-options-grid active"></li>
+				</ul> 
+			</div>
 		</div>
-	</div>
-	<div class="gmap-wrapper">
-		<div id="gmap"></div>
-		<div class="gmap-hotel">
-			<div class="hotel-item-map">
-				<div class="hotel-map-close"></div>
-				<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
-				<div class="hotel-item-grid-body">
-					<div class="hotel-item-grid-image">
-						<div class="img-container img-ratio-2-1">
-							<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-						</div>
-					</div>
-					<div class="hotel-item-grid-content">
-						<div class="title">Hilton Hotel</div>
-						<div class="rating">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-o"></i>
-							<i class="fa fa-star-o"></i>
-						</div>
-						<div class="intro">
-							The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-						</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
 					</div>
 				</div>
-				<div class="row facilities">
-					<div class="col-sm-12">
-						<ul class="facilities-list clearfix">
-							<li class="wifi">Wifi</li>
-							<li class="bar">Bar</li>
-							<li class="restaurant">Restaurant</li>
-							<li class="transfers">Transfer</li>
-						</ul>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
 					</div>
-					<div class="col-sm-12">
-						<a href="" class="button button--primary button--block">select hotel</a>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
 					</div>
 				</div>
-				
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<!-- GOGGLE MAPS CONFIGURATION -->
-	<!-- ref: http://maplacejs.com/ -->
-	<script>
-		var gmap_options = {
-			generate_controls : false,
-			locations : [{
-				lat : 52.3702160,
-				lon : 4.8951680,
-				animation : google.maps.Animation.DROP,
-				html : "Some text goes here",
-				icon : "assets/img/map.png",
-			}, {
-				lat : 52.3681198,
-				lon : 4.8998029,
-				animation : google.maps.Animation.DROP,
-				html : "Some text goes here",
-				icon : "assets/img/map.png",
-			}, {
-				lat : 52.3694823,
-				lon : 4.8901898,
-				animation : google.maps.Animation.DROP,
-				html : "Some text goes here",
-				icon : "assets/img/map.png",
-			}, {
-				lat : 52.3688535,
-				lon : 4.9121625,
-				animation : google.maps.Animation.DROP,
-				html : "Some text goes here",
-				icon : "assets/img/map-ml.png",
-			}
-
-			],
-			map_options : {
-				scrollwheel : false,
-				mapTypeControl : false,
-				streetViewControl : false,
-				zoomControlOptions : {
-					style : google.maps.ZoomControlStyle.SMALL,
-				},
-				zoom : 14,
-			},
-			styles : {
-				// source: https://snazzymaps.com
-				'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
-			},
-		};
-	</script>
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+					</div>
+				</div>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
+					</div>
+				</div>
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+					</div>
+				</div>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
+					</div>
+				</div>
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+					</div>
+				</div>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
+					</div>
+				</div>
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+					</div>
+				</div>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
+					</div>
+				</div>
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="hotel-item-grid">
+	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+	<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+	<div class="hotel-item-grid-wrapper">
+		<div class="hotel-item-grid-slide">
+			<div class="hotel-item-grid-body">
+				<div class="hotel-item-grid-image">
+					<div class="img-container img-ratio-2-1">
+						<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+					</div>
+				</div>
+				<div class="hotel-item-grid-content">
+					<div class="title">Hilton Hotel</div>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="intro">
+						The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague. 
+					</div>
+				</div>
+			</div>
+			<div class="row facilities">
+				<div class="col-sm-12">
+					<ul class="facilities-list clearfix">
+						<li class="wifi">Wifi</li>
+						<li class="bar">Bar</li>
+						<li class="restaurant">Restaurant</li>
+						<li class="transfers">Transfer</li>
+					</ul>
+				</div>
+				<div class="col-sm-12">
+					<a href="" class="button button--primary button--block">select hotel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+		<nav class="my-pager">
+    <ul class="my-pager-list">
+        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-left"></i></a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link my-pager-link--active">1</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link">2</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link">3</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-right"></i></a></li>
+    </ul>
+</nav>
+	</div>
 </section>
+
+<div id="loading-data">
+	<svg width="200" height="200" viewbox="0 0 200 200">
+		<path id="border" transform="translate(100, 100)"/>
+		<path id="loader" transform="translate(100, 100) scale(.9)"/>
+	</svg>
+</div>
+
+
 
 	<footer class="footer">
 		<div class="container">
@@ -446,46 +641,42 @@
 		</div>
 	</footer>
 </div>
-
 		<script src="assets/js/app.js"></script>
 
 		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
-					new Maplace( gmap_options ).Load();
-				};
-			});
-		</script>
-		<script src="assets/js/plugins/maplace-0.1.3.min.js"></script>
+
 		
 
 		
-		<script src="assets/js/plugins/layerslider/greensock.js" type="text/javascript"></script>
-		<script src="assets/js/plugins/layerslider/layerslider.transitions.js" type="text/javascript"></script>
-		<script src="assets/js/plugins/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('#layerslider').layerSlider({
-					autoStart: true,
-					firstLayer: 1,
-					navPrevNext: true,
-					navButtons: false,
-					navStartStop: false,
-					pauseOnHover: false,
-					imgPreload: true,
-					lazyLoad: true,
-					touchNav: true,
-					thumbnailNavigation: 'disabled',
-					skin: 'fullwidth',
-					skinsPath: '/assets/js/plugins/layerslider/skins/'
-					// Slider options goes here,
-					// please check the 'List of slider options' section in the documentation
-				});
+				// PIE loader
+				var loader = document.getElementById('loader')
+				, border = document.getElementById('border')
+				, α = 0
+				, π = Math.PI
+				, t = 10;
+
+				(function draw() {
+					α++;
+					α %= 360;
+					var r = ( α * π / 180 )
+					, x = Math.sin( r ) * 100
+					, y = Math.cos( r ) * - 100
+					, mid = ( α > 180 ) ? 1 : 0
+					, anim = 'M 0 0 v -100 A 100 100 1 ' 
+					+ mid + ' 1 ' 
+					+  x  + ' ' 
+					+  y  + ' z';
+					//[x,y].forEach(function( d ){
+					//  d = Math.round( d * 1e3 ) / 1e3;
+					//});
+				loader.setAttribute( 'd', anim );
+				border.setAttribute( 'd', anim );
+				setTimeout(draw, t); // Redraw
+				})();
 			});
 		</script>
-		
-
 		
 </body>
 </html>
