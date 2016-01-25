@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.5 (25218) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="0" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="7.5" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="15" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="7.5" y="0" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="7.5" y="7.5" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="7.5" y="15" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15" y="0" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15" y="7.5" width="5" height="5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15" y="15" width="5" height="5"></rect>
+        </g>
+    </g>
+</svg>

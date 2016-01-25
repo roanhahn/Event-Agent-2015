@@ -369,7 +369,7 @@
 
 	<div class="row">
 		
-		<div class="col-sm-6 col-md-3">
+		<div class="col-xs-6 col-md-3">
 			<label for="" class="form-label">Check in</label>
 			<div class="form-wrapper">
 				<select name="" id="checkin" class="form-select" required="required">
@@ -383,7 +383,7 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-sm-6 col-md-3">
+		<div class="col-xs-6 col-md-3">
 			<label for="" class="form-label">Check out</label>
 			<div class="form-wrapper">
 				<select name="" id="checkout" class="form-select" required="required">
@@ -397,16 +397,16 @@
 			</div>
 			<div class="form-text-message">Some text goes here</div>
 		</div>
-		<div class="col-md-1">
-			<label for="" class="form-label">&nbsp;</label>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">People</label>
 			<div class="form-persons">
 				<span>12</span>
 			</div>
 		</div>
-		<div class="col-sm-6 col-md-1">
+		<div class="col-xs-6 col-md-1">
 			<label for="" class="form-label">Rooms</label>
 			<div class="form-wrapper">
-				<select name="" id="rooms" class="form-select form-select--inline" required="required">
+				<select name="" id="rooms" class="form-select" required="required">
 					<option value="1" class="form-option">2</option>
 					<option value="2" class="form-option">3</option>
 					<option value="3" class="form-option">4</option>
@@ -414,25 +414,39 @@
 			</div>
 			<div class="form-text-message"></div>
 		</div>
-		<div class="col-sm-6 col-md-2">
+		<div class="col-md-2">
 			<label class="form-label">Guests</label>
-			<div class="form-wrapper form-wrapper--inline">
-				<label for="" class="form-label--small">Room 1</label>
-				<select name="" id="checkout" class="form-select form-select--inline" required="required">
-					<option value="1" class="form-option">1</option>
-					<option value="1" class="form-option">2</option>
-					<option value="1" class="form-option">3</option>
-					<option value="1" class="form-option">4</option>
-				</select>
-			</div>
-			<div class="form-wrapper form-wrapper--inline">
-				<label for="" class="form-label--small">Room 2</label>
-				<select name="" id="checkout" class="form-select form-select--inline" required="required">
-					<option value="1" class="form-option">1</option>
-					<option value="1" class="form-option">2</option>
-					<option value="1" class="form-option">3</option>
-					<option value="1" class="form-option">4</option>
-				</select>
+			<div class="row">
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 1</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 2</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">
@@ -444,13 +458,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
             </div>
-            <div class="col-sm-6 text-right">
+            <div class="col-md-6">
                 <ul class="switch-display clearfix">
-                    <li class="display-options-map">Show on map</li>
-                    <li class="display-options-grid active">Show as grid</li>
+                    <li class="switch-display-list-item switch-display-list-item--margin">Sort by</li>
+                    <li class="switch-display-list-item switch-display-list-item--margin">
+                        <form>
+                            <fieldset>
+                                <select name="" id="checkin" class="form-select">
+                                    <option value="1" class="form-option">Price low - high</option>
+                                    <option value="2" class="form-option">Price high -low</option>
+                                    <option value="3" class="form-option">Popular</option>
+                                    <option value="4" class="form-option">A-Z</option>
+                                    <option value="5" class="form-option">Z-A</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </li>
+                    <li class="switch-display-list-item"><span class="display-options-map"></span></li>
+                    <li class="switch-display-list-item switch-display-list-item--border"><span class="display-options-list"></span></li>
+                    <li class="switch-display-list-item active"><span class="display-options-grid"></span></li>
                 </ul> 
             </div>
         </div>
@@ -484,10 +513,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -527,10 +556,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -570,10 +599,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -613,10 +642,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -656,10 +685,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -699,10 +728,10 @@
 			<div class="row facilities">
 				<div class="col-sm-12">
 					<ul class="facilities-list clearfix">
-						<li class="wifi">Wifi</li>
-						<li class="bar">Bar</li>
-						<li class="restaurant">Restaurant</li>
-						<li class="transfers">Transfer</li>
+						<li class="AICO">Air Conditioning</li>
+						<li class="BRBF">Breakfast Buffet</li>
+						<li class="COBU">Computer Business Centre</li>
+						<li class="CUEX">Currency Exchange</li>
 					</ul>
 				</div>
 				<div class="col-sm-12">
@@ -725,16 +754,1032 @@
 </nav>
     </div>
 </section>
+					<!--<section class="event-hero" data-stellar-background-ratio="0.2">
+	<div class="table">
+		<div class="vertical-align">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 text-center">
+						<h1>Mysteryland<small>24 - 25 august</small></h1>
+						<a href="" class="button button--outline button--hero">Regular <span>Packages</span></a>
+						<a href="" class="button button--outline button--hero">Premium <span>Packages</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>-->
+<section class="section section--grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="fold-description clearfix">
+	<!--<div class="fold-navigation">
+		<button class="button button--prev">Back</button>
+		<button class="button button--next">Next</button>
+	</div>-->
+	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
+</div>
+
+
+<form action="" method="" class="ticket-form">
+
+	<div class="row">
+		
+		<div class="col-xs-6 col-md-3">
+			<label for="" class="form-label">Check in</label>
+			<div class="form-wrapper">
+				<select name="" id="checkin" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<label for="" class="form-label">Check out</label>
+			<div class="form-wrapper">
+				<select name="" id="checkout" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">People</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">Rooms</label>
+			<div class="form-wrapper">
+				<select name="" id="rooms" class="form-select" required="required">
+					<option value="1" class="form-option">2</option>
+					<option value="2" class="form-option">3</option>
+					<option value="3" class="form-option">4</option>
+				</select>
+			</div>
+			<div class="form-text-message"></div>
+		</div>
+		<div class="col-md-2">
+			<label class="form-label">Guests</label>
+			<div class="row">
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 1</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 2</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">
+			<input type="submit" value="Confirm" class="button button--primary button--block-mobile">
+		</div>
+	</div>
+
+</form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="switch-display clearfix">
+                    <li class="switch-display-list-item switch-display-list-item--margin">Sort by</li>
+                    <li class="switch-display-list-item switch-display-list-item--margin">
+                        <form>
+                            <fieldset>
+                                <select name="" id="checkin" class="form-select">
+                                    <option value="1" class="form-option">Price low - high</option>
+                                    <option value="2" class="form-option">Price high -low</option>
+                                    <option value="3" class="form-option">Popular</option>
+                                    <option value="4" class="form-option">A-Z</option>
+                                    <option value="5" class="form-option">Z-A</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </li>
+                    <li class="switch-display-list-item"><span class="display-options-map"></span></li>
+                    <li class="switch-display-list-item active switch-display-list-item--border"><span class="display-options-list"></span></li>
+                    <li class="switch-display-list-item"><span class="display-options-grid"></span></li>
+                </ul> 
+            </div>
+        </div>
+
+      
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
 					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="hotel-item-list">
+	<div class="clearfix">
+		<div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+			<div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+			<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
+			<div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+				<a href="#"><img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage"></a>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="hotel-item-list-content">
+								<div class="title">Hilton Hotel</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<div class="intro">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
+								<ul class="facilities-list clearfix">
+									<!--<li class="AICO">Air Conditioning</li>-->
+									<li class="BRBF">Breakfast Buffet</li>
+									<!--<li class="COBU">Computer Business Centre</li>-->
+									<li class="CUEX">Currency Exchange</li>
+									<!--<li class="EXCK">Express Check in/Check out</li>-->
+									<li class="FD24">Front Desk 24/7</li>
+									<li class="INWI">Wi/Fi Wireless LAN</li>
+									<!--<li class="MEFA">Meeting Facilities/Conference</li>
+									<li class="PARK">Parking</li>
+									<li class="ROSE">Room Service</li>
+									<li class="RTNT">Restaurant</li>
+									<li class="SAFD">Safety Deposit Box</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="clearfix">
+						<div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        <nav class="my-pager">
+    <ul class="my-pager-list">
+        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-left"></i></a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link my-pager-link--active">1</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link">2</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link">3</a></li>
+        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-right"></i></a></li>
+    </ul>
+</nav>
+    </div>
+</section>
+					<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="fold-description clearfix">
+	<!--<div class="fold-navigation">
+		<button class="button button--prev">Back</button>
+		<button class="button button--next">Next</button>
+	</div>-->
+	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
+</div>
+
+
+<form action="" method="" class="ticket-form">
+
+	<div class="row">
+		
+		<div class="col-xs-6 col-md-3">
+			<label for="" class="form-label">Check in</label>
+			<div class="form-wrapper">
+				<select name="" id="checkin" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<label for="" class="form-label">Check out</label>
+			<div class="form-wrapper">
+				<select name="" id="checkout" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">People</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-1">
+			<label for="" class="form-label">Rooms</label>
+			<div class="form-wrapper">
+				<select name="" id="rooms" class="form-select" required="required">
+					<option value="1" class="form-option">2</option>
+					<option value="2" class="form-option">3</option>
+					<option value="3" class="form-option">4</option>
+				</select>
+			</div>
+			<div class="form-text-message"></div>
+		</div>
+		<div class="col-md-2">
+			<label class="form-label">Guests</label>
+			<div class="row">
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 1</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label--small">Room 2</label>
+						</div>
+						<div class="col-sm-6">
+							<select name="" id="checkout" class="form-select" required="required">
+								<option value="1" class="form-option">1</option>
+								<option value="1" class="form-option">2</option>
+								<option value="1" class="form-option">3</option>
+								<option value="1" class="form-option">4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">
+			<input type="submit" value="Confirm" class="button button--primary button--block-mobile">
+		</div>
+	</div>
+
+</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
+			</div>
+			<div class="col-md-6">
+				<ul class="switch-display clearfix">
+					<li class="switch-display-list-item switch-display-list-item--margin">Sort by</li>
+					<li class="switch-display-list-item switch-display-list-item--margin">
+						<form>
+							<fieldset>
+								<select name="" id="checkin" class="form-select">
+									<option value="1" class="form-option">Price low - high</option>
+									<option value="2" class="form-option">Price high -low</option>
+									<option value="3" class="form-option">Popular</option>
+									<option value="4" class="form-option">A-Z</option>
+									<option value="5" class="form-option">Z-A</option>
+								</select>
+							</fieldset>
+						</form>
+					</li>
+					<li class="switch-display-list-item active"><span class="display-options-map"></span></li>
+					<li class="switch-display-list-item switch-display-list-item--border"><span class="display-options-list"></span></li>
+					<li class="switch-display-list-item"><span class="display-options-grid"></span></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="gmap-wrapper">
+		<div id="gmap"></div>
+		<div class="gmap-hotel">
+			<div class="hotel-item-map">
+				<div class="hotel-map-close"></div>
+				<div class="hotel-item-grid-price">&euro; 229,- p.p.</div>
+				<div class="hotel-item-grid-body">
+					<div class="hotel-item-grid-image">
+						<div class="img-container img-ratio-2-1">
+							<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
+						</div>
+					</div>
+					<div class="hotel-item-grid-content">
+						<div class="title">Hilton Hotel</div>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<div class="intro">
+							The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
+						</div>
+					</div>
+				</div>
+				<div class="row facilities">
+					<div class="col-sm-12">
+						<ul class="facilities-list clearfix">
+							<li class="BRBF">Breakfast Buffet</li>
+							<li class="CUEX">Currency Exchange</li>
+							<li class="FD24">Front Desk 24/7</li>
+							<li class="INWI">Wi/Fi Wireless LAN</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<a href="" class="button button--primary button--block">select hotel</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<!-- GOGGLE MAPS CONFIGURATION -->
+	<!-- ref: http://maplacejs.com/ -->
+	<script>
+		var gmap_options = {
+			generate_controls : false,
+			locations : [{
+				lat : 52.3702160,
+				lon : 4.8951680,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3681198,
+				lon : 4.8998029,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3694823,
+				lon : 4.8901898,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map.png",
+			}, {
+				lat : 52.3688535,
+				lon : 4.9121625,
+				animation : google.maps.Animation.DROP,
+				html : "Some text goes here",
+				icon : "assets/img/map-ml.png",
+			}
+
+			],
+			map_options : {
+				scrollwheel : false,
+				mapTypeControl : false,
+				streetViewControl : false,
+				zoomControlOptions : {
+					style : google.maps.ZoomControlStyle.SMALL,
+				},
+				zoom : 14,
+			},
+			styles : {
+				// source: https://snazzymaps.com
+				'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+			},
+		};
+	</script>
+</section>
+
+					<section class="section section--grey hotel-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="fold-description clearfix">
+	<!--<div class="fold-navigation">
+		<button class="button button--prev">Back</button>
+		<button class="button button--next">Next</button>
+	</div>
+	<h3 class="fold-h3">Your booking preferences</h3>-->
+</div>
+
+
+<div class="ticket-form">
+
+	<div class="row">
+		
+		<div class="col-sm-6 col-md-3">
+			<label for="" class="form-label">Check in</label>
+			<div class="form-text-message">Thur 24-11-2015</div>
+		</div>
+		<div class="col-sm-6 col-md-3">
+			<label for="" class="form-label">Check out</label>
+			<div class="form-text-message">Mon 24-11-2015</div>
+		</div>
+		<div class="col-md-1">
+			<label for="" class="form-label">Persons</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-1">
+			<label for="" class="form-label">Rooms</label>
+			<div class="form-text-message">2</div>
+		</div>
+		<div class="col-sm-6 col-md-2">
+			<label class="form-label">Guests</label>
+			<div class="form-wrapper form-wrapper--inline">
+				<div class="form-text-message">Room 1:&nbsp;&nbsp;&nbsp;<strong>2</strong><br />Room 2:&nbsp;&nbsp;&nbsp;<strong>1</strong></div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-2 text-right">
+			<input type="submit" value="Change" class="button button--primary button--block-mobile">
+		</div>
+	</div>
+
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                
+                <h1 class="h1">Hilton Hotels</h1>
+                
+                
+            </div>
+            <div class="col-sm-4">
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="carousel">
+                    <img class="img-responsive" src="assets/img/hotel1.jpg">
+                    <img class="img-responsive" src="assets/img/hotel2.jpg">
+                    <img class="img-responsive" src="assets/img/hotel3.jpg">
+                    <img class="img-responsive" src="assets/img/hotel4.jpg">
+                    <img class="img-responsive" src="assets/img/hotel5.jpg">
+                    <img class="img-responsive" src="assets/img/hotel6.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7">
+                <div>
+                    <h3 class="h3">Hotel information</h3>
+                    <p class="p">
+                        This hotel enjoys a convenient location in the centre of Filderstadt-Berhausen and offers ideal
+                        connections to the area’s main transport hubs being 1.7 miles from Stuttfart airport. All 139 rooms are
+                        air-conditioned and soundproofed with guests having access to 24 hour room service and free Wi-Fi
+                        internet. The hotel restaurant has an open kitchen and offers delicious, fresh and healthy dishes as
+                        well as a large breakfast buffet in the morning.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <h3 class="h3">Hotel facilities</h3>
+                <ul class="facilities-list clearfix">
+                    <li class="wifi">Wifi</li>
+                    <li class="bar">Bar</li>
+                    <li class="restaurant">Restaurant</li>
+                    <li class="transfers">Transfer</li>
+                    <li class="restaurant">Spa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="h4 margin-top-40">Select roomtype</h4>
+                <div class="hotel-item-list">
+    <div class="clearfix">
+        <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+            <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+            <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+                <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotelroom.jpg" alt="" class="img-responsive lazyimage">
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hotel-item-list-content">
+                        <div class="title">Premier Room King Bed</div>
+                        <div class="room-details">
+                            <ul>
+                                <li>Suite, rolstoeltoegankelijk</li>
+                                <li>58 vierkante meter</li>
+                                <li>2 tweepersoonsbedden</li>
+                                <li>(Extra beschikbare bedden: Babybed)</li>
+                                <li>Voor 6 gasten (waarvan max. 5 kinderen)</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+                        <div class="manage-rooms">
+                            <button class="manage-button minus"></button>
+                            <div class="amount">1</div>
+                            <button class="manage-button plus"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="hotel-item-list">
+    <div class="clearfix">
+        <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+            <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+            <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+                <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotelroom.jpg" alt="" class="img-responsive lazyimage">
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hotel-item-list-content">
+                        <div class="title">Premier Room King Bed</div>
+                        <div class="room-details">
+                            <ul>
+                                <li>Suite, rolstoeltoegankelijk</li>
+                                <li>58 vierkante meter</li>
+                                <li>2 tweepersoonsbedden</li>
+                                <li>(Extra beschikbare bedden: Babybed)</li>
+                                <li>Voor 6 gasten (waarvan max. 5 kinderen)</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="hotel-item-list">
+    <div class="clearfix">
+        <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+            <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+            <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+                <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotelroom.jpg" alt="" class="img-responsive lazyimage">
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hotel-item-list-content">
+                        <div class="title">Premier Room King Bed</div>
+                        <div class="room-details">
+                            <ul>
+                                <li>Suite, rolstoeltoegankelijk</li>
+                                <li>58 vierkante meter</li>
+                                <li>2 tweepersoonsbedden</li>
+                                <li>(Extra beschikbare bedden: Babybed)</li>
+                                <li>Voor 6 gasten (waarvan max. 5 kinderen)</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="hotel-item-list">
+    <div class="clearfix">
+        <div class="col-sm-5 col-md-4 col-lg-3 no-padding">
+            <div class="hotel-item-list-price hotel-item-list-price--mobile">&euro; 229,- p.p.</div>
+            <div class="img-container img-ratio-1-1 xs-img-ratio-2-1">
+                <img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotelroom.jpg" alt="" class="img-responsive lazyimage">
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hotel-item-list-content">
+                        <div class="title">Premier Room King Bed</div>
+                        <div class="room-details">
+                            <ul>
+                                <li>Suite, rolstoeltoegankelijk</li>
+                                <li>58 vierkante meter</li>
+                                <li>2 tweepersoonsbedden</li>
+                                <li>(Extra beschikbare bedden: Babybed)</li>
+                                <li>Voor 6 gasten (waarvan max. 5 kinderen)</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <div class="hotel-item-list-price">&euro; 229,- p.p.</div>
+                        <a href="" class="button button--primary hotel-item-list-button">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
 				</article>
 			</div>
-			<div id="loading-data">
-				<svg width="200" height="200" viewbox="0 0 200 200">
-					<path id="border" transform="translate(100, 100)"/>
-					<path id="loader" transform="translate(100, 100) scale(.9)"/>
-				</svg>
-			</div>
-
 		</section>
 
 		<!-- Customize -->
@@ -1198,6 +2243,15 @@
 		<script src="assets/js/app.js"></script>
 
 		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
+					new Maplace( gmap_options ).Load();
+				};
+			});
+		</script>
+		<script src="assets/js/plugins/maplace-0.1.3.min.js"></script>
+		
 
 		
 		<script src="assets/js/plugins/layerslider/greensock.js" type="text/javascript"></script>
@@ -1225,36 +2279,6 @@
 		</script>
 		
 
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				// PIE loader
-				var loader = document.getElementById('loader')
-				, border = document.getElementById('border')
-				, α = 0
-				, π = Math.PI
-				, t = 10;
-
-				(function draw() {
-					α++;
-					α %= 360;
-					var r = ( α * π / 180 )
-					, x = Math.sin( r ) * 100
-					, y = Math.cos( r ) * - 100
-					, mid = ( α > 180 ) ? 1 : 0
-					, anim = 'M 0 0 v -100 A 100 100 1 ' 
-					+ mid + ' 1 ' 
-					+  x  + ' ' 
-					+  y  + ' z';
-					//[x,y].forEach(function( d ){
-					//  d = Math.round( d * 1e3 ) / 1e3;
-					//});
-				loader.setAttribute( 'd', anim );
-				border.setAttribute( 'd', anim );
-				setTimeout(draw, t); // Redraw
-				})();
-			});
-		</script>
 		
 </body>
 </html>
