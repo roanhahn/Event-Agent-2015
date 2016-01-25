@@ -193,7 +193,7 @@
 	}
 }
 
-.close-cart{
+.close-cart, .close-page{
 	float: right;
 	position: absolute;
 	z-index: 10;
@@ -265,7 +265,20 @@
 		display: none;
 	}
 }
-
+.page-text{
+	position: fixed;
+	top: $header-height;
+	background-color: #f1f1f1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: none;
+	overflow-y: auto;
+	@media all and (max-width: $breakpoint-mobile){
+		top: $header-height-mobile;
+	}
+}
 .tell-me-more{
 	
 	color: #fff;
@@ -283,6 +296,7 @@
 	bottom: 0;
 	z-index: 100;
 	display: none;
+	overflow-y: auto;
 	@media all and (max-width: $breakpoint-mobile){
 		top: $header-height-mobile;
 	}

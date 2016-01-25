@@ -1193,7 +1193,7 @@ input[type="checkbox"]:checked + label span {
     .cart-open {
       right: 0px; } }
 
-.close-cart {
+.close-cart, .close-page {
   float: right;
   position: absolute;
   z-index: 10;
@@ -1208,9 +1208,9 @@ input[type="checkbox"]:checked + label span {
   background: transparent url("../img/close-cart.png") no-repeat center center scroll;
   background-size: 21px; }
   @media all and (max-width: 767px) {
-    .close-cart {
+    .close-cart, .close-page {
       top: 0; } }
-  .close-cart:hover {
+  .close-cart:hover, .close-page:hover {
     color: #000; }
 
 .cart-section {
@@ -1254,6 +1254,20 @@ input[type="checkbox"]:checked + label span {
   .show-tell {
     display: none; } }
 
+.page-text {
+  position: fixed;
+  top: 80px;
+  background-color: #f1f1f1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  overflow-y: auto; }
+  @media all and (max-width: 767px) {
+    .page-text {
+      top: 50px; } }
+
 .tell-me-more {
   color: #fff;
   padding: 60px 0; }
@@ -1269,7 +1283,8 @@ input[type="checkbox"]:checked + label span {
   right: 0;
   bottom: 0;
   z-index: 100;
-  display: none; }
+  display: none;
+  overflow-y: auto; }
   @media all and (max-width: 767px) {
     .tell-me-more-wrapper {
       top: 50px; } }
@@ -1819,7 +1834,8 @@ input[type="checkbox"]:checked + label span {
   margin-bottom: 4px; }
 
 .footer-list-link {
-  color: #444; }
+  color: #444;
+  cursor: pointer; }
   .footer-list-link:hover {
     color: #fff; }
 
