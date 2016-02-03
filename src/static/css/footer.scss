@@ -37,7 +37,7 @@
 }
 
 .footer-col{
-	border-right: 1px solid $footer-form-line-color;
+	border-right: 1px solid $footer-line-color;
 	min-height: 100px;
 	@media all and (max-width: $breakpoint-tablet){
 		min-height: 0px;

@@ -1,0 +1,156 @@
+
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
+$breakpoint-mobile: 767px;
+
+$body-bg-color: #fff;
+
+$theme-folder: sensation;
+
+
+
+// FONTS
+
+$primary-font: 'Lato', Arial, sans-serif;
+$primary-text-color: #000;
+$primary-link-color: #000;
+$secondary-text-color: #6db2c2;
+$secondary-link-color: #6db2c2;
+$tertiary-text-color: #666;
+$tertiary-link-color: #666;
+
+$secondary-font: 'Oswald', sans-serif;
+$tertiary-font: 'Oswald', sans-serif;
+
+
+// HEADER STYLING
+$header-height: 80px;
+$header-height-mobile: 50px;
+$logo-width: 65px;
+$logo-height: 25px;
+$logo-width-mobile: 54px;
+$logo-height-mobile: 20px;
+$header-border-color: #ddd;
+$header-link-color: #000;
+$header-link-size: 20px;
+$header-hover-color: #6db2c2;
+
+
+
+// HERO STYLING
+
+$hero-bg-color: #6db2c2;
+$hero-color: #fff;
+$hero-size: 50px;
+$hero-size-mobile: 25px;
+
+// FOOTER STYLING
+
+$footer-bg-color: #fff;
+$footer-padding: 45px;
+$footer-text-color: #000;
+$footer-link-color: #000;
+$footer-hover-color: #6db2c2;
+$footer-header-color: #000;
+$footer-header-size: 16px;
+$footer-header-weight: 700;
+$footer-text-size: 13px;
+$footer-line-color: #cbcbcb;
+$footer-form-bg-color: #fff;
+$footer-form-line-color: #000;
+$footer-form-input-color: #000;
+$footer-form-submit-bg-color: #000;
+$footer-form-submit-color: #fff;
+$footer-form-submit-hover-bg-color: #6db2c2;
+$footer-form-submit-hover-color: #fff;
+
+
+// BUTTON STYLING
+$primary-btn-bg-color: #000;
+$primary-btn-text-color: #fff;
+$primary-btn-bg-hover-color: #6db2c2;
+$primary-btn-hover-text-color: #fff;
+
+$secondary-btn-bg-color: #6db2c2;
+$secondary-btn-text-color: #fff;
+
+// LOCATION STYLING
+
+$date-bg-color: #f1f1f2;
+$date-color: #000;
+$location-color: #fff;
+$location-title-color: #000;
+$location-subtitle-color: #444;
+
+// CONTENT STYLING
+
+$section-bg-color: #fff;
+$border-color: #cbcbcb;
+
+// RIBBON STYLING
+
+$ribbon-color: #6db2c2;
+$ribbon-shadow-color: #231f20;
+
+
+// FORM STYLING
+
+$select-bg-color: #fff;
+
+
+.header-logo{
+    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat 0 0 scroll !important;
+    background-size: $logo-width !important;
+    margin-top: 26px !important;
+    @media all and (max-width: $breakpoint-mobile){
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 15px 0 0 !important;
+    }
+}
+
+.header-menu-link{
+    font-family: $secondary-font;
+    text-transform: uppercase;
+}
+
+
+.hero-h1{
+    text-transform: uppercase;
+    line-height: 1.2 !important;
+}
+
+.footer-h4{
+    font-family: $tertiary-font;
+    padding-top: 35px;
+    @media all and (max-width: $breakpoint-tablet){
+        padding-top: 0px;
+    }
+}
+.footer-col{
+    min-height: 160px !important;
+        @media all and (max-width: $breakpoint-tablet){
+        min-height: 0px !important;
+    }
+}
+.accordion-h3{
+    text-transform: uppercase;
+    font-family: $tertiary-font !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+
+    & small{
+        font-family: $primary-font !important;
+        color: $primary-text-color !important;
+        font-weight: normal !important;
+    }
+
+    &:after{
+        color: $primary-text-color !important;
+    }
+}
+
+.plain h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}

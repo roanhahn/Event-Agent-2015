@@ -24,17 +24,20 @@
 
 	& h1{
 		color: #fff;
+		font-family: $tertiary-font;
 		text-transform: uppercase;
-		font-weight: 900;
-		font-size: 90px;
+		font-weight: 700;
+		font-size: 120px;
 		text-shadow: 2px 2px 5px rgba(50,50,50,.2);
 		margin-bottom: 40px;
 
 		& small{
+			font-family: $primary-font;
 			display: block;
 			color: #fff;
 			font-weight: 700;
 			margin-top: 5px;
+			font-size: 50%;
 		}
 
 		@media all and (max-width: $breakpoint-tablet){

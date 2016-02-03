@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(bootstrap.css);
 @import url(layerslider/layerslider.css);
 @import url(owl.carousel.css);
@@ -43,12 +44,53 @@ a, a:visited, a:active {
   src: url("../font/mysterylandfont-condensedregula-webfont.eot?#iefix") format("embedded-opentype"), url("../font/mysterylandfont-condensedregula-webfont.woff2") format("woff2"), url("../font/mysterylandfont-condensedregula-webfont.woff") format("woff"), url("../font/mysterylandfont-condensedregula-webfont.ttf") format("truetype"), url("../font/mysterylandfont-condensedregula-webfont.svg#mysteryland_fontregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-@font-face {
-  font-family: 'oswaldbold';
-  src: url("../font/oswald-bold-webfont.eot");
-  src: url("../font/oswald-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/oswald-bold-webfont.woff2") format("woff2"), url("../font/oswald-bold-webfont.woff") format("woff"), url("../font/oswald-bold-webfont.ttf") format("truetype"), url("../font/oswald-bold-webfont.svg#oswaldbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+.header-logo {
+  background: transparent url(../img/sensation/logo.svg) no-repeat 0 0 scroll !important;
+  background-size: 65px !important;
+  margin-top: 26px !important; }
+  @media all and (max-width: 767px) {
+    .header-logo {
+      width: 54px !important;
+      background-size: 54px !important;
+      margin: 15px 0 0 !important; } }
+
+.header-menu-link {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.hero-h1 {
+  text-transform: uppercase;
+  line-height: 1.2 !important; }
+
+.footer-h4 {
+  font-family: "Oswald", sans-serif;
+  padding-top: 35px; }
+  @media all and (max-width: 991px) {
+    .footer-h4 {
+      padding-top: 0px; } }
+
+.footer-col {
+  min-height: 160px !important; }
+  @media all and (max-width: 991px) {
+    .footer-col {
+      min-height: 0px !important; } }
+
+.accordion-h3 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 35px !important; }
+  .accordion-h3 small {
+    font-family: "Lato", Arial, sans-serif !important;
+    color: #000 !important;
+    font-weight: normal !important; }
+  .accordion-h3:after {
+    color: #000 !important; }
+
+.plain h1 {
+  text-transform: uppercase;
+  font-weight: 700; }
+
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
@@ -62,11 +104,11 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #dc2d50; }
+  background: #6db2c2; }
 
 ::selection {
   color: #fff;
-  background: #dc2d50; }
+  background: #6db2c2; }
 
 a {
   text-decoration: none;
@@ -76,17 +118,17 @@ a {
   transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .h1 {
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 10px 0 10px;
   font-size: 30px;
-  font-family: "oswaldbold"; }
+  font-family: "Oswald", sans-serif; }
   @media all and (max-width: 767px) {
     .h1 {
       font-size: 26px; } }
 
 .plain h1 {
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 50px;
   border-bottom: 1px solid #cbcbcb;
   margin-bottom: 30px;
@@ -121,7 +163,7 @@ a {
   line-height: 1.5; }
 
 .plain a {
-  color: #dc2d50;
+  color: #6db2c2;
   text-decoration: underline; }
 
 .accordion-row {
@@ -140,7 +182,7 @@ a {
   font-weight: 700; }
 
 .accordion-h3 {
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   display: block;
   font-size: 45px;
   line-height: 45px;
@@ -210,11 +252,11 @@ a {
 
 .location-h3 {
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 23px;
   color: #000;
   line-height: 1;
-  font-family: "oswaldbold"; }
+  font-family: "Oswald", sans-serif; }
   .location-h3 small {
     display: block;
     text-transform: none;
@@ -230,13 +272,12 @@ a {
   font-size: 30px; }
 
 .fold-h3 {
-  font-weight: 900;
-  font-weight: normal;
+  font-weight: 700;
   padding-top: 5px;
   font-size: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-family: "oswaldbold"; }
+  font-family: "Oswald", sans-serif; }
   @media all and (max-width: 767px) {
     .fold-h3 {
       font-size: 16px;
@@ -260,7 +301,7 @@ a {
 
 .show-more-info {
   display: inline-block;
-  color: #dc2d50;
+  color: #6db2c2;
   font-weight: 700;
   cursor: pointer; }
   .show-more-info:before {
@@ -282,20 +323,20 @@ a {
 
 .tell-me-more h3 {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 1px solid #fff;
-  font-family: "oswaldbold"; }
+  font-family: "Oswald", sans-serif; }
 .tell-me-more p {
   margin-bottom: 10px;
   line-height: 25px; }
 
 .ea-offer-bigtext {
   width: 100%;
-  font-family: "oswaldbold";
-  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 36px; }
   .ea-offer-bigtext small {
@@ -307,7 +348,7 @@ html, body {
   /* lets it scroll lazy */ }
 
 body {
-  background-color: #000;
+  background-color: #fff;
   height: 100%; }
 
 .content-wrapper {
@@ -389,9 +430,9 @@ body {
   padding: 10px;
   color: #000;
   line-height: 1;
-  font-family: "oswaldbold"; }
+  font-family: "Oswald", sans-serif; }
   .location-date .day {
-    font-weight: normal;
+    font-weight: 700;
     font-size: 35px; }
   .location-date .month {
     text-transform: uppercase;
@@ -536,17 +577,17 @@ svg {
     border: 2px solid #000;
     font-weight: 900; }
     .button--primary:hover {
-      background-color: #dc2d50;
+      background-color: #6db2c2;
       color: #fff;
-      border-color: #dc2d50; }
+      border-color: #6db2c2; }
   .button--secondary {
-    background-color: #dc2d50;
+    background-color: #6db2c2;
     color: #fff;
-    border: 2px solid #dc2d50;
+    border: 2px solid #6db2c2;
     font-weight: 900; }
     .button--secondary:hover {
       background-color: #fff;
-      color: #dc2d50; }
+      color: #6db2c2; }
   .button--submit {
     padding: 0px 11px; }
   .button--small {
@@ -826,8 +867,8 @@ svg {
   display: block;
   text-transform: uppercase;
   color: #000;
-  font-family: "oswaldbold";
-  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 17px; }
   .form-label--small {
     display: inline-block;
@@ -838,12 +879,12 @@ svg {
       .form-label--small {
         line-height: normal; } }
   .form-label--error {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .form-error-list {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
-  border: 1px solid #dc2d50;
+  border: 1px solid #6db2c2;
   padding: 10px 15px;
   margin-bottom: 30px; }
   .form-error-list li {
@@ -889,8 +930,8 @@ svg {
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3); }
   .form-field--error {
-    background-color: #dc2d50;
-    border-color: #dc2d50;
+    background-color: #6db2c2;
+    border-color: #6db2c2;
     color: #fff; }
   .form-field--ok {
     border-color: #58d68d;
@@ -973,8 +1014,8 @@ svg {
     min-width: 80px;
     margin-right: 4px; }
   .form-select--error {
-    background-color: #dc2d50;
-    border-color: #dc2d50;
+    background-color: #6db2c2;
+    border-color: #6db2c2;
     color: #fff; }
     .form-select--error .form-option {
       color: #fff; }
@@ -1019,7 +1060,7 @@ input[type="checkbox"]:checked + label span {
   border: 0;
   background: transparent;
   white-space: nowrap;
-  color: #dc2d50; }
+  color: #6db2c2; }
   .btn-remove:before {
     content: "\f00d";
     font-family: "FontAwesome";
@@ -1051,16 +1092,16 @@ input[type="checkbox"]:checked + label span {
 
 .header-logo {
   float: left;
-  width: 123px;
-  height: 50px;
-  background: transparent url(../img/ml/logo.png) no-repeat 0 0 scroll;
-  background-size: 123px;
+  width: 65px;
+  height: 25px;
+  background: transparent url(../img/sensation/logo.png) no-repeat 0 0 scroll;
+  background-size: 65px;
   margin-top: 15px;
   display: block; }
   @media all and (max-width: 767px) {
     .header-logo {
-      width: 100px;
-      background-size: 100px;
+      width: 54px;
+      background-size: 54px;
       margin-top: 5px;
       margin: 5px 0;
       float: left; } }
@@ -1075,7 +1116,7 @@ input[type="checkbox"]:checked + label span {
 .mobile-cart {
   float: right;
   display: none;
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   margin-top: 12px; }
   @media all and (max-width: 767px) {
@@ -1099,27 +1140,27 @@ input[type="checkbox"]:checked + label span {
   display: block;
   margin-left: 40px;
   color: #000;
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
-  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
   font-weight: normal;
   cursor: pointer;
   -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
   .header-menu-link:hover {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .hero {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
   padding: 50px 0;
-  font-family: "mysteryland_fontregular", Arial, sans-serif; }
+  font-family: "Oswald", sans-serif; }
   .hero .hero-h1 {
-    font-size: 70px;
+    font-size: 50px;
     line-height: 1; }
     @media all and (max-width: 767px) {
       .hero .hero-h1 {
-        font-size: 35px; } }
+        font-size: 25px; } }
 
 .cart-total {
   display: inline-block;
@@ -1140,13 +1181,13 @@ input[type="checkbox"]:checked + label span {
   	top: -3px;
   }*/ }
   .cart-total--active {
-    color: #dc2d50; }
+    color: #6db2c2; }
   .cart-total span {
     display: inline-block;
     margin-left: 10px; }
 
 .cart-total-open {
-  color: #dc2d50;
+  color: #6db2c2;
   /*& .cart-total:after{
   	content: "\f077";
   }*/ }
@@ -1230,7 +1271,7 @@ input[type="checkbox"]:checked + label span {
   text-transform: uppercase; }
 
 .message {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
   position: fixed;
   /*top: $header-height;*/
@@ -1278,7 +1319,7 @@ input[type="checkbox"]:checked + label span {
 .tell-me-more-wrapper {
   position: fixed;
   top: 80px;
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1311,7 +1352,7 @@ input[type="checkbox"]:checked + label span {
 
 .event-hero {
   height: 100%;
-  background: #000 url(../img/ml/hero.jpg) no-repeat center center scroll;
+  background: #fff url(../img/sensation/hero.jpg) no-repeat center center scroll;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -1329,16 +1370,19 @@ input[type="checkbox"]:checked + label span {
     content: ""; }
   .event-hero h1 {
     color: #fff;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 90px;
+    font-weight: 700;
+    font-size: 120px;
     text-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
     margin-bottom: 40px; }
     .event-hero h1 small {
+      font-family: "Lato", Arial, sans-serif;
       display: block;
       color: #fff;
       font-weight: 700;
-      margin-top: 5px; }
+      margin-top: 5px;
+      font-size: 50%; }
     @media all and (max-width: 991px) {
       .event-hero h1 {
         font-size: 60px; } }
@@ -1348,7 +1392,7 @@ input[type="checkbox"]:checked + label span {
 
 .booking-hero {
   height: 100%;
-  background: #000 url(../img/ml/hero.jpg) no-repeat top center fixed;
+  background: #fff url(../img/sensation/hero.jpg) no-repeat top center fixed;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -1490,18 +1534,18 @@ input[type="checkbox"]:checked + label span {
     font-size: 17px;
     color: #000; }
   .hotel-item-grid-content .rating {
-    color: #dc2d50;
+    color: #6db2c2;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
   .hotel-item-grid-content .more-info {
-    color: #dc2d50;
+    color: #6db2c2;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-grid-content .more-info:hover {
-      color: #dc2d50; }
+      color: #6db2c2; }
     @media all and (max-width: 767px) {
       .hotel-item-grid-content .more-info {
         display: block; } }
@@ -1596,18 +1640,18 @@ input[type="checkbox"]:checked + label span {
         padding-top: 0;
         margin-top: 0; } }
   .hotel-item-list-content .rating {
-    color: #dc2d50;
+    color: #6db2c2;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
   .hotel-item-list-content .more-info {
-    color: #dc2d50;
+    color: #6db2c2;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-list-content .more-info:hover {
-      color: #dc2d50; }
+      color: #6db2c2; }
     @media all and (max-width: 767px) {
       .hotel-item-list-content .more-info {
         display: block; } }
@@ -1681,7 +1725,7 @@ input[type="checkbox"]:checked + label span {
     text-align: center; } }
 
 .hotel-details .rating {
-  color: #dc2d50;
+  color: #6db2c2;
   margin: 10px 20px 10px 0;
   font-size: 20px;
   line-height: 1;
@@ -1700,7 +1744,7 @@ input[type="checkbox"]:checked + label span {
   background-color: #cbcbcb; }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   opacity: 1; }
 
 .gmap-wrapper {
@@ -1738,7 +1782,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 1;
     font-size: 20px; }
   .hotel-map-close:hover {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .ribbon {
   position: absolute;
@@ -1759,19 +1803,21 @@ input[type="checkbox"]:checked + label span {
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "oswaldbold";
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   text-align: center;
   line-height: 30px;
+  padding-bottom: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #dc2d50;
+  background: #6db2c2;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 30px;
-  right: -32px; }
+  top: 27px;
+  right: -33px; }
 
 .ribbon .text::before {
   content: '';
@@ -1818,10 +1864,10 @@ input[type="checkbox"]:checked + label span {
   border-top-color: #1e5799; }
 
 .footer {
-  background-color: #000;
-  color: #444;
-  padding-top: 35px;
-  padding-bottom: 35px; }
+  background-color: #fff;
+  color: #000;
+  padding-top: 45px;
+  padding-bottom: 45px; }
 
 .footer-list {
   list-style-type: none;
@@ -1834,20 +1880,20 @@ input[type="checkbox"]:checked + label span {
   margin-bottom: 4px; }
 
 .footer-list-link {
-  color: #444;
+  color: #000;
   cursor: pointer; }
   .footer-list-link:hover {
-    color: #fff; }
+    color: #6db2c2; }
 
 .footer-h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #444;
+  color: #000;
   text-transform: uppercase;
   margin-bottom: 10px; }
 
 .footer-col {
-  border-right: 1px solid #444;
+  border-right: 1px solid #cbcbcb;
   min-height: 100px; }
   @media all and (max-width: 991px) {
     .footer-col {
@@ -1863,10 +1909,10 @@ input[type="checkbox"]:checked + label span {
   height: 45px; }
 
 .footer-form-field {
-  background-color: #000;
-  border: 1px solid #444;
+  background-color: #fff;
+  border: 1px solid #000;
   padding: 5px 10px;
-  color: #fff;
+  color: #000;
   position: absolute;
   left: 0;
   top: 0;
@@ -1878,17 +1924,17 @@ input[type="checkbox"]:checked + label span {
   border-radius: 0;
   -webkit-appearance: none; }
   .footer-form-field::-webkit-input-placeholder {
-    color: #444;
+    color: #000;
     opacity: 1; }
   .footer-form-field::-moz-placeholder {
     /* Firefox 18- */
-    color: #444;
+    color: #000;
     opacity: 1; }
 
 .footer-form-submit {
   border: none;
-  background-color: #444;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   font-family: "Lato", Arial, sans-serif;
   text-transform: uppercase;
   display: inline-block;
@@ -1908,7 +1954,7 @@ input[type="checkbox"]:checked + label span {
   -webkit-appearance: none;
   border-radius: 0; }
   .footer-form-submit:hover {
-    background-color: #fff;
-    color: #000; }
+    background-color: #6db2c2;
+    color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
