@@ -141,12 +141,7 @@ $select-bg-color: #fff;
 
     & small{
         font-family: $primary-font !important;
-        color: $primary-text-color !important;
         font-weight: normal !important;
-    }
-
-    &:after{
-        color: $primary-text-color !important;
     }
 }
 

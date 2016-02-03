@@ -116,6 +116,9 @@
 		color: $secondary-link-color;
 	}
 }
+.form-label-price{
+	font-weight: 400;
+}
 .form-error-list{
 	background-color: $secondary-link-color;
 	color: #fff;
@@ -257,7 +260,7 @@
 	border: 1px solid #fff;
 	color: rgba(0,0,0,0);
 	background-color: $select-bg-color;
-	padding: 8px 15px;
+	padding: 0px 40px 0 15px;
 	-webkit-appearance: none;  /*Removes default chrome and safari style*/
 	-moz-appearance: none; /* Removes Default Firefox style*/
 	appearance:none;
@@ -269,6 +272,9 @@
 	text-shadow: 0 0 0 #666;
 	border-radius: 0;
 
+	&--sort{
+		min-width: 200px;
+	}
 
 
 	&:focus{

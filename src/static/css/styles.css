@@ -82,10 +82,7 @@ a, a:visited, a:active {
   font-size: 35px !important; }
   .accordion-h3 small {
     font-family: "Lato", Arial, sans-serif !important;
-    color: #000 !important;
     font-weight: normal !important; }
-  .accordion-h3:after {
-    color: #000 !important; }
 
 .plain h1 {
   text-transform: uppercase;
@@ -207,7 +204,7 @@ a {
     font-family: "Lato", Arial, sans-serif;
     text-transform: uppercase;
     border-right: 1px solid #ddd;
-    color: #ddd;
+    color: #000;
     -webkit-transition: color 0.2s ease-in-out 0s;
     -moz-transition: color 0.2s ease-in-out 0s;
     -o-transition: color 0.2s ease-in-out 0s;
@@ -223,7 +220,7 @@ a {
     right: 0px;
     font-size: 18px;
     font-weight: normal;
-    color: #ddd;
+    color: #000;
     -webkit-transition: color 0.2s ease-in-out 0s;
     -moz-transition: color 0.2s ease-in-out 0s;
     -o-transition: color 0.2s ease-in-out 0s;
@@ -881,6 +878,9 @@ svg {
   .form-label--error {
     color: #6db2c2; }
 
+.form-label-price {
+  font-weight: 400; }
+
 .form-error-list {
   background-color: #6db2c2;
   color: #fff;
@@ -991,7 +991,7 @@ svg {
   border: 1px solid #fff;
   color: transparent;
   background-color: #fff;
-  padding: 8px 15px;
+  padding: 0px 40px 0 15px;
   -webkit-appearance: none;
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
@@ -1004,6 +1004,8 @@ svg {
   color: transparent;
   text-shadow: 0 0 0 #666;
   border-radius: 0; }
+  .form-select--sort {
+    min-width: 200px; }
   .form-select:focus {
     -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
@@ -1185,6 +1187,11 @@ input[type="checkbox"]:checked + label span {
   .cart-total span {
     display: inline-block;
     margin-left: 10px; }
+
+.cart-amount {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700; }
 
 .cart-total-open {
   color: #6db2c2;
@@ -1465,7 +1472,7 @@ input[type="checkbox"]:checked + label span {
       .switch-display .switch-display-list-item {
         margin: 15px 5px 0 0; } }
     .switch-display .switch-display-list-item--margin {
-      margin-right: 5px; }
+      margin-right: 15px; }
     .switch-display .switch-display-list-item--border {
       border-left: 1px solid #cbcbcb;
       border-right: 1px solid #cbcbcb; }
@@ -1500,6 +1507,11 @@ input[type="checkbox"]:checked + label span {
   position: relative;
   background-color: #fff;
   margin-bottom: 30px; }
+
+.hotel-item-map {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5); }
 
 .hotel-item-grid-wrapper {
   position: relative;
@@ -1566,10 +1578,10 @@ input[type="checkbox"]:checked + label span {
     .facilities-list {
       margin-bottom: 11px; } }
   .facilities-list li {
-    padding: 0 0 4px 27px;
+    padding: 0 0 0 27px;
     position: relative;
     line-height: normal;
-    margin-bottom: 5px;
+    margin-bottom: 14px;
     /*float: left;
     width: 50%;*/ }
     @media all and (max-width: 991px) {
@@ -1608,6 +1620,10 @@ input[type="checkbox"]:checked + label span {
     content: "\f0f5"; }
   .facilities-list .SAFD:before {
     content: "\f023"; }
+
+.hotel-item-grid .facilities-list li {
+  float: left;
+  width: 50%; }
 
 .hotel-item-list, .customize-item {
   background-color: #fff;

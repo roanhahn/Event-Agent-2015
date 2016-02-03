@@ -4,10 +4,12 @@ var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
 var hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
 var hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
+var gridfacilities = hotelgridbody - hotelgridimg;
 
 $(function() {
 	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
-	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
+	$(".hotel-item-grid-content").css("height",hotelgridcontent);
+    $(".grid-facilities").css("height",gridfacilities);
 });
 
 $(window).resize(function(){
@@ -15,10 +17,15 @@ $(window).resize(function(){
 	hotelgridimg = $(".hotel-item-grid-image").outerHeight();
 	hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
 	hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
+    gridfacilities = hotelgridbody - hotelgridimg;
 
 	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
 	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
+    $(".grid-facilities").css("height",gridfacilities);
 });
+
+
+
 
 $(".hotel-item-grid").hover
 (
