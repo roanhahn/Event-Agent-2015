@@ -2653,7 +2653,7 @@ if (typeof Object.create !== "function") {
 	window.Stellar = Plugin;
 }(jQuery, this, document));
 $(document).ready(function() {
-
+/*
 var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
 var hotelgridimg = $(".hotel-item-grid-image").outerHeight();
 var hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
@@ -2676,11 +2676,11 @@ $(window).resize(function(){
 	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
 	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
     $(".grid-facilities").css("height",gridfacilities);
-});
+});*/
 
 
 
-
+/*
 $(".hotel-item-grid").hover
 (
 	function()
@@ -2692,7 +2692,7 @@ $(".hotel-item-grid").hover
 		$(this).parent().find(".hotel-item-grid-slide").css("top","0");
 	}
 	);
-
+*/
 // Lazyloading the images
 $("img.lazyimage").unveil(200, function() {
 	$(this).load(function() {
