@@ -595,7 +595,7 @@ svg {
     border: 2px solid #fff;
     font-weight: 900; }
     .button--tertiary:hover {
-      background-color: #6db2c2;
+      background-color: #000;
       color: #fff; }
   .button--submit {
     padding: 0px 11px; }
@@ -1594,7 +1594,7 @@ input[type="checkbox"]:checked + label span {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #cbcbcb;
+      border-left: 1px solid #6db2c2;
       padding-left: 10px; }
   .hotel-item-grid-content .more-info {
     color: #6db2c2;
@@ -1712,7 +1712,7 @@ input[type="checkbox"]:checked + label span {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #cbcbcb;
+      border-left: 1px solid #6db2c2;
       padding-left: 10px; }
   .hotel-item-list-content .more-info {
     color: #6db2c2;
@@ -1804,7 +1804,7 @@ input[type="checkbox"]:checked + label span {
     display: inline-block;
     margin-left: 5px;
     font-size: 13px;
-    border-left: 1px solid #cbcbcb;
+    border-left: 1px solid #6db2c2;
     padding-left: 10px; }
   @media all and (max-width: 767px) {
     .hotel-details .rating {

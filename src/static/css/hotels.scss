@@ -197,7 +197,7 @@
 			display: inline-block;
 			margin-left: 5px;
 			font-size: 13px;
-			border-left: 1px solid $border-color;
+			border-left: 1px solid $secondary-text-color;
 			padding-left: 10px;
 		}
 	}
@@ -263,40 +263,40 @@
 		color: $primary-link-color;
 	}
 
-	& .INWI:before{
+	& .INWI:before, .fa-inwi:before{
 		content: "\f1eb";
 	}
-	& .AICO:before{
+	& .AICO:before, .fa-aico:before{
 		content: "\f1d1";
 	}
-	& .BRBF:before{
+	& .BRBF:before, .fa-brbf:before{
 		content: "\f0f4";
 	}
-	& .COBU:before{
+	& .COBU:before, .fa-cobu:before{
 		content: "\f108";
 	}
-	& .CUEX:before{
+	& .CUEX:before, .fa-cuex:before{
 		content: "\f0d6";
 	}
-	& .EXCK:before{
+	& .EXCK:before, .fa-exck:before{
 		content: "\f090";
 	}
-	& .FD24:before{
+	& .FD24:before, .fa-fd24:before{
 		content: "\f017";
 	}
-	& .MEFA:before{
+	& .MEFA:before, .fa-mefa:before{
 		content: "\f0e6";
 	}
-	& .PARK:before{
+	& .PARK:before, .fa-park:before{
 		content: "\f1b9";
 	}
-	& .ROSE:before{
+	& .ROSE:before, .fa-rose:before{
 		content: "\f0a2";
 	}
-	& .RTNT:before{
+	& .RTNT:before, .fa-rtnt:before{
 		content: "\f0f5";
 	}
-	& .SAFD:before{
+	& .SAFD:before, .fa-safd:before{
 		content: "\f023";
 	}
 }
@@ -356,7 +356,7 @@
 			display: inline-block;
 			margin-left: 5px;
 			font-size: 13px;
-			border-left: 1px solid $border-color;
+			border-left: 1px solid $secondary-text-color;
 			padding-left: 10px;
 		}
 	}
@@ -478,7 +478,7 @@
 			display: inline-block;
 			margin-left: 5px;
 			font-size: 13px;
-			border-left: 1px solid $border-color;
+			border-left: 1px solid $secondary-text-color;
 			padding-left: 10px;
 		}
 
