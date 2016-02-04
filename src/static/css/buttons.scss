@@ -20,6 +20,7 @@
 	-webkit-appearance: none;
 	border-radius: 0;
 	font-family: $primary-font;
+	cursor: pointer;
 
 	&--primary{
 		background-color: $primary-btn-bg-color;
@@ -43,6 +44,18 @@
 		&:hover{
 			background-color: $secondary-btn-text-color;
 			color: $secondary-btn-bg-color;
+		}
+	}
+
+	&--tertiary{
+		background-color: transparent;
+		color: #fff;
+		border: 2px solid #fff;
+		font-weight: 900;
+
+		&:hover{
+			background-color: $primary-btn-bg-hover-color;
+			color: #fff;
 		}
 	}
 
@@ -155,7 +168,7 @@
 	&--hero{
 		background-color: rgba(0,0,0,.2);
 		font-weight: 900;
-		font-size: 35px;
+		font-size: 26px;
 		margin: 0 15px;
 		padding: 20px 50px;
 		height: auto;

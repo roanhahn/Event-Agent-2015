@@ -120,6 +120,10 @@ $select-bg-color: #fff;
     line-height: 1.2 !important;
 }
 
+.footer{
+    border-top: 1px solid #ddd;
+}
+
 .footer-h4{
     font-family: $tertiary-font;
     padding-top: 35px;
@@ -128,7 +132,7 @@ $select-bg-color: #fff;
     }
 }
 .footer-col{
-    min-height: 160px !important;
+    min-height: 185px !important;
         @media all and (max-width: $breakpoint-tablet){
         min-height: 0px !important;
     }
