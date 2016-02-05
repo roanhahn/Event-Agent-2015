@@ -2708,15 +2708,13 @@ $(".hotel-card-container").hover
   }
 );
 
+//onclick="document.querySelector('#flip-toggle').classList.toggle('hover');
+
 $('.toggleflip').click(function()
 {
-  $('.flip-container').addClass("flipped");
+  $('.flip-toggle').toggleClass("hover");
 });
 
-$('.toggleflipback').click(function()
-{
-  $('.flip-container').removeClass("flipped");
-});
 
 
 // Lazyloading the images
