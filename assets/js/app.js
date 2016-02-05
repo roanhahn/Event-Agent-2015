@@ -2712,7 +2712,7 @@ $(".hotel-card-container").hover
 
 $('.toggleflip').click(function()
 {
-  $('.flip-toggle').toggleClass("hover");
+  $(this).parent().find(".flip-toggle").toggleClass("hover");
 });
 
 
