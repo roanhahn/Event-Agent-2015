@@ -2693,6 +2693,23 @@ $(".hotel-item-grid").hover
 	}
 	);
 */
+
+// Flipping card
+
+$(".hotel-card-container").hover
+(
+  function()
+  {
+    $(this).find(".hotel-card").addClass("flipped");
+  },
+  function()
+  {
+   $(this).find(".hotel-card").removeClass("flipped");
+  }
+);
+
+
+
 // Lazyloading the images
 $("img.lazyimage").unveil(200, function() {
 	$(this).load(function() {
