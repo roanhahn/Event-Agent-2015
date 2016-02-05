@@ -3,7 +3,7 @@
     <head>
         <title>Test: Hotels Flip</title>
         <link href="assets/css/styles.min.css" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -17,16 +17,20 @@
 
 
 
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                
+	<div class="flip-container" id="flip-toggle">
 		<div class="flipper">
-			<div class="front" style="background: red;">
-				<img src="http://dummyimage.com/300x100/000/fff.png" class="img-responsive">
+			<div class="front" style="background:red;">
+				<span class="name">David Walsh</span>
 			</div>
-			<div class="back" style="background:blue;">
+			<div class="back" style="background:green;">
 				
 			</div>
 		</div>
 	</div>
+	<button onclick="document.querySelector('#flip-toggle').classList.toggle('hover');" class="btn">Toggle Flip</button>
+
+
             
         <script src="assets/js/app.js"></script>
     </body>

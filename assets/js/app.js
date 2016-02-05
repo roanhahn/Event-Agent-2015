@@ -2708,14 +2708,14 @@ $(".hotel-card-container").hover
   }
 );
 
-$('.flip').click(function()
+$('.toggleflip').click(function()
 {
-  $('#f1_card').addClass("flipped");
+  $('.flip-container').addClass("flipped");
 });
 
-$('.flipback').click(function()
+$('.toggleflipback').click(function()
 {
-  $('#f1_card').removeClass("flipped");
+  $('.flip-container').removeClass("flipped");
 });
 
 
