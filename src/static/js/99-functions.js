@@ -39,6 +39,30 @@ $(".hotel-item-grid").hover
 	}
 	);
 */
+
+// Flipping card
+
+$(".hotel-card-container").hover
+(
+  function()
+  {
+    $(this).find(".hotel-card").addClass("flipped");
+  },
+  function()
+  {
+   $(this).find(".hotel-card").removeClass("flipped");
+  }
+);
+
+//onclick="document.querySelector('#flip-toggle').classList.toggle('hover');
+
+$('.toggleflip').click(function()
+{
+  $(this).parent().find(".flip-toggle").toggleClass("hover");
+});
+
+
+
 // Lazyloading the images
 $("img.lazyimage").unveil(200, function() {
 	$(this).load(function() {
