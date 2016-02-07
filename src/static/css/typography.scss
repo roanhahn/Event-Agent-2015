@@ -307,3 +307,26 @@ a{
 	}
 }
 
+.loading-data{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	font-size: 19px;
+	background-color: #fff;
+	border: 2px solid #000;
+	padding: 30px;
+	z-index: 900;
+	width: 300px;
+	height: 200px;
+	color: $secondary-link-color;
+	font-weight: 700;
+	-ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #fff url(../img/#{$theme-folder}/loader.gif) no-repeat center 50% scroll;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+}
+
