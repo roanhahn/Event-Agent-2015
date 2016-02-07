@@ -1418,6 +1418,25 @@ input[type="checkbox"]:checked + label span {
   .close-tell-me-more:hover {
     color: #000; }
 
+.cart-steps {
+  text-align: center;
+  margin: 30px 0 50px; }
+  .cart-steps .step-item {
+    margin-bottom: 20px; }
+  .cart-steps .step-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2; }
+  .cart-steps .step-descr {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #6db2c2; }
+  .cart-steps .step-icon {
+    margin: 0 0 10px; }
+  .cart-steps .step-svg {
+    height: 50px; }
+
 .event-hero {
   height: 100%;
   background: #fff url(../img/sensation/hero.jpg) no-repeat center center scroll;

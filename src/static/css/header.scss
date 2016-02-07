@@ -334,3 +334,33 @@
 		color: $primary-link-color;
 	}
 }
+
+.cart-steps{
+	text-align: center;
+	margin: 30px 0 50px;
+
+	& .step-item{
+		margin-bottom: 20px;
+	}
+
+	& .step-text{
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1.2;
+	}
+
+	& .step-descr{
+		font-weight: 700;
+		font-size: 18px;
+		margin-bottom: 20px;
+		color: $secondary-link-color;
+	}
+
+	& .step-icon{
+		margin: 0 0 10px
+	}
+
+	& .step-svg{
+		height: 50px;
+	}
+}
