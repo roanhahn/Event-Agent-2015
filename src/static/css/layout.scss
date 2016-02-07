@@ -41,6 +41,19 @@ body{
 	&--white{
 		background-color: #fff;
 	}
+
+	&--theme{
+		background-color: $secondary-link-color;
+		color: #fff;
+
+		& a{
+			color: #fff;
+		}
+
+		& h1{
+			border-color: #fff;
+		}
+	}
 }
 
 .plain{

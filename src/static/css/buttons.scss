@@ -59,6 +59,13 @@
 		}
 	}
 
+	&--book{
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		left: 15px;
+	}
+
 	&--submit{
 		padding: 0px 11px;
 	}

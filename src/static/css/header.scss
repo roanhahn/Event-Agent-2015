@@ -222,6 +222,11 @@
 	}
 }
 
+.section--theme .close-page{
+	background: transparent url("../img/close.png") no-repeat center center scroll;
+	background-size: 21px;
+}
+
 .cart-section{
 	border-top: 1px solid $header-border-color;
 	padding: 15px 0 15px;
@@ -254,7 +259,7 @@
 	left: 0;
 	right: 0;
 	z-index: 999;
-	font-size: 16px;
+	font-size: 23px;
 	text-align: center;
 	line-height: $header-height;
 	@media all and (max-width: $breakpoint-mobile){

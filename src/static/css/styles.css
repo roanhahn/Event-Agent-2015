@@ -117,6 +117,10 @@ a {
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
+.readmore {
+  color: #6db2c2;
+  font-weight: bold; }
+
 .h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -375,6 +379,13 @@ body {
     background-color: #f1f1f1; }
   .section--white {
     background-color: #fff; }
+  .section--theme {
+    background-color: #6db2c2;
+    color: #fff; }
+    .section--theme a {
+      color: #fff; }
+    .section--theme h1 {
+      border-color: #fff; }
 
 .plain {
   padding: 60px 0; }
@@ -597,6 +608,11 @@ svg {
     .button--tertiary:hover {
       background-color: #000;
       color: #fff; }
+  .button--book {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    left: 15px; }
   .button--submit {
     padding: 0px 11px; }
   .button--small {
@@ -1273,6 +1289,10 @@ input[type="checkbox"]:checked + label span {
   .close-cart:hover, .close-page:hover {
     color: #000; }
 
+.section--theme .close-page {
+  background: transparent url("../img/close.png") no-repeat center center scroll;
+  background-size: 21px; }
+
 .cart-section {
   border-top: 1px solid #ddd;
   padding: 15px 0 15px; }
@@ -1299,7 +1319,7 @@ input[type="checkbox"]:checked + label span {
   left: 0;
   right: 0;
   z-index: 999;
-  font-size: 16px;
+  font-size: 23px;
   text-align: center;
   line-height: 80px; }
   @media all and (max-width: 767px) {
@@ -1609,7 +1629,8 @@ input[type="checkbox"]:checked + label span {
         display: block; } }
   .hotel-item-grid-content .intro {
     color: #666;
-    line-height: 25px; }
+    line-height: 25px;
+    margin-bottom: 15px; }
 
 .facilities {
   padding: 15px;
