@@ -215,24 +215,24 @@
 
 	& span{
 		display: inline-block;
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 900;
 		line-height: 20px;
 		color: #fff;
 		position: absolute;
 		left: 0;
-		top: 11px;
+		top: 2px;
 		text-align: center;
-		width: 45px;
+		width: 27px;
 	}
 
 	&:before{
 		content: "";
 		display: block;
-		background-image: url("../img/case.png");
-		background-size: 45px;
-		width: 45px;
-		height: 37px;
+		background: red url("../img/icon-door.svg") no-repeat top center scroll;
+		background-size: 27px;
+		width: 27px;
+		height: 45px;
 	}
 }
 
