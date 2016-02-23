@@ -360,22 +360,20 @@ a {
     left: 50%;
     top: 50%;
     text-align: center;
-    font-size: 19px;
+    font-size: 0px;
     background-color: #fff;
-    border: 2px solid #000;
-    padding: 30px;
-    width: 300px;
-    height: 200px;
+    width: 62px;
+    height: 30px;
     color: #6db2c2;
     font-weight: 700;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #fff url(../img/sensation/loader.gif) no-repeat center 60% scroll;
-    background-size: 80px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2); }
+    background: #fff url(../img/sensation/loader-2.gif) no-repeat center 50% scroll;
+    background-size: 50px;
+    /*-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);*/ }
 
 html, body {
   -webkit-overflow-scrolling: touch;
@@ -507,6 +505,17 @@ body {
 @media all and (max-width: 767px) {
   .col-xs-margin-30 {
     margin-bottom: 30px; } }
+.video-background {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .video-background iframe {
+    width: 100%;
+    height: 100%; }
+
 .img-container {
   background-color: #000;
   height: 0;
