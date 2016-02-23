@@ -1004,15 +1004,15 @@ svg {
 .ticket-form-submit {
   padding-top: 32px; }
 
-.form-persons {
+.form-persons, .form-rooms {
   color: #000;
   margin: 0;
   position: relative; }
   @media all and (max-width: 991px) {
-    .form-persons {
+    .form-persons, .form-rooms {
       margin-top: 0;
       margin-bottom: 15px; } }
-  .form-persons span {
+  .form-persons span, .form-rooms span {
     display: inline-block;
     font-size: 14px;
     font-weight: 900;
@@ -1023,13 +1023,23 @@ svg {
     top: 2px;
     text-align: center;
     width: 27px; }
-  .form-persons:before {
+  .form-persons:before, .form-rooms:before {
     content: "";
     display: block;
-    background: red url("../img/icon-door.svg") no-repeat top center scroll;
+    background: transparent url("../img/icon-door.svg") no-repeat top center scroll;
     background-size: 27px;
     width: 27px;
     height: 45px; }
+
+.form-persons span {
+  top: 16px;
+  width: 55px; }
+
+.form-persons:before {
+  background: transparent url("../img/case.png") no-repeat top center scroll;
+  background-size: 55px;
+  width: 55px;
+  height: 45px; }
 
 @media all and (max-width: 991px) {
   .form-wrapper--inline {
