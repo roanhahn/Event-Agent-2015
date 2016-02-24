@@ -362,15 +362,15 @@ a {
     text-align: center;
     font-size: 0px;
     background-color: #fff;
-    width: 62px;
-    height: 30px;
+    width: 260px;
+    height: 50px;
     color: #6db2c2;
     font-weight: 700;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: #fff url(../img/sensation/loader-2.gif) no-repeat center 50% scroll;
-    background-size: 50px;
+    background-size: 220px;
     /*-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.2);
     box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);*/ }
@@ -505,6 +505,10 @@ body {
 @media all and (max-width: 767px) {
   .col-xs-margin-30 {
     margin-bottom: 30px; } }
+.video-wrapper {
+  width: 100% !important;
+  height: 100% !important; }
+
 .video-background {
   background-color: red;
   position: absolute;
