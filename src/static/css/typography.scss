@@ -60,6 +60,12 @@ a{
 	font-size: 21px;
 	font-family: $primary-font;
 }
+.h3-header{
+	font-family: $secondary-font;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
 .h4{
 	color: $primary-text-color;
 	font-size: 16px;
@@ -321,20 +327,21 @@ a{
 		left: 50%;
 		top: 50%;
 		text-align: center;
-		font-size: 0px;
-		background-color: #fff;
-		width: 260px;
-		height: 50px;
-		color: $secondary-link-color;
+		min-width: 280px;
+		height: 180px;
+		padding: 30px;
+		color: $primary-link-color;
 		font-weight: 700;
+		font-size: 17px;
+		border: 3px solid $secondary-link-color;
 		-ms-transform: translate(-50%,-50%);
 		-webkit-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
-		background: #fff url(../img/#{$theme-folder}/loader-2.gif) no-repeat center 50% scroll;
-		background-size: 220px;
-		/*-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+		background: #fff url(../img/#{$theme-folder}/equalizer.gif) no-repeat center 65% scroll;
+		background-size: 100px;
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
 		-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-		box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);*/
+		box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);
 	}
 }
 
