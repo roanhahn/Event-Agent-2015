@@ -91,6 +91,10 @@ a, a:visited, a:active {
   text-transform: uppercase;
   font-weight: 700; }
 
+.h3-header {
+  text-transform: uppercase;
+  font-size: 20px !important; }
+
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
@@ -146,8 +150,8 @@ a {
   font-family: "Lato", Arial, sans-serif; }
 
 .h3-header {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
   font-weight: 400; }
 
 .h4 {
@@ -518,7 +522,6 @@ body {
   height: 100% !important; }
 
 .video-background {
-  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
