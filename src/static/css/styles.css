@@ -365,21 +365,23 @@ a {
     left: 50%;
     top: 50%;
     text-align: center;
-    min-width: 280px;
-    height: 180px;
-    padding: 30px;
+    min-width: 260px;
+    min-height: 50px;
+    padding: 80px 30px 30px;
     color: #000;
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 17px;
-    border: 3px solid #6db2c2;
+    font-size: 13px;
+    /*border: 3px solid $secondary-link-color;*/
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #fff url(../img/sensation/equalizer.gif) no-repeat center 65% scroll;
-    background-size: 100px;
+    background: #fff url(../img/sensation/equalizer-2.gif) no-repeat center 30px scroll;
+    background-size: 128px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2); }
+    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+    letter-spacing: 1px; }
 
 html, body {
   -webkit-overflow-scrolling: touch;
@@ -1039,29 +1041,25 @@ svg {
     line-height: 20px;
     color: #fff;
     position: absolute;
-    left: 10px;
-    top: 22px;
-    text-align: center;
-    width: 30px; }
+    top: 16px;
+    left: 0px;
+    width: 55px;
+    text-align: center; }
   .form-persons:before, .form-rooms:before {
     content: "";
     display: block;
-    background: transparent url("../img/icon-door-label.svg") no-repeat top right scroll;
-    background-size: 30px;
-    width: 40px;
-    height: 45px;
-    left: 10px; }
+    background: transparent url("../img/case.png") no-repeat top center scroll;
+    background-size: 55px;
+    width: 55px;
+    height: 45px; }
 
-.form-persons span {
-  top: 16px;
-  left: 0px;
-  width: 55px; }
+.form-rooms span {
+  color: #000;
+  top: 13px;
+  font-weight: normal; }
 
-.form-persons:before {
-  background: transparent url("../img/case.png") no-repeat top center scroll;
-  background-size: 55px;
-  width: 55px;
-  height: 45px; }
+.form-rooms:before {
+  display: none; }
 
 @media all and (max-width: 991px) {
   .form-wrapper--inline {

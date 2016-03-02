@@ -220,35 +220,30 @@
 		line-height: 20px;
 		color: #fff;
 		position: absolute;
-		left: 10px;
-		top: 22px;
+		top: 16px;
+		left: 0px;
+		width: 55px;
 		text-align: center;
-		width: 30px;
 	}
 
 	&:before{
 		content: "";
 		display: block;
-		background: transparent url("../img/icon-door-label.svg") no-repeat top right scroll;
-		background-size: 30px;
-		width: 40px;
+		background: transparent url("../img/case.png") no-repeat top center scroll;
+		background-size: 55px;
+		width: 55px;
 		height: 45px;
-		left: 10px;
 	}
 }
-
-.form-persons span{
-	top: 16px;
-	left: 0px;
-	width: 55px;
+.form-rooms span{
+	color: #000;
+	top: 13px;
+	font-weight: normal;
+}
+.form-rooms:before{
+	display: none;
 }
 
-.form-persons:before{
-	background: transparent url("../img/case.png") no-repeat top center scroll;
-	background-size: 55px;
-	width: 55px;
-	height: 45px;
-}
 
 .form-wrapper{
 

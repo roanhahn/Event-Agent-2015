@@ -326,21 +326,24 @@ a{
 		left: 50%;
 		top: 50%;
 		text-align: center;
-		min-width: 280px;
-		height: 180px;
-		padding: 30px;
+		min-width: 260px;
+		min-height: 50px;
+
+		padding: 80px 30px 30px;
 		color: $primary-link-color;
+		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 17px;
-		border: 3px solid $secondary-link-color;
+		font-size: 13px;
+		/*border: 3px solid $secondary-link-color;*/
 		-ms-transform: translate(-50%,-50%);
 		-webkit-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
-		background: #fff url(../img/#{$theme-folder}/equalizer.gif) no-repeat center 65% scroll;
-		background-size: 100px;
+		background: #fff url(../img/#{$theme-folder}/equalizer-2.gif) no-repeat center 30px scroll;
+		background-size: 128px;
 		-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
 		-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.2);
 		box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+		letter-spacing: 1px;
 	}
 }
 
