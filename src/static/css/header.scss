@@ -100,6 +100,11 @@
 	& .hero-h1{
 		font-size: $hero-size;
 		line-height: 1;
+		font-weight: normal;
+		letter-spacing: 1px;
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: $hero-size-tablet;
+		}
 		@media all and (max-width: $breakpoint-mobile){
 			font-size: $hero-size-mobile;
 		}
