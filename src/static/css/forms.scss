@@ -328,6 +328,18 @@
 
 }
 
+button[disabled], html input[disabled]{
+	background-color: #ddd;
+	border-color: #ddd;
+	color: #fff;
+	opacity: .6;
+	&:hover{
+		background-color: #ddd;
+		border-color: #ddd;
+		color: #fff;
+	}
+}
+
 input[type="checkbox"] {
 	display:none;
 }

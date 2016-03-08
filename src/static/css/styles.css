@@ -698,6 +698,15 @@ svg {
     .button--outline:hover {
       background-color: #fff;
       color: #000; }
+  .button--disabled {
+    background-color: #ddd;
+    border-color: #ddd;
+    color: #fff;
+    opacity: .6; }
+    .button--disabled:hover {
+      background-color: #ddd;
+      border-color: #ddd;
+      color: #fff; }
   .button--hero {
     background-color: rgba(0, 0, 0, 0.2);
     font-weight: 900;
@@ -1088,6 +1097,16 @@ svg {
   margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px; }
+
+button[disabled], html input[disabled] {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #fff;
+  opacity: .6; }
+  button[disabled]:hover, html input[disabled]:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+    color: #fff; }
 
 input[type="checkbox"] {
   display: none; }

@@ -7,6 +7,7 @@
     "name": "Roan Hahn",
     "url": "http://github.com/roanhahn/"
   },
+  "license":"ISC",
   "repository": {
     "type": "git",
     "url": "git://github.com/roanhahn/Event-Agent-2015.git"

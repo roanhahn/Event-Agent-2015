@@ -17,6 +17,8 @@
 	font-family: $primary-font;
 	cursor: pointer;
 
+
+
 	&--primary{
 		background-color: $primary-btn-bg-color;
 		color: $primary-btn-text-color;
@@ -172,6 +174,18 @@
 		&:hover{
 			background-color: #fff;
 			color: #000;
+		}
+	}
+
+	&--disabled{
+		background-color: #ddd;
+		border-color: #ddd;
+		color: #fff;
+		opacity: .6;
+		&:hover{
+			background-color: #ddd;
+			border-color: #ddd;
+			color: #fff;
 		}
 	}
 
