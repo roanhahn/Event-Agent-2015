@@ -80,7 +80,7 @@ a {
   margin: 10px 0 10px;
   font-size: 30px;
   font-family: "Oswald", sans-serif; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .h1 {
       font-size: 26px; } }
 
@@ -104,7 +104,7 @@ a {
   font-weight: 400; }
 
 .h4 {
-  color: #000;
+  color: #666;
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 400; }
@@ -153,7 +153,7 @@ a {
   -moz-transition: color 0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s;
   transition: color 0.2s ease-in-out 0s; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .accordion-h3 {
       font-size: 30px;
       line-height: 30px; } }
@@ -174,7 +174,7 @@ a {
     -moz-transition: color 0.2s ease-in-out 0s;
     -o-transition: color 0.2s ease-in-out 0s;
     transition: color 0.2s ease-in-out 0s; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .accordion-h3 small {
         display: none; } }
   .accordion-h3:after {
@@ -196,7 +196,7 @@ a {
 
 .open .fold-navigation {
   display: block; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .open .fold-navigation {
       display: none; } }
 
@@ -225,7 +225,7 @@ a {
     margin-top: 5px;
     color: #444;
     font-family: "Lato", Arial, sans-serif; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .location-h3 {
       font-size: 18px; } }
 
@@ -240,7 +240,7 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .fold-h3 {
       font-size: 16px;
       margin-bottom: 20px; } }
@@ -257,7 +257,7 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   padding-bottom: 30px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .summary-total {
       padding-bottom: 15px; } }
 
@@ -349,7 +349,7 @@ body {
   position: relative;
   top: 80px;
   height: calc(100% - 80px); }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .content-wrapper {
       top: 50px;
       height: calc(100% - 50px); } }
@@ -361,7 +361,7 @@ body {
   background-color: #fff;
   padding: 0 0 60px;
   overflow: hidden; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .section {
       padding: 0 0 30px; } }
   .section--grey {
@@ -378,7 +378,7 @@ body {
 
 .plain {
   padding: 60px 0; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .plain {
       padding: 30px 0; } }
 
@@ -454,16 +454,16 @@ body {
   top: 20px;
   right: 20px;
   width: 36px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .location-flag {
       width: 35px;
       top: 0;
       right: 0; } }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 800px) {
   .col-sm-margin-30 {
     margin-bottom: 30px; } }
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .col-xs-margin-30 {
     margin-bottom: 30px; } }
 .video-wrapper {
@@ -538,7 +538,7 @@ body {
   padding-bottom: 56.25%;
   /* 16:9*100 */ }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .xs-img-ratio-2-1 {
     padding-bottom: 50%;
     /* 1:4*100 */ } }
@@ -655,7 +655,7 @@ svg {
       font-weight: normal; }
   .button--nomargin {
     margin: 0; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .button--block-mobile {
       display: block;
       width: 100%; } }
@@ -727,11 +727,11 @@ svg {
       display: none;
       font-size: 50%;
       padding-top: 5px; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .button--hero {
         display: block;
         margin: 0 0 15px; } }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .button--hero {
         padding: 15px 30px;
         font-size: 30px; } }
@@ -773,7 +773,7 @@ svg {
   color: #cbcbcb;
   text-transform: uppercase;
   font-weight: 900; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .my-pager-link {
       padding: 5px 10px;
       font-size: 12px; } }
@@ -790,10 +790,10 @@ svg {
   overflow: hidden;
   display: inline-block;
   position: relative; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .manage-rooms {
       float: right; } }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .manage-rooms {
       float: none;
       margin-bottom: 10px; } }
@@ -840,7 +840,7 @@ svg {
     .manage-rooms .plus:before {
       content: "\f067"; }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .button-payment {
     margin-top: 20px; } }
 
@@ -869,11 +869,11 @@ svg {
     /* Firefox 18- */
     color: #fff;
     opacity: 1; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .event-registration-form-field {
       font-size: 18px;
       padding: 15px; } }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .event-registration-form-field {
       font-size: 13px;
       padding: 10px; } }
@@ -896,11 +896,11 @@ svg {
   .event-registration-form-submit:hover {
     background-color: #fff;
     color: #000; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .event-registration-form-submit {
       font-size: 18px;
       padding: 15px; } }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .event-registration-form-submit {
       font-size: 13px;
       padding: 10px; } }
@@ -912,7 +912,7 @@ svg {
 
 .form-col {
   border-right: 1px solid #cbcbcb; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .form-col {
       min-height: 0px;
       border-right: none; } }
@@ -929,7 +929,7 @@ svg {
     font-size: 13px;
     text-transform: capitalize;
     line-height: 45px; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .form-label--small {
         line-height: normal; } }
   .form-label--error {
@@ -1008,7 +1008,7 @@ svg {
   color: #000;
   margin: 0;
   position: relative; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .form-persons, .form-rooms {
       margin-top: 0;
       margin-bottom: 15px; } }
@@ -1039,7 +1039,7 @@ svg {
 .form-rooms:before {
   display: none; }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 800px) {
   .form-wrapper--inline {
     display: inline;
     margin-right: 10px; } }
@@ -1143,12 +1143,12 @@ input[type="checkbox"]:checked + label span {
     font-family: "FontAwesome";
     display: inline-block;
     margin-right: 5px; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .btn-remove:before {
         margin-right: 0px; } }
   .btn-remove:hover {
     text-decoration: underline; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .btn-remove span {
       display: none; } }
 
@@ -1163,7 +1163,7 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1); }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .header {
       height: 50px; } }
 
@@ -1175,7 +1175,7 @@ input[type="checkbox"]:checked + label span {
   background-size: 123px;
   margin-top: 15px;
   display: block; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .header-logo {
       width: 100px;
       background-size: 100px;
@@ -1183,7 +1183,7 @@ input[type="checkbox"]:checked + label span {
       margin: 5px 0;
       float: left; } }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .header-menu .header-menu-item {
     line-height: 50px; }
   .header-menu .header-menu-link {
@@ -1196,7 +1196,7 @@ input[type="checkbox"]:checked + label span {
   font-family: "mysteryland_fontregular", Arial, sans-serif;
   font-size: 20px;
   margin-top: 12px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .mobile-cart {
       display: none; } }
   .mobile-cart .cart-total:after {
@@ -1237,10 +1237,10 @@ input[type="checkbox"]:checked + label span {
     line-height: 1;
     font-weight: normal;
     letter-spacing: 1px; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .hero .hero-h1 {
         font-size: 45px; } }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .hero .hero-h1 {
         font-size: 35px; } }
 
@@ -1289,7 +1289,7 @@ input[type="checkbox"]:checked + label span {
   bottom: 0;
   z-index: 800;
   background-color: #fff; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .cart {
       top: 50px; } }
   .cart .extra-info {
@@ -1311,13 +1311,13 @@ input[type="checkbox"]:checked + label span {
   -moz-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .cart-wrapper {
       padding: 30px 0 0; } }
 
 .cart-open {
   right: 0px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .cart-open {
       right: 0px; } }
 
@@ -1335,7 +1335,7 @@ input[type="checkbox"]:checked + label span {
   height: 21px;
   background: transparent url("../img/close-cart.png") no-repeat center center scroll;
   background-size: 21px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .close-cart, .close-page {
       top: 0; } }
   .close-cart:hover, .close-page:hover {
@@ -1374,7 +1374,7 @@ input[type="checkbox"]:checked + label span {
   font-size: 23px;
   text-align: center;
   line-height: 80px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .message {
       /*top: $header-height-mobile;*/
       padding: 15px;
@@ -1382,7 +1382,7 @@ input[type="checkbox"]:checked + label span {
       line-height: normal;
       font-size: 14px; } }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .show-tell {
     display: none; } }
 
@@ -1396,14 +1396,14 @@ input[type="checkbox"]:checked + label span {
   z-index: 100;
   display: none;
   overflow-y: auto; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .page-text {
       top: 50px; } }
 
 .tell-me-more {
   color: #fff;
   padding: 60px 0; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .tell-me-more {
       padding: 30px 0; } }
 
@@ -1417,7 +1417,7 @@ input[type="checkbox"]:checked + label span {
   z-index: 100;
   display: none;
   overflow-y: auto; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .tell-me-more-wrapper {
       top: 50px; } }
 
@@ -1435,7 +1435,7 @@ input[type="checkbox"]:checked + label span {
   height: 21px;
   background: transparent url("../img/close.png") no-repeat center center scroll;
   background-size: 21px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .close-tell-me-more {
       top: 0; } }
   .close-tell-me-more:hover {
@@ -1493,10 +1493,10 @@ input[type="checkbox"]:checked + label span {
       font-weight: 700;
       margin-top: 5px;
       font-size: 50%; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .event-hero h1 {
         font-size: 60px; } }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .event-hero h1 {
         font-size: 30px; } }
 
@@ -1550,7 +1550,7 @@ input[type="checkbox"]:checked + label span {
   position: relative;
   /*top: -10px;*/
   top: -2px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .fold-navigation {
       float: none;
       margin-bottom: 20px;
@@ -1560,7 +1560,7 @@ input[type="checkbox"]:checked + label span {
   list-style-type: none;
   margin-bottom: 30px;
   float: right; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .switch-display {
       float: none;
       margin-bottom: 20px;
@@ -1571,7 +1571,7 @@ input[type="checkbox"]:checked + label span {
     position: relative;
     margin: 0;
     color: #6d6e71; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .switch-display .switch-display-list-item {
         margin: 15px 5px 0 0; } }
     .switch-display .switch-display-list-item--margin {
@@ -1642,7 +1642,7 @@ input[type="checkbox"]:checked + label span {
   -moz-transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -o-transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .hotel-item-grid .select-button, .hotel-item-map .select-button {
       opacity: 1;
       top: 0;
@@ -1702,7 +1702,7 @@ input[type="checkbox"]:checked + label span {
     margin-top: 2px; }
     .hotel-item-grid-content .more-info:hover {
       color: #dc2d50; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .hotel-item-grid-content .more-info {
         display: block; } }
   .hotel-item-grid-content .intro {
@@ -1720,7 +1720,7 @@ input[type="checkbox"]:checked + label span {
   color: #000;
   margin-bottom: 11px;
   margin-top: 4px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .facilities-list {
       margin-bottom: 11px; } }
   .facilities-list li {
@@ -1730,7 +1730,7 @@ input[type="checkbox"]:checked + label span {
     margin-bottom: 8px;
     /*float: left;
     width: 50%;*/ }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .facilities-list li {
         /*float: left;
         width: 50%;*/ } }
@@ -1776,16 +1776,53 @@ input[type="checkbox"]:checked + label span {
   background-color: #fff;
   margin-bottom: 30px; }
 
+.hotel-details-room {
+  border-top: 1px solid #cbcbcb;
+  padding-bottom: 20px; }
+  .hotel-details-room:last-child {
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 30px; }
+  .hotel-details-room .room-title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #000; }
+    @media all and (max-width: 600px) {
+      .hotel-details-room .room-title {
+        font-size: 17px; } }
+  .hotel-details-room .room-details {
+    color: #666;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px; }
+    @media all and (max-width: 800px) {
+      .hotel-details-room .room-details {
+        font-size: 13px; } }
+  .hotel-details-room .room-price {
+    color: #000;
+    padding: 15px 0 11px;
+    font-weight: 400;
+    font-size: 25px;
+    position: relative; }
+    @media all and (max-width: 800px) {
+      .hotel-details-room .room-price {
+        text-align: right; } }
+    @media all and (max-width: 600px) {
+      .hotel-details-room .room-price {
+        text-align: left;
+        padding-top: 0px; } }
+
 .hotel-item-list-content {
   margin: 15px 0 0;
   /*border-right: 1px solid $border-color;*/
   /*min-height: 200px;*/
   padding: 0 0 0 15px; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .hotel-item-list-content {
       border-right: none;
       min-height: 0px; } }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .hotel-item-list-content {
       padding: 15px 0 0;
       margin-top: 0; } }
@@ -1793,12 +1830,12 @@ input[type="checkbox"]:checked + label span {
     font-weight: 700;
     font-size: 22px;
     color: #000; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .hotel-item-list-content .title {
         font-size: 17px; } }
   .hotel-item-list-content--no-margin {
     margin-top: 0; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .hotel-item-list-content--no-margin {
         padding-top: 0;
         margin-top: 0; } }
@@ -1821,7 +1858,7 @@ input[type="checkbox"]:checked + label span {
     margin-top: 2px; }
     .hotel-item-list-content .more-info:hover {
       color: #dc2d50; }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 600px) {
       .hotel-item-list-content .more-info {
         display: block; } }
   .hotel-item-list-content .intro {
@@ -1831,7 +1868,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 10px; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .hotel-item-list-content .intro {
         font-size: 13px;
         height: 50px; } }
@@ -1840,7 +1877,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin: 10px 0 10px 15px; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .hotel-item-list-content .list {
         font-size: 13px; } }
   .hotel-item-list-content .room-details {
@@ -1851,7 +1888,7 @@ input[type="checkbox"]:checked + label span {
       font-size: 15px;
       line-height: 1.4;
       margin-bottom: 20px; }
-      @media all and (max-width: 767px) {
+      @media all and (max-width: 600px) {
         .hotel-item-list-content .room-details ul {
           font-size: 13px;
           line-height: 1.2; } }
@@ -1870,16 +1907,16 @@ input[type="checkbox"]:checked + label span {
     position: relative;
     top: -1px;
     color: #666; }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 800px) {
       .hotel-item-list-price span {
         display: inline-block; } }
   .hotel-item-list-price--mobile {
     display: none; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .hotel-item-list-price {
       padding: 0 15px;
       float: left; } }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .hotel-item-list-price {
       padding: 0;
       font-size: 22px;
@@ -1892,10 +1929,10 @@ input[type="checkbox"]:checked + label span {
         padding: 10px 15px;
         display: block; } }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 800px) {
   .hotel-item-list-button {
     float: right; } }
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .hotel-item-list-button {
     float: right;
     margin-bottom: 15px;
@@ -1915,7 +1952,7 @@ input[type="checkbox"]:checked + label span {
     font-size: 13px;
     border-left: 1px solid #dc2d50;
     padding-left: 10px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .hotel-details .rating {
       float: none;
       font-size: 16px; } }
@@ -1935,7 +1972,7 @@ input[type="checkbox"]:checked + label span {
 .gmap-wrapper {
   position: relative;
   height: 700px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .gmap-wrapper {
       height: 400px; } }
 
@@ -1952,7 +1989,7 @@ input[type="checkbox"]:checked + label span {
   right: 140px;
   top: 30px;
   width: 300px; }
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 600px) {
     .gmap-hotel {
       right: 10px; } }
 
@@ -2039,7 +2076,7 @@ input[type="checkbox"]:checked + label span {
 	-moz-transform: rotateY( 180deg );
 	-o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
-}*/
+	}*/
 .face {
   position: absolute;
   width: 100%;
@@ -2323,7 +2360,7 @@ input[type="checkbox"]:checked + label span {
 .footer-list {
   list-style-type: none;
   font-size: 13px; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .footer-list {
       margin-bottom: 30px; } }
 
@@ -2346,12 +2383,12 @@ input[type="checkbox"]:checked + label span {
 .footer-col {
   border-right: 1px solid #444;
   min-height: 100px; }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: 800px) {
     .footer-col {
       min-height: 0px;
       border-right: none; } }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .footer-form {
     margin-bottom: 30px; } }
 
