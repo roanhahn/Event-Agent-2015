@@ -1805,6 +1805,9 @@ input[type="checkbox"]:checked + label span {
     font-weight: 400;
     font-size: 25px;
     position: relative; }
+    .hotel-details-room .room-price span {
+      color: #666;
+      font-size: 13px; }
     @media all and (max-width: 800px) {
       .hotel-details-room .room-price {
         text-align: right; } }
@@ -2072,11 +2075,11 @@ input[type="checkbox"]:checked + label span {
 
 /*
 #f1_container:hover #f1_card {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-    }*/
+	-webkit-transform: rotateY( 180deg );
+	-moz-transform: rotateY( 180deg );
+	-o-transform: rotateY( 180deg );
+	transform: rotateY( 180deg );
+	}*/
 .face {
   position: absolute;
   width: 100%;
@@ -2109,12 +2112,12 @@ input[type="checkbox"]:checked + label span {
 
 /*
 .flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	filter: FlipH;
+	-ms-filter: "FlipH";
 }
 */
 /* START: Accommodating for IE */
@@ -2251,10 +2254,10 @@ input[type="checkbox"]:checked + label span {
 
 /*
 .vertical.flip-container:hover .flipper {
-    -webkit-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);
-    -ms-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	-ms-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
 }
 */
 /* START: Accommodating for IE */
