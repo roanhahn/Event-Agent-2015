@@ -1083,7 +1083,7 @@ svg {
   .form-select--error {
     background-color: #dc2d50;
     border-color: #dc2d50;
-    color: #fff; }
+    text-shadow: 0 0 0 #fff; }
     .form-select--error .form-option {
       color: #fff; }
   .form-select--ok {
@@ -1864,7 +1864,7 @@ input[type="checkbox"]:checked + label span {
   .hotel-item-list-content .intro {
     color: #666;
     overflow: hidden;
-    height: 75px;
+    height: 175px;
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 10px; }
@@ -2072,11 +2072,11 @@ input[type="checkbox"]:checked + label span {
 
 /*
 #f1_container:hover #f1_card {
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
-	}*/
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    }*/
 .face {
   position: absolute;
   width: 100%;
@@ -2107,16 +2107,16 @@ input[type="checkbox"]:checked + label span {
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d; }
 
-			/*
-			.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
-				-webkit-transform: rotateY(180deg);
-				-moz-transform: rotateY(180deg);
-				-ms-transform: rotateY(180deg);
-				transform: rotateY(180deg);
-				filter: FlipH;
-    			-ms-filter: "FlipH";
-			}
-			*/
+/*
+.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+*/
 /* START: Accommodating for IE */
 .flip-container:hover .back, .flip-container.hover .back {
   -webkit-transform: rotateY(0deg);
@@ -2251,10 +2251,10 @@ input[type="checkbox"]:checked + label span {
 
 /*
 .vertical.flip-container:hover .flipper {
-	-webkit-transform: rotateX(-180deg);
-	-moz-transform: rotateX(-180deg);
-	-ms-transform: rotateX(-180deg);
-	transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
 }
 */
 /* START: Accommodating for IE */

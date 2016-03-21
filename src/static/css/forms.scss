@@ -302,7 +302,7 @@
 	&--error{
 		background-color: $secondary-link-color;
 		border-color: $secondary-link-color;
-		color: #fff;
+		text-shadow: 0 0 0 #fff;
 
 		& .form-option{
 			color: #fff;
