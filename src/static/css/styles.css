@@ -44,6 +44,82 @@ a, a:visited, a:active {
   src: url("../font/mysterylandfont-condensedregula-webfont.eot?#iefix") format("embedded-opentype"), url("../font/mysterylandfont-condensedregula-webfont.woff2") format("woff2"), url("../font/mysterylandfont-condensedregula-webfont.woff") format("woff"), url("../font/mysterylandfont-condensedregula-webfont.ttf") format("truetype"), url("../font/mysterylandfont-condensedregula-webfont.svg#mysteryland_fontregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+.header-logo {
+  background: transparent url(../img/sensation/logo.svg) no-repeat 0 0 scroll !important;
+  background-size: 65px !important;
+  margin-top: 26px !important; }
+  @media all and (max-width: 767px) {
+    .header-logo {
+      width: 54px !important;
+      background-size: 54px !important;
+      margin: 15px 0 0 !important; } }
+
+.header-menu-link {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.hero-h1 {
+  text-transform: uppercase;
+  line-height: 1.2 !important;
+  letter-spacing: 0px !important; }
+
+.footer {
+  border-top: 1px solid #ddd; }
+
+.footer-h4 {
+  font-family: "Oswald", sans-serif;
+  padding-top: 35px; }
+  @media all and (max-width: 991px) {
+    .footer-h4 {
+      padding-top: 0px; } }
+
+.footer-col {
+  min-height: 185px !important; }
+  @media all and (max-width: 991px) {
+    .footer-col {
+      min-height: 0px !important; } }
+
+.accordion-h3 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 35px !important; }
+  .accordion-h3 small {
+    font-family: "Lato", Arial, sans-serif !important;
+    font-weight: normal !important; }
+
+.plain h1 {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.h3-header {
+  text-transform: uppercase;
+  font-size: 20px !important; }
+
+.button--hero {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  font-family: "Lato", Arial, sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  font-size: 26px !important;
+  letter-spacing: 0px !important;
+  padding: 20px 50px !important; }
+  .button--hero span {
+    display: block !important; }
+
+.button--location {
+  font-size: 25px !important;
+  font-weight: 900 !important;
+  padding: 15px 30px !important;
+  font-family: "Lato", Arial, sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important; }
+
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
@@ -57,11 +133,11 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #dc2d50; }
+  background: #6db2c2; }
 
 ::selection {
   color: #fff;
-  background: #dc2d50; }
+  background: #6db2c2; }
 
 a {
   text-decoration: none;
@@ -71,7 +147,7 @@ a {
   transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .readmore {
-  color: #dc2d50;
+  color: #6db2c2;
   font-weight: bold; }
 
 .h1 {
@@ -80,12 +156,12 @@ a {
   margin: 10px 0 10px;
   font-size: 30px;
   font-family: "Oswald", sans-serif; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .h1 {
       font-size: 26px; } }
 
 .plain h1 {
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 50px;
   border-bottom: 1px solid #cbcbcb;
   margin-bottom: 30px;
@@ -99,7 +175,7 @@ a {
   font-family: "Lato", Arial, sans-serif; }
 
 .h3-header {
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 400; }
 
@@ -125,7 +201,7 @@ a {
   line-height: 1.5; }
 
 .plain a {
-  color: #dc2d50;
+  color: #6db2c2;
   text-decoration: underline; }
 
 .accordion-row {
@@ -144,7 +220,7 @@ a {
   font-weight: 700; }
 
 .accordion-h3 {
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   display: block;
   font-size: 45px;
   line-height: 45px;
@@ -153,7 +229,7 @@ a {
   -moz-transition: color 0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s;
   transition: color 0.2s ease-in-out 0s; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .accordion-h3 {
       font-size: 30px;
       line-height: 30px; } }
@@ -174,7 +250,7 @@ a {
     -moz-transition: color 0.2s ease-in-out 0s;
     -o-transition: color 0.2s ease-in-out 0s;
     transition: color 0.2s ease-in-out 0s; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .accordion-h3 small {
         display: none; } }
   .accordion-h3:after {
@@ -196,7 +272,7 @@ a {
 
 .open .fold-navigation {
   display: block; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .open .fold-navigation {
       display: none; } }
 
@@ -225,7 +301,7 @@ a {
     margin-top: 5px;
     color: #444;
     font-family: "Lato", Arial, sans-serif; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .location-h3 {
       font-size: 18px; } }
 
@@ -240,7 +316,7 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .fold-h3 {
       font-size: 16px;
       margin-bottom: 20px; } }
@@ -257,13 +333,16 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   padding-bottom: 30px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .summary-total {
       padding-bottom: 15px; } }
 
+.summary-agree p {
+  margin-top: 10px; }
+
 .show-more-info {
   display: inline-block;
-  color: #dc2d50;
+  color: #6db2c2;
   font-weight: 700;
   cursor: pointer; }
   .show-more-info:before {
@@ -312,7 +391,8 @@ a {
   bottom: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 900; }
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 99; }
   .loading-data .box {
     position: fixed;
     left: 50%;
@@ -329,11 +409,8 @@ a {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #fff url(../img/ml/equalizer-2.gif) no-repeat center 30px scroll;
-    background-size: 128px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.2);
+    background: transparent url(../img/sensation/loading.png) no-repeat center center scroll;
+    background-size: 64px;
     letter-spacing: 1px; }
 
 html, body {
@@ -341,7 +418,7 @@ html, body {
   /* lets it scroll lazy */ }
 
 body {
-  background-color: #000;
+  background-color: #fff;
   height: 100%; }
 
 .content-wrapper {
@@ -349,7 +426,7 @@ body {
   position: relative;
   top: 80px;
   height: calc(100% - 80px); }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .content-wrapper {
       top: 50px;
       height: calc(100% - 50px); } }
@@ -361,7 +438,7 @@ body {
   background-color: #fff;
   padding: 0 0 60px;
   overflow: hidden; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .section {
       padding: 0 0 30px; } }
   .section--grey {
@@ -369,7 +446,7 @@ body {
   .section--white {
     background-color: #fff; }
   .section--theme {
-    background-color: #dc2d50;
+    background-color: #6db2c2;
     color: #fff; }
     .section--theme a {
       color: #fff; }
@@ -378,7 +455,7 @@ body {
 
 .plain {
   padding: 60px 0; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .plain {
       padding: 30px 0; } }
 
@@ -454,16 +531,16 @@ body {
   top: 20px;
   right: 20px;
   width: 36px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .location-flag {
       width: 35px;
       top: 0;
       right: 0; } }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 991px) {
   .col-sm-margin-30 {
     margin-bottom: 30px; } }
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .col-xs-margin-30 {
     margin-bottom: 30px; } }
 .video-wrapper {
@@ -538,7 +615,7 @@ body {
   padding-bottom: 56.25%;
   /* 16:9*100 */ }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .xs-img-ratio-2-1 {
     padding-bottom: 50%;
     /* 1:4*100 */ } }
@@ -592,17 +669,17 @@ svg {
     border: 2px solid #000;
     font-weight: 900; }
     .button--primary:hover {
-      background-color: #dc2d50;
+      background-color: #6db2c2;
       color: #fff;
-      border-color: #dc2d50; }
+      border-color: #6db2c2; }
   .button--secondary {
-    background-color: #dc2d50;
+    background-color: #6db2c2;
     color: #fff;
-    border: 2px solid #dc2d50;
+    border: 2px solid #6db2c2;
     font-weight: 900; }
     .button--secondary:hover {
       background-color: #fff;
-      color: #dc2d50; }
+      color: #6db2c2; }
   .button--tertiary {
     background-color: transparent;
     color: #fff;
@@ -655,7 +732,7 @@ svg {
       font-weight: normal; }
   .button--nomargin {
     margin: 0; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .button--block-mobile {
       display: block;
       width: 100%; } }
@@ -679,7 +756,7 @@ svg {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
-    font-family: "mysteryland_fontregular", Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: none;
     font-weight: normal;
     font-size: 40px;
@@ -718,7 +795,7 @@ svg {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
-    font-family: "mysteryland_fontregular", Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: none;
     font-weight: normal;
     font-size: 40px;
@@ -727,11 +804,11 @@ svg {
       display: none;
       font-size: 50%;
       padding-top: 5px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .button--hero {
         display: block;
         margin: 0 0 15px; } }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .button--hero {
         padding: 15px 30px;
         font-size: 30px; } }
@@ -773,7 +850,7 @@ svg {
   color: #cbcbcb;
   text-transform: uppercase;
   font-weight: 900; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .my-pager-link {
       padding: 5px 10px;
       font-size: 12px; } }
@@ -790,10 +867,10 @@ svg {
   overflow: hidden;
   display: inline-block;
   position: relative; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .manage-rooms {
       float: right; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .manage-rooms {
       float: none;
       margin-bottom: 10px; } }
@@ -840,7 +917,7 @@ svg {
     .manage-rooms .plus:before {
       content: "\f067"; }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .button-payment {
     margin-top: 20px; } }
 
@@ -869,11 +946,11 @@ svg {
     /* Firefox 18- */
     color: #fff;
     opacity: 1; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .event-registration-form-field {
       font-size: 18px;
       padding: 15px; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .event-registration-form-field {
       font-size: 13px;
       padding: 10px; } }
@@ -896,11 +973,11 @@ svg {
   .event-registration-form-submit:hover {
     background-color: #fff;
     color: #000; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .event-registration-form-submit {
       font-size: 18px;
       padding: 15px; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .event-registration-form-submit {
       font-size: 13px;
       padding: 10px; } }
@@ -912,7 +989,7 @@ svg {
 
 .form-col {
   border-right: 1px solid #cbcbcb; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .form-col {
       min-height: 0px;
       border-right: none; } }
@@ -929,19 +1006,19 @@ svg {
     font-size: 13px;
     text-transform: capitalize;
     line-height: 45px; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .form-label--small {
         line-height: normal; } }
   .form-label--error {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .form-label-price {
   font-weight: 400; }
 
 .form-error-list {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
-  border: 1px solid #dc2d50;
+  border: 1px solid #6db2c2;
   padding: 10px 15px;
   margin-bottom: 30px; }
   .form-error-list li {
@@ -987,8 +1064,8 @@ svg {
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3); }
   .form-field--error {
-    background-color: #dc2d50;
-    border-color: #dc2d50;
+    background-color: #6db2c2;
+    border-color: #6db2c2;
     color: #fff; }
   .form-field--ok {
     border-color: #58d68d;
@@ -1008,7 +1085,7 @@ svg {
   color: #000;
   margin: 0;
   position: relative; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .form-persons, .form-rooms {
       margin-top: 0;
       margin-bottom: 15px; } }
@@ -1039,7 +1116,7 @@ svg {
 .form-rooms:before {
   display: none; }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 991px) {
   .form-wrapper--inline {
     display: inline;
     margin-right: 10px; } }
@@ -1081,8 +1158,8 @@ svg {
     min-width: 80px;
     margin-right: 4px; }
   .form-select--error {
-    background-color: #dc2d50;
-    border-color: #dc2d50;
+    background-color: #6db2c2;
+    border-color: #6db2c2;
     text-shadow: 0 0 0 #fff; }
     .form-select--error .form-option {
       color: #fff; }
@@ -1137,18 +1214,18 @@ input[type="checkbox"]:checked + label span {
   border: 0;
   background: transparent;
   white-space: nowrap;
-  color: #dc2d50; }
+  color: #6db2c2; }
   .btn-remove:before {
     content: "\f00d";
     font-family: "FontAwesome";
     display: inline-block;
     margin-right: 5px; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .btn-remove:before {
         margin-right: 0px; } }
   .btn-remove:hover {
     text-decoration: underline; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .btn-remove span {
       display: none; } }
 
@@ -1163,27 +1240,27 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1); }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .header {
       height: 50px; } }
 
 .header-logo {
   float: left;
-  width: 123px;
-  height: 50px;
-  background: transparent url(../img/ml/logo.png) no-repeat 0 0 scroll;
-  background-size: 123px;
+  width: 65px;
+  height: 25px;
+  background: transparent url(../img/sensation/logo.png) no-repeat 0 0 scroll;
+  background-size: 65px;
   margin-top: 15px;
   display: block; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .header-logo {
-      width: 100px;
-      background-size: 100px;
+      width: 54px;
+      background-size: 54px;
       margin-top: 5px;
       margin: 5px 0;
       float: left; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .header-menu .header-menu-item {
     line-height: 50px; }
   .header-menu .header-menu-link {
@@ -1193,10 +1270,10 @@ input[type="checkbox"]:checked + label span {
 .mobile-cart {
   float: right;
   display: none;
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   margin-top: 12px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .mobile-cart {
       display: none; } }
   .mobile-cart .cart-total:after {
@@ -1217,32 +1294,32 @@ input[type="checkbox"]:checked + label span {
   display: block;
   margin-left: 40px;
   color: #000;
-  font-family: "mysteryland_fontregular", Arial, sans-serif;
-  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
   font-weight: normal;
   cursor: pointer;
   -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
   .header-menu-link:hover {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .hero {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
   padding: 50px 0;
-  font-family: "mysteryland_fontregular", Arial, sans-serif; }
+  font-family: "Oswald", sans-serif; }
   .hero .hero-h1 {
-    font-size: 70px;
+    font-size: 50px;
     line-height: 1;
     font-weight: normal;
     letter-spacing: 1px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hero .hero-h1 {
         font-size: 45px; } }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .hero .hero-h1 {
-        font-size: 35px; } }
+        font-size: 25px; } }
 
 .cart-total {
   display: inline-block;
@@ -1263,7 +1340,7 @@ input[type="checkbox"]:checked + label span {
   	top: -3px;
   }*/ }
   .cart-total--active {
-    color: #dc2d50; }
+    color: #6db2c2; }
   .cart-total span {
     display: inline-block;
     margin-left: 10px; }
@@ -1274,7 +1351,7 @@ input[type="checkbox"]:checked + label span {
   font-weight: 700; }
 
 .cart-total-open {
-  color: #dc2d50;
+  color: #6db2c2;
   /*& .cart-total:after{
   	content: "\f077";
   }*/ }
@@ -1289,7 +1366,7 @@ input[type="checkbox"]:checked + label span {
   bottom: 0;
   z-index: 800;
   background-color: #fff; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .cart {
       top: 50px; } }
   .cart .extra-info {
@@ -1311,13 +1388,13 @@ input[type="checkbox"]:checked + label span {
   -moz-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .cart-wrapper {
       padding: 30px 0 0; } }
 
 .cart-open {
   right: 0px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .cart-open {
       right: 0px; } }
 
@@ -1335,7 +1412,7 @@ input[type="checkbox"]:checked + label span {
   height: 21px;
   background: transparent url("../img/close-cart.png") no-repeat center center scroll;
   background-size: 21px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .close-cart, .close-page {
       top: 0; } }
   .close-cart:hover, .close-page:hover {
@@ -1362,7 +1439,7 @@ input[type="checkbox"]:checked + label span {
   text-transform: uppercase; }
 
 .message {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   color: #fff;
   position: fixed;
   /*top: $header-height;*/
@@ -1374,7 +1451,7 @@ input[type="checkbox"]:checked + label span {
   font-size: 23px;
   text-align: center;
   line-height: 80px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .message {
       /*top: $header-height-mobile;*/
       padding: 15px;
@@ -1382,7 +1459,7 @@ input[type="checkbox"]:checked + label span {
       line-height: normal;
       font-size: 14px; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .show-tell {
     display: none; } }
 
@@ -1396,28 +1473,28 @@ input[type="checkbox"]:checked + label span {
   z-index: 100;
   display: none;
   overflow-y: auto; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .page-text {
       top: 50px; } }
 
 .tell-me-more {
   color: #fff;
   padding: 60px 0; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .tell-me-more {
       padding: 30px 0; } }
 
 .tell-me-more-wrapper {
   position: fixed;
   top: 80px;
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
   display: none;
   overflow-y: auto; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .tell-me-more-wrapper {
       top: 50px; } }
 
@@ -1435,7 +1512,7 @@ input[type="checkbox"]:checked + label span {
   height: 21px;
   background: transparent url("../img/close.png") no-repeat center center scroll;
   background-size: 21px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .close-tell-me-more {
       top: 0; } }
   .close-tell-me-more:hover {
@@ -1454,7 +1531,7 @@ input[type="checkbox"]:checked + label span {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
-    color: #dc2d50; }
+    color: #6db2c2; }
   .cart-steps .step-icon {
     margin: 0 0 10px; }
   .cart-steps .step-svg {
@@ -1462,7 +1539,7 @@ input[type="checkbox"]:checked + label span {
 
 .event-hero {
   height: 100%;
-  background: #000 url(../img/ml/hero.jpg) no-repeat center center scroll;
+  background: #fff url(../img/sensation/hero.jpg) no-repeat center center scroll;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -1493,16 +1570,16 @@ input[type="checkbox"]:checked + label span {
       font-weight: 700;
       margin-top: 5px;
       font-size: 50%; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .event-hero h1 {
         font-size: 60px; } }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .event-hero h1 {
         font-size: 30px; } }
 
 .booking-hero {
   height: 100%;
-  background: #000 url(../img/ml/hero.jpg) no-repeat top center fixed;
+  background: #fff url(../img/sensation/hero.jpg) no-repeat top center fixed;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -1550,7 +1627,7 @@ input[type="checkbox"]:checked + label span {
   position: relative;
   /*top: -10px;*/
   top: -2px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .fold-navigation {
       float: none;
       margin-bottom: 20px;
@@ -1560,7 +1637,7 @@ input[type="checkbox"]:checked + label span {
   list-style-type: none;
   margin-bottom: 30px;
   float: right; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .switch-display {
       float: none;
       margin-bottom: 20px;
@@ -1571,7 +1648,7 @@ input[type="checkbox"]:checked + label span {
     position: relative;
     margin: 0;
     color: #6d6e71; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .switch-display .switch-display-list-item {
         margin: 15px 5px 0 0; } }
     .switch-display .switch-display-list-item--margin {
@@ -1642,7 +1719,7 @@ input[type="checkbox"]:checked + label span {
   -moz-transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -o-transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   transition: top .3s ease-out .1s, opacity .2s ease-in-out .2s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .hotel-item-grid .select-button, .hotel-item-map .select-button {
       opacity: 1;
       top: 0;
@@ -1684,7 +1761,7 @@ input[type="checkbox"]:checked + label span {
     font-size: 17px;
     color: #000; }
   .hotel-item-grid-content .rating {
-    color: #dc2d50;
+    color: #6db2c2;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -1692,17 +1769,17 @@ input[type="checkbox"]:checked + label span {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #dc2d50;
+      border-left: 1px solid #6db2c2;
       padding-left: 10px; }
   .hotel-item-grid-content .more-info {
-    color: #dc2d50;
+    color: #6db2c2;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-grid-content .more-info:hover {
-      color: #dc2d50; }
-    @media all and (max-width: 600px) {
+      color: #6db2c2; }
+    @media all and (max-width: 767px) {
       .hotel-item-grid-content .more-info {
         display: block; } }
   .hotel-item-grid-content .intro {
@@ -1720,7 +1797,7 @@ input[type="checkbox"]:checked + label span {
   color: #000;
   margin-bottom: 11px;
   margin-top: 4px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .facilities-list {
       margin-bottom: 11px; } }
   .facilities-list li {
@@ -1730,7 +1807,7 @@ input[type="checkbox"]:checked + label span {
     margin-bottom: 8px;
     /*float: left;
     width: 50%;*/ }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .facilities-list li {
         /*float: left;
         width: 50%;*/ } }
@@ -1788,7 +1865,7 @@ input[type="checkbox"]:checked + label span {
     margin-bottom: 20px;
     margin-top: 20px;
     color: #000; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .hotel-details-room .room-title {
         font-size: 17px; } }
   .hotel-details-room .room-details {
@@ -1796,7 +1873,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 10px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hotel-details-room .room-details {
         font-size: 13px; } }
   .hotel-details-room .room-price {
@@ -1808,10 +1885,10 @@ input[type="checkbox"]:checked + label span {
     .hotel-details-room .room-price span {
       color: #666;
       font-size: 13px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hotel-details-room .room-price {
         text-align: right; } }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .hotel-details-room .room-price {
         text-align: left;
         padding-top: 0px; } }
@@ -1821,11 +1898,11 @@ input[type="checkbox"]:checked + label span {
   /*border-right: 1px solid $border-color;*/
   /*min-height: 200px;*/
   padding: 0 0 0 15px; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .hotel-item-list-content {
       border-right: none;
       min-height: 0px; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .hotel-item-list-content {
       padding: 15px 0 0;
       margin-top: 0; } }
@@ -1833,17 +1910,17 @@ input[type="checkbox"]:checked + label span {
     font-weight: 700;
     font-size: 22px;
     color: #000; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .hotel-item-list-content .title {
         font-size: 17px; } }
   .hotel-item-list-content--no-margin {
     margin-top: 0; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 767px) {
       .hotel-item-list-content--no-margin {
         padding-top: 0;
         margin-top: 0; } }
   .hotel-item-list-content .rating {
-    color: #dc2d50;
+    color: #6db2c2;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -1851,17 +1928,17 @@ input[type="checkbox"]:checked + label span {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #dc2d50;
+      border-left: 1px solid #6db2c2;
       padding-left: 10px; }
   .hotel-item-list-content .more-info {
-    color: #dc2d50;
+    color: #6db2c2;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-list-content .more-info:hover {
-      color: #dc2d50; }
-    @media all and (max-width: 600px) {
+      color: #6db2c2; }
+    @media all and (max-width: 767px) {
       .hotel-item-list-content .more-info {
         display: block; } }
   .hotel-item-list-content .intro {
@@ -1871,7 +1948,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 10px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hotel-item-list-content .intro {
         font-size: 13px;
         height: 50px; } }
@@ -1880,7 +1957,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin: 10px 0 10px 15px; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hotel-item-list-content .list {
         font-size: 13px; } }
   .hotel-item-list-content .room-details {
@@ -1891,7 +1968,7 @@ input[type="checkbox"]:checked + label span {
       font-size: 15px;
       line-height: 1.4;
       margin-bottom: 20px; }
-      @media all and (max-width: 600px) {
+      @media all and (max-width: 767px) {
         .hotel-item-list-content .room-details ul {
           font-size: 13px;
           line-height: 1.2; } }
@@ -1900,26 +1977,26 @@ input[type="checkbox"]:checked + label span {
 
 .hotel-item-list-price {
   color: #000;
-  padding: 15px 0 11px;
+  padding: 33px 0 11px;
   font-weight: 400;
   font-size: 25px;
   position: relative; }
   .hotel-item-list-price span {
-    display: block;
+    display: inline-block;
     font-size: 13px;
     position: relative;
-    top: -1px;
+    margin-left: 5px;
     color: #666; }
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 991px) {
       .hotel-item-list-price span {
         display: inline-block; } }
   .hotel-item-list-price--mobile {
     display: none; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .hotel-item-list-price {
       padding: 0 15px;
       float: left; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .hotel-item-list-price {
       padding: 0;
       font-size: 22px;
@@ -1932,10 +2009,10 @@ input[type="checkbox"]:checked + label span {
         padding: 10px 15px;
         display: block; } }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 991px) {
   .hotel-item-list-button {
     float: right; } }
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .hotel-item-list-button {
     float: right;
     margin-bottom: 15px;
@@ -1944,7 +2021,7 @@ input[type="checkbox"]:checked + label span {
     text-align: center; } }
 
 .hotel-details .rating {
-  color: #dc2d50;
+  color: #6db2c2;
   margin: 10px 0px 10px 0;
   font-size: 20px;
   line-height: 1;
@@ -1953,9 +2030,9 @@ input[type="checkbox"]:checked + label span {
     display: inline-block;
     margin-left: 5px;
     font-size: 13px;
-    border-left: 1px solid #dc2d50;
+    border-left: 1px solid #6db2c2;
     padding-left: 10px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .hotel-details .rating {
       float: none;
       font-size: 16px; } }
@@ -1969,13 +2046,13 @@ input[type="checkbox"]:checked + label span {
   background-color: #cbcbcb; }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #dc2d50;
+  background-color: #6db2c2;
   opacity: 1; }
 
 .gmap-wrapper {
   position: relative;
   height: 700px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .gmap-wrapper {
       height: 400px; } }
 
@@ -1992,7 +2069,7 @@ input[type="checkbox"]:checked + label span {
   right: 140px;
   top: 30px;
   width: 300px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 767px) {
     .gmap-hotel {
       right: 10px; } }
 
@@ -2007,7 +2084,7 @@ input[type="checkbox"]:checked + label span {
     line-height: 1;
     font-size: 20px; }
   .hotel-map-close:hover {
-    color: #dc2d50; }
+    color: #6db2c2; }
 
 .hotel-card-container {
   width: 100%;
@@ -2304,7 +2381,7 @@ input[type="checkbox"]:checked + label span {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #dc2d50;
+  background: #6db2c2;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;
@@ -2355,15 +2432,15 @@ input[type="checkbox"]:checked + label span {
   border-top-color: #1e5799; }
 
 .footer {
-  background-color: #000;
-  color: #444;
-  padding-top: 35px;
-  padding-bottom: 35px; }
+  background-color: #fff;
+  color: #000;
+  padding-top: 45px;
+  padding-bottom: 45px; }
 
 .footer-list {
   list-style-type: none;
   font-size: 13px; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .footer-list {
       margin-bottom: 30px; } }
 
@@ -2371,27 +2448,27 @@ input[type="checkbox"]:checked + label span {
   margin-bottom: 4px; }
 
 .footer-list-link {
-  color: #444;
+  color: #000;
   cursor: pointer; }
   .footer-list-link:hover {
-    color: #fff; }
+    color: #6db2c2; }
 
 .footer-h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #444;
+  color: #000;
   text-transform: uppercase;
   margin-bottom: 10px; }
 
 .footer-col {
-  border-right: 1px solid #444;
+  border-right: 1px solid #cbcbcb;
   min-height: 100px; }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 991px) {
     .footer-col {
       min-height: 0px;
       border-right: none; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 767px) {
   .footer-form {
     margin-bottom: 30px; } }
 
@@ -2400,10 +2477,10 @@ input[type="checkbox"]:checked + label span {
   height: 45px; }
 
 .footer-form-field {
-  background-color: #000;
-  border: 1px solid #444;
+  background-color: #fff;
+  border: 1px solid #000;
   padding: 5px 10px;
-  color: #fff;
+  color: #000;
   position: absolute;
   left: 0;
   top: 0;
@@ -2415,17 +2492,17 @@ input[type="checkbox"]:checked + label span {
   border-radius: 0;
   -webkit-appearance: none; }
   .footer-form-field::-webkit-input-placeholder {
-    color: #444;
+    color: #000;
     opacity: 1; }
   .footer-form-field::-moz-placeholder {
     /* Firefox 18- */
-    color: #444;
+    color: #000;
     opacity: 1; }
 
 .footer-form-submit {
   border: none;
-  background-color: #444;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   font-family: "Lato", Arial, sans-serif;
   text-transform: uppercase;
   display: inline-block;
@@ -2445,7 +2522,7 @@ input[type="checkbox"]:checked + label span {
   -webkit-appearance: none;
   border-radius: 0; }
   .footer-form-submit:hover {
-    background-color: #fff;
-    color: #000; }
+    background-color: #6db2c2;
+    color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
