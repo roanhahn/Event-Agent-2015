@@ -410,7 +410,7 @@ a {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: transparent url(../img/sensation/loading.png) no-repeat center center scroll;
-    background-size: 64px;
+    background-size: 100px;
     letter-spacing: 1px; }
 
 html, body {
