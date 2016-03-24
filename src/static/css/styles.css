@@ -409,7 +409,7 @@ a {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: transparent url(../img/sensation/loading.png) no-repeat center center scroll;
+    background: transparent url(../img/loader.gif) no-repeat center center scroll;
     background-size: 100px;
     letter-spacing: 1px; }
 
