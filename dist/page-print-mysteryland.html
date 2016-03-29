@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Printing page Mysteryland</title>
+    </head>
+    <body>
+        
+
+
+<style>
+	
+
+	@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+	@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+	@page {
+		size: A4 portrait;
+	}
+
+	@font-face {
+	    font-family: 'mysteryland_fontregular';
+	    src: url('assets/font/mysterylandfont-condensedregula-webfont.eot');
+	    src: url('assets/font/mysterylandfont-condensedregula-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('assets/font/mysterylandfont-condensedregula-webfont.woff2') format('woff2'),
+	         url('assets/font/mysterylandfont-condensedregula-webfont.woff') format('woff'),
+	         url('assets/font/mysterylandfont-condensedregula-webfont.ttf') format('truetype'),
+	         url('assets/font/mysterylandfont-condensedregula-webfont.svg#mysteryland_fontregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	@media print {
+		html, body {
+			width: 210mm;
+			height: 297mm;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.logo{
+		height: 20mm;
+	}
+
+	.print-wrapper{
+		width: 210mm;
+		height: 297mm;
+		padding: 10mm 15mm;
+		/*zborder: 1px solid black;*/
+		margin: 0 auto;
+		font: normal 400 9pt/1.6 'Lato', Arial, sans-serif;
+	}
+
+	.intro{
+		text-align: center;
+		font: normal 400 36pt/1.6 'mysteryland_fontregular', Arial, sans-serif;
+		text-transform: none;
+		letter-spacing: 1px;
+		background-color: #dc2d50;
+		color: #fff;
+		padding: 10mm 0;
+		margin-bottom: 10mm;
+	}
+
+	.row{
+		margin-bottom: 10mm;
+	}
+
+	.row:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+
+	.col-6{
+		width: 50%;
+		float: left;
+	}
+
+	h3{
+		font: normal 700 20pt/1.6 'Oswald', sans-serif;
+		text-transform: uppercase;
+		margin: 0 0 5mm;
+		padding: 0;
+	}
+
+	h4{
+		font: normal 700 12pt/1.6 'Oswald', sans-serif;
+		text-transform: uppercase;
+		margin: 0 0 5mm;
+		padding: 0;
+		letter-spacing: .2pt;
+	}
+
+	table{
+		width: 100%;
+		border: none;
+		padding: 0 0 5mm;
+		font-size: 9pt;
+		border-bottom: 1pt solid #000;
+	}
+
+	td{
+		width: auto;
+	}
+
+	.strong{
+		font-weight: bold;
+		font-size: 11pt;
+		text-transform: uppercase;
+	}
+
+</style>
+
+<div class="print-wrapper">
+
+	<div class="logo">
+		<img src="assets/img/ml/logo.png" width="150">
+	</div>
+
+	<div class="intro">thanks for booking with us!</div>
+	<h3>Your booking details</h3>
+
+	<div class="row">
+		<div class="col-6">
+
+			<h4>Main booker</h4>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>First name:</td>
+					<td>Jurgen</td>
+				</tr>
+				<tr>
+					<td>Last name:</td>
+					<td>van Zachten</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>jurgen@thisisloco.com</td>
+				</tr>
+				<tr>
+					<td>Phone number:</td>
+					<td>+31(0)646255387</td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td>Ruysdaelhof Oost 9c</td>
+				</tr>
+				<tr>
+					<td>Zipcode:</td>
+					<td>+31(0)646255387</td>
+				</tr>
+				<tr>
+					<td>5642 JM:</td>
+					<td>Eindhoven</td>
+				</tr>
+				<tr>
+					<td>Date of birth:</td>
+					<td>01-03-1980</td>
+				</tr>
+				<tr>
+					<td>Country:</td>
+					<td>The Netherlands</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="col-6">
+
+			<h4>Guests</h4>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>First name:</td>
+					<td>Jurgen</td>
+				</tr>
+				<tr>
+					<td>Last name:</td>
+					<td>van Zachten</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<h3>Your hotel information</h3>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>Ticket:</td>
+				<td>2x premium ticket</td>
+				<td>€ 150,00</td>
+			</tr>
+			<tr>
+				<td>Hotel:</td>
+				<td>Ibis Amsterdam Airport</td>
+				<td>€ 150,00</td>
+			</tr>
+			<tr>
+				<td>Check in:</td>
+				<td>Thursday 24 nov</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Check out:</td>
+				<td>Monday 05 dec</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Room 1:</td>
+				<td>Presidential Suite, 2 adults, 3 nights</td>
+				<td>€ 2.667,50</td>
+			</tr>
+			<tr>
+				<td>Customize:</td>
+				<td>Safari tour</td>
+				<td>€ 200,00</td>
+			</tr>
+			<tr>
+				<td class="strong">Total price:</td>
+				<td></td>
+				<td class="strong">€ 2.667,50</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="row">
+		<p>Nulla sollicitudin quam arcu, ac ullamcorper risus pretium ac. Aenean suscipit fermentum lectus, in sodales justo. Fusce quis venenatis est, sed scelerisque neque. Nunc quis erat commodo, interdum quam in, elementum ante. Cras feugiat sem in egestas rutrum. Etiam vel massa et metus laoreet faucibus. Cras imperdiet velit ut felis rutrum, vitae venenatis nulla euismod. Ut facilisis interdum nunc, non varius quam laoreet vitae. Cras in quam ipsum. Duis id ligula blandit, tempus neque posuere, maximus neque. Integer sed tempus magna.</p>
+	</div>
+
+	<div class="row">
+		<h4>Contact & more information</h4>
+
+		+31(0)6 52 382 38<br />
+		travel@eventagent.com
+
+	</div>
+
+</div>
+    </body>
+</html>
