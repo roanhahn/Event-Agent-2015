@@ -1,140 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="format-detection" content="telephone=no"> 
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 
-    <title>Thanks for booking with us!</title>
+	<title>Thanks for booking with us!</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+		/* Some resets and issue fixes */
+		#outlook a { padding:0; }
+		body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ReadMsgBody { width: 100%; }
+		.ExternalClass {width:100%;} 
+		.backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
+		table td {border-collapse: collapse;}
+		.ExternalClass * {line-height: 115%;}
+		/* End reset */
 
-    <style type="text/css">
-        @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-        @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-        /* Some resets and issue fixes */
-        #outlook a { padding:0; }
-        body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }     
-        .ReadMsgBody { width: 100%; }
-        .ExternalClass {width:100%;} 
-        .backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
-        table td {border-collapse: collapse;}
-        .ExternalClass * {line-height: 115%;}           
-        /* End reset */
-
-        
-        html, body{
-            height: 100%;
-        } 
-        *[class="body"]{
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            background-color: #ffffff;
-            color: #000001;
-        }
-        *[class="wrapper"]{
-            margin: 0;
-            padding: 0 0 60px;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-        }
-        *[class="content"]{
-            background-color: #ffffff;
-            font-family: 'Lato', Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        *[class="padding"]{
-            margin: 0;
-            padding:0 20px;
-        }
-
-        .logo{
-            width: 80px;
-            margin-top: 20px;
-            position: relative;
-        }
-
-        h1{
-            text-align: center;
-            background-color: #6db2c2;
-            color: #ffffff;
-            font: 400 26px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            padding: 40px 25px;
-        }
-        h2{
-            font: 700 25px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            color: #000001;
-        }
-        h3{
-            font: 700 18px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-            padding: 0px;
-            color: #000001;
-        }
-        .link{
-            color: #6db2c2;
-        }
-        p{
-            margin: 0px 0px 10px;
-            line-height: 1.6;
-            color: #000001;
-        }
-        hr{
-            background-color: #000001;
-            border: none;
-            height: 1px;
-            display: block;
-            margin: 30px 0;
-            line-height: 0px;
-        }
-
-        /* grid styles */
-        *[class="row"]{
-            border-bottom: 1px solid #000001;
-        }
-        *[class="col-12"]{
-            width: 100%;
-        }
-        *[class="col-6"]{
-            width: 50%;
-        }
-        *[class="col-4"]{
-            width: 33.33%;
-        }
-        *[class="col-3"]{
-            width: 25%;
-        }
-
-
-        @media screen and (max-width: 640px) {
-            *[class="inner"] {width:100% !important; padding:0px;}
-            *[class^="col"] {width: 100%; display: block; margin-bottom: 10px;}
-            .logo{
-                margin: 20px auto 0px;
-                left: calc(50% - 40px);
-            }
-            h1{
-                font-size: 18px;
-            }
-            h2{
-                font-size: 18px;
-            }
-            h3{
-                font-size: 14px;
-            }
-            p{
-                font-size: 12px;
-            }
-        }
-        
-    </style>
+		html, body{
+			height: 100%;
+		} 
+		*[class="body"]{
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			background-color: #ffffff;
+		}
+		*[class="wrapper"]{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: #ffffff;
+		}
+		*[class="inner"]{
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+		}
+		*[class="content"]{
+			width: 100%;
+		}
+		*[class="header"]{
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		*[class="main"]{
+			padding-bottom: 60px;
+		}
+		*[class="row"]{
+			padding-top: 30px;
+		}
+		*[class="logo"]{
+			padding-right: 20px;
+		}
+		*[class="footer"]{
+			padding-top: 30px;
+			padding-bottom: 60px;
+		}
+		*[class="w15"]{
+			width: 15px;
+		}
+		*[class="w20"]{
+			width: 20px;
+		}
+		*[class="img"]{
+			display: block;
+		}
+		*[class="h1"]{
+			font-weight: 400;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 16px;
+			color: #666666;
+			border-left: 1px solid #666666;
+			margin-bottom: 10px;
+			padding-left: 20px;
+		}
+		*[class="h2"]{
+			font-weight: 400;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 27px;
+			color: #000001;
+			margin-bottom: 10px;
+		}
+		*[class="h3"]{
+			font-weight: 900;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 17px;
+			color: #000001;
+		}
+		*[class="h4"]{
+			font-weight: 900;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 22px;
+			color: #000001;
+		}
+		*[class="text-right"]{
+			text-align: right;
+		}
+		*[class="p"]{
+			font-size: 15px;
+			line-height: 1.5;
+			color:  #000001;
+			padding-bottom: 30px;
+			font-family: "Lato", Arial, sans-serif;
+		}
+		*[class="hr"]{
+			background-color: #666666;
+			height: 1px;
+		}
+		*[class="link"]{
+			color: #000001;
+			text-decoration: underline;
+		}
+	</style>
 
 
 </head>

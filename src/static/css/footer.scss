@@ -38,7 +38,7 @@
 
 .footer-col{
 	border-right: 1px solid $footer-line-color;
-	min-height: 100px;
+	min-height: 130px;
 	@media all and (max-width: $breakpoint-tablet){
 		min-height: 0px;
 		border-right: none;

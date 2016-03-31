@@ -193,3 +193,45 @@ body{
 	}
 }
 
+.location-visual--ams{
+	position: relative;
+}
+
+.location-visual--ams:before{
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: rgba(226,6,19, 1);
+	mix-blend-mode: multiply;
+}
+
+.location-visual--rdam:before{
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: rgba(41,171,226, 1);
+	mix-blend-mode: multiply;
+}
+
+.location-content--ams{
+	background-color: rgba(226,6,19, 1);
+}
+
+.location-content--eind{
+	background-color: #fff;
+}
+
+.location-content--rdam{
+	background-color: rgba(41,171,226, 1);
+}
+
