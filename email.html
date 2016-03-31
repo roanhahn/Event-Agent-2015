@@ -1,303 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="format-detection" content="telephone=no"> 
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 
-    <title>Thanks for booking with us!</title>
+	<title>Thanks for booking with us!</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+		/* Some resets and issue fixes */
+		#outlook a { padding:0; }
+		body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ReadMsgBody { width: 100%; }
+		.ExternalClass {width:100%;} 
+		.backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
+		table td {border-collapse: collapse;}
+		.ExternalClass * {line-height: 115%;}
+		/* End reset */
 
-    <style type="text/css">
-        @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-        @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-        /* Some resets and issue fixes */
-        #outlook a { padding:0; }
-        body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }     
-        .ReadMsgBody { width: 100%; }
-        .ExternalClass {width:100%;} 
-        .backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
-        table td {border-collapse: collapse;}
-        .ExternalClass * {line-height: 115%;}           
-        /* End reset */
-
-        
-        html, body{
-            height: 100%;
-        } 
-        *[class="body"]{
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            background-color: #fff;
-        }
-        *[class="wrapper"]{
-            margin: 0;
-            padding: 0 0 60px;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-        }
-        *[class="content"]{
-            background-color: #fff;
-            font-family: 'Lato', Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        *[class="padding"]{
-            margin: 0;
-            padding:0 20px;
-        }
-
-        .logo{
-            width: 80px;
-            margin-top: 20px;
-            position: relative;
-        }
-
-        h1{
-            text-align: center;
-            background-color: #6db2c2;
-            color: #fff;
-            font: 400 26px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            padding: 40px 25px;
-        }
-        h2{
-            font: 700 25px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        h3{
-            font: 700 18px/1.2 "Oswald",sans-serif;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-            padding: 0px;
-        }
-        .link{
-            color: #6db2c2;
-        }
-        p{
-            margin: 0px 0px 10px;
-            line-height: 1.6;
-        }
-        hr{
-            background-color: #000;
-            border: none;
-            height: 1px;
-            display: block;
-            margin: 30px 0;
-            line-height: 0px;
-        }
-
-        /* grid styles */
-        *[class="row"]{
-            border-bottom: 1px solid #000;
-        }
-        *[class="col-12"]{
-            width: 100%;
-        }
-        *[class="col-6"]{
-            width: 50%;
-        }
-        *[class="col-4"]{
-            width: 33.33%;
-        }
-        *[class="col-3"]{
-            width: 25%;
-        }
-
-
-        @media screen and (max-width: 640px) {
-            *[class="inner"] {width:100% !important; padding:0px;}
-            *[class^="col"] {width: 100%; display: block; margin-bottom: 10px;}
-            .logo{
-                margin: 20px auto 0px;
-                left: calc(50% - 40px);
-            }
-            h1{
-                font-size: 18px;
-            }
-            h2{
-                font-size: 18px;
-            }
-            h3{
-                font-size: 14px;
-            }
-            p{
-                font-size: 12px;
-            }
-        }
-        
-    </style>
+		html, body{
+			height: 100%;
+		} 
+		*[class="body"]{
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			background-color: #ffffff;
+		}
+		*[class="wrapper"]{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: #ffffff;
+		}
+		*[class="inner"]{
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+		}
+		*[class="content"]{
+			width: 100%;
+		}
+		*[class="header"]{
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		*[class="main"]{
+			padding-bottom: 60px;
+		}
+		*[class="row"]{
+			padding-top: 30px;
+		}
+		*[class="logo"]{
+			padding-right: 20px;
+		}
+		*[class="footer"]{
+			padding-top: 30px;
+			padding-bottom: 60px;
+		}
+		*[class="w15"]{
+			width: 15px;
+		}
+		*[class="w20"]{
+			width: 20px;
+		}
+		*[class="img"]{
+			display: block;
+		}
+		*[class="h1"]{
+			font-weight: 400;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 16px;
+			color: #666666;
+			border-left: 1px solid #666666;
+			margin-bottom: 10px;
+			padding-left: 20px;
+		}
+		*[class="h2"]{
+			font-weight: 400;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 27px;
+			color: #111111;
+			margin-bottom: 10px;
+		}
+		*[class="h3"]{
+			font-weight: 900;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 17px;
+			color: #111111;
+		}
+		*[class="h4"]{
+			font-weight: 900;
+			font-family: "Lato", Arial, sans-serif;
+			text-transform: uppercase;;
+			font-size: 22px;
+			color: #111111;
+		}
+		*[class="text-right"]{
+			text-align: right;
+		}
+		*[class="p"]{
+			font-size: 15px;
+			line-height: 1.5;
+			color:  #333333;
+			padding-bottom: 30px;
+			font-family: "Lato", Arial, sans-serif;
+		}
+		*[class="hr"]{
+			background-color: #666666;
+			height: 1px;
+		}
+		*[class="link"]{
+			color: #333333;
+			text-decoration: underline;
+		}
+	</style>
 
 
 </head>
 
 
 <body class="body">
-    <table border="0" cellpadding="0" cellspacing="0" class="wrapper">
-        <tr>
-            <td align="center" valign="top">
-                <table width="600" border="0" cellpadding="0" cellspacing="0" class="inner">
-                    <!-- single column-->
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-12" valign="top">
-                                        <div class="padding">
-                                            <img src="http://roanhahn.github.io/Event-Agent-2015/assets/img/sensation/logo.png" class="logo">
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <!-- single column-->
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-12" valign="top">
-                                        <div class="padding">
-                                            <h1>Thanks for booking with us!</h1>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-12" valign="top">
-                                        <div class="padding">
-                                            <h2>Your booking details:</h2>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <!-- double column-->
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">
-                                            
-                                            <h3>Main booker</h3>
-                                            <p>
-                                                Mr. Michel de Winter
-                                            </p>
-                                            
-                                        </div>
-                                    </td>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">
-                                            <h3>Your tickets</h3>
-                                            <p>
-                                                2x Black Regular
-                                            </p>
-                                            <p>
-                                                <strong>Price: € 120,00</strong>
-                                            </p>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-12" valign="top">
-                                        <div class="padding">
-                                            <hr />
-                                            <h2>YOUR HOTEL INFORMATION:</h2>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">                                            
-                                            <p>
-                                                <strong>Alp de Veenen Hotel</strong><br />
-                                                Ouderkerkerlaan 19,<br />1185 AC Amsterdam<br />
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">
-                                            <p>
-                                                Check in: 01-07-2016<br />
-                                                Check out:  04-07-2016<br />
-                                                Room 1: Twin Room
-                                            </p>
-                                            <p>
-                                                <strong>Price: € 315,00</strong>
-                                            </p> 
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">
-                                            <h2>Total price:</h2>
-                                        </div>
-                                    </td>
-                                    <td class="col-6" valign="top">
-                                        <div class="padding">
-                                            <h2>€ 435,00</h2>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content">
-                                <tr>
-                                    <td class="col-12" valign="top">
-                                        <div class="padding">
-                                        <hr /> 
-                                            <p>Nulla sollicitudin quam arcu, ac ullamcorper risus pretium ac. Aenean suscipit fermentum lectus, in sodales justo. Fusce quis venenatis est, sed scelerisque neque. Nunc quis erat commodo, interdum quam in, elementum ante. Cras feugiat sem in egestas rutrum. Etiam vel massa et metus laoreet faucibus. Cras imperdiet velit ut felis rutrum, vitae venenatis nulla euismod. Ut facilisis interdum nunc, non varius quam laoreet vitae. Cras in quam ipsum. Duis id ligula blandit, tempus neque posuere, maximus neque. Integer sed tempus magna.</p>
-                                            <hr /> 
-                                            <h3>Contact & more information</h3>
-                                            <p>
-                                                +31(0)6 52 382 38<br />
-                                                <a href="mailto:travel@eventagent.com" class="link">travel@eventagent.com</a> 
-                                            </p>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+	<table border="0" cellpadding="0" cellspacing="0" class="wrapper">
+		<tr>
+			<td valign="top" align="center">
+				<table width="640" border="0" cellpadding="0" cellspacing="0" class="inner">
+					<tr>
+						<td valign="top" class="header">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td width="120" valign="top" class="logo">
+										<img class="img" src="http://roanhahn.github.io/Event-Agent-2015/assets/img/sensation/logo.png" width="120">
+									</td>
+									<td class="h1">
+										Thank you for booking with us!
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td colspan="2">
+													<h2 class="h2">Your booking details</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="50%" class="p">
+													<h3 class="h3">Main booker</h3>
+													<strong>Mr. Michel de Winter</strong><br />
+													Somewherestreet 1<br />
+													1234 AB Some Town<br />
+													The Netherlands
+												</td>
+												<td valign="top" width="50%" class="p">
+													<h3 class="h3">Guests</h3>
+													Name 1<br />
+													Name 2<br />
+													Name 3<br />
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" colspan="2">
+													<h2 class="h2">Your tickets</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="80%" valign="top" class="p">
+													5 x Deluxe a &euro; 99,-
+												</td>
+												<td valign="top" class="p">
+													<strong>&euro; 396,-</strong>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" colspan="2">
+													<h2 class="h2">Customise</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="80%" valign="top" class="p">
+													1 x limo a &euro; 299,-<br />
+													5 x transfer a &euro; 29,-
+												</td>
+												<td valign="top" class="p">
+													<strong>&euro; 299,-</strong><br />
+													<strong>&euro; 145,-</strong>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" colspan="2">
+													<h2 class="h2">Hotel information</h2>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" valign="top" class="p">
+													<strong>Alp de Veenen Hotel</strong><br />
+													Ouderkerkerlaan 19,<br />
+													1185 AC Amsterdam
+												</td>
+											</tr>
+											<tr>
+												<td width="80%" valign="top" class="p">
+													Room 1<br />
+													Room 2<br />
+													Room 3<br />
+												</td>
+												<td valign="top" class="p">
+													<strong>&euro; 299,-</strong><br />
+													<strong>&euro; 299,-</strong><br />
+													<strong>&euro; 299,-</strong><br />
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" width="80%">
+													<h3 class="h4">Total price</h2>
+												</td>
+												<td valign="top">
+													<h3 class="h4">&euro; 299,-</h2>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" colspan="2" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="row">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" class="p">
+													Nulla sollicitudin quam arcu, ac ullamcorper risus pretium ac. Aenean suscipit fermentum lectus, in sodales justo. Fusce quis venenatis est, sed scelerisque neque. Nunc quis erat commodo, interdum quam in, elementum ante. Cras feugiat sem in egestas rutrum. Etiam vel massa et metus laoreet faucibus. Cras imperdiet velit ut felis rutrum, vitae venenatis nulla euismod. Ut facilisis interdum nunc, non varius quam laoreet vitae. Cras in quam ipsum. Duis id ligula blandit, tempus neque posuere, maximus neque. Integer sed tempus magna.
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" class="hr"></td>
+											</tr>
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="footer">
+							<table border="0" cellpadding="0" cellspacing="0" class="content">
+								<tr>
+									<td valign="top" class="w20"></td>
+									<td valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" class="content">
+											<tr>
+												<td valign="top" class="p">
+													<h3 class="h3">Contact & more information</h3>
+													+31(0)6 52 382 38<br/>
+													<a href="mailto:travel@eventagent.com" class="link">travel@eventagent.com</a>
+												</td>
+											</tr>
+											
+										</table>
+									</td>
+									<td valign="top" class="w20"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
-
 
 
 
