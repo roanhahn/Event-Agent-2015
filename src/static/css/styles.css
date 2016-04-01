@@ -2630,7 +2630,7 @@ input[type="checkbox"]:checked + label span {
   color: #fff;
   cursor: pointer; }
   .footer-list-link:hover {
-    color: #fff; }
+    color: #29abe2; }
 
 .footer-h4 {
   font-size: 16px;
@@ -2701,7 +2701,7 @@ input[type="checkbox"]:checked + label span {
   -webkit-appearance: none;
   border-radius: 0; }
   .footer-form-submit:hover {
-    background-color: #e10512;
+    background-color: #29abe2;
     color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
