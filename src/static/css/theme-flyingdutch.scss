@@ -106,12 +106,16 @@ body{
     color: #000 !important;
     font-weight: normal !important;
 }
-.section--grey, .tell-me-more-wrapper, .cart{
+.section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer{
     background: #f9f9f9 url(../img/#{$theme-folder}/background.svg) repeat center top scroll !important;
     background-size: 100% !important;
 }
 .cart-wrapper{
     background: transparent !important;
+}
+
+.section--theme{
+    background: none !important;
 }
 
 .header-menu-item{
@@ -128,7 +132,7 @@ body{
 .cart-total--active{
     color: #fff !important;
 }
-.header-menu-link:hover .cart-total--active, .tell-me-more{
+.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme,.section--theme a{
     color: #000  !important;
 }
 .cart-total{
@@ -208,7 +212,7 @@ body{
     font-size: 15px !important;
 }
 
-.close-tell-me-more{
+.close-tell-me-more, .close-page{
     background-image: url("../img/close-cart.png") !important;
 }
 
@@ -244,7 +248,7 @@ body{
     font-weight: 400 !important;
 }
 
-.accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3{
+.accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1{
     border-color: #000 !important;
 }
 
