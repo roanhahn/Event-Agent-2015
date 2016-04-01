@@ -11,7 +11,7 @@ $theme-folder: flyingdutch;
 
 // FONTS
 
-$primary-font: 'Montserrat', Arial, sans-serif;
+$primary-font: 'proximanova-regular', Arial, sans-serif;
 $primary-text-color: #000;
 $primary-link-color: #000;
 $secondary-text-color: #e10512;
@@ -292,10 +292,16 @@ body{
     font-weight: normal !important;
 }
 
-.customize-item, .hotel-item-list, .hotel-item-grid, .hotel-item-map{
+.customize-item, .hotel-item-list, .front, .back, .hotel-item-grid{
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
     -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
     box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
+}
+
+.front .hotel-item-grid, .back .hotel-item-grid{
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow:    none!important;
+    box-shadow:         none!important;
 }
 
 .location-content{

@@ -51,6 +51,12 @@ a, a:visited, a:active {
   src: url("../font/collegiate-webfont.eot?#iefix") format("embedded-opentype"), url("../font/collegiate-webfont.woff2") format("woff2"), url("../font/collegiate-webfont.woff") format("woff"), url("../font/collegiate-webfont.ttf") format("truetype"), url("../font/collegiate-webfont.svg#mysteryland_fontregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'proximanova-regular';
+  src: url("../font/proximanova-regular-webfont.eot");
+  src: url("../font/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/proximanova-regular-webfont.woff2") format("woff2"), url("../font/proximanova-regular-webfont.woff") format("woff"), url("../font/proximanova-regular-webfont.ttf") format("truetype"), url("../font/proximanova-regular-webfont.svg#mysteryland_fontregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background: #f9f9f9 url(../img/flyingdutch/background.svg) repeat center top scroll !important;
   background-size: 100% !important; }
@@ -169,7 +175,7 @@ body {
   text-transform: uppercase;
   font-size: 35px !important; }
   .accordion-h3 small {
-    font-family: "Montserrat", Arial, sans-serif !important;
+    font-family: "proximanova-regular", Arial, sans-serif !important;
     font-weight: normal !important; }
 
 .my-pager-link {
@@ -216,10 +222,15 @@ body {
   font-family: "collegiate", sans-serif !important;
   font-weight: normal !important; }
 
-.customize-item, .hotel-item-list, .hotel-item-grid, .hotel-item-map {
+.customize-item, .hotel-item-list, .front, .back, .hotel-item-grid {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15) !important;
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15) !important;
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15) !important; }
+
+.front .hotel-item-grid, .back .hotel-item-grid {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
 
 .location-content {
   padding: 10px; }
@@ -247,7 +258,7 @@ body {
   color: #000 !important; }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -298,7 +309,7 @@ a {
   font-weight: 700;
   padding-bottom: 15px;
   font-size: 21px;
-  font-family: "Montserrat", Arial, sans-serif; }
+  font-family: "proximanova-regular", Arial, sans-serif; }
 
 .h3-header {
   font-family: "collegiate", sans-serif;
@@ -368,7 +379,7 @@ a {
     color: #000;
     font-size: 15px;
     font-weight: 900;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "proximanova-regular", Arial, sans-serif;
     text-transform: uppercase;
     border-right: 1px solid #ddd;
     color: #000;
@@ -426,7 +437,7 @@ a {
     text-transform: none;
     margin-top: 5px;
     color: #444;
-    font-family: "Montserrat", Arial, sans-serif; }
+    font-family: "proximanova-regular", Arial, sans-serif; }
   @media all and (max-width: 767px) {
     .location-h3 {
       font-size: 18px; } }
@@ -823,7 +834,7 @@ svg {
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -webkit-appearance: none;
   border-radius: 0;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   cursor: pointer; }
   .button--primary {
     background-color: #000;
@@ -1510,7 +1521,7 @@ input[type="checkbox"]:checked + label span {
     margin-left: 10px; }
 
 .cart-amount {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   font-size: 15px;
   font-weight: 700; }
 
@@ -1525,6 +1536,7 @@ input[type="checkbox"]:checked + label span {
   top: 80px;
   width: 100%;
   display: none;
+  overflow-y: auto;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1728,7 +1740,7 @@ input[type="checkbox"]:checked + label span {
     text-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
     margin-bottom: 40px; }
     .event-hero h1 small {
-      font-family: "Montserrat", Arial, sans-serif;
+      font-family: "proximanova-regular", Arial, sans-serif;
       display: block;
       color: #fff;
       font-weight: 700;
@@ -2667,7 +2679,7 @@ input[type="checkbox"]:checked + label span {
   border: none;
   background-color: #fff;
   color: #000;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 900;
