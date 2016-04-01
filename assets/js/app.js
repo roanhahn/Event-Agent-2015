@@ -2740,14 +2740,16 @@ $('#single[data-accordion]').accordion({
 $('.show-cart').click(function()
 {
 	$('.cart').slideToggle("fast");
-    $('.show-cart').toggleClass("cart-total-open");
-    $('body').addClass("overflow");
+  $.scrollLock( true );
+  // $('.show-cart').toggleClass("cart-total-open");
+    // $('body').addClass("overflow");
 });
 $('.close-cart').click(function()
 {
 	$('.cart').slideToggle("fast");
     $('.show-cart').toggleClass("cart-total-open");
-    $('body').removeClass("overflow");
+    $.scrollLock( false );
+    // $('body').removeClass("overflow");
 });
 
 // Hide hotel on map
@@ -2762,12 +2764,14 @@ $('.hotel-map-close').click(function()
 $('.show-tell').click(function()
 {
 	$('.tell-me-more-wrapper').slideToggle("fast");
-    $('body').addClass("overflow");
+  $.scrollLock( true );
+    // $('body').addClass("overflow");
 });
 $('.close-tell-me-more').click(function()
 {
 	$('.tell-me-more-wrapper').slideToggle("fast");
-    $('body').removeClass("overflow");
+  $.scrollLock( false );
+   // $('body').removeClass("overflow");
 });
 
 // Show/hide Disclaimer
