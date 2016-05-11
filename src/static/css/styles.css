@@ -1097,6 +1097,24 @@ svg {
   .button-payment {
     margin-top: 20px; } }
 
+.show-more-description {
+  padding: 0;
+  background: none;
+  border: 0;
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #000; }
+  .show-more-description:before {
+    content: "\f0fe";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: normal; }
+
+.show-less-description:before {
+  content: "\f146"; }
+
 .form-field-wrapper {
   position: relative; }
 
@@ -2041,9 +2059,12 @@ input[type="checkbox"]:checked + label span {
   .hotel-details-room .room-title {
     font-weight: 700;
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 20px;
     color: #000; }
+    .hotel-details-room .room-title i {
+      cursor: help;
+      color: #000; }
     @media all and (max-width: 767px) {
       .hotel-details-room .room-title {
         font-size: 17px; } }
@@ -2052,6 +2073,22 @@ input[type="checkbox"]:checked + label span {
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 10px; }
+    .hotel-details-room .room-details strong {
+      display: block; }
+    .hotel-details-room .room-details .toggle-description {
+      height: 50px;
+      overflow: hidden;
+      display: block;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; }
+    .hotel-details-room .room-details .toggle-height {
+      height: auto;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; }
     @media all and (max-width: 991px) {
       .hotel-details-room .room-details {
         font-size: 13px; } }
@@ -2064,6 +2101,9 @@ input[type="checkbox"]:checked + label span {
     .hotel-details-room .room-price span {
       color: #666;
       font-size: 13px; }
+      @media all and (max-width: 991px) {
+        .hotel-details-room .room-price span {
+          display: block; } }
     @media all and (max-width: 991px) {
       .hotel-details-room .room-price {
         text-align: right; } }

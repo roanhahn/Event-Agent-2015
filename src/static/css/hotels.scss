@@ -339,9 +339,13 @@
 	& .room-title{
 		font-weight: 700;
 		font-size: 22px;
-		margin-bottom: 20px;
+		margin-bottom:10px;
 		margin-top: 20px;
 		color: $primary-link-color;
+		& i{
+			cursor: help;
+			color: $primary-link-color;
+		}
 		@media all and(max-width: $breakpoint-mobile){
 			font-size: 17px;
 		}
@@ -352,6 +356,28 @@
 		line-height: 25px;
 		font-size: 15px;
 		margin-bottom: 10px;
+
+		& strong{
+			display: block;
+		}
+
+		& .toggle-description{
+			height: 50px;
+			overflow: hidden;
+			display: block;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-o-transition: all 0.2s ease-in-out 0s;
+			transition: all 1s ease-in-out 0s;
+		}
+
+		& .toggle-height{
+			height: auto;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-o-transition: all 0.2s ease-in-out 0s;
+			transition: all 1s ease-in-out 0s;
+		}
 		@media all and(max-width: $breakpoint-tablet){
 			font-size: 13px;
 		}
@@ -367,7 +393,10 @@
 
 		& span{
 			color: #666;
-			font-size: 13px
+			font-size: 13px;
+			@media all and(max-width: $breakpoint-tablet){
+				display: block;
+			}
 		}
 
 		@media all and(max-width: $breakpoint-tablet){

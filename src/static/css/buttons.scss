@@ -366,3 +366,26 @@
 		margin-top: 20px;
 	}
 }
+
+.show-more-description{
+	padding: 0;
+	background: none;
+	// text-transform: uppercase;
+	border: 0;
+	font-weight: 700;
+	margin-top: 5px;
+	font-size: 14px;
+	color: $primary-link-color;
+	&:before{
+		content: "\f0fe";
+		font-family: "FontAwesome";
+		margin-right: 5px;
+		// font-size: 16px;
+		display: inline-block;
+		font-weight: normal;
+	}
+}
+
+.show-less-description:before{
+	content: "\f146";
+}
