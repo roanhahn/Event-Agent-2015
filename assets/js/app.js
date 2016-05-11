@@ -2694,6 +2694,20 @@ $(".hotel-item-grid").hover
 	);
 */
 
+// Tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// show more
+
+$('.show-more-description').click(function()
+{
+    $(this).parent().find(".toggle-description").toggleClass("toggle-height");
+    $(this).toggleClass("show-less-description");
+});
+
 // Flipping card
 
 $(".hotel-card-container").hover
