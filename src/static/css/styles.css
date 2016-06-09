@@ -553,6 +553,22 @@ a {
     background-size: 100px;
     letter-spacing: 1px; }
 
+.h1-offline {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 100px;
+  margin-top: 100px; }
+
+.p-offline {
+  font-size: 18px;
+  font-weight: bold; }
+
+.logo-offline {
+  background: transparent url(../img/flyingdutch/logo.svg) no-repeat center 0 scroll;
+  background-size: contain;
+  height: 100px;
+  margin-top: 20px; }
+
 html, body {
   -webkit-overflow-scrolling: touch;
   /* lets it scroll lazy */ }
@@ -1983,6 +1999,13 @@ input[type="checkbox"]:checked + label span {
     color: #000;
     line-height: 25px;
     margin-bottom: 15px; }
+    .hotel-item-grid-content .intro ul, .hotel-item-grid-content .intro ol {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-top: 10px;
+      padding: 0; }
+    .hotel-item-grid-content .intro ol {
+      list-style-type: decimal; }
 
 .facilities {
   padding: 15px;
@@ -2171,6 +2194,13 @@ input[type="checkbox"]:checked + label span {
       .hotel-item-list-content .intro {
         font-size: 13px;
         height: 50px; } }
+    .hotel-item-list-content .intro ul, .hotel-item-list-content .intro ol {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-top: 10px;
+      padding: 0; }
+    .hotel-item-list-content .intro ol {
+      list-style-type: decimal; }
   .hotel-item-list-content .list {
     color: #000;
     line-height: 25px;
