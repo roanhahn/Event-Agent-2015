@@ -360,16 +360,18 @@ a{
 	font-weight: bold;
 	margin-bottom: 100px;
 	margin-top: 100px;
+	color: #fff;
 }
 
 .p-offline{
 	font-size: 18px;
 	font-weight: bold;
+	color: #fff;
 }
 
 .logo-offline{
-	background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0 scroll;
+	background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat center 0 scroll;
 	background-size: contain;
 	height: 100px;
-	margin-top: 20px;
+	margin-top: 50px;
 }

@@ -260,6 +260,12 @@ body {
 .location-content--eind .location-h3, .location-content--eind .location-h3 small {
   color: #000 !important; }
 
+.h1-offline, .p-offline {
+  color: #000 !important; }
+
+.logo-offline {
+  background: transparent url(../img/flyingdutch/logo.svg) no-repeat center 0/contain scroll !important; }
+
 body {
   font-family: "proximanova-regular", Arial, sans-serif;
   font-weight: 400;
@@ -557,17 +563,19 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 100px;
-  margin-top: 100px; }
+  margin-top: 100px;
+  color: #fff; }
 
 .p-offline {
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 .logo-offline {
-  background: transparent url(../img/flyingdutch/logo.svg) no-repeat center 0 scroll;
+  background: transparent url(../img/flyingdutch/logo.png) no-repeat center 0 scroll;
   background-size: contain;
   height: 100px;
-  margin-top: 20px; }
+  margin-top: 50px; }
 
 html, body {
   -webkit-overflow-scrolling: touch;
