@@ -34,6 +34,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ornitons-bold';
+    src: url('../font/ornitons-bold.woff2') format('woff2'),
+         url('../font/ornitons-bold.woff') format('woff'),
+         url('../font/ornitons-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $breakpoint-desktop: 1199px;
 $breakpoint-tablet: 800px;
 $breakpoint-mobile: 600px;
