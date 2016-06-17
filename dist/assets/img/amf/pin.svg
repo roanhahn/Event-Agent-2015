@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="37px" viewBox="0 0 25 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>pin</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <path d="M21.083,3.591 C16.295,-1.197 8.53,-1.197 3.742,3.591 C-0.272,7.603 -0.908,13.698 1.803,18.389 L12.412,36.764 L23.021,18.389 C25.732,13.698 25.095,7.603 21.083,3.591" id="path-1"></path>
+        <rect id="path-3" x="0.158" y="0" width="25" height="37"></rect>
+        <path d="M5.412,10.167 C2.703,10.167 0.508,7.972 0.508,5.263 C0.508,2.553 2.703,0.357 5.412,0.357 C8.121,0.357 10.316,2.552 10.316,5.263 C10.316,7.971 8.121,10.167 5.412,10.167" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin">
+            <g id="Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <g mask="url(#mask-2)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="SVGID_3_"></g>
+                    <rect id="Rectangle-path" fill="#E6242B" mask="url(#mask-4)" x="-4.842" y="-5" width="34.508" height="46.764"></rect>
+                </g>
+            </g>
+            <g id="Clipped" transform="translate(7.000000, 7.000000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="SVGID_5_"></g>
+                <rect id="Rectangle-path" fill="#FFFFFF" mask="url(#mask-6)" x="-4.493" y="-4.644" width="19.809" height="19.81"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

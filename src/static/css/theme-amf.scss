@@ -271,6 +271,10 @@ body{
     color: #fff !important;
     font-weight: 400 !important;
 }
+.my-pager-link--active{
+    color: $secondary-link-color !important;
+    font-weight: 700 !important;
+}
 
 .accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1{
     border-color: #191919 !important;
