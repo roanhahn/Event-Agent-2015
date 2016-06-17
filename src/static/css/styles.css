@@ -125,12 +125,12 @@ body {
     font-size: 13px !important; } }
 .header-logo {
   background: transparent url(../img/amf/logo.png) no-repeat 0 0 scroll !important;
-  background-size: 120px !important;
+  background-size: 111px !important;
   margin-top: 0 !important; }
   @media all and (max-width: 767px) {
     .header-logo {
-      width: 75px !important;
-      background-size: 75px !important;
+      width: 69px !important;
+      background-size: 69px !important;
       margin: 0 !important; } }
 
 .header-menu-link {
@@ -262,14 +262,14 @@ body {
   font-weight: 400 !important;
   font-size: 36px !important;
   letter-spacing: 0px !important;
-  background-color: #fff !important;
+  background-color: #000 !important;
   padding: 20px 50px !important;
-  color: #e6242b !important; }
+  color: #fff !important; }
   .button--hero span {
     display: block !important; }
   .button--hero:hover {
-    color: #fff !important;
-    background-color: #000 !important; }
+    color: #000 !important;
+    background-color: #fff !important; }
 
 .button--location {
   font-size: 25px !important;
@@ -1531,16 +1531,16 @@ input[type="checkbox"]:checked + label span {
 
 .header-logo {
   float: left;
-  width: 120px;
+  width: 111px;
   height: 80px;
   background: transparent url(../img/amf/logo.png) no-repeat 0 0 scroll;
-  background-size: 120px;
+  background-size: 111px;
   margin-top: 15px;
   display: block; }
   @media all and (max-width: 767px) {
     .header-logo {
-      width: 75px;
-      background-size: 75px;
+      width: 69px;
+      background-size: 69px;
       margin-top: 5px;
       margin: 5px 0;
       float: left; } }
