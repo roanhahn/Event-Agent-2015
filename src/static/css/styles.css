@@ -97,7 +97,7 @@ body {
 .cart-total--active {
   color: #fff !important; }
 
-.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme, .section--theme a {
+.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme, .section--theme a, .hotel-item-list-price--mobile {
   color: #fff  !important; }
 
 .cart-total {
@@ -206,6 +206,9 @@ body {
   .accordion-h3 small {
     font-family: "Open Sans", Arial, sans-serif !important;
     font-weight: normal !important; }
+  @media all and (max-width: 767px) {
+    .accordion-h3 {
+      font-size: 24px !important; } }
 
 .my-pager-link {
   color: #fff !important;
@@ -274,6 +277,9 @@ body {
   .button--hero:hover {
     color: #000 !important;
     background-color: #fff !important; }
+  @media all and (max-width: 767px) {
+    .button--hero {
+      font-size: 18px !important; } }
 
 .button--location {
   font-size: 25px !important;

@@ -138,7 +138,7 @@ body{
 .cart-total--active{
     color: #fff !important;
 }
-.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme,.section--theme a{
+.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme,.section--theme a, .hotel-item-list-price--mobile{
     color: #fff  !important;
 }
 .cart-total{
@@ -265,6 +265,10 @@ body{
         font-family: $primary-font !important;
         font-weight: normal !important;
     }
+
+    @media all and (max-width: $breakpoint-mobile){
+        font-size: 24px !important;
+    }
 }
 
 .my-pager-link{
@@ -347,6 +351,10 @@ body{
     &:hover{
         color: #000 !important;
         background-color: #fff !important;
+    }
+
+    @media all and (max-width: $breakpoint-mobile){
+        font-size: 18px !important;
     }
 }
 
