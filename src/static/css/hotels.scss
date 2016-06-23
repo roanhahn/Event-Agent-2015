@@ -494,7 +494,8 @@
 		margin-bottom: 10px;
 		@media all and(max-width: $breakpoint-tablet){
 			font-size: 13px;
-			height: 50px;
+			height: auto;
+			max-height: 130px;
 		}
 
 		& ul, & ol{

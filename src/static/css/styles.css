@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import url(bootstrap.css);
 @import url(layerslider/layerslider.css);
@@ -832,6 +835,10 @@ body {
 .location-content--rdam {
   background-color: #29abe2; }
 
+.gmap_wrapper {
+  overflow: hidden;
+  height: 250px !important; }
+
 .img-container {
   background-color: #000;
   height: 0;
@@ -1148,6 +1155,7 @@ svg {
   @media all and (max-width: 767px) {
     .manage-rooms {
       float: none;
+      width: 100%;
       margin-bottom: 10px; } }
   .manage-rooms .manage-button {
     -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
@@ -1187,7 +1195,7 @@ svg {
     width: 40px;
     height: 40px;
     text-align: center;
-    float: left;
+    float: right;
     cursor: pointer; }
     .manage-rooms .plus:before {
       content: "\f067"; }
@@ -2276,7 +2284,8 @@ input[type="checkbox"]:checked + label span {
     @media all and (max-width: 991px) {
       .hotel-item-list-content .intro {
         font-size: 13px;
-        height: 50px; } }
+        height: auto;
+        max-height: 130px; } }
     .hotel-item-list-content .intro ul, .hotel-item-list-content .intro ol {
       list-style-type: disc;
       list-style-position: inside;
