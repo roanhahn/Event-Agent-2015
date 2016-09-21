@@ -2692,7 +2692,9 @@ $(".hotel-item-grid").hover
 
 // DATEPICKER
 
-    $('.input-group.date').datepicker({});
+    $('.input-group.date').datepicker({
+      autoclose: true
+    });
 
 // Tooltip
 
