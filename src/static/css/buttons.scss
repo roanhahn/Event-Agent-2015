@@ -368,6 +368,14 @@
 	}
 }
 
+.submitformbutton{
+	margin-top: 28px;
+
+	@media all and (max-width: $breakpoint-tablet){
+		margin-top: 0;
+	}
+}
+
 .show-more-description{
 	padding: 0;
 	background: none;

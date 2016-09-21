@@ -63,6 +63,8 @@ body{
 	}
 }
 
+
+
 .margin-top-10{
 	margin-top: 10px;
 }
@@ -238,4 +240,18 @@ body{
 .gmap_wrapper{
 	overflow: hidden;
 	height: 250px !important;
+}
+
+.margin-bottom-30{
+	margin-bottom: 30px !important;
+}
+
+@media all and(max-width: $breakpoint-mobile){
+
+	.xs-hide{
+		display: none;
+	}
+	.xs-show{
+		display: block !important;
+	}
 }

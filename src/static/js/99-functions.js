@@ -40,6 +40,11 @@ $(".hotel-item-grid").hover
 	);
 */
 
+
+// DATEPICKER
+
+    $('.input-group.date').datepicker({});
+
 // Tooltip
 
 $(function () {
@@ -95,6 +100,12 @@ $('#single[data-accordion]').accordion({
   transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
   transitionSpeed: 200
 });
+
+$('.showbookingform').click(function()
+{
+  $('.bookingform').slideToggle("fast");
+});
+
 
 // Show/hide cart
 $('.show-cart').click(function()

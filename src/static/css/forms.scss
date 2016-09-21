@@ -100,8 +100,10 @@
 	color: $primary-text-color;
 	font-family: $tertiary-font;
 	font-weight: 700;
-	font-size: 17px;
-
+	font-size: 15px;
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 14px;
+	}
 	&--small{
 		display: inline-block;
 		font-size: 13px;
@@ -157,7 +159,8 @@
 	width: 100%;
 	height: 45px;
 	outline: none!important;
-	border: 1px solid #fff;
+	// border: 1px solid #fff;
+	border: 1px solid #ccc;
 	background-color: $select-bg-color;
 	padding: 10px;
 	-webkit-appearance: none;  /*Removes default chrome and safari style*/
@@ -168,11 +171,15 @@
 	color: #666;
 	-webkit-appearance: none;
 	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:    none;
+	box-shadow:         none;
 
 	&:focus{
 		-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
 		-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.3);
 		box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		// border-color: #fff;
 	}
 
 	&--error{
@@ -195,6 +202,15 @@
 .form-personal-info .form-field{
 	margin-bottom: 20px;
 	padding-left: 15px;
+}
+
+.input-group-addon{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.formguests{
+	line-height: 43px;
 }
 .ticket-form-submit{
 	padding-top: 32px;
@@ -263,7 +279,8 @@
 	width: 100%;
 	height: 45px;
 	outline: none!important;
-	border: 1px solid #fff;
+	// border: 1px solid #fff;
+	border: 1px solid #ccc;
 	color: rgba(0,0,0,0);
 	background-color: $select-bg-color;
 	padding: 0px 40px 0 15px;
@@ -277,6 +294,9 @@
 	color: rgba(0,0,0,0);
 	text-shadow: 0 0 0 #666;
 	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:    none;
+	box-shadow:         none;
 
 	&--sort{
 		min-width: 200px;
@@ -291,6 +311,7 @@
 		-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
 		-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.3);
 		box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.3);
+		// border-color: #fff;
 	}
 
 	&--inline{
