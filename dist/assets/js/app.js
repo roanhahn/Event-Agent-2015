@@ -2692,7 +2692,11 @@ $(".hotel-item-grid").hover
 
 // DATEPICKER
 
-    $('.input-group.date').datepicker({});
+    $('.input-group.date').datepicker({
+      startDate: '01/01/2017',
+      endDate: '01/08/2017',
+      autoclose: true
+    });
 
 // Tooltip
 

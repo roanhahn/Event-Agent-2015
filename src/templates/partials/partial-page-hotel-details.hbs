@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-sm-8">
-                
+
                 <h1 class="h1">Hilton Hotels</h1>
                 
                 
@@ -37,16 +37,14 @@
         </div>
         <div class="row">
             <div class="col-sm-7">
-                <div>
-                    <h3 class="h3">Hotel information</h3>
-                    <p class="p">
-                        This hotel enjoys a convenient location in the centre of Filderstadt-Berhausen and offers ideal
-                        connections to the area’s main transport hubs being 1.7 miles from Stuttfart airport. All 139 rooms are
-                        air-conditioned and soundproofed with guests having access to 24 hour room service and free Wi-Fi
-                        internet. The hotel restaurant has an open kitchen and offers delicious, fresh and healthy dishes as
-                        well as a large breakfast buffet in the morning.
-                    </p>
-                </div>
+                <h3 class="h3">Hotel information</h3>
+                <p class="p">
+                    This hotel enjoys a convenient location in the centre of Filderstadt-Berhausen and offers ideal
+                    connections to the area’s main transport hubs being 1.7 miles from Stuttfart airport. All 139 rooms are
+                    air-conditioned and soundproofed with guests having access to 24 hour room service and free Wi-Fi
+                    internet. The hotel restaurant has an open kitchen and offers delicious, fresh and healthy dishes as
+                    well as a large breakfast buffet in the morning.
+                </p>
             </div>
             <div class="col-sm-5">
                 <h3 class="h3">Hotel facilities</h3>
@@ -56,6 +54,55 @@
                     <li class="COBU">Computer Business Centre</li>
                     <li class="CUEX">Currency Exchange</li>
                 </ul>
+                <div style="height: 250px;"><div id="gmap"></div></div>
+                <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- GOGGLE MAPS CONFIGURATION -->
+    <!-- ref: http://maplacejs.com/ -->
+    <script>
+        var gmap_options = {
+            generate_controls : false,
+            locations : [{
+                lat : 52.3702160,
+                lon : 4.8951680,
+                animation : google.maps.Animation.DROP,
+                html : "Some text goes here",
+                icon : "assets/img/flyingdutch/pin.svg",
+            }, {
+                lat : 52.3681198,
+                lon : 4.8998029,
+                animation : google.maps.Animation.DROP,
+                html : "Some text goes here",
+                icon : "assets/img/flyingdutch/pin.svg",
+            }, {
+                lat : 52.3694823,
+                lon : 4.8901898,
+                animation : google.maps.Animation.DROP,
+                html : "Some text goes here",
+                icon : "assets/img/flyingdutch/pin.svg",
+            }, {
+                lat : 52.3688535,
+                lon : 4.9121625,
+                animation : google.maps.Animation.DROP,
+                html : "Some text goes here",
+                icon : "assets/img/flyingdutch/event.svg",
+            }
+
+            ],
+            map_options : {
+                scrollwheel : false,
+                mapTypeControl : false,
+                streetViewControl : false,
+                zoomControlOptions : {
+                    style : google.maps.ZoomControlStyle.SMALL,
+                },
+                zoom : 14,
+            },
+            styles : {
+                // source: https://snazzymaps.com
+                'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+            },
+        };
+    </script>
             </div>
         </div>
         <div class="row">
@@ -69,3 +116,4 @@
         </div>
     </div>
 </section>
+

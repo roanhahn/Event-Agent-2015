@@ -425,7 +425,7 @@
 	margin: 15px 0 0;
 	/*border-right: 1px solid $border-color;*/
 	/*min-height: 200px;*/
-	padding: 0 0 0 15px;
+	padding: 0 0 15px 15px;
 
 	@media all and(max-width: $breakpoint-tablet){
 		border-right: none;
@@ -487,15 +487,15 @@
 
 	& .intro{
 		color: $tertiary-text-color;
-		overflow: hidden;
-		height: 175px;
+		// overflow: hidden;
+		// height: 175px;
 		line-height: 25px;
 		font-size: 15px;
 		margin-bottom: 10px;
 		@media all and(max-width: $breakpoint-tablet){
 			font-size: 13px;
-			height: auto;
-			max-height: 130px;
+			// height: auto;
+			// max-height: 130px;
 		}
 
 		& ul, & ol{
@@ -556,7 +556,7 @@
 		margin-left: 5px;
 		color: $tertiary-text-color;
 		@media all and(max-width: $breakpoint-tablet){
-			display: inline-block;
+			// display: inline-block;
 		}
 	}
 
@@ -565,8 +565,8 @@
 	}
 
 	@media all and(max-width: $breakpoint-tablet){
-		padding: 0 15px;
-		float: left;
+		// padding: 0 15px;
+		// float: left;
 	}
 	@media all and(max-width: $breakpoint-mobile){
 		padding: 0;
@@ -587,7 +587,7 @@
 
 .hotel-item-list-button{
 	@media all and(max-width: $breakpoint-tablet){
-		float: right;
+		// float: right;
 	}
 	@media all and(max-width: $breakpoint-mobile){
 		float: right;
