@@ -147,7 +147,7 @@
 		}
 	}
 }
-.hotel-item-grid:hover, .hotel-item-map:hover{
+.hotel-item-grid:hover{
 
 	& img{
 		opacity: .2 !important;
@@ -237,7 +237,7 @@
 
 		& ul, & ol{
 			list-style-type: disc;
-			list-style-position: inside;
+			list-style-position: outside;
 			margin-top: 10px;
 			padding: 0;
 		}
@@ -500,9 +500,9 @@
 
 		& ul, & ol{
 			list-style-type: disc;
-			list-style-position: inside;
 			margin-top: 10px;
 			padding: 0;
+			margin-left: 15px;
 		}
 
 		& ol{
