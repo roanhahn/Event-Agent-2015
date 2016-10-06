@@ -437,3 +437,9 @@ input[type="checkbox"]:checked + label span {
 		float: right;
 	}
 }
+
+.bookingform{
+	@media all and (min-width: $breakpoint-mobile){
+		display: block !important;
+	}
+}

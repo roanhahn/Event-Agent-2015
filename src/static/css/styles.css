@@ -1579,6 +1579,10 @@ input[type="checkbox"]:checked + label span {
   .payment-method .method-price {
     float: right; }
 
+@media all and (min-width: 767px) {
+  .bookingform {
+    display: block !important; } }
+
 .header {
   background-color: #fff;
   height: 80px;
