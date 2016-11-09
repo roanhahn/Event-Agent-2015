@@ -181,6 +181,15 @@ body {
     color: #e6242b !important;
     border-color: #fff !important; }
 
+.button--selected {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important; }
+  .button--selected:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff; }
+
 .button--prev:before, .button--next:after {
   font-size: 15px !important; }
 
@@ -956,7 +965,8 @@ svg {
   -webkit-appearance: none;
   border-radius: 0;
   font-family: "Open Sans", Arial, sans-serif;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #fff; }
   .button--primary {
     background-color: #000;
     color: #fff;
@@ -982,6 +992,14 @@ svg {
     .button--tertiary:hover {
       background-color: #000;
       color: #fff; }
+  .button--selected {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff; }
+    .button--selected:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff; }
   .button--book {
     position: absolute;
     bottom: 15px;
@@ -2291,12 +2309,12 @@ input[type="checkbox"]:checked + label span {
     .hotel-item-list-content {
       padding: 15px 0 0;
       margin-top: 0; } }
-  .hotel-item-list-content .title {
+  .hotel-item-list-content .title, .hotel-item-list-content .title a {
     font-weight: 700;
     font-size: 22px;
     color: #fff; }
     @media all and (max-width: 767px) {
-      .hotel-item-list-content .title {
+      .hotel-item-list-content .title, .hotel-item-list-content .title a {
         font-size: 17px; } }
   .hotel-item-list-content--no-margin {
     margin-top: 0; }

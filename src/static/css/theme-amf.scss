@@ -231,6 +231,18 @@ body{
     }
 }
 
+.button--selected{
+    background-color: $primary-btn-bg-hover-color !important;
+    color: $primary-btn-hover-text-color !important;
+    border-color: $primary-btn-bg-hover-color !important;
+
+    &:hover{
+        background-color: $primary-btn-bg-hover-color;
+        color: $primary-btn-hover-text-color;
+        border-color: $primary-btn-bg-hover-color;
+    }
+}
+
 .button--prev:before, .button--next:after{
     font-size: 15px !important;
 }
@@ -289,14 +301,14 @@ body{
 .accordion-row{
     background-color: #000;
     &:hover{
-     background-color: #191919 !important;
+       background-color: #191919 !important;
 
-     & .accordion-h3 small{
+       & .accordion-h3 small{
         color: #fff !important;
     }
     & .accordion-h3:after{
-     color: #fff !important;
- }
+       color: #fff !important;
+   }
 }
 }
 

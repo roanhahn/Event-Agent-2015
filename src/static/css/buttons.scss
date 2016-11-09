@@ -16,6 +16,7 @@
 	border-radius: 0;
 	font-family: $primary-font;
 	cursor: pointer;
+	color: $primary-btn-text-color;
 
 
 
@@ -53,6 +54,18 @@
 		&:hover{
 			background-color: #000;
 			color: #fff;
+		}
+	}
+
+	&--selected{
+		background-color: $primary-btn-bg-hover-color;
+		color: $primary-btn-hover-text-color;
+		border-color: $primary-btn-bg-hover-color;
+
+		&:hover{
+			background-color: $primary-btn-bg-hover-color;
+			color: $primary-btn-hover-text-color;
+			border-color: $primary-btn-bg-hover-color;
 		}
 	}
 

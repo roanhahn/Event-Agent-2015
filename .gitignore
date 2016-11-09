@@ -1,3 +1,14 @@
 
 .grunt/grunt-gh-pages/gh-pages/src/
 .sass-cache
+dist/assets/css/.DS_Store
+
+dist/assets/font/.DS_Store
+
+dist/assets/img/.DS_Store
+
+dist/assets/img/flyingdutch/.DS_Store
+
+src/static/js/.DS_Store
+
+src/static/.DS_Store
