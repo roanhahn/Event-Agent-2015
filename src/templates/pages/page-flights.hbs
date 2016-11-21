@@ -1,0 +1,183 @@
+---
+title: Book Flights
+layout: default.hbs
+---
+
+
+
+
+<section class="section section--grey" style="padding-top: 60px;">
+	<div class="container">		
+		<form>
+			<div class="row">
+				<div class="col-sm-12"><h3 class="h3">Vlucht 1| Economy</h3></div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Vetrek van</label>
+						<div class="input-group">
+							<input type="text" class="form-control form-field" placeholder="Amsterdam, Nederland (AMS)"><span class="input-group-addon"><i class="fa fa-plane " aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Aankomst in</label>
+						<div class="input-group">
+							<input type="text" class="form-control form-field" placeholder=""><span class="input-group-addon"><i class="fa fa-plane fa-flip-horizontal" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Vertrekdatum</label>
+						<div class="input-group date">
+							<input type="text" class="form-control form-field" placeholder="Kies een datum"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row margin-top-40">
+				<div class="col-sm-12"><h3 class="h3">Vlucht 2| Economy</h3></div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Vetrek van</label>
+						<div class="input-group">
+							<input type="text" class="form-control form-field" placeholder="Amsterdam, Nederland (AMS)"><span class="input-group-addon"><i class="fa fa-plane " aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Aankomst in</label>
+						<div class="input-group">
+							<input type="text" class="form-control form-field" placeholder=""><span class="input-group-addon"><i class="fa fa-plane fa-flip-horizontal" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="form-group">
+						<label for="" class="form-label">Vertrekdatum</label>
+						<div class="input-group date">
+							<input type="text" class="form-control form-field" placeholder="Kies een datum"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row margin-top-40">
+				<div class="col-xs-6 col-md-4 col-md-offset-4">
+					<div class="row">
+						<div class="col-sm-4">
+							<label for="" class="form-label">Volw.</label>
+							<div class="input-group">
+								<input type="number" class="form-control form-field"><span class="input-group-addon"><i class="fa fa-male" aria-hidden="true"></i></span>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<label for="" class="form-label">Kind</label>
+							<div class="input-group">
+								<input type="number" class="form-control form-field"><span class="input-group-addon"><i class="fa fa-child" aria-hidden="true"></i></span>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<label for="" class="form-label">Baby</label>
+							<div class="input-group">
+								<input type="number" class="form-control form-field"><span class="input-group-addon"><i class="fa fa-child" aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="" class="form-label">Tarieftype</label>
+							<select name="" id="country" class="form-select" required="required">
+								<option value="1" class="form-option">Economy</option>
+								<option value="2" class="form-option">Business Class</option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<label for="" class="form-label">Vluchttype</label>
+							<select name="" id="country" class="form-select" required="required">
+								<option value="1" class="form-option">Retour</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 text-right">
+					<div class="form-group">
+						<button type="submit" class="button button--primary button--block-mobile submitformbutton">Zoeken</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+
+{{!-- <form action="" method="" class="ticket-form">
+
+	<div class="row">
+		
+		<div class="col-sm-6 col-md-3">
+			<label for="" class="form-label">Check in</label>
+			<div class="form-wrapper">
+				<select name="" id="checkin" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-sm-6 col-md-3">
+			<label for="" class="form-label">Check out</label>
+			<div class="form-wrapper">
+				<select name="" id="checkout" class="form-select" required="required">
+					<option value="1" class="form-option">24-11-2015</option>
+					<option value="2" class="form-option">24-11-2015</option>
+					<option value="3" class="form-option">24-11-2015</option>
+					<option value="4" class="form-option">24-11-2015</option>
+					<option value="5" class="form-option">24-11-2015</option>
+					<option value="6" class="form-option">24-11-2015</option>
+				</select>
+			</div>
+			<div class="form-text-message">Some text goes here</div>
+		</div>
+		<div class="col-sm-6 col-md-1">
+			<label for="" class="form-label">Persons</label>
+			<div class="form-persons">
+				<span>12</span>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-2">
+			<label for="" class="form-label">Guests per room</label>
+			<div class="form-wrapper">
+				<select name="" id="rooms" class="form-select" required="required">
+					<option value="1" class="form-option">2</option>
+					<option value="2" class="form-option">3</option>
+					<option value="3" class="form-option">4</option>
+				</select>
+			</div>
+			<div class="form-text-message"></div>
+		</div>
+		
+		<div class="col-sm-6 col-md-1">
+			<label for="" class="form-label">Rooms</label>
+			<div class="form-rooms">
+				<span>2</span>
+			</div>
+		</div>
+		
+		<div class="col-sm-12 col-md-2 ticket-form-submit text-right">
+			<input type="submit" disabled="disabled" value="Confirm" class="button button--primary button--block-mobile">
+		</div>
+	</div>
+
+</form> --}}
+
+
