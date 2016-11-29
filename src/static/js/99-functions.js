@@ -55,6 +55,19 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+// POPOVER
+$('#collapseExample').collapse({
+  toggle: false
+})
+
+// Flights
+
+$('.flight-row').click(function (event) {
+   if (event.target.type !== 'radio') {
+      $(':radio', this).trigger('click');
+    }
+});
+
 // show more
 
 $('.show-more-description').click(function()

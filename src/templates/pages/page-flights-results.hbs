@@ -1,0 +1,150 @@
+---
+title: Book Flights - Results
+layout: default.hbs
+---
+
+{{> header }}
+
+<section class="section section--grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12"></div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="section section--grey">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="flights-feature flights-feature--price">
+					<div class="name">Goedkoopste vlucht</div>
+					<div><a href="#" class="readmore">Brussel Airlines <span>&euro; 348</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="flights-feature flights-feature--time">
+					<div class="name">Totale reisduur <span>15u 20</span></div>
+					<div><a href="#" class="readmore">Delta Airlines <span>&euro; 578</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			{{!-- Filter --}}
+			<div class="col-md-2">
+			Filter je resultaten
+			<button>Reset filter</button>
+
+			<div>
+			Bagage
+
+			<form>
+				<div></div>
+			</form>
+			</div>
+			</div>
+			
+			{{!-- Resultaten --}}
+			<div class="col-md-10">
+				Alle zoekresultaten
+				Er zijn 63 vluchten gevonden.
+				<div class="flights-item">
+					<div class="operator clearfix">
+						<div class="operator-logo">
+							<img src="https://7thgear-prod.azureedge.net/img/FlightEngine/Default/Airlines/th_dl_tx.png" alt="" class="img-responsive">
+						</div>
+						<div class="cabinclass">Economy</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9">
+							<table id="">
+								<thead>
+									<tr>
+										<th colspan="4" class="date"><i class="fa fa-plane" aria-hidden="true"></i> <span>Vlucht 1:</span> vrijdag 23 dec. 2016</th>
+										<th>Stoelen</th>
+										<th>Stops</th>
+										<th>Reisduur</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="flight-row">
+										<td class="departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio"> 10:35</td>
+										<td class="departure-airport">Amsterdam</td>
+										<td class="arrival-time">13u30</td>
+										<td class="arrival-airport">New York, JFK...</td>
+										<td>0</td>
+										<td>Direct</td>
+										<td>8u20</td>
+										<td class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+									</tr>
+									<tr class="flight-row">
+										<td class="departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio"> 10:35</td>
+										<td class="departure-airport">Amsterdam</td>
+										<td class="arrival-time">13u30</td>
+										<td class="arrival-airport">New York, JFK...</td>
+										<td>0</td>
+										<td>1x</td>
+										<td>8u20</td>
+										<td class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table id="">
+								<thead>
+									<tr>
+										<th colspan="4" class="date"><i class="fa fa-plane fa-flip-horizontal" aria-hidden="true"></i> <span>Vlucht 2:</span> zaterdag 24 dec. 2016</th>
+										<th>Stoelen</th>
+										<th>Stops</th>
+										<th>Reisduur</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="flight-row">
+										<td class="departure-time"><input type="radio" checked="" id=""  name="retourvlucht" class="flights-radio"> 23u40</td>
+										<td class="departure-airport">New York, JFK...</td>
+										<td class="arrival-time">22u40</td>
+										<td class="arrival-airport">Amsterdam</td>
+										<td>0</td>
+										<td>Direct</td>
+										<td>8u20</td>
+										<td class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+									</tr>
+									<tr class="flight-row">
+										<td class="departure-time"><input type="radio" checked="" id=""  name="retourvlucht" class="flights-radio"> 23u40</td>
+										<td class="departure-airport">New York, JFK...</td>
+										<td class="arrival-time">22u40</td>
+										<td class="arrival-airport">Amsterdam</td>
+										<td>0</td>
+										<td>Direct</td>
+										<td>8u20</td>
+										<td class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-3 text-center booking">
+							<div class="fare">€1.393,-</div>
+							<div class="book">
+								<a href="" class="button button--flights">Boek nu</a>
+							</div>
+							<div class="bagage">
+								<div><i class="fa fa-suitcase" aria-hidden="true"></i></div>
+								Bagage inbegrepen
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+{{> footer }}

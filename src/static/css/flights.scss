@@ -24,3 +24,157 @@
 		}
 	}
 }
+
+.flights-feature{
+	border: 1px solid $border-color;
+	background-color: #fefefe;
+	padding: 20px 20px 20px 65px;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 15px;
+
+
+	&:before{
+		font-family: FontAwesome;
+		display: block;
+		position: absolute;
+		font-size: 36px;
+		left: 20px;
+		top: 20px;
+		color: $primary-btn-bg-hover-color;
+	}
+
+	&--price:before{
+		content: "\f153";
+	}
+
+	&--time:before{
+		content: "\f017";
+	}
+
+
+
+	& .name{
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	& span{
+		font-weight: bold;
+		display: inline-block;
+		margin-left: 20px;
+	}
+}
+
+.flights-item{
+	background-color: #fff;
+	border: 1px solid $border-color;
+	padding: 0 10px 10px;
+
+	& .operator{
+		border-bottom: 1px solid $border-color;
+		position: relative;
+		padding: 10px 0;
+
+		&-logo{
+			width: 110px;
+			float: left;
+		}
+
+		& .cabinclass{
+			font-size: 11px;
+			background-color: $flights-color-1;
+			display: inline-block;
+			color: #fff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			padding: 10px;
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+		}
+	}
+
+	& .booking{
+		color: $flights-color-1;
+		padding: 10px 0 0 0;
+	}
+
+	& .fare{
+		color: #90bc3c;
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+
+
+	& .bagage{
+		margin-top: 15px;
+		font-size: 11px;
+
+		& i{
+			font-size: 26px;
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+
+	& table{
+		width: 100%;
+		padding: 0;
+		border: 0;
+		margin: 10px 0 30px;
+
+		& tr{
+			cursor: pointer;
+		}
+
+		& th{
+			font-weight: bold;
+			vertical-align: middle;
+			text-align: left;
+			padding: 5px 5px 10px;
+			font-size: 13px;
+
+			& i{
+				margin-right: 15px;
+				font-size: 15px;
+			}
+
+			& span{
+				color: $primary-btn-bg-hover-color;
+				font-size: 16px;
+			}
+		}
+
+		& td{
+			width: auto;
+			vertical-align: middle;
+			padding: 5px;
+			font-size: 13px;
+
+			&.departure-time, &.arrival-time{
+				font-size: 15px;
+			}
+		}
+
+		& .info{
+			font-size: 16px;
+			color: $primary-btn-bg-hover-color;
+		}
+
+		& .flights-radio{
+			margin: 0 10px 0 0;
+			display: inline-block;
+		}
+
+		& tbody tr:nth-child(odd){
+			background-color: #f1f1f1;
+		}
+
+
+	}
+}

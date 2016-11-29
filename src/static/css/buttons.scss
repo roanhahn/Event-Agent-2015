@@ -57,6 +57,19 @@
 		}
 	}
 
+	&--flights{
+		background-color: $flights-color-1;
+		color: #fff;
+		border: 2px solid $flights-color-1;
+		font-weight: 900;
+
+		&:hover{
+			background-color: $flights-color-1-hover;
+			color: #fff;
+			border-color: $flights-color-1-hover;
+		}
+	}
+
 	&--selected{
 		background-color: $primary-btn-bg-hover-color;
 		color: $primary-btn-hover-text-color;

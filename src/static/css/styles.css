@@ -818,6 +818,15 @@ svg {
     .button--tertiary:hover {
       background-color: #000;
       color: #fff; }
+  .button--flights {
+    background-color: #90bc3c;
+    color: #fff;
+    border: 2px solid #90bc3c;
+    font-weight: 900; }
+    .button--flights:hover {
+      background-color: #a2c957;
+      color: #fff;
+      border-color: #a2c957; }
   .button--selected {
     background-color: #6db2c2;
     color: #fff;
@@ -3079,5 +3088,106 @@ input[type="checkbox"]:checked + label span {
     .flights-dropdown li:hover {
       color: #fff;
       background-color: #6db2c2; }
+
+.flights-feature {
+  border: 1px solid #cbcbcb;
+  background-color: #fefefe;
+  padding: 20px 20px 20px 65px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 15px; }
+  .flights-feature:before {
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    font-size: 36px;
+    left: 20px;
+    top: 20px;
+    color: #6db2c2; }
+  .flights-feature--price:before {
+    content: "\f153"; }
+  .flights-feature--time:before {
+    content: "\f017"; }
+  .flights-feature .name {
+    font-size: 18px;
+    font-weight: bold; }
+  .flights-feature span {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px; }
+
+.flights-item {
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  padding: 0 10px 10px; }
+  .flights-item .operator {
+    border-bottom: 1px solid #cbcbcb;
+    position: relative;
+    padding: 10px 0; }
+    .flights-item .operator-logo {
+      width: 110px;
+      float: left; }
+    .flights-item .operator .cabinclass {
+      font-size: 11px;
+      background-color: #90bc3c;
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 10px;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-transform: uppercase; }
+  .flights-item .booking {
+    color: #90bc3c;
+    padding: 10px 0 0 0; }
+  .flights-item .fare {
+    color: #90bc3c;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .flights-item .bagage {
+    margin-top: 15px;
+    font-size: 11px; }
+    .flights-item .bagage i {
+      font-size: 26px;
+      margin-bottom: 5px;
+      display: block; }
+  .flights-item table {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 10px 0 30px; }
+    .flights-item table tr {
+      cursor: pointer; }
+    .flights-item table th {
+      font-weight: bold;
+      vertical-align: middle;
+      text-align: left;
+      padding: 5px 5px 10px;
+      font-size: 13px; }
+      .flights-item table th i {
+        margin-right: 15px;
+        font-size: 15px; }
+      .flights-item table th span {
+        color: #6db2c2;
+        font-size: 16px; }
+    .flights-item table td {
+      width: auto;
+      vertical-align: middle;
+      padding: 5px;
+      font-size: 13px; }
+      .flights-item table td.departure-time, .flights-item table td.arrival-time {
+        font-size: 15px; }
+    .flights-item table .info {
+      font-size: 16px;
+      color: #6db2c2; }
+    .flights-item table .flights-radio {
+      margin: 0 10px 0 0;
+      display: inline-block; }
+    .flights-item table tbody tr:nth-child(odd) {
+      background-color: #f1f1f1; }
 
 /*# sourceMappingURL=styles.css.map */
