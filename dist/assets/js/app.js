@@ -2705,9 +2705,7 @@ $(function () {
 })
 
 // POPOVER
-$('#collapseExample').collapse({
-  toggle: false
-})
+
 
 // Flights
 

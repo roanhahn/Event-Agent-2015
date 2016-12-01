@@ -3071,6 +3071,63 @@ input[type="checkbox"]:checked + label span {
 .has-dropdown {
   position: relative; }
 
+.flights-traject {
+  border: 1px solid #cbcbcb;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
+  .flights-traject .flight {
+    position: relative;
+    display: table-cell;
+    width: 33%;
+    padding-right: 120px; }
+  .flights-traject .heading {
+    color: #6db2c2;
+    font-weight: bold;
+    font-size: 15px; }
+  .flights-traject .date {
+    font-size: 13px; }
+  .flights-traject .seperator {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    height: 50px;
+    width: 100px;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+    .flights-traject .seperator:before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #cbcbcb;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .flights-traject .seperator .icon {
+      position: absolute;
+      font-size: 27px;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #cbcbcb; }
+      .flights-traject .seperator .icon span {
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Safari */
+        transform: rotate(90deg);
+        line-height: 1;
+        display: block;
+        top: -1px; }
+
 .flights-dropdown {
   position: absolute;
   top: 45px;
@@ -3091,9 +3148,9 @@ input[type="checkbox"]:checked + label span {
 
 .flights-feature {
   border: 1px solid #cbcbcb;
-  background-color: #fefefe;
+  background-color: #fff;
   padding: 20px 20px 20px 65px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   font-size: 15px; }
   .flights-feature:before {
@@ -3189,5 +3246,33 @@ input[type="checkbox"]:checked + label span {
       display: inline-block; }
     .flights-item table tbody tr:nth-child(odd) {
       background-color: #f1f1f1; }
+
+.flights-filter li {
+  list-style-type: none;
+  font-size: 13px; }
+  .flights-filter li label {
+    font-weight: normal;
+    cursor: pointer;
+    display: block; }
+  .flights-filter li .pull-right {
+    float: right;
+    display: inline-block; }
+.flights-filter .panel-heading {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px; }
+  .flights-filter .panel-heading .toggle-panel {
+    float: right; }
+    .flights-filter .panel-heading .toggle-panel:before {
+      content: "\f0d8";
+      font-family: "FontAwesome";
+      display: block;
+      color: #000; }
+  .flights-filter .panel-heading.collapsed .toggle-panel:before {
+    content: "\f0d7"; }
+.flights-filter input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 5px; }
 
 /*# sourceMappingURL=styles.css.map */

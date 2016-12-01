@@ -18,6 +18,48 @@ layout: default.hbs
 <section class="section section--grey">
 	<div class="container">
 
+
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="flights-traject">
+					
+							<div class="flight">
+								<div class="heading">Amsterdam, Nederland</div>
+								<div class="date">Vertrek: <strong>za. 31 dec. 2016</strong></div>
+								<div class="seperator">
+									<span class="icon"><span class="glyphicon glyphicon-plane" aria-hidden="true"></span></span>
+								</div>
+							</div>
+					
+						
+							<div class="flight">
+								<div class="heading">
+									New York, JF Kennedy Intl, NY, Verenigde Staten
+								</div>
+								<div class="date">
+									Aankomst: za. 31 dec. 2016<br />
+									Vertrek: <strong>za. 25 feb. 2017</strong>
+								</div>
+								<div class="seperator">
+									<span class="icon"><span class="glyphicon glyphicon-plane" aria-hidden="true"></span></span>
+								</div>
+							</div>
+					
+					
+							<div class="flight">
+								<div class="heading">Amsterdam, Nederland</div>
+								<div class="date">Aankomst: <strong>zo. 26 feb. 2017</strong></div>
+							</div>
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+
 		<div class="row">
 			<div class="col-md-4">
 				<div class="flights-feature flights-feature--price">
@@ -35,23 +77,118 @@ layout: default.hbs
 		<div class="row">
 
 			{{!-- Filter --}}
-			<div class="col-md-2">
-			Filter je resultaten
-			<button>Reset filter</button>
+			<div class="col-md-3">
 
-			<div>
-			Bagage
+				
+				<div class="panel-group" id="filter" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default flights-filter">
+						<div class="panel-heading" data-toggle="collapse" href="#stops" aria-expanded="true" aria-controls="stops">
+							Aantal stops:
+							<span class="toggle-panel"></span>
+						</div>
+						<div id="stops" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="stops">
+							<div class="panel-body">
+								<ul>
+									<li>
+										<div>
+											<label for="check1">
+												<input id="check1" name="" checked="" type="checkbox" />Toon alles
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check2">
+												<input id="check2" name="" type="checkbox" />Direct
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check3">
+												<input id="check3" name="" type="checkbox" />1 stop
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check4">
+												<input id="check4" name="" type="checkbox" />2 stops
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default flights-filter">
+						<div class="panel-heading" data-toggle="collapse" href="#partner" aria-expanded="true" aria-controls="partner">
+							Vliegmaatschapij:
+							<span class="toggle-panel"></span>
+						</div>
+						<div id="partner" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="partner">
+							<div class="panel-body">
+								<ul>
+									<li>
+										<div>
+											<label for="check1">
+												<input id="check1" name="" checked="" type="checkbox" />Toon alles
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check2">
+												<input id="check2" name="" type="checkbox" />Value
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check3">
+												<input id="check3" name="" type="checkbox" />Value
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div>
+											<label for="check4">
+												<input id="check4" name="" type="checkbox" />Value
+												<span class="pull-right">(€839)</span>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			<form>
-				<div></div>
-			</form>
-			</div>
+				
+
+				Filter je resultaten
+				<button>Reset filter</button>
+
+				<div>
+					Bagage
+
+					<form>
+						<div></div>
+					</form>
+				</div>
 			</div>
 			
 			{{!-- Resultaten --}}
-			<div class="col-md-10">
-				Alle zoekresultaten
-				Er zijn 63 vluchten gevonden.
+			<div class="col-md-9">
+				<div class="text-left m-b-30">
+					<h2 class="h2">Alle zoekresultaten</h2>
+					<p class="h4">Er zijn 63 vluchten gevonden.</p>
+				</div>
 				<div class="flights-item">
 					<div class="operator clearfix">
 						<div class="operator-logo">
