@@ -127,7 +127,7 @@ a{
 	font-weight: 700;
 }
 
-.accordion-h3{
+.accordion-h3, .accordion-h3:visited, .accordion-h3:active{
 	font-family: $secondary-font;
 	display: block;
 	font-size: 45px;
@@ -137,6 +137,7 @@ a{
 	-moz-transition: color 0.2s ease-in-out 0s;
 	-o-transition: color 0.2s ease-in-out 0s;
 	transition: color 0.2s ease-in-out 0s;
+	color: #000;
 
 	@media all and(max-width: $breakpoint-mobile){
 		font-size: 30px;

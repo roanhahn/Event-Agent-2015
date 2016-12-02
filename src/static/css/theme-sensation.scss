@@ -192,6 +192,14 @@ $select-bg-color: #fff;
     border-radius: 0 !important;
 }
 
+.button--next, .button--prev{
+    color: #000 !important;
+
+    &:hover{
+        color: #fff !important;
+    }
+}
+
 .h1-offline, .p-offline{
     color: $primary-text-color !important;
 }
