@@ -2704,6 +2704,17 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+// POPOVER
+
+
+// Flights
+
+$('.flight-row').click(function (event) {
+   if (event.target.type !== 'radio') {
+      $('.flight-radio-desk', this).trigger('click');
+    }
+});
+
 // show more
 
 $('.show-more-description').click(function()
