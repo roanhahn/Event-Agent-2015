@@ -2711,7 +2711,7 @@ $(function () {
 
 $('.flight-row').click(function (event) {
    if (event.target.type !== 'radio') {
-      $(':radio', this).trigger('click');
+      $('.flight-radio-desk', this).trigger('click');
     }
 });
 

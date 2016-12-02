@@ -2,13 +2,23 @@
 	position: relative;
 }
 
+.section-flights{
+	color: #000;
+	background: none;
+	background: #fefefe !important;
+	padding: 60px 0;
+}
+
 .flights-traject{
-	border: 1px solid $border-color;
+	border: 1px solid #ddd;
 	background-color: #fff;
 	padding: 15px;
 	margin-bottom: 30px;
 	display: table;
 	width: 100%;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 
 	& .flight{
 		// padding-right: 50px;
@@ -16,12 +26,28 @@
 		display: table-cell;
 		width: 33%;
 		padding-right: 120px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			display: block;
+			width: 100%;
+			padding: 0 0 0 60px;
+			margin-bottom: 20px;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
 	}
 
 	& .heading{
-		color: $primary-btn-bg-hover-color;
+		color: $flights-color-2;
 		font-weight: bold;
 		font-size: 15px;
+		margin-bottom: 5px;
+
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 13px;
+		}
 	}
 
 	& .date{
@@ -38,17 +64,29 @@
 		-webkit-transform: translate(0, -50%);
 		transform: translate(0, -50%);
 
+		@media all and (max-width: $breakpoint-tablet){
+			right: auto;
+			left: 0px;
+			width: 50px;
+		}
+
 		&:before{
 			content: "";
 			width: 100%;
 			height: 1px;
-			background-color: $border-color;
+			background-color: #95a5a6;
 			display: block;
 			position: absolute;
 			top: 50%;
 			-ms-transform: translate(0, -50%);
 			-webkit-transform: translate(0, -50%);
 			transform: translate(0, -50%);
+
+			@media all and (max-width: $breakpoint-tablet){
+				width: 1px;
+				height: 100%;
+				left: 50%;
+			}
 		}
 
 		& .icon{
@@ -59,7 +97,13 @@
 			-ms-transform: translate(-50%, -50%);
 			-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-			color: $border-color;
+			color: #95a5a6;
+
+			@media all and (max-width: $breakpoint-tablet){
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
 
 			& span{
 				-ms-transform: rotate(90deg); /* IE 9 */
@@ -68,6 +112,14 @@
 				line-height: 1;
 				display: block;
 				top: -1px;
+
+				@media all and (max-width: $breakpoint-tablet){
+					-ms-transform: rotate(180deg); /* IE 9 */
+					-webkit-transform: rotate(180deg); /* Safari */
+					transform: rotate(180deg);
+
+					left: 2px;
+				}
 			}
 
 			
@@ -100,18 +152,141 @@
 
 		&:hover{
 			color: #fff;
-			background-color: $primary-btn-bg-hover-color;
+			background-color: $flights-color-2;
 		}
 	}
 }
 
+.flights-searching{
+	text-align: center;
+	min-height: 400px;
+	position: relative;
+
+	@media all and (max-width: $breakpoint-mobile){
+		min-height: 300px;
+	}	
+
+	& .heading{
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 15px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 20px;
+		}
+	}
+
+	& .data{
+		font-size: 16px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 12px;
+		}
+
+		& p{
+			margin-bottom: 5px;
+		}
+
+		& span{
+			color: #7f8c8d;
+			margin: 0 5px;
+		}
+	}
+
+	& .loader{
+		// background: transparent url(https://media.tix.nl/loader_white_bg_48.gif) no-repeat center center;
+		// background-size: cover;
+		// width: 50px;
+		// height: 50px;
+		// display: inline-block;
+		// margin-top: 15px;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		overflow: hidden;
+		background-color: #000;
+		display: inline-block;
+		margin-top: 30px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			width: 40px;
+			height: 40px;
+		}
+
+		&-mask{
+			background: transparent url(../img/loader-mask.png) no-repeat center center;
+			background-size: cover;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		&-circle{
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			
+
+			width: 1px;
+			height: 1px;
+			background-color: $flights-color-2;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+
+			-webkit-transition: all 0.2s ease-out 0s;
+			-moz-transition: all 0.2s ease-out 0s;
+			-o-transition: all 0.2s ease-out 0s;
+			transition: all 0.2s ease-out 0s;
+
+			-webkit-animation: CIRCLE 1.2s infinite; /* Safari 4+ */
+			-moz-animation:    CIRCLE 1.2s infinite; /* Fx 5+ */
+			-o-animation:      CIRCLE 1.2s infinite; /* Opera 12+ */
+			animation:         CIRCLE 1.2s infinite; /* IE 10+, Fx 29+ */
+
+			transform-origin: 50% 50%;
+		}
+	}
+}
+
+@-webkit-keyframes CIRCLE {
+  0%   { transform: scale(1, 1); }
+	100% { transform: scale(70, 70); }
+}
+@-moz-keyframes CIRCLE {
+  0%   { transform: scale(1, 1); }
+	100% { transform: scale(70, 70); }
+}
+@-o-keyframes CIRCLE {
+  0%   { transform: scale(1, 1); }
+	100% { transform: scale(70, 70); }
+}
+@keyframes CIRCLE {
+	0%   { transform: scale(1, 1); }
+	100% { transform: scale(70, 70); }
+}
+
 .flights-feature{
-	border: 1px solid $border-color;
+	border: 1px solid #ddd;
 	background-color: #fff;
 	padding: 20px 20px 20px 65px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	position: relative;
 	font-size: 15px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+
+	& .readmore{
+		color: $flights-color-2 !important;
+	}
 
 
 	&:before{
@@ -121,7 +296,7 @@
 		font-size: 36px;
 		left: 20px;
 		top: 20px;
-		color: $primary-btn-bg-hover-color;
+		color: $flights-color-2;
 	}
 
 	&--price:before{
@@ -148,17 +323,25 @@
 
 .flights-item{
 	background-color: #fff;
-	border: 1px solid $border-color;
+	border: 1px solid #ddd;
 	padding: 0 10px 10px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	margin-bottom: 30px;
 
 	& .operator{
-		border-bottom: 1px solid $border-color;
+		border-bottom: 1px solid #ddd;
 		position: relative;
 		padding: 10px 0;
 
 		&-logo{
-			width: 110px;
+			width: 130px;
 			float: left;
+
+			@media all and (max-width: $breakpoint-mobile){
+				width: 100px;
+			}
 		}
 
 		& .cabinclass{
@@ -174,6 +357,16 @@
 			-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 			text-transform: uppercase;
+
+			@media all and (max-width: $breakpoint-mobile){
+				// padding: 5px;
+				font-size: 10px;
+				left: auto;
+				right: 0;
+				-ms-transform: translate(0%, -50%);
+				-webkit-transform: translate(0%, -50%);
+				transform: translate(0%, -50%);
+			}
 		}
 	}
 
@@ -208,6 +401,11 @@
 		border: 0;
 		margin: 10px 0 30px;
 
+		@media all and (max-width: $breakpoint-mobile){
+			margin-bottom: 10px;
+		}
+
+
 		& tr{
 			cursor: pointer;
 		}
@@ -219,13 +417,22 @@
 			padding: 5px 5px 10px;
 			font-size: 13px;
 
+			@media all and (max-width: $breakpoint-mobile){
+				display: none;
+
+				&.date{
+					display: table-cell;
+					width: 100%;
+				}
+			}
+
 			& i{
 				margin-right: 15px;
 				font-size: 15px;
 			}
 
 			& span{
-				color: $primary-btn-bg-hover-color;
+				color: $flights-color-2;
 				font-size: 16px;
 			}
 		}
@@ -239,16 +446,36 @@
 			&.departure-time, &.arrival-time{
 				font-size: 15px;
 			}
+
+			@media all and (max-width: $breakpoint-mobile){
+				vertical-align: top;
+			}
+
+			&.mobile-radio{
+				width: 10% !important;
+			}
+			&.mobile-label{
+				display: none;
+				font-size: 12px;
+
+				@media all and (max-width: $breakpoint-mobile){
+					display: table-cell;
+				}
+			}
 		}
 
 		& .info{
 			font-size: 16px;
-			color: $primary-btn-bg-hover-color;
+			color: $flights-color-2;
 		}
 
 		& .flights-radio{
 			margin: 0 10px 0 0;
 			display: inline-block;
+		}
+
+		& tbody tr:hover{
+			background-color: #f1f1f1;
 		}
 
 		& tbody tr:nth-child(odd){
@@ -303,5 +530,17 @@
 		display:inline-block;
 		vertical-align: baseline;
 		margin-right: 5px;
+	}
+}
+
+.button-flights{
+	background-color: $flights-color-2 !important;
+	border-color: $flights-color-2 !important;
+	color: #fff;
+
+	&:hover{
+		color: #fff !important;
+		background-color: $flights-color-2-hover !important;
+		border-color: $flights-color-2-hover !important;
 	}
 }
