@@ -274,6 +274,7 @@
 }
 
 
+
 .form-select{
 	display: block;
 	width: 100%;
@@ -284,9 +285,10 @@
 	color: rgba(0,0,0,0);
 	background-color: $select-bg-color;
 	padding: 0px 40px 0 15px;
-	-webkit-appearance: none;  /*Removes default chrome and safari style*/
-	-moz-appearance: none; /* Removes Default Firefox style*/
-	appearance:none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 	background: #fff url(../img/form-select-bg.png) no-repeat right center;
 	background-size: 25px;
 	margin-bottom: 8px;
@@ -298,14 +300,13 @@
 	-moz-box-shadow:    none;
 	box-shadow:         none;
 
+	&::-ms-expand {
+		display: none!important;
+	}
+
 	&--sort{
 		min-width: 200px;
 	}
-
-	& select::-ms-expand {
-		display: none;
-	}
-
 
 	&:focus{
 		-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
@@ -379,6 +380,9 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
 	background:url(../img/check_radio_sheet.png) -26px top no-repeat;
 }
+
+
+
 .form-text-message{
 	margin-bottom: 15px;
 }
@@ -443,3 +447,5 @@ input[type="checkbox"]:checked + label span {
 		display: block !important;
 	}
 }
+
+select::-ms-expand { display: none !important; }

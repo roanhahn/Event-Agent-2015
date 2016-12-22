@@ -12,3 +12,5 @@ dist/assets/img/flyingdutch/.DS_Store
 src/static/js/.DS_Store
 
 src/static/.DS_Store
+
+*.zip
