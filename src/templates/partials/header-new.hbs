@@ -1,0 +1,184 @@
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a href="index.html" class="header-logo"></a>
+				<nav class="header-menu">
+					<ul class="header-menu-list">
+						{{!-- <li class="header-menu-item">
+							<a class="header-menu-link show-tell">why book</a>
+						</li> --}}
+					   {{!--  <li class="header-menu-item">
+							<a class="header-menu-link show-tell">login</a>
+						</li> --}}
+						<li class="header-menu-item">
+
+
+							<div class="dropdown">
+								<button class="user-avatar" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="http://static.wixstatic.com/media/9be9ce_e77a94830e104231bcc7c2af67854d24.jpg" alt="Username">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu user-menu" aria-labelledby="dLabel">
+									<li><a href="#">Mijn boekingen</a></li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="line"><a href="#">Profiel</a></li>
+									<li><a href="#">Uitloggen</a></li>
+								</ul>
+							</div>
+
+
+							{{!-- <div class="user-avatar" data-toggle="dropdown">
+								<img src="http://static.wixstatic.com/media/9be9ce_e77a94830e104231bcc7c2af67854d24.jpg" alt="Username">
+								<span class="carret"></span>
+								<div class="user-menu dropdown-menu">
+									<ul>
+										<li><a href="#">Mijn boekingen</a></li>
+										<li><a href="#">Item</a></li>
+										<li><a href="#">Item</a></li>
+										<li class="line"><a href="#">Profiel</a></li>
+										<li><a href="#">Uitloggen</a></li>
+									</ul>
+								</div>
+							</div> --}}
+						</li>
+						<li class="header-menu-item">
+							<a class="header-menu-link">login</a>
+						</li>
+						<li class="header-menu-item">
+							<div class="header-menu-link show-cart">
+								<div class="cart-total cart-total--active"><i class="fa fa-shopping-cart" aria-hidden="true"></i> your booking  <span class="cart-amount"> &euro;4.765,95</span></div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Cart -->
+<div class="cart">
+	<div class="cart-wrapper">
+		<div class="container">
+
+
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="close-cart"></div>
+
+					<!-- If empty -->
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3 class="h3-header">Your Booking is empty, follow these steps</h3>
+						</div>
+					</div>
+					<div class="row cart-steps">
+						<div class="col-sm-3 col-md-2 col-md-offset-1 step-item">
+							<div class="step-descr">1. Select ticket</div>
+							<div class="step-icon"><object data="assets/img/icon-ticket.svg" type="image/svg+xml" class="step-svg"></object></div>
+							<div class="step-text">Some text goes here</div>
+						</div>
+						<div class="col-sm-3 col-md-2 step-item">
+							<div class="step-descr">2. Select Hotel</div>
+							<div class="step-icon"><object data="assets/img/icon-hotel.svg" type="image/svg+xml" class="step-svg"></object></div>
+							<div class="step-text">Some text goes here</div>                            
+						</div>
+						<div class="col-sm-3 col-md-2 step-item">
+							<div class="step-descr">3. Customise</div>
+							<div class="step-icon"><object data="assets/img/icon-customize.svg" type="image/svg+xml" class="step-svg"></object></div>
+							<div class="step-text">Some text goes here</div>
+						</div>
+						<div class="col-sm-3 col-md-2 step-item">
+							<div class="step-descr">4. Personal info</div>
+							<div class="step-icon"><object data="assets/img/icon-personal.svg" type="image/svg+xml" class="step-svg"></object></div>
+							<div class="step-text">Some text goes here</div>                            
+						</div>
+						<div class="col-sm-3 col-md-2 step-item">
+							<div class="step-descr">5. Summary</div>
+							<div class="step-icon"><object data="assets/img/icon-summary.svg" type="image/svg+xml" class="step-svg"></object></div>
+							<div class="step-text">Some text goes here</div>
+						</div>
+					</div>
+
+
+					<form>
+						<label class="form-label">Your Booking</label>
+						<div class="row">
+							<div class="col-sm-3 strong">Ticket:</div>
+							<div class="col-xs-6 col-sm-5">2 x premium ticket</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 150,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section"></div></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Hotel:</div>
+							<div class="col-xs-8 col-sm-5">Ibis Amsterdam Airport</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Check in:</div>
+							<div class="col-xs-8 col-sm-5">Thursday 24 nov</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-3 strong">Check out:</div>
+							<div class="col-xs-8 col-sm-5">Monday 05 dec</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Room 1:</div>
+							<div class="col-xs-6 col-sm-5">Presidential Suite: <span class="extra-info">2 adults, 3 nights</span></div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Room 2:</div>
+							<div class="col-xs-6 col-sm-5">Suite: <span class="extra-info">rolstoeltoegankelijk, 2 adults, 3 nights</span></div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 2.667,50</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section"></div></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong">Customize:</div>
+							<div class="col-xs-6 col-sm-5">Limousine transfer</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 100,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 strong"></div>
+							<div class="col-xs-6 col-sm-5">Safari tour</div>
+							<div class="col-xs-4 col-sm-2 text-right">&euro; 200,00</div>
+							<div class="col-xs-2 text-right"><button class="btn-remove"><span>Remove</span></button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12"><div class="summary-section summary-section--total"></div></div>
+						</div>
+						<div class="row summary-total">
+							<div class="col-xs-6 strong">Total price</div>
+							<div class="col-xs-6 text-right strong">&euro; 4.765,95</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End cart -->
+
+<!-- Message -->
+<div class="message">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<i class="fa fa-check"></i> 2 Tickets added to your booking
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Start content -->
+<div class="content-wrapper">
