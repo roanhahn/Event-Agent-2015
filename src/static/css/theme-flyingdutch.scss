@@ -14,8 +14,8 @@ $theme-folder: flyingdutch;
 $primary-font: 'proximanova-regular', Arial, sans-serif;
 $primary-text-color: #000;
 $primary-link-color: #000;
-$secondary-text-color: #e10512;
-$secondary-link-color: #e10512;
+$secondary-text-color: #d6001c;
+$secondary-link-color: #d6001c;
 $tertiary-text-color: #000;
 $tertiary-link-color: #000;
 
@@ -33,13 +33,13 @@ $logo-height-mobile: 50px;
 $header-border-color: #ddd;
 $header-link-color: #000;
 $header-link-size: 20px;
-$header-hover-color: #e10512;
+$header-hover-color: #d6001c;
 
 
 
 // HERO STYLING
 
-$hero-bg-color: #29ABE2;
+$hero-bg-color: #00b2ff;
 $hero-color: #fff;
 $hero-size: 50px;
 $hero-size-mobile: 25px;
@@ -50,7 +50,7 @@ $footer-bg-color: #000;
 $footer-padding: 45px;
 $footer-text-color: #fff;
 $footer-link-color: #fff;
-$footer-hover-color: #29abe2;
+$footer-hover-color: #00b2ff;
 $footer-header-color: #fff;
 $footer-header-size: 16px;
 $footer-header-weight: 700;
@@ -61,7 +61,7 @@ $footer-form-line-color: #fff;
 $footer-form-input-color: #fff;
 $footer-form-submit-bg-color: #fff;
 $footer-form-submit-color: #000;
-$footer-form-submit-hover-bg-color: #29abe2;
+$footer-form-submit-hover-bg-color: #00b2ff;
 $footer-form-submit-hover-color: #fff;
 
 
@@ -89,7 +89,7 @@ $border-color: #000;
 
 // RIBBON STYLING
 
-$ribbon-color: #e10512;
+$ribbon-color: #d6001c;
 $ribbon-shadow-color: #231f20;
 
 
@@ -162,7 +162,7 @@ body{
     }
 }
 .header-logo{
-    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat 0 0 scroll !important;
+    background: transparent url(../img/#{$theme-folder}/logo-2017.svg) no-repeat 0 0 scroll !important;
     background-size: $logo-width !important;
     margin-top: 0 !important;
     @media all and (max-width: $breakpoint-mobile){

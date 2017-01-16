@@ -41,6 +41,13 @@ $(".hotel-item-grid").hover
 */
 
 
+// PopOver
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+})
+
+
 // DATEPICKER
 
     $('.input-group.date').datepicker({

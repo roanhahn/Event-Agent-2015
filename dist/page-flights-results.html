@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Book Flights - Results</title>
 	<link href="assets/css/styles.min.css" rel="stylesheet">
-	<link href="assets/img/amf/favicon.ico?v=2" rel="shortcut icon" type="image/ico" />
+	
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -38,20 +38,34 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="index.html" class="header-logo"></a>
-				<!--<div class="mobile-cart show-cart">
-					<div class="cart-total">&euro; 4.765,95</div>
-				</div>-->
 				<nav class="header-menu">
 					<ul class="header-menu-list">
+						
+					   
+						<li class="header-menu-item user">
+
+
+							<div class="dropdown">
+								<button class="user-avatar" id="" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="http://static.wixstatic.com/media/9be9ce_e77a94830e104231bcc7c2af67854d24.jpg" alt="Username">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu user-menu dropdown-menu-right " aria-labelledby="">
+									<li><a href="#">Mijn boekingen</a></li>
+									<li><a href="#">Mijn tickets</a></li>
+									<li><a href="#">Mijn vrienden</a></li>
+									<li class="line"><a href="#">Profiel</a></li>
+									<li><a href="#">Uitloggen</a></li>
+								</ul>
+							</div>
+						</li>
+						
 						<li class="header-menu-item">
 							<a class="header-menu-link show-tell">why book</a>
 						</li>
 						<li class="header-menu-item">
-							<a class="header-menu-link show-tell">info</a>
-						</li>
-						<li class="header-menu-item">
 							<div class="header-menu-link show-cart">
-								<div class="cart-total cart-total--active">your booking  <span class="cart-amount">&euro;4.765,95</span></div>
+								<div class="cart-total cart-total--active"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="cart-text"> your booking</span> <span class="cart-amount"> &euro;4.765,95</span></div>
 							</div>
 						</li>
 					</ul>
@@ -66,7 +80,7 @@
 	<div class="cart-wrapper">
 		<div class="container">
 
-			
+
 
 			<div class="row">
 				<div class="col-sm-12">
@@ -87,7 +101,7 @@
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">2. Select Hotel</div>
 							<div class="step-icon"><object data="assets/img/icon-hotel.svg" type="image/svg+xml" class="step-svg"></object></div>
-							<div class="step-text">Some text goes here</div>							
+							<div class="step-text">Some text goes here</div>                            
 						</div>
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">3. Customise</div>
@@ -97,7 +111,7 @@
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">4. Personal info</div>
 							<div class="step-icon"><object data="assets/img/icon-personal.svg" type="image/svg+xml" class="step-svg"></object></div>
-							<div class="step-text">Some text goes here</div>							
+							<div class="step-text">Some text goes here</div>                            
 						</div>
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">5. Summary</div>
@@ -246,7 +260,7 @@
 			
 			<div class="col-md-3">
 				<h3 class="h3">Filter je resultaten</h3>
-				<button class="button button--primary button-flights m-b-20"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filter</button>
+				<button class="button button--block button--primary button-flights m-b-20"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filter</button>
 				<div class="panel panel-default flights-filter">
 					<div class="panel-heading" data-toggle="collapse" href="#stops" aria-expanded="true" aria-controls="stops">
 						Aantal stops:
@@ -341,7 +355,11 @@
 					<h2 class="h2">Alle zoekresultaten</h2>
 					<p class="h4">Er zijn 63 vluchten gevonden.</p>
 				</div>
-				<div class="flights-item">
+				
+
+
+
+<div class="flights-item">
 	<div class="operator clearfix">
 		<div class="operator-logo">
 			<img src="https://7thgear-prod.azureedge.net/img/FlightEngine/Default/Airlines/th_dl_tx.png" alt="" class="img-responsive">
@@ -362,16 +380,66 @@
 				</thead>
 				<tbody>
 					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
+						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht1" class="flights-radio flight-radio-desk"> 10u35</td>
 						<td class="xs-hide departure-airport">Amsterdam</td>
 						<td class="xs-hide arrival-time">13u30</td>
 						<td class="xs-hide arrival-airport">New York, JFK...</td>
 						<td class="xs-hide seats-left">9</td>
 						<td class="xs-hide stopovers">Direct</td>
 						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+						<td class="xs-hide info">
+							<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</td>
 						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
+						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht1" class="flights-radio flight-radio-mob"></td>
 						<td class="mobile-label">
 							<div>Vertrek</div>
 							<div>Aankomst</div>
@@ -389,20 +457,120 @@
 						<td class="mobile-label">
 							<div>Amsterdam</div>
 							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+							<div class="info">
+								<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							</div>
 						</td>
 					</tr>
 					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
+						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht1" class="flights-radio flight-radio-desk"> 10u35</td>
 						<td class="xs-hide departure-airport">Amsterdam</td>
 						<td class="xs-hide arrival-time">13u30</td>
 						<td class="xs-hide arrival-airport">New York, JFK...</td>
 						<td class="xs-hide">0</td>
 						<td class="xs-hide">1x</td>
 						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+						<td class="xs-hide info">
+							<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</td>
 						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
+						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht1" class="flights-radio flight-radio-mob"></td>
 						<td class="mobile-label">
 							<div>Vertrek</div>
 							<div>Aankomst</div>
@@ -420,7 +588,57 @@
 						<td class="mobile-label">
 							<div>Amsterdam</div>
 							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+							<div class="info">
+								<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							</div>
 						</td>
 					</tr>
 				</tbody>
@@ -437,16 +655,66 @@
 				</thead>
 				<tbody>
 					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
+						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht2" class="flights-radio flight-radio-desk"> 10u35</td>
 						<td class="xs-hide departure-airport">Amsterdam</td>
 						<td class="xs-hide arrival-time">13u30</td>
 						<td class="xs-hide arrival-airport">New York, JFK...</td>
 						<td class="xs-hide seats-left">9</td>
 						<td class="xs-hide stopovers">Direct</td>
 						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+						<td class="xs-hide info">
+							<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</td>
 						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
+						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht2" class="flights-radio flight-radio-mob"></td>
 						<td class="mobile-label">
 							<div>Vertrek</div>
 							<div>Aankomst</div>
@@ -464,20 +732,120 @@
 						<td class="mobile-label">
 							<div>Amsterdam</div>
 							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+							<div class="info">
+								<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							</div>
 						</td>
 					</tr>
 					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
+						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht2" class="flights-radio flight-radio-desk"> 10u35</td>
 						<td class="xs-hide departure-airport">Amsterdam</td>
 						<td class="xs-hide arrival-time">13u30</td>
 						<td class="xs-hide arrival-airport">New York, JFK...</td>
 						<td class="xs-hide">0</td>
 						<td class="xs-hide">1x</td>
 						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
+						<td class="xs-hide info">
+							<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</td>
 						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
+						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht2" class="flights-radio flight-radio-mob"></td>
 						<td class="mobile-label">
 							<div>Vertrek</div>
 							<div>Aankomst</div>
@@ -495,7 +863,57 @@
 						<td class="mobile-label">
 							<div>Amsterdam</div>
 							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+							<div class="info">
+								<a tabindex="0" role="button" type="button" class="" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-container="body" title="Amsterdam - Zurich<br />Reisduur: 14u10" data-html="true" data-content="<table class='flight-popover'>
+	<tbody>
+		<tr>
+			<td class='first'>Vlucht 1</td>
+			<td>Amsterdam -Zurich</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>09u50</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>11u20</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>1u30</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX725</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'><strong>Transfertijd 1u55, Zurich</strong></td>
+		</tr>
+
+		<tr>
+			<td class='first'>Vlucht 2</td>
+			<td>Zurich -Miami</td>
+		</tr>
+		<tr>
+			<td class='first'>Vertrek</td>
+			<td><strong>13u15</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Aankomst</td>
+			<td><strong>18u00</strong> ma. 09 jan. 2017</td>
+		</tr>
+		<tr>
+			<td class='first'>Reisduur</td>
+			<td>10u45</td>
+		</tr>
+		<tr>
+			<td class='first'>Vluchtnummer</td>
+			<td>LX64</td>
+		</tr>
+	</tbody>
+</table>"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							</div>
 						</td>
 					</tr>
 				</tbody>
@@ -513,350 +931,7 @@
 		</div>
 	</div>
 </div>
-				<div class="flights-item">
-	<div class="operator clearfix">
-		<div class="operator-logo">
-			<img src="https://7thgear-prod.azureedge.net/img/FlightEngine/Default/Airlines/th_dl_tx.png" alt="" class="img-responsive">
-		</div>
-		<div class="cabinclass">Economy</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-9">
-			<table>
-				<thead>
-					<tr>
-						<th colspan="4" class="date"><i class="fa fa-plane" aria-hidden="true"></i> <span>Vlucht 1:</span> vrijdag 23 dec. 2016</th>
-						<th>Stoelen</th>
-						<th>Stops</th>
-						<th>Reisduur</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide seats-left">9</td>
-						<td class="xs-hide stopovers">Direct</td>
-						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>9</div>
-							<div>Direct</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide">0</td>
-						<td class="xs-hide">1x</td>
-						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>0</div>
-							<div>1x</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<table>
-				<thead>
-					<tr>
-						<th colspan="4" class="date"><i class="fa fa-plane fa-flip-horizontal" aria-hidden="true"></i> <span>Vlucht 2:</span> vrijdag 23 dec. 2016</th>
-						<th>Stoelen</th>
-						<th>Stops</th>
-						<th>Reisduur</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide seats-left">9</td>
-						<td class="xs-hide stopovers">Direct</td>
-						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>9</div>
-							<div>Direct</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide">0</td>
-						<td class="xs-hide">1x</td>
-						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>0</div>
-							<div>1x</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="col-sm-3 text-center booking">
-			<div class="fare">€1.393,-</div>
-			<div class="book">
-				<a href="" class="button button--flights">Boek nu</a>
-			</div>
-			<div class="bagage">
-				<div><i class="fa fa-suitcase" aria-hidden="true"></i></div>
-				Bagage inbegrepen
-			</div>
-		</div>
-	</div>
-</div>
-				<div class="flights-item">
-	<div class="operator clearfix">
-		<div class="operator-logo">
-			<img src="https://7thgear-prod.azureedge.net/img/FlightEngine/Default/Airlines/th_dl_tx.png" alt="" class="img-responsive">
-		</div>
-		<div class="cabinclass">Economy</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-9">
-			<table>
-				<thead>
-					<tr>
-						<th colspan="4" class="date"><i class="fa fa-plane" aria-hidden="true"></i> <span>Vlucht 1:</span> vrijdag 23 dec. 2016</th>
-						<th>Stoelen</th>
-						<th>Stops</th>
-						<th>Reisduur</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide seats-left">9</td>
-						<td class="xs-hide stopovers">Direct</td>
-						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>9</div>
-							<div>Direct</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide">0</td>
-						<td class="xs-hide">1x</td>
-						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>0</div>
-							<div>1x</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<table>
-				<thead>
-					<tr>
-						<th colspan="4" class="date"><i class="fa fa-plane fa-flip-horizontal" aria-hidden="true"></i> <span>Vlucht 2:</span> vrijdag 23 dec. 2016</th>
-						<th>Stoelen</th>
-						<th>Stops</th>
-						<th>Reisduur</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" checked="" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide seats-left">9</td>
-						<td class="xs-hide stopovers">Direct</td>
-						<td class="xs-hide traveltime">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>9</div>
-							<div>Direct</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-					<tr class="flight-row">
-						<td class="xs-hide departure-time"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-desk"> 10u35</td>
-						<td class="xs-hide departure-airport">Amsterdam</td>
-						<td class="xs-hide arrival-time">13u30</td>
-						<td class="xs-hide arrival-airport">New York, JFK...</td>
-						<td class="xs-hide">0</td>
-						<td class="xs-hide">1x</td>
-						<td class="xs-hide">8u20</td>
-						<td class="xs-hide info"><i class="fa fa-question-circle" aria-hidden="true"></i></td>
-						
-						<td class="mobile-label mobile-radio"><input type="radio" id="" name="heenvlucht" class="flights-radio flight-radio-mob"></td>
-						<td class="mobile-label">
-							<div>Vertrek</div>
-							<div>Aankomst</div>
-							<div>Stoelen</div>
-							<div>Stops</div>
-							<div>Reisduur</div>
-						</td>
-						<td class="mobile-label">
-							<div>10u35</div>
-							<div>13u30</div>
-							<div>0</div>
-							<div>1x</div>
-							<div>8u20</div>
-						</td>
-						<td class="mobile-label">
-							<div>Amsterdam</div>
-							<div>New York, JFK..</div>
-							<div class="info"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="col-sm-3 text-center booking">
-			<div class="fare">€1.393,-</div>
-			<div class="book">
-				<a href="" class="button button--flights">Boek nu</a>
-			</div>
-			<div class="bagage">
-				<div><i class="fa fa-suitcase" aria-hidden="true"></i></div>
-				Bagage inbegrepen
-			</div>
-		</div>
-	</div>
-</div>
+				
 			</div>
 		</div>
 	</div>

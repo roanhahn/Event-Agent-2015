@@ -3,7 +3,7 @@ title: Book Flights - Results
 layout: default.hbs
 ---
 
-{{> header }}
+{{> header-new }}
 
 
 
@@ -65,7 +65,7 @@ layout: default.hbs
 			{{!-- Filter --}}
 			<div class="col-md-3">
 				<h3 class="h3">Filter je resultaten</h3>
-				<button class="button button--primary button-flights m-b-20"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filter</button>
+				<button class="button button--block button--primary button-flights m-b-20"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filter</button>
 				<div class="panel panel-default flights-filter">
 					<div class="panel-heading" data-toggle="collapse" href="#stops" aria-expanded="true" aria-controls="stops">
 						Aantal stops:
@@ -161,8 +161,8 @@ layout: default.hbs
 					<p class="h4">Er zijn 63 vluchten gevonden.</p>
 				</div>
 				{{> partial-flight }}
-				{{> partial-flight }}
-				{{> partial-flight }}
+				{{!-- {{> partial-flight }}
+				{{> partial-flight }} --}}
 			</div>
 		</div>
 	</div>

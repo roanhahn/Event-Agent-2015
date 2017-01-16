@@ -89,8 +89,8 @@ $border-color: #000;
 
 // RIBBON STYLING
 
-$ribbon-color: #00ade7;
-$ribbon-shadow-color: #231f20;
+$ribbon-color: #3f86d8;
+$ribbon-shadow-color: #000000;
 
 
 // FORM STYLING
@@ -98,322 +98,390 @@ $ribbon-shadow-color: #231f20;
 $select-bg-color: #fff;
 
 body{
-    background: #000 !important;
-    background-size: 100% !important;
+	background: #000 !important;
+	background-size: 100% !important;
 }
 .hero{
-    // background: transparent !important;
-    color: #fff !important;
-    font-weight: normal !important;
+	// background: transparent !important;
+	color: #fff !important;
+	font-weight: normal !important;
 }
 .message{
-    background-color: #00ade7 !important;
+	background-color: #00ade7 !important;
 }
 .section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer{
-    background: #000 url(../img/#{$theme-folder}/background.svg) no-repeat left bottom scroll !important;
-    background-size: 100% auto !important;
+	background: #000 url(../img/#{$theme-folder}/bg.jpg) repeat 0 0 scroll !important;
+	padding-bottom: 0 !important;
+
+	& .container{
+		background: #000;
+		border-left: 1px solid #4d4d4d;
+		border-right: 1px solid #4d4d4d;
+		padding-bottom: 60px !important;
+	}
+	// background-size: 100% auto !important;
+}
+.tell-me-more, .cart-wrapper{
+	padding: 0 !important;
+	height: 100%;
+
+	& .container{
+		padding-top: 60px;
+		padding-bottom: 60px;
+		height: 100%;
+	}
+}
+button[disabled], html input[disabled]{
+	background:  $secondary-text-color !important;
+	cursor: not-allowed;
+}
+.cart-amount, .caret{
+	color: $header-link-color;
 }
 .cart-wrapper{
-    background: transparent !important;
+	background: transparent !important;
 }
 
 .section--theme{
-    background: none !important;
+	background: none !important;
 }
 .header{
-    background-color: #e6e6e6 !important;
-    // border-bottom: 1px solid #4c4c4c !important;
+	background-color: #e6e6e6 !important;
+	// border-bottom: 1px solid #4c4c4c !important;
 }
 .header-menu-item{
-    line-height: 46px !important;
-    margin-top: 15px;
-    margin-left: 10px !important;
+	line-height: 46px !important;
+	margin-top: 15px;
+	margin-left: 10px !important;
 
 }
 .header-menu-link{
-    background: #e6e6e6 !important;
-    color: #000  !important;
-    padding: 0 15px !important;
-    border: none !important;
+	background: #e6e6e6 !important;
+	color: #000  !important;
+	padding: 0 15px !important;
+	border: none !important;
 }
 .cart-total--active{
-    color: #000 !important;
+	color: #000 !important;
 }
-.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme,.section--theme a, .hotel-item-list-price--mobile{
-    color: #3f86d8  !important;
+.header-menu-link:hover .cart-total--active, .section--theme,.section--theme a, .hotel-item-list-price--mobile{
+	color: #3f86d8  !important;
 }
 .cart-total{
-    float: none !important;
+	float: none !important;
 }
 .header-menu-link:hover{
-    background: transparent !important;
-    color: #3f86d8  !important;
-    // border-color: #000;
+	background: transparent !important;
+	color: #3f86d8  !important;
+	// border-color: #000;
 }
 .header-menu-link{
-    margin-left: 0px !important;
-    border: 2px solid #000;
+	margin-left: 0px !important;
+	border: 2px solid #000;
 }
 @media all and (max-width: $breakpoint-mobile){
-    .header-menu-item{
-        line-height: 36px !important;
-        margin-top: 5px !important;
+	.header-menu-item{
+		line-height: 36px !important;
+		margin-top: 5px !important;
 
-    }
-    .header-menu .header-menu-link{
-        font-size: 13px !important;
-        padding: 0 5px!important;
-    }
-    .cart-amount{
-        font-size: 13px !important;
-    }
+	}
+	.header-menu .header-menu-link{
+		font-size: 13px !important;
+		padding: 0 5px!important;
+	}
+	.cart-amount{
+		font-size: 13px !important;
+	}
 }
 .header-logo{
-    background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll !important;
-    background-size: $logo-width !important;
-    margin-top: 0 !important;
-    @media all and (max-width: $breakpoint-mobile){
-        width: $logo-width-mobile !important;
-        background-size: $logo-width-mobile !important;
-        margin: 0 !important;
-    }
+	background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll !important;
+	background-size: $logo-width !important;
+	margin-top: 0 !important;
+	@media all and (max-width: $breakpoint-mobile){
+		width: $logo-width-mobile !important;
+		background-size: $logo-width-mobile !important;
+		margin: 0 !important;
+	}
 }
 
 .header-menu-link{
-    font-family: $secondary-font;
-    text-transform: uppercase;
+	font-family: $secondary-font;
+	text-transform: uppercase;
 }
 
 
 .hero-h1{
-    text-transform: uppercase;
-    line-height: 1.1 !important;
-    letter-spacing: 0px !important;
+	text-transform: uppercase;
+	line-height: 1.1 !important;
+	letter-spacing: 0px !important;
 }
 
 .footer{
-    border-top: 1px solid #4d4d4d;
+	border-top: 1px solid #4d4d4d;
 }
 
 .fold-h3, .button, .form-label, .event-hero h1, .event-hero h1 small, .tell-me-more h3 {
-    font-family: $secondary-font !important;
-    font-weight: normal !important;
+	font-family: $secondary-font !important;
+	font-weight: normal !important;
 }
 .tell-me-more h3{
-    font-size: 26px !important;
+	font-size: 26px !important;
 }
 
 .form-label{
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    font-family: $primary-font !important;
+	font-size: 13px !important;
+	font-weight: 500 !important;
+	font-family: $primary-font !important;
 }
 
 .button{
-    font-size: 14px !important;
-    font-family: $primary-font !important;
-    font-weight: 500 !important;
+	font-size: 15px !important;
+	font-family: $secondary-font !important;
+	letter-spacing: 1px !important;
+	font-weight: 400 !important;
 }
 .button--primary, .button--secondary, .button--next, .button--prev{
-    border-color: #3f86d8 !important;
-    font-family: $primary-font !important;
-    line-height: 40px !important;
-    vertical-align: middle;
-    font-weight: 500 !important;
-    &:hover{
-        background-color: #fff !important;
-        color: $secondary-link-color !important;
-        border-color: #fff !important;
-    }
+	border-color: #3f86d8 !important;
+	font-family: $secondary-font !important;
+	line-height: 40px !important;
+	vertical-align: middle;
+	font-weight: 400 !important;
+	&:hover{
+		background-color: #fff !important;
+		color: $secondary-link-color !important;
+		border-color: #fff !important;
+	}
 }
 
 .button--selected{
-    background-color: $primary-btn-bg-hover-color !important;
-    color: $primary-btn-hover-text-color !important;
-    border-color: $primary-btn-bg-hover-color !important;
+	background-color: $primary-btn-bg-hover-color !important;
+	color: $primary-btn-hover-text-color !important;
+	border-color: $primary-btn-bg-hover-color !important;
 
-    &:hover{
-        background-color: $primary-btn-bg-hover-color;
-        color: $primary-btn-hover-text-color;
-        border-color: $primary-btn-bg-hover-color;
-    }
+	&:hover{
+		background-color: $primary-btn-bg-hover-color;
+		color: $primary-btn-hover-text-color;
+		border-color: $primary-btn-bg-hover-color;
+	}
+}
+
+.button--prev, .button--next{
+	background: $secondary-text-color !important;
 }
 
 .button--prev:before, .button--next:after{
-    font-size: 15px !important;
+	font-size: 15px !important;
 }
 
 .close-cart, .close-page{
-    background: rgba(0, 0, 0, 0) url("../img/close.png") no-repeat scroll center center / 21px auto !important;
+	background: rgba(0, 0, 0, 0) url("../img/close.png") no-repeat scroll center center / 21px auto !important;
 }
 
 .footer-h4{
-    font-family: $secondary-font;
-    font-size: 23px !important;
-    font-weight: 400 !important;
-    padding-top: 35px;
-    @media all and (max-width: $breakpoint-tablet){
-        padding-top: 0px;
-    }
+	font-family: $secondary-font;
+	font-size: 23px !important;
+	font-weight: 400 !important;
+	padding-top: 35px;
+	@media all and (max-width: $breakpoint-tablet){
+		padding-top: 0px;
+	}
 }
 .footer-col{
-    min-height: 185px !important;
-    @media all and (max-width: $breakpoint-tablet){
-        min-height: 0px !important;
-    }
+	min-height: 185px !important;
+	@media all and (max-width: $breakpoint-tablet){
+		min-height: 0px !important;
+	}
 }
 .accordion-h3{
-    text-transform: uppercase;
-    // font-family: $tertiary-font !important;
-    // font-weight: 700 !important;
-    font-size: 35px !important;
-    color: #fff;
+	text-transform: uppercase;
+	// font-family: $tertiary-font !important;
+	// font-weight: 700 !important;
+	font-size: 35px !important;
+	color: #fff;
 
-    & small{
-        font-family: $primary-font !important;
-        font-weight: normal !important;
-    }
+	& small{
+		font-family: $primary-font !important;
+		font-weight: normal !important;
+	}
 
-    @media all and (max-width: $breakpoint-mobile){
-        font-size: 24px !important;
-    }
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 24px !important;
+	}
 }
 
 .accordion-h3, .accordion-h3:active, .accordion-h3:visited {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .my-pager-link{
-    color: #fff !important;
-    font-weight: 400 !important;
+	color: #fff !important;
+	font-weight: 400 !important;
 }
 .my-pager-link--active{
-    color: $secondary-link-color !important;
-    font-weight: 700 !important;
+	color: $secondary-link-color !important;
+	font-weight: 700 !important;
 }
 
 .accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1{
-    border-color: #4d4d4d !important;
+	border-color: #4d4d4d !important;
 }
 .accordion-h3 small, .accordion-h3:after{
-    color: #fff !important;
+	color: #fff !important;
 }
 .accordion-row{
-    background-color: #000;
-    &:hover{
-       background-color: #191919 !important;
+	background-color: #000;
+	&:hover{
+	   background-color: #191919 !important;
 
-       & .accordion-h3 small{
-        color: #fff !important;
-    }
-    & .accordion-h3:after{
-       color: #fff !important;
+	   & .accordion-h3 small{
+		color: #fff !important;
+	}
+	& .accordion-h3:after{
+	   color: #fff !important;
    }
 }
 }
 
 .open .accordion-row{
-    background-color: #191919 !important;
-    border-bottom: 1px solid #4c4c4c !important;
+	background-color: #191919 !important;
+	border-bottom: 1px solid #4c4c4c !important;
 }
 .open .accordion-h3, .switch-display .switch-display-list-item, .form-rooms span{
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .back, .front{
-    background-color: #191919 !important;
+	background-color: #191919 !important;
 }
 
 .display-options-grid{
-    background-image: url(../img/icon-grid-white.svg) !important;
+	background-image: url(../img/icon-grid-white.svg) !important;
 }
 .display-options-list{
-    background-image: url(../img/icon-list-white.svg) !important;
+	background-image: url(../img/icon-list-white.svg) !important;
 }
 .display-options-map{
-    background-image: url(../img/icon-map-white.svg) !important;
+	background-image: url(../img/icon-map-white.svg) !important;
 }
 .plain h1{
-    text-transform: uppercase;
-    font-weight: 700;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .h3-header{
-    text-transform: uppercase;
-    font-size: 20px !important;
+	text-transform: uppercase;
+	font-size: 20px !important;
 }
 
 .button--hero{
-    -webkit-border-radius: 50px !important;
-    -moz-border-radius: 50px !important;
-    border-radius: 50px !important;
-    font-family: $secondary-font !important;
-    text-transform: uppercase!important;
-    font-weight: 400 !important;
-    font-size: 36px !important;
-    letter-spacing: 0px!important;
-    background-color: #000 !important;
-    padding: 20px 50px !important;
-    color: #fff !important;
+	-webkit-border-radius: 50px !important;
+	-moz-border-radius: 50px !important;
+	border-radius: 50px !important;
+	font-family: $secondary-font !important;
+	text-transform: uppercase!important;
+	font-weight: 400 !important;
+	font-size: 36px !important;
+	letter-spacing: 0px!important;
+	background-color: #000 !important;
+	padding: 20px 50px !important;
+	color: #fff !important;
 
-    & span{
-        display: block !important;
-    }
+	& span{
+		display: block !important;
+	}
 
-    &:hover{
-        color: #000 !important;
-        background-color: #fff !important;
-    }
+	&:hover{
+		color: #000 !important;
+		background-color: #fff !important;
+	}
 
-    @media all and (max-width: $breakpoint-mobile){
-        font-size: 18px !important;
-    }
+	@media all and (max-width: $breakpoint-mobile){
+		font-size: 18px !important;
+	}
 }
 
 .button--location{
-    font-size: 25px !important;
-    font-weight: 900 !important;
-    padding: 15px 30px!important;
-    font-family: $secondary-font !important;
-    text-transform: uppercase!important;
-    font-weight: 400 !important;
-    letter-spacing: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
+	font-size: 25px !important;
+	font-weight: 900 !important;
+	padding: 15px 30px!important;
+	font-family: $secondary-font !important;
+	text-transform: uppercase!important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
 }
 
 .ribbon .text, .location-h3, .location-h3 small{
-    font-family: $secondary-font !important;
-    font-weight: normal !important;
+	font-family: $secondary-font !important;
+	font-weight: normal !important;
 }
 
 .customize-item, .hotel-item-list, .front, .back, .hotel-item-grid{
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
-    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
-    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
+	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
+	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.15)!important;
 }
 
+.customize-item, .hotel-item-list{
+	border-bottom: 1px solid #4d4d4d;
+	padding-bottom: 20px;
+	margin-bottom: 20px !important;
+}
+
+.hotel-item-list-price, .hotel-item-list-content .title, .hotel-item-list-content .title a{
+	color: $secondary-text-color !important;
+}
 .hotel-item-list-price span, .readmore{
-    color: #fff !important;
+	color: #fff !important;
 }
 .hotel-details-room .room-price span, .hotel-details-room .room-details, .hotel-item-list-price span {
-    color: #9e9f9e !important;
+	color: #9e9f9e !important;
 }
 
 .hotel-item-list, .hotel-item-grid, .hotel-item-map, .hotel-item-grid-content .intro, .customize-item, .hotel-item-list, .hotel-item-list-content .list{
-    background-color: #191919 !important;
-    color: #fff !important;
+	background-color: #000 !important;
+	color: #fff !important;
 }
 
 .hotel-item-list-content .room-details ul, .hotel-item-list-content .intro, .hotel-item-grid-price span {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .front .hotel-item-grid, .back .hotel-item-grid{
-    -webkit-box-shadow: none!important;
-    -moz-box-shadow:    none!important;
-    box-shadow:         none!important;
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow:    none!important;
+	box-shadow:         none!important;
+}
+
+.event-hero h1{
+	font-family: $secondary-font !important;
+	font-size: 120px !important;
+	line-height: 1 !important;
+
+	@media all and (max-width: $breakpoint-tablet){
+		font-size: 60px !important;
+	}
+
+	@media all and (max-width: $breakpoint-mobile){
+			font-size: 40px !important;
+		}
+
+	& small{
+		font-weight: 400 !important;
+		font-size: 40px !important;
+		line-height: 1 !important;
+		font-family: $primary-font !important;
+
+		@media all and (max-width: $breakpoint-tablet){
+			font-size: 20px !important;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 16px !important;
+		}
+	}
 }
 
 // .location-content{
@@ -444,24 +512,24 @@ body{
 //     color: #000 !important;
 // }
 .location-h3 small{
-    font-family: $primary-font !important;
+	font-family: $primary-font !important;
 }
 .location-date{
-    font-family: $secondary-font !important;
+	font-family: $secondary-font !important;
 }
 .h1-offline, .p-offline{
-    color: $primary-text-color !important;
+	color: $primary-text-color !important;
 }
 
 .logo-offline{
-    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0/contain scroll !important;
+	background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0/contain scroll !important;
 }
 .loading-data{
-    background-color: rgba(0,0,0,0.6)!important;
+	background-color: rgba(0,0,0,0.6)!important;
 }
 .owl-theme .owl-controls .owl-page span{
-    background-color: #fff !important;
+	background-color: #fff !important;
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
-    background-color: $secondary-link-color !important;
+	background-color: $secondary-link-color !important;
 }

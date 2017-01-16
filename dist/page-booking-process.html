@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Complete booking process with harmonica</title>
 	<link href="assets/css/styles.min.css" rel="stylesheet">
-	<link href="assets/img/amf/favicon.ico?v=2" rel="shortcut icon" type="image/ico" />
+	
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -38,20 +38,34 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="index.html" class="header-logo"></a>
-				<!--<div class="mobile-cart show-cart">
-					<div class="cart-total">&euro; 4.765,95</div>
-				</div>-->
 				<nav class="header-menu">
 					<ul class="header-menu-list">
+						
+					   
+						<li class="header-menu-item user">
+
+
+							<div class="dropdown">
+								<button class="user-avatar" id="" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="http://static.wixstatic.com/media/9be9ce_e77a94830e104231bcc7c2af67854d24.jpg" alt="Username">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu user-menu dropdown-menu-right " aria-labelledby="">
+									<li><a href="#">Mijn boekingen</a></li>
+									<li><a href="#">Mijn tickets</a></li>
+									<li><a href="#">Mijn vrienden</a></li>
+									<li class="line"><a href="#">Profiel</a></li>
+									<li><a href="#">Uitloggen</a></li>
+								</ul>
+							</div>
+						</li>
+						
 						<li class="header-menu-item">
 							<a class="header-menu-link show-tell">why book</a>
 						</li>
 						<li class="header-menu-item">
-							<a class="header-menu-link show-tell">info</a>
-						</li>
-						<li class="header-menu-item">
 							<div class="header-menu-link show-cart">
-								<div class="cart-total cart-total--active">your booking  <span class="cart-amount">&euro;4.765,95</span></div>
+								<div class="cart-total cart-total--active"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="cart-text"> your booking</span> <span class="cart-amount"> &euro;4.765,95</span></div>
 							</div>
 						</li>
 					</ul>
@@ -66,7 +80,7 @@
 	<div class="cart-wrapper">
 		<div class="container">
 
-			
+
 
 			<div class="row">
 				<div class="col-sm-12">
@@ -87,7 +101,7 @@
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">2. Select Hotel</div>
 							<div class="step-icon"><object data="assets/img/icon-hotel.svg" type="image/svg+xml" class="step-svg"></object></div>
-							<div class="step-text">Some text goes here</div>							
+							<div class="step-text">Some text goes here</div>                            
 						</div>
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">3. Customise</div>
@@ -97,7 +111,7 @@
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">4. Personal info</div>
 							<div class="step-icon"><object data="assets/img/icon-personal.svg" type="image/svg+xml" class="step-svg"></object></div>
-							<div class="step-text">Some text goes here</div>							
+							<div class="step-text">Some text goes here</div>                            
 						</div>
 						<div class="col-sm-3 col-md-2 step-item">
 							<div class="step-descr">5. Summary</div>
@@ -192,29 +206,15 @@
     <!-- slider -->
     <div class="ea-detail-slider">
         <div id="layerslider" class="layerslider" style="width:100%; height:100%;">     
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/sensation/slider-1.jpg" class="ls-bg" alt="">
+            
+             <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
+                <img src="assets/img/edm/slide-1.jpg" class="ls-bg" alt="">
+                <h1 class="ls-l ea-offer-bigtext" style="top: 40%;" data-ls="offsetxin:0;durationin:2000;delayin:200;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:200;durationout:1000;">AfroJack<small>LAS VEGAS 14 december</small></h1>
             </div>
 
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/amf/slider-2.jpg" class="ls-bg" alt="">
-            </div>
+           
 
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/amf/slider-3.jpg" class="ls-bg" alt="">
-            </div>
-
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/amf/slider-4.jpg" class="ls-bg" alt="">
-            </div>
-
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/amf/slider-5.jpg" class="ls-bg" alt="">
-            </div>
-
-            <div class="ls-slide" data-ls="slidedelay: 3000; transition2d:12;">
-                <img src="assets/img/amf/slider-6.jpg" class="ls-bg" alt="">
-            </div>
+            
 
         </div>
     </div>
@@ -229,7 +229,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="" class="accordion-h3">1: ticket<small>Select the best ticket</small></a>
+							<a href="#" class="accordion-h3">1: ticket<small>Select the best ticket</small></a>
 						</div>
 					</div>
 				</div>
@@ -338,7 +338,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="" class="accordion-h3">2: hotel<small>Select your room</small></a>
+							<a href="#" class="accordion-h3">2: hotel<small>Select your room</small></a>
 							<div class="fold-navigation">
 								<a href="#" class="button button--prev">Back</a>
 								<a href="#" class="button button--next">Next</a>
@@ -349,349 +349,7 @@
 			</div>
 			<div data-content>
 				<article>
-					<section class="section section--grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="fold-description clearfix">
-	<!--<div class="fold-navigation">
-		<button class="button button--prev">Back</button>
-		<button class="button button--next">Next</button>
-	</div>-->
-	<!--<h3 class="fold-h3">Your booking preferences</h3>-->
-</div>
-
-<form action="" method="" class="ticket-form">
-	<div class="row xs-show" style="display: none;">
-		<div class="col-sm-12 margin-bottom-30">
-			<span class="button button--primary showbookingform" style="width: 100%;">Hide/Show bookingform</span>
-		</div>
-	</div>
-	<div class="row bookingform xs-hide">
-
-		<div class="col-xs-6 col-md-3">
-			<div class="form-group">
-				<label for="" class="form-label">Check in</label>
-				<div class="input-group date">
-					<input type="text" class="form-control form-field"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-xs-6 col-md-3">
-			<div class="form-group">
-				<label for="" class="form-label">Check out</label>
-				<div class="input-group date">
-					<input type="text" class="form-control form-field"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-xs-3 col-md-1">
-			<div class="form-group">
-				<label for="" class="form-label">Guests</label>
-				<div class="formguests">12</div>
-			</div>
-		</div>
-		<div class="col-xs-5 col-sm-3 col-md-2">
-			<div class="form-group">
-				<label for="" class="form-label">Guests per room</label>
-				<select class="form-control form-select">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-xs-3 col-sm-3 col-md-1">
-			<div class="form-group">
-				<label for="" class="form-label">Rooms</label>
-				<div class="formguests">2</div>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-md-2">
-			<div class="form-group">
-			<button type="submit" disabled="disabled" class="button button--primary button--block submitformbutton">Confirm</button>
-			</div>
-		</div>
-	</div>
-	<div class="alert alert-danger" role="alert">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-</form>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="fold-h3">MYSTERYLAND SELECTED HOTELS</h3>
-            </div>
-            <div class="col-md-6">
-                <ul class="switch-display clearfix">
-                    <li class="switch-display-list-item switch-display-list-item--margin">Sort by</li>
-                    <li class="switch-display-list-item switch-display-list-item--margin">
-                        <form>
-                            <fieldset>
-                                <select name="" id="checkin" class="form-select">
-                                    <option value="1" class="form-option">Standard</option>
-                                    <option value="1" class="form-option">Distance to venue</option>
-                                    <option value="1" class="form-option">Price low - high</option>
-                                    <option value="2" class="form-option">Price high -low</option>
-                                    <option value="3" class="form-option">Popular</option>
-                                    <option value="4" class="form-option">A-Z</option>
-                                    <option value="5" class="form-option">Z-A</option>
-                                </select>
-                            </fieldset>
-                        </form>
-                    </li>
-                    <li class="switch-display-list-item"><span class="display-options-map"></span></li>
-                    <li class="switch-display-list-item switch-display-list-item--border"><span class="display-options-list"></span></li>
-                    <li class="switch-display-list-item active"><span class="display-options-grid"></span></li>
-                </ul> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="hotel-item-grid">
-	<div class="ribbon"><div class="text"><span>Our pick</span></div></div>
-	<div class="hotel-item-grid-price">&euro; 229,- <span>(price per night)</span></div>
-	<div class="hotel-item-grid-wrapper">
-		<div class="hotel-item-grid-image">
-			<div class="img-container img-ratio-2-1">
-				<img src="http://dummyimage.com/400x400/fff/fff.png" data-src="assets/img/hotel.jpg" alt="" class="img-responsive lazyimage">
-				<div class="centered">
-					<a href="#" class="button button--tertiary select-button">select hotel</a>
-				</div>
-			</div>
-		</div>
-		<div class="hotel-item-grid-content">
-			<div class="title">Hilton Hotel</div>
-			<div class="rating">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star-half-o"></i>
-				<i class="fa fa-star-o"></i>
-				<span>Distance to venue 5km</span>
-			</div>
-			<div class="intro">
-				The 4-star Absolutum Boutique Hotel is a newly renovated and modern hotel situated in the heart of Prague.
-				<ul>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ul>
-				<ol>
-					<li>listitem</li>
-					<li>listitem</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
-            </div>
-        </div>
-        <nav class="my-pager">
-    <ul class="my-pager-list">
-        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-left"></i></a></li>
-        <li class="my-pager-item"><a href="" class="my-pager-link my-pager-link--active">1</a></li>
-        <li class="my-pager-item"><a href="" class="my-pager-link">2</a></li>
-        <li class="my-pager-item"><a href="" class="my-pager-link">3</a></li>
-        <li class="my-pager-item"><a href="" class="my-pager-link"><i class="fa fa-chevron-right"></i></a></li>
-    </ul>
-</nav>
-    </div>
-</section>
+					
 					<!--<section class="event-hero" data-stellar-background-ratio="0.2">
 	<div class="table">
 		<div class="vertical-align">
@@ -843,14 +501,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -881,7 +533,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -920,14 +572,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -958,7 +604,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -997,14 +643,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -1035,7 +675,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -1074,14 +714,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -1112,7 +746,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -1151,14 +785,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -1189,7 +817,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -1228,14 +856,8 @@
 							<div class="hotel-item-list-content hotel-item-list-content--no-margin">
 								<div class="intro">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-									<ul>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ul>
-									<ol>
-										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
-										<li>listitem</li>
-									</ol>
+									
+									
 								</div>
 							</div>
 						</div>
@@ -1266,7 +888,7 @@
 							&euro; 229,-
 							<span>(price per night)</span>
 						</div>
-						<a href="" class="button button--primary button--selected hotel-item-list-button">select hotel</a>
+						<a href="" class="button button--primary hotel-item-list-button">select hotel</a>
 					</div>
 				</div>
 			</div>
@@ -1785,7 +1407,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="" class="accordion-h3">3: customize<small>Customize your package</small></a>
+							<a href="#" class="accordion-h3">3: customize<small>Customize your package</small></a>
 							<div class="fold-navigation">
 								<button class="button button--prev">Back</button>
 								<button class="button button--next">Next</button>
@@ -1919,7 +1541,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="" class="accordion-h3">4: personal info<small>Your contact details</small></a>
+							<a href="#" class="accordion-h3">4: personal info<small>Your contact details</small></a>
 							<div class="fold-navigation">
 								<button class="button button--prev">Back</button>
 								<button class="button button--next">Next</button>
@@ -2058,7 +1680,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="" class="accordion-h3">5: summary<small>Check and pay</small></a>
+							<a href="#" class="accordion-h3">5: summary<small>Check and pay</small></a>
 							<div class="fold-navigation">
 								<button class="button button--prev">Back</button>
 							</div>

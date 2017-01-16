@@ -465,8 +465,15 @@
 		}
 
 		& .info{
-			font-size: 16px;
-			color: $flights-color-2;
+			
+			// color: $flights-color-2;
+
+			& a{
+				background: none;
+				border: none;
+				font-size: 16px;
+				color: $flights-color-2;
+			}
 		}
 
 		& .flights-radio{
@@ -542,6 +549,26 @@
 		color: #fff !important;
 		background-color: $flights-color-2-hover !important;
 		border-color: $flights-color-2-hover !important;
+	}
+}
+
+.flight-popover{
+	margin: 0 !important;
+	background: #fff;
+
+	& tr{
+		background: #fff !important;
+	}
+	& td{
+		padding: 5px 0 !important;
+		font-size: 12px !important;
+		white-space: nowrap;
+
+		&.first{
+			padding-right: 20px !important;
+			font-weight: bold;
+			color: $flights-color-2;
+		}
 	}
 }
 
