@@ -7,20 +7,20 @@ var hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
 var gridfacilities = hotelgridbody - hotelgridimg;
 
 $(function() {
-	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
-	$(".hotel-item-grid-content").css("height",hotelgridcontent);
+  $(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
+  $(".hotel-item-grid-content").css("height",hotelgridcontent);
     $(".grid-facilities").css("height",gridfacilities);
 });
 
 $(window).resize(function(){
-	hotelgridbody = $(".hotel-item-grid-body").outerHeight();
-	hotelgridimg = $(".hotel-item-grid-image").outerHeight();
-	hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
-	hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
+  hotelgridbody = $(".hotel-item-grid-body").outerHeight();
+  hotelgridimg = $(".hotel-item-grid-image").outerHeight();
+  hotelgridwrapper = $(".hotel-item-grid-wrapper").outerHeight();
+  hotelgridcontent = $(".hotel-item-grid-image").outerHeight();
     gridfacilities = hotelgridbody - hotelgridimg;
 
-	$(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
-	$(".hotel-item-grid-content").css("height",hotelgridcontent); 
+  $(".hotel-item-grid-wrapper").css("height",hotelgridimg * 2);
+  $(".hotel-item-grid-content").css("height",hotelgridcontent);
     $(".grid-facilities").css("height",gridfacilities);
 });*/
 
@@ -29,15 +29,15 @@ $(window).resize(function(){
 /*
 $(".hotel-item-grid").hover
 (
-	function()
-	{
-		$(this).parent().find(".hotel-item-grid-slide").css("top",-hotelgridimg);
-	},
-	function()
-	{
-		$(this).parent().find(".hotel-item-grid-slide").css("top","0");
-	}
-	);
+  function()
+  {
+    $(this).parent().find(".hotel-item-grid-slide").css("top",-hotelgridimg);
+  },
+  function()
+  {
+    $(this).parent().find(".hotel-item-grid-slide").css("top","0");
+  }
+  );
 */
 
 
@@ -106,9 +106,9 @@ $('.toggleflip').click(function()
 
 // Lazyloading the images
 $("img.lazyimage").unveil(200, function() {
-	$(this).load(function() {
-		this.style.opacity = 1;
-	});
+  $(this).load(function() {
+    this.style.opacity = 1;
+  });
 });
 
 // Message
@@ -132,14 +132,14 @@ $('.showbookingform').click(function()
 // Show/hide cart
 $('.show-cart').click(function()
 {
-	$('.cart').slideToggle("fast");
+  $('.cart').slideToggle("fast");
   $.scrollLock( true );
   // $('.show-cart').toggleClass("cart-total-open");
     // $('body').addClass("overflow");
 });
 $('.close-cart').click(function()
 {
-	$('.cart').slideToggle("fast");
+  $('.cart').slideToggle("fast");
     $('.show-cart').toggleClass("cart-total-open");
     $.scrollLock( false );
     // $('body').removeClass("overflow");
@@ -149,20 +149,20 @@ $('.close-cart').click(function()
 
 $('.hotel-map-close').click(function()
 {
-	$('.gmap-hotel').fadeToggle("fast");
+  $('.gmap-hotel').fadeToggle("fast");
 });
 
 
 // Show/hide tell me more
 $('.show-tell').click(function()
 {
-	$('.tell-me-more-wrapper').slideToggle("fast");
+  $('.tell-me-more-wrapper').slideToggle("fast");
   $.scrollLock( true );
     // $('body').addClass("overflow");
 });
 $('.close-tell-me-more').click(function()
 {
-	$('.tell-me-more-wrapper').slideToggle("fast");
+  $('.tell-me-more-wrapper').slideToggle("fast");
   $.scrollLock( false );
    // $('body').removeClass("overflow");
 });
@@ -182,7 +182,7 @@ $('.close-page').click(function()
 // Show more info at tickets
 /* $('.show-more-info').click(function()
 {
-	$(this).parent().find(".more-info").toggle("fast");
+  $(this).parent().find(".more-info").toggle("fast");
 });*/
 
 
@@ -191,7 +191,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 }
 else{
-	$.stellar({
+  $.stellar({
   // Set scrolling to be in either one or both directions
   horizontalScrolling: false,
   verticalScrolling: true,
@@ -233,19 +233,44 @@ else{
 var owl = $(".carousel");
 
 owl.owlCarousel({
-	items : 3, //10 items above 1000px browser width
-	itemsDesktop : [1000,3], //5 items between 1000px and 901px
-	itemsDesktopSmall : [900,2], // betweem 900px and 601px
-	itemsTablet: [600,2], //2 items between 600 and 0
-	itemsMobile : [480,2], // itemsMobile disabled - inherit from itemsTablet option
-	mouseDrag: true,
-	touchdrag: true,
-	lazyLoad : false,
-	responsive: true,
-	autoPlay: 5000,
-	stopOnHover: true,
+  items : 3, //10 items above 1000px browser width
+  itemsDesktop : [1000,3], //5 items between 1000px and 901px
+  itemsDesktopSmall : [900,2], // betweem 900px and 601px
+  itemsTablet: [600,2], //2 items between 600 and 0
+  itemsMobile : [480,2], // itemsMobile disabled - inherit from itemsTablet option
+  mouseDrag: true,
+  touchdrag: true,
+  lazyLoad : false,
+  responsive: true,
+  autoPlay: 5000,
+  stopOnHover: true,
 });
 
+var $input = $('.typeahead');
+$input.typeahead({source:
+        [
+         {id: "someId1", name: "Amsterdam (AMS)"},
+         {id: "someId2", name: "New York (JFK)"},
+         {id: "someId3", name: "Miami (MIA)"},
+         {id: "someId4", name: "Paris Charles de Gaulle (CDG)"},
+         {id: "someId5", name: "London Heathrow Airport (LHR)"},
+
+        ],
+        autoSelect: true});
+$input.change(function() {
+    var current = $input.typeahead("getActive");
+    if (current) {
+        // Some item from your model is active!
+        if (current.name == $input.val()) {
+            // This means the exact match is found. Use toLowerCase() if you want case insensitive match.
+        } else {
+            // This means it is only a partial match, you can either add a new item
+            // or take the active if you don't want new items
+        }
+    } else {
+        // Nothing is active so it is a new value (or maybe empty value)
+    }
+});
 
 
 });
