@@ -110,8 +110,9 @@ body{
 	background-color: #3f86d8 !important;
 }
 .section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer{
-	background: #000 url(../img/#{$theme-folder}/bg.jpg) repeat 0 0 scroll !important;
+	background: #000 url(../img/#{$theme-folder}/bg.jpg) repeat center 0 scroll !important;
 	padding-bottom: 0 !important;
+	background-size: 180px !important;
 
 	& .container{
 		background: #000;

@@ -77,8 +77,9 @@ body {
   background-color: #3f86d8 !important; }
 
 .section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer {
-  background: #000 url(../img/edm/bg.jpg) repeat 0 0 scroll !important;
-  padding-bottom: 0 !important; }
+  background: #000 url(../img/edm/bg.jpg) repeat center 0 scroll !important;
+  padding-bottom: 0 !important;
+  background-size: 180px !important; }
   .section--grey .container, .tell-me-more-wrapper .container, .cart .container, .page-disclaimer .container {
     background: #000;
     border-left: 1px solid #4d4d4d;
