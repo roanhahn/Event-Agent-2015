@@ -208,6 +208,15 @@ body{
     border-color: #000 !important;
 }
 
+.button--prev, .button--next{
+    color: $primary-text-color !important;
+    border-color: $primary-text-color !important;
+
+    &:hover{
+        color: #fff !important;
+    }
+}
+
 .button--prev:before, .button--next:after{
     font-size: 15px !important;
 }
@@ -250,6 +259,18 @@ body{
 
 .accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1{
     border-color: #000 !important;
+}
+
+.button--selected{
+    background-color: $primary-btn-bg-hover-color !important;
+    color: $primary-btn-hover-text-color !important;
+    border-color: #e10512 !important;
+
+    &:hover{
+        background-color: $primary-btn-bg-hover-color;
+        color: $primary-btn-hover-text-color;
+        border-color: $primary-btn-bg-hover-color;
+    }
 }
 
 .plain h1{

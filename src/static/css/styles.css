@@ -66,40 +66,17 @@ a, a:visited, a:active {
   font-weight: normal;
   font-style: normal; }
 body {
-  background: #000 !important;
+  background: #f9f9f9 url(../img/flyingdutch/background.svg) repeat center top scroll !important;
   background-size: 100% !important; }
 
 .hero {
-  color: #fff !important;
+  background: transparent !important;
+  color: #000 !important;
   font-weight: normal !important; }
 
-.message {
-  background-color: #3f86d8 !important; }
-
 .section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer {
-  background: #000 url(../img/edm/bg.jpg) repeat center 0 scroll !important;
-  padding-bottom: 0 !important;
-  background-size: 180px !important; }
-  .section--grey .container, .tell-me-more-wrapper .container, .cart .container, .page-disclaimer .container {
-    background: #000;
-    border-left: 1px solid #4d4d4d;
-    border-right: 1px solid #4d4d4d;
-    padding-bottom: 60px !important; }
-
-.tell-me-more, .cart-wrapper {
-  padding: 0 !important;
-  height: 100%; }
-  .tell-me-more .container, .cart-wrapper .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: 100%; }
-
-button[disabled], html input[disabled] {
-  background: #3f86d8 !important;
-  cursor: not-allowed; }
-
-.cart-amount, .caret {
-  color: #000; }
+  background: #f9f9f9 url(../img/flyingdutch/background.svg) repeat center top scroll !important;
+  background-size: 100% !important; }
 
 .cart-wrapper {
   background: transparent !important; }
@@ -107,32 +84,29 @@ button[disabled], html input[disabled] {
 .section--theme {
   background: none !important; }
 
-.header {
-  background-color: #e6e6e6 !important; }
-
 .header-menu-item {
   line-height: 46px !important;
   margin-top: 15px;
   margin-left: 10px !important; }
 
 .header-menu-link {
-  background: #e6e6e6 !important;
-  color: #000  !important;
-  padding: 0 15px !important;
-  border: none !important; }
+  background: #000 !important;
+  color: #fff  !important;
+  padding: 0 15px !important; }
 
 .cart-total--active {
-  color: #000 !important; }
+  color: #fff !important; }
 
-.header-menu-link:hover .cart-total--active, .section--theme, .section--theme a, .hotel-item-list-price--mobile {
-  color: #3f86d8  !important; }
+.header-menu-link:hover .cart-total--active, .tell-me-more, .section--theme, .section--theme a {
+  color: #000  !important; }
 
 .cart-total {
   float: none !important; }
 
 .header-menu-link:hover {
-  background: transparent !important;
-  color: #3f86d8  !important; }
+  background: #fff !important;
+  color: #000  !important;
+  border-color: #000; }
 
 .header-menu-link {
   margin-left: 0px !important;
@@ -150,7 +124,7 @@ button[disabled], html input[disabled] {
   .cart-amount {
     font-size: 13px !important; } }
 .header-logo {
-  background: transparent url(../img/edm/logo.png) no-repeat 0 0 scroll !important;
+  background: transparent url(../img/flyingdutch/logo-2017.svg) no-repeat 0 0 scroll !important;
   background-size: 160px !important;
   margin-top: 0 !important; }
   @media all and (max-width: 767px) {
@@ -160,66 +134,47 @@ button[disabled], html input[disabled] {
       margin: 0 !important; } }
 
 .header-menu-link {
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   text-transform: uppercase; }
 
 .hero-h1 {
   text-transform: uppercase;
-  line-height: 1.1 !important;
+  line-height: 1.2 !important;
   letter-spacing: 0px !important; }
 
 .footer {
-  border-top: 1px solid #4d4d4d; }
+  border-top: 1px solid #ddd; }
 
 .fold-h3, .button, .form-label, .event-hero h1, .event-hero h1 small, .tell-me-more h3 {
-  font-family: "Prompt", sans-serif !important;
+  font-family: "collegiate", sans-serif !important;
   font-weight: normal !important; }
 
 .tell-me-more h3 {
   font-size: 26px !important; }
 
 .form-label {
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  font-family: "Roboto", sans-serif !important; }
+  font-size: 19px !important; }
 
 .button {
-  font-size: 15px !important;
-  font-family: "Prompt", sans-serif !important;
-  letter-spacing: 1px !important;
-  font-weight: 400 !important; }
+  font-size: 20px !important; }
 
-.button--primary, .button--secondary, .button--next, .button--prev {
-  border-color: #3f86d8 !important;
-  font-family: "Prompt", sans-serif !important;
-  line-height: 40px !important;
-  vertical-align: middle;
-  font-weight: 400 !important; }
-  .button--primary:hover, .button--secondary:hover, .button--next:hover, .button--prev:hover {
-    background-color: #fff !important;
-    color: #3f86d8 !important;
-    border-color: #fff !important; }
-
-.button--selected {
-  background-color: #fff !important;
-  color: #000 !important;
-  border-color: #fff !important; }
-  .button--selected:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #fff; }
+.button--primary:hover {
+  border-color: #000 !important; }
 
 .button--prev, .button--next {
-  background: #3f86d8 !important; }
+  color: #000 !important;
+  border-color: #000 !important; }
+  .button--prev:hover, .button--next:hover {
+    color: #fff !important; }
 
 .button--prev:before, .button--next:after {
   font-size: 15px !important; }
 
-.close-cart, .close-page {
-  background: transparent url("../img/close.png") no-repeat scroll center center/21px auto !important; }
+.close-tell-me-more, .close-page {
+  background-image: url("../img/close-cart.png") !important; }
 
 .footer-h4 {
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   font-size: 23px !important;
   font-weight: 400 !important;
   padding-top: 35px; }
@@ -235,59 +190,26 @@ button[disabled], html input[disabled] {
 
 .accordion-h3 {
   text-transform: uppercase;
-  font-size: 35px !important;
-  color: #fff; }
+  font-size: 35px !important; }
   .accordion-h3 small {
-    font-family: "Roboto", sans-serif !important;
+    font-family: "proximanova-regular", Arial, sans-serif !important;
     font-weight: normal !important; }
-  @media all and (max-width: 767px) {
-    .accordion-h3 {
-      font-size: 24px !important; } }
-
-.accordion-h3, .accordion-h3:active, .accordion-h3:visited {
-  color: #fff !important; }
 
 .my-pager-link {
-  color: #fff !important;
+  color: #000 !important;
   font-weight: 400 !important; }
 
-.my-pager-link--active {
-  color: #3f86d8 !important;
-  font-weight: 700 !important; }
-
 .accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1 {
-  border-color: #4d4d4d !important; }
+  border-color: #000 !important; }
 
-.accordion-h3 small, .accordion-h3:after {
-  color: #fff !important; }
-
-.accordion-row {
-  background-color: #000; }
-  .accordion-row:hover {
-    background-color: #191919 !important; }
-    .accordion-row:hover .accordion-h3 small {
-      color: #fff !important; }
-    .accordion-row:hover .accordion-h3:after {
-      color: #fff !important; }
-
-.open .accordion-row {
-  background-color: #191919 !important;
-  border-bottom: 1px solid #4c4c4c !important; }
-
-.open .accordion-h3, .switch-display .switch-display-list-item, .form-rooms span {
-  color: #fff !important; }
-
-.back, .front {
-  background-color: #191919 !important; }
-
-.display-options-grid {
-  background-image: url(../img/icon-grid-white.svg) !important; }
-
-.display-options-list {
-  background-image: url(../img/icon-list-white.svg) !important; }
-
-.display-options-map {
-  background-image: url(../img/icon-map-white.svg) !important; }
+.button--selected {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-color: #e10512 !important; }
+  .button--selected:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff; }
 
 .plain h1 {
   text-transform: uppercase;
@@ -298,31 +220,23 @@ button[disabled], html input[disabled] {
   font-size: 20px !important; }
 
 .button--hero {
-  -webkit-border-radius: 50px !important;
-  -moz-border-radius: 50px !important;
-  border-radius: 50px !important;
-  font-family: "Prompt", sans-serif !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  font-family: "collegiate", sans-serif !important;
   text-transform: uppercase !important;
   font-weight: 400 !important;
   font-size: 36px !important;
   letter-spacing: 0px !important;
-  background-color: #000 !important;
-  padding: 20px 50px !important;
-  color: #fff !important; }
+  padding: 20px 50px !important; }
   .button--hero span {
     display: block !important; }
-  .button--hero:hover {
-    color: #000 !important;
-    background-color: #fff !important; }
-  @media all and (max-width: 767px) {
-    .button--hero {
-      font-size: 18px !important; } }
 
 .button--location {
   font-size: 25px !important;
   font-weight: 900 !important;
   padding: 15px 30px !important;
-  font-family: "Prompt", sans-serif !important;
+  font-family: "collegiate", sans-serif !important;
   text-transform: uppercase !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important;
@@ -331,7 +245,7 @@ button[disabled], html input[disabled] {
   border-radius: 0 !important; }
 
 .ribbon .text, .location-h3, .location-h3 small {
-  font-family: "Prompt", sans-serif !important;
+  font-family: "collegiate", sans-serif !important;
   font-weight: normal !important; }
 
 .customize-item, .hotel-item-list, .front, .back, .hotel-item-grid {
@@ -339,81 +253,48 @@ button[disabled], html input[disabled] {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15) !important;
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15) !important; }
 
-.customize-item, .hotel-item-list {
-  border-bottom: 1px solid #4d4d4d;
-  padding-bottom: 20px;
-  margin-bottom: 20px !important; }
-
-.hotel-item-list-price, .hotel-item-list-content .title, .hotel-item-list-content .title a {
-  color: #3f86d8 !important; }
-
-.hotel-item-list-price span, .readmore {
-  color: #fff !important; }
-
-.hotel-details-room .room-price span, .hotel-details-room .room-details, .hotel-item-list-price span {
-  color: #9e9f9e !important; }
-
-.hotel-item-list, .hotel-item-grid, .hotel-item-map, .hotel-item-grid-content .intro, .customize-item, .hotel-item-list, .hotel-item-list-content .list {
-  background-color: #000 !important;
-  color: #fff !important; }
-
-.hotel-item-list-content .room-details ul, .hotel-item-list-content .intro, .hotel-item-grid-price span {
-  color: #fff !important; }
-
 .front .hotel-item-grid, .back .hotel-item-grid {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
 
-.event-hero h1 {
-  font-family: "Prompt", sans-serif !important;
-  font-size: 120px !important;
-  line-height: 1 !important; }
-  @media all and (max-width: 991px) {
-    .event-hero h1 {
-      font-size: 60px !important; } }
-  @media all and (max-width: 767px) {
-    .event-hero h1 {
-      font-size: 40px !important; } }
-  .event-hero h1 small {
-    font-weight: 400 !important;
-    font-size: 40px !important;
-    line-height: 1 !important;
-    font-family: "Roboto", sans-serif !important; }
-    @media all and (max-width: 991px) {
-      .event-hero h1 small {
-        font-size: 20px !important; } }
-    @media all and (max-width: 767px) {
-      .event-hero h1 small {
-        font-size: 16px !important; } }
+.location-content {
+  padding: 10px; }
+
+.location-info {
+  width: 100% !important;
+  float: none !important;
+  text-align: center !important;
+  border: 2px solid #fff; }
+
+.location-content--eind .location-info {
+  border-color: #000 !important; }
+
+.location-h3, .location-h3 small {
+  color: #fff !important;
+  text-transform: uppercase !important; }
+
+.location-h3 {
+  font-size: 40px !important; }
 
 .location-h3 small {
-  font-family: "Roboto", sans-serif !important; }
+  margin-top: 0px !important; }
 
-.location-date {
-  font-family: "Prompt", sans-serif !important; }
+.location-content--eind .location-h3, .location-content--eind .location-h3 small {
+  color: #000 !important; }
 
 .h1-offline, .p-offline {
-  color: #fff !important; }
+  color: #000 !important; }
 
 .logo-offline {
-  background: transparent url(../img/edm/logo.svg) no-repeat center 0/contain scroll !important; }
-
-.loading-data {
-  background-color: rgba(0, 0, 0, 0.6) !important; }
-
-.owl-theme .owl-controls .owl-page span {
-  background-color: #fff !important; }
-
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #3f86d8 !important; }
+  background: transparent url(../img/flyingdutch/logo.svg) no-repeat center 0/contain scroll !important; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
   cursor: default;
   font-smooth: auto;
   -webkit-font-smoothing: subpixel-antialiased; }
@@ -421,11 +302,11 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #3f86d8; }
+  background: #d6001c; }
 
 ::selection {
   color: #fff;
-  background: #3f86d8; }
+  background: #d6001c; }
 
 a {
   text-decoration: none;
@@ -435,7 +316,7 @@ a {
   transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .readmore {
-  color: #3f86d8;
+  color: #d6001c;
   font-weight: bold; }
 
 .h1 {
@@ -459,7 +340,7 @@ a {
       font-size: 26px; } }
 
 .plain h1 {
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   font-size: 50px;
   border-bottom: 1px solid #cbcbcb;
   margin-bottom: 30px;
@@ -470,10 +351,10 @@ a {
   font-weight: 700;
   padding-bottom: 15px;
   font-size: 21px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "proximanova-regular", Arial, sans-serif; }
 
 .h3-header {
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   font-size: 30px;
   font-weight: 400; }
 
@@ -499,7 +380,7 @@ a {
   line-height: 1.5; }
 
 .plain a {
-  color: #3f86d8;
+  color: #d6001c;
   text-decoration: underline; }
 
 .accordion-row {
@@ -518,7 +399,7 @@ a {
   font-weight: 700; }
 
 .accordion-h3, .accordion-h3:visited, .accordion-h3:active {
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   display: block;
   font-size: 45px;
   line-height: 45px;
@@ -541,7 +422,7 @@ a {
     color: #000;
     font-size: 15px;
     font-weight: 900;
-    font-family: "Roboto", sans-serif;
+    font-family: "proximanova-regular", Arial, sans-serif;
     text-transform: uppercase;
     border-right: 1px solid #ddd;
     color: #000;
@@ -591,21 +472,21 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 23px;
-  color: #fff;
+  color: #000;
   line-height: 1;
   font-family: "Oswald", sans-serif; }
   .location-h3 small {
     display: block;
     text-transform: none;
     margin-top: 5px;
-    color: #fff;
-    font-family: "Roboto", sans-serif; }
+    color: #444;
+    font-family: "proximanova-regular", Arial, sans-serif; }
   @media all and (max-width: 767px) {
     .location-h3 {
       font-size: 18px; } }
 
 .fold-h2 {
-  color: #fff;
+  color: #000;
   font-size: 30px; }
 
 .fold-h3 {
@@ -641,7 +522,7 @@ a {
 
 .show-more-info {
   display: inline-block;
-  color: #3f86d8;
+  color: #d6001c;
   font-weight: 700;
   cursor: pointer; }
   .show-more-info:before {
@@ -649,7 +530,7 @@ a {
     font-weight: normal;
     content: "\f059";
     font-family: "FontAwesome";
-    color: #fff;
+    color: #000;
     margin-right: 5px;
     margin-top: 15px; }
 
@@ -700,7 +581,7 @@ a {
     min-width: 260px;
     min-height: 50px;
     padding: 80px 30px 30px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 13px;
@@ -708,7 +589,7 @@ a {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: transparent url(../img/edm/loader.gif) no-repeat center center scroll;
+    background: transparent url(../img/flyingdutch/loader.gif) no-repeat center center scroll;
     background-size: 100px;
     letter-spacing: 1px; }
 
@@ -725,7 +606,7 @@ a {
   color: #fff; }
 
 .logo-offline {
-  background: transparent url(../img/edm/logo.png) no-repeat center 0 scroll;
+  background: transparent url(../img/flyingdutch/logo.png) no-repeat center 0 scroll;
   background-size: contain;
   height: 100px;
   margin-top: 50px; }
@@ -735,7 +616,7 @@ html, body {
   /* lets it scroll lazy */ }
 
 body {
-  background-color: #000;
+  background-color: #fff;
   height: 100%; }
 
 .content-wrapper {
@@ -763,7 +644,7 @@ body {
   .section--white {
     background-color: #fff; }
   .section--theme {
-    background-color: #3f86d8;
+    background-color: #d6001c;
     color: #fff; }
     .section--theme a {
       color: #fff; }
@@ -851,14 +732,14 @@ body {
     z-index: 1; }
 
 .location-date {
-  background-color: #000;
+  background-color: #f1f1f2;
   width: 100px;
   height: 100px;
   text-align: center;
   float: left;
   display: table;
   padding: 10px;
-  color: #fff;
+  color: #000;
   line-height: 1;
   font-family: "Oswald", sans-serif; }
   .location-date .day {
@@ -869,7 +750,7 @@ body {
     font-size: 20px; }
 
 .location-content {
-  background-color: #000; }
+  background-color: #fff; }
 
 .location-info {
   width: calc(100% - 100px);
@@ -1063,13 +944,13 @@ svg {
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s, border-color  0.2s ease-in-out 0s;
   -webkit-appearance: none;
   border-radius: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   cursor: pointer;
   color: #fff; }
   .button--primary {
-    background-color: #3f86d8;
+    background-color: #000;
     color: #fff;
-    border: 2px solid #3f86d8;
+    border: 2px solid #000;
     font-weight: 900; }
     .button--primary:hover {
       background-color: #fff;
@@ -1176,7 +1057,7 @@ svg {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
-    font-family: "Prompt", sans-serif;
+    font-family: "collegiate", sans-serif;
     text-transform: none;
     font-weight: normal;
     font-size: 40px;
@@ -1215,7 +1096,7 @@ svg {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
-    font-family: "Prompt", sans-serif;
+    font-family: "collegiate", sans-serif;
     text-transform: none;
     font-weight: normal;
     font-size: 40px;
@@ -1311,7 +1192,7 @@ svg {
     .manage-rooms .manage-button:hover {
       background-color: #666; }
   .manage-rooms .minus {
-    background-color: #3f86d8;
+    background-color: #000;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -1328,7 +1209,7 @@ svg {
     font-weight: 700;
     font-size: 13px; }
   .manage-rooms .plus {
-    background-color: #3f86d8;
+    background-color: #000;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -1355,7 +1236,7 @@ svg {
   font-weight: 700;
   margin-top: 5px;
   font-size: 14px;
-  color: #fff; }
+  color: #000; }
   .show-more-description:before {
     content: "\f0fe";
     font-family: "FontAwesome";
@@ -1442,7 +1323,7 @@ svg {
 .form-label {
   display: block;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 15px; }
@@ -1458,15 +1339,15 @@ svg {
       .form-label--small {
         line-height: normal; } }
   .form-label--error {
-    color: #3f86d8; }
+    color: #d6001c; }
 
 .form-label-price {
   font-weight: 400; }
 
 .form-error-list {
-  background-color: #3f86d8;
+  background-color: #d6001c;
   color: #fff;
-  border: 1px solid #3f86d8;
+  border: 1px solid #d6001c;
   padding: 10px 15px;
   margin-bottom: 30px; }
   .form-error-list li {
@@ -1515,8 +1396,8 @@ svg {
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3); }
   .form-field--error {
-    background-color: #3f86d8;
-    border-color: #3f86d8;
+    background-color: #d6001c;
+    border-color: #d6001c;
     color: #fff; }
   .form-field--ok {
     border-color: #58d68d;
@@ -1621,8 +1502,8 @@ svg {
     min-width: 80px;
     margin-right: 4px; }
   .form-select--error {
-    background-color: #3f86d8;
-    border-color: #3f86d8;
+    background-color: #d6001c;
+    border-color: #d6001c;
     text-shadow: 0 0 0 #fff; }
     .form-select--error .form-option {
       color: #fff; }
@@ -1677,7 +1558,7 @@ input[type="checkbox"]:checked + label span {
   border: 0;
   background: transparent;
   white-space: nowrap;
-  color: #3f86d8; }
+  color: #d6001c; }
   .btn-remove:before {
     content: "\f00d";
     font-family: "FontAwesome";
@@ -1730,7 +1611,7 @@ select::-ms-expand {
   float: left;
   width: 160px;
   height: 80px;
-  background: transparent url(../img/edm/logo.png) no-repeat 0 0 scroll;
+  background: transparent url(../img/flyingdutch/logo.png) no-repeat 0 0 scroll;
   background-size: 160px;
   margin-top: 15px;
   display: block; }
@@ -1752,7 +1633,7 @@ select::-ms-expand {
 .mobile-cart {
   float: right;
   display: none;
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   font-size: 20px;
   margin-top: 12px; }
   @media all and (max-width: 767px) {
@@ -1776,7 +1657,7 @@ select::-ms-expand {
   display: block;
   margin-left: 40px;
   color: #000;
-  font-family: "Prompt", sans-serif;
+  font-family: "collegiate", sans-serif;
   font-size: 20px;
   font-weight: normal;
   cursor: pointer;
@@ -1784,13 +1665,13 @@ select::-ms-expand {
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
   .header-menu-link:hover {
-    color: #e10512; }
+    color: #d6001c; }
 
 .hero {
-  background-color: #000;
+  background-color: #00b2ff;
   color: #fff;
   padding: 50px 0;
-  font-family: "Prompt", sans-serif; }
+  font-family: "collegiate", sans-serif; }
   .hero .hero-h1 {
     font-size: 50px;
     line-height: 1;
@@ -1822,7 +1703,7 @@ select::-ms-expand {
   	top: -3px;
   	}*/ }
   .cart-total--active {
-    color: #3f86d8; }
+    color: #d6001c; }
   .cart-total i {
     position: relative;
     top: -2px; }
@@ -1831,12 +1712,12 @@ select::-ms-expand {
     margin-left: 10px; }
 
 .cart-amount {
-  font-family: "Roboto", sans-serif;
+  font-family: "proximanova-regular", Arial, sans-serif;
   font-size: 15px;
   font-weight: 700; }
 
 .cart-total-open {
-  color: #e10512;
+  color: #d6001c;
   /*& .cart-total:after{
   	content: "\f077";
   	}*/ }
@@ -1906,7 +1787,7 @@ select::-ms-expand {
     .close-cart, .close-page {
       top: 0; } }
   .close-cart:hover, .close-page:hover {
-    color: #fff; }
+    color: #000; }
 
 .section--theme .close-page {
   background: transparent url("../img/close.png") no-repeat center center scroll;
@@ -1929,7 +1810,7 @@ select::-ms-expand {
   text-transform: uppercase; }
 
 .message {
-  background-color: #000;
+  background-color: #00b2ff;
   color: #fff;
   position: fixed;
   /*top: $header-height;*/
@@ -1977,7 +1858,7 @@ select::-ms-expand {
 .tell-me-more-wrapper {
   position: fixed;
   top: 80px;
-  background-color: #000;
+  background-color: #00b2ff;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2006,7 +1887,7 @@ select::-ms-expand {
     .close-tell-me-more {
       top: 0; } }
   .close-tell-me-more:hover {
-    color: #fff; }
+    color: #000; }
 
 .cart-steps {
   text-align: center;
@@ -2021,7 +1902,7 @@ select::-ms-expand {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
-    color: #3f86d8; }
+    color: #d6001c; }
   .cart-steps .step-icon {
     margin: 0 0 10px; }
   .cart-steps .step-svg {
@@ -2068,7 +1949,7 @@ select::-ms-expand {
     list-style-type: none;
     line-height: normal;
     min-width: 180px;
-    font-family: "Roboto", sans-serif;
+    font-family: "proximanova-regular", Arial, sans-serif;
     font-size: 15px !important;
     text-transform: uppercase; }
   .user-menu li a {
@@ -2076,7 +1957,7 @@ select::-ms-expand {
     padding: 8px 15px !important;
     color: #000; }
     .user-menu li a:hover {
-      background-color: #3f86d8;
+      background-color: #d6001c;
       color: #fff; }
   .user-menu li.line {
     border-top: 1px solid #cbcbcb;
@@ -2084,7 +1965,7 @@ select::-ms-expand {
 
 .event-hero {
   height: 100%;
-  background: #000 url(../img/edm/hero.jpg) no-repeat center center scroll;
+  background: #fff url(../img/flyingdutch/hero.jpg) no-repeat center center scroll;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -2109,7 +1990,7 @@ select::-ms-expand {
     text-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
     margin-bottom: 40px; }
     .event-hero h1 small {
-      font-family: "Roboto", sans-serif;
+      font-family: "proximanova-regular", Arial, sans-serif;
       display: block;
       color: #fff;
       font-weight: 700;
@@ -2124,7 +2005,7 @@ select::-ms-expand {
 
 .booking-hero {
   height: 100%;
-  background: #000 url(../img/edm/hero.jpg) no-repeat top center fixed;
+  background: #fff url(../img/flyingdutch/hero.jpg) no-repeat top center fixed;
   background-size: cover;
   text-align: center;
   min-height: 300px;
@@ -2203,7 +2084,7 @@ select::-ms-expand {
       border-right: 1px solid #cbcbcb; }
     .switch-display .switch-display-list-item:hover span, .switch-display .switch-display-list-item.active span {
       cursor: pointer;
-      color: #fff;
+      color: #000;
       opacity: 1 !important; }
     .switch-display .switch-display-list-item:first-child {
       border-left: none; }
@@ -2286,7 +2167,7 @@ select::-ms-expand {
   transition: top .3s ease-in-out .1s; }
 
 .hotel-item-grid-price {
-  color: #fff;
+  color: #000;
   padding: 10px 15px;
   font-weight: 400;
   font-size: 25px;
@@ -2304,9 +2185,9 @@ select::-ms-expand {
   .hotel-item-grid-content .title {
     font-weight: 700;
     font-size: 17px;
-    color: #fff; }
+    color: #000; }
   .hotel-item-grid-content .rating {
-    color: #3f86d8;
+    color: #d6001c;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -2314,16 +2195,16 @@ select::-ms-expand {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #3f86d8;
+      border-left: 1px solid #d6001c;
       padding-left: 10px; }
   .hotel-item-grid-content .more-info {
-    color: #3f86d8;
+    color: #d6001c;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-grid-content .more-info:hover {
-      color: #3f86d8; }
+      color: #d6001c; }
     @media all and (max-width: 767px) {
       .hotel-item-grid-content .more-info {
         display: block; } }
@@ -2347,7 +2228,7 @@ select::-ms-expand {
 .facilities-list {
   list-style-type: none;
   font-size: 14px;
-  color: #fff;
+  color: #000;
   margin-bottom: 11px;
   margin-top: 4px; }
   @media all and (max-width: 767px) {
@@ -2372,7 +2253,7 @@ select::-ms-expand {
     line-height: normal;
     font-family: "FontAwesome";
     display: inline-block;
-    color: #fff; }
+    color: #000; }
   .facilities-list .INWI:before, .facilities-list .fa-inwi:before {
     content: "\f1eb"; }
   .facilities-list .AICO:before, .facilities-list .fa-aico:before {
@@ -2417,10 +2298,10 @@ select::-ms-expand {
     font-size: 22px;
     margin-bottom: 10px;
     margin-top: 20px;
-    color: #fff; }
+    color: #000; }
     .hotel-details-room .room-title i {
       cursor: help;
-      color: #fff; }
+      color: #000; }
     @media all and (max-width: 767px) {
       .hotel-details-room .room-title {
         font-size: 17px; } }
@@ -2449,7 +2330,7 @@ select::-ms-expand {
       .hotel-details-room .room-details {
         font-size: 13px; } }
   .hotel-details-room .room-price {
-    color: #fff;
+    color: #000;
     padding: 15px 0 11px;
     font-weight: 400;
     font-size: 25px;
@@ -2484,7 +2365,7 @@ select::-ms-expand {
   .hotel-item-list-content .title, .hotel-item-list-content .title a {
     font-weight: 700;
     font-size: 22px;
-    color: #fff; }
+    color: #000; }
     @media all and (max-width: 767px) {
       .hotel-item-list-content .title, .hotel-item-list-content .title a {
         font-size: 17px; } }
@@ -2495,7 +2376,7 @@ select::-ms-expand {
         padding-top: 0;
         margin-top: 0; } }
   .hotel-item-list-content .rating {
-    color: #3f86d8;
+    color: #d6001c;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -2503,16 +2384,16 @@ select::-ms-expand {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #3f86d8;
+      border-left: 1px solid #d6001c;
       padding-left: 10px; }
   .hotel-item-list-content .more-info {
-    color: #3f86d8;
+    color: #d6001c;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-list-content .more-info:hover {
-      color: #3f86d8; }
+      color: #d6001c; }
     @media all and (max-width: 767px) {
       .hotel-item-list-content .more-info {
         display: block; } }
@@ -2555,7 +2436,7 @@ select::-ms-expand {
       margin-bottom: 5px; }
 
 .hotel-item-list-price {
-  color: #fff;
+  color: #000;
   padding: 33px 0 11px;
   font-weight: 400;
   font-size: 25px;
@@ -2590,7 +2471,7 @@ select::-ms-expand {
     text-align: center; } }
 
 .hotel-details .rating {
-  color: #3f86d8;
+  color: #d6001c;
   margin: 10px 0px 10px 0;
   font-size: 20px;
   line-height: 1;
@@ -2599,7 +2480,7 @@ select::-ms-expand {
     display: inline-block;
     margin-left: 5px;
     font-size: 13px;
-    border-left: 1px solid #3f86d8;
+    border-left: 1px solid #d6001c;
     padding-left: 10px; }
   @media all and (max-width: 767px) {
     .hotel-details .rating {
@@ -2615,7 +2496,7 @@ select::-ms-expand {
   background-color: #000; }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #3f86d8;
+  background-color: #d6001c;
   opacity: 1; }
 
 .gmap-wrapper {
@@ -2653,7 +2534,7 @@ select::-ms-expand {
     line-height: 1;
     font-size: 20px; }
   .hotel-map-close:hover {
-    color: #3f86d8; }
+    color: #d6001c; }
 
 .hotel-card-container {
   width: 100%;
@@ -2950,7 +2831,7 @@ select::-ms-expand {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #3f86d8;
+  background: #d6001c;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;
@@ -2962,10 +2843,10 @@ select::-ms-expand {
   left: 0px;
   top: 100%;
   z-index: -1;
-  border-left: 3px solid #000000;
+  border-left: 3px solid #231f20;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #000000; }
+  border-top: 3px solid #231f20; }
 
 .ribbon .text::after {
   content: '';
@@ -2973,10 +2854,10 @@ select::-ms-expand {
   right: 0%;
   top: 100%;
   z-index: -1;
-  border-right: 3px solid #000000;
+  border-right: 3px solid #231f20;
   border-left: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #000000; }
+  border-top: 3px solid #231f20; }
 
 .red span {
   background: linear-gradient(#F70505 0%, #8F0808 100%); }
@@ -3001,8 +2882,8 @@ select::-ms-expand {
   border-top-color: #1e5799; }
 
 .footer {
-  background-color: #3f86d8;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   padding-top: 45px;
   padding-bottom: 45px; }
 
@@ -3017,20 +2898,20 @@ select::-ms-expand {
   margin-bottom: 4px; }
 
 .footer-list-link {
-  color: #000;
+  color: #fff;
   cursor: pointer; }
   .footer-list-link:hover {
-    color: #fff; }
+    color: #00b2ff; }
 
 .footer-h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 10px; }
 
 .footer-col {
-  border-right: 1px solid #3f86d8;
+  border-right: 1px solid #fff;
   min-height: 130px; }
   @media all and (max-width: 991px) {
     .footer-col {
@@ -3047,9 +2928,9 @@ select::-ms-expand {
 
 .footer-form-field {
   background-color: #000;
-  border: 1px solid #3f86d8;
+  border: 1px solid #fff;
   padding: 0px 10px;
-  color: #3f86d8;
+  color: #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -3060,18 +2941,18 @@ select::-ms-expand {
   border-radius: 0;
   -webkit-appearance: none; }
   .footer-form-field::-webkit-input-placeholder {
-    color: #3f86d8;
+    color: #fff;
     opacity: 1; }
   .footer-form-field::-moz-placeholder {
     /* Firefox 18- */
-    color: #3f86d8;
+    color: #fff;
     opacity: 1; }
 
 .footer-form-submit {
   border: none;
-  background-color: #000;
-  color: #3f86d8;
-  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-family: "proximanova-regular", Arial, sans-serif;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 900;
@@ -3090,7 +2971,7 @@ select::-ms-expand {
   -webkit-appearance: none;
   border-radius: 0; }
   .footer-form-submit:hover {
-    background-color: #000;
+    background-color: #00b2ff;
     color: #fff; }
 
 /*!
