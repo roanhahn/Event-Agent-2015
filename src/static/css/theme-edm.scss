@@ -111,13 +111,14 @@ body{
 }
 .section--grey, .tell-me-more-wrapper, .cart, .page-disclaimer{
 	background: #000 url(../img/#{$theme-folder}/bg.jpg) repeat center 0 scroll !important;
+	background: #000 !important;
 	padding-bottom: 0 !important;
 	background-size: 180px !important;
 
 	& .container{
 		background: #000;
-		border-left: 1px solid #4d4d4d;
-		border-right: 1px solid #4d4d4d;
+		// border-left: 1px solid #4d4d4d;
+		// border-right: 1px solid #4d4d4d;
 		padding-bottom: 60px !important;
 	}
 	// background-size: 100% auto !important;
@@ -136,7 +137,10 @@ button[disabled], html input[disabled]{
 	background:  $secondary-text-color !important;
 	cursor: not-allowed;
 }
-.cart-amount, .caret{
+.cart-amount, .hotel-item-grid-content .title{
+	color: $secondary-text-color !important;
+}
+.caret{
 	color: $header-link-color;
 }
 .cart-wrapper{
@@ -241,7 +245,7 @@ button[disabled], html input[disabled]{
 	letter-spacing: 1px !important;
 	font-weight: 400 !important;
 }
-.button--primary, .button--secondary, .button--next, .button--prev{
+.button--primary{
 	border-color: #3f86d8 !important;
 	font-family: $secondary-font !important;
 	line-height: 40px !important;
@@ -267,11 +271,25 @@ button[disabled], html input[disabled]{
 }
 
 .button--prev, .button--next{
-	background: $secondary-text-color !important;
+	background: #000 !important;
+	-webkit-border-radius: 50px !important;
+	-moz-border-radius: 50px !important;
+	border-radius: 50px !important;
+
+	&:hover{
+		background-color: #fff !important;
+		color:#000 !important;
+		border-color: #fff !important;
+	}
 }
 
 .button--prev:before, .button--next:after{
 	font-size: 15px !important;
+}
+
+.form-label--ticket{
+	font-size: 18px !important;
+	font-weight: 400 !important;
 }
 
 .close-cart, .close-page{
@@ -369,6 +387,10 @@ button[disabled], html input[disabled]{
 	font-weight: 700;
 }
 
+.plain{
+	color: #fff !important;
+}
+
 .h3-header{
 	text-transform: uppercase;
 	font-size: 20px !important;
@@ -438,7 +460,8 @@ button[disabled], html input[disabled]{
 	color: #fff !important;
 }
 .hotel-details-room .room-price span, .hotel-details-room .room-details, .hotel-item-list-price span {
-	color: #9e9f9e !important;
+	// color: #9e9f9e !important;
+	color: $secondary-text-color !important;
 }
 
 .hotel-item-list, .hotel-item-grid, .hotel-item-map, .hotel-item-grid-content .intro, .customize-item, .hotel-item-list, .hotel-item-list-content .list{
@@ -515,7 +538,7 @@ button[disabled], html input[disabled]{
 .location-h3 small{
 	font-family: $primary-font !important;
 }
-.location-date{
+.location-date, .h1, .h2{
 	font-family: $secondary-font !important;
 }
 .h1-offline, .p-offline{
