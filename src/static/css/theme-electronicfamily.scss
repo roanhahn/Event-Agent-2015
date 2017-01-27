@@ -172,6 +172,12 @@ $select-bg-color: #fff;
     background: transparent url(../img/#{$theme-folder}/logo-electronicfamily2017.png) no-repeat 0 0 scroll !important;
     background-size: $logo-width !important;
     margin-top: 2px !important;
+
+    @media all and (max-width: $breakpoint-tablet){
+        width: 180px !important;
+        background-size: 180px !important;
+        margin: 10px 0 0 !important;
+    }
     @media all and (max-width: $breakpoint-mobile){
         width: $logo-width-mobile !important;
         background-size: $logo-width-mobile !important;
@@ -183,8 +189,25 @@ $select-bg-color: #fff;
     font-family: $secondary-font;
     text-transform: uppercase;
     font-size: 15px !important;
-}
+    color: $primary-link-color !important;
 
+    &:hover{
+        color: #37d6c7 !important;
+    }
+
+    @media all and (max-width: $breakpoint-tablet){
+        margin-left: 15px !important;
+    }
+}
+.cart-total--active{
+     -webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+}
+.cart-total--active:hover{
+    color: #37d6c7 !important;
+}
 
 .hero-h1{
     text-transform: uppercase;
