@@ -176,7 +176,8 @@ $select-bg-color: #fff;
     }
 
     @media all and (max-width: $breakpoint-mobile){
-        font-size: 18px !important;
+        font-size: 16px !important;
+         padding: 15px 10px !important;
     }
 }
 

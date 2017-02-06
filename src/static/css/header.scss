@@ -26,8 +26,44 @@
 		width: $logo-width-mobile;
 		background-size: $logo-width-mobile;
 		margin-top: 5px;
-		margin: 5px 0;
-		float: left;
+		position: absolute;
+		left: 50px;
+		// left: 50%;
+		// -ms-transform: translate(-50%, 0);
+		// -webkit-transform: translate(-50%, 0);
+		// transform: translate(-50%, 0);
+		// float: left;
+	}
+}
+
+.mobile-menu{
+	background: green;
+	position: absolute;
+	top: $header-height-mobile;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.1);
+	display: none;
+
+	& ul{
+		list-style-type: none;
+		// border-top: 1px solid $border-color;
+		& li{
+			border-bottom: 1px solid $border-color;
+			& a{
+				display: block;
+				padding: 8px 15px;
+				font-size: 12px;
+				color:  $header-link-color;
+				font-family: $secondary-font;
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 

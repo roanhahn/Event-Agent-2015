@@ -244,8 +244,8 @@
 			margin: 0 0 15px;
 		}
 		@media all and (max-width: $breakpoint-mobile){
-			padding: 15px 30px;
-			font-size: 30px;
+			padding: 10px 10px;
+			font-size: 20px;
 		}
 	}
 
@@ -423,4 +423,20 @@
 
 .show-less-description:before{
 	content: "\f146";
+}
+
+.show-mobilemenu{
+	float: left;
+	background: none;
+	border: 0;
+	width: 30px;
+	font-size: 16px;
+	padding: 0;
+	margin-top: 15px;
+	display: none;
+	color:  $header-link-color;
+	
+	@media all and (max-width: $breakpoint-mobile){
+		display: block;
+	}
 }
