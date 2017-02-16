@@ -2777,12 +2777,18 @@ $('.showbookingform').click(function()
   $('.bookingform').slideToggle("fast");
 });
 
+// Mobile Menu
+$('.show-mobilemenu').click(function()
+{
+  $('.mobile-menu').slideToggle("fast");
+});
 
 // Show/hide cart
 $('.show-cart').click(function()
 {
   $('.cart').slideToggle("fast");
   $.scrollLock( true );
+  $('.mobile-menu').css('display', 'none');
   // $('.show-cart').toggleClass("cart-total-open");
     // $('body').addClass("overflow");
 });
@@ -2806,6 +2812,7 @@ $('.hotel-map-close').click(function()
 $('.show-tell').click(function()
 {
   $('.tell-me-more-wrapper').slideToggle("fast");
+  $('.mobile-menu').css('display', 'none');
   $.scrollLock( true );
     // $('body').addClass("overflow");
 });
