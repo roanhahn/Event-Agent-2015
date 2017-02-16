@@ -110,7 +110,7 @@ $font-vier: 'AndesW04-Lt', sans-serif;
 
 // HEADER STYLING
 $header-height: 90px;
-$header-height-mobile: 50px;
+$header-height-mobile: 60px;
 $logo-width: 64px;
 $logo-height: 60px;
 $logo-width-mobile: 43px;
@@ -406,6 +406,10 @@ body{
     & small{
 
     }
+
+    @media all and (max-width: $breakpoint-mobile){
+        font-size: 20px !important;
+    }
 }
 
 .plain h1{
@@ -509,6 +513,10 @@ body{
      color: #fff !important;
      font-size: 48px !important;
      font-weight: bold !important;
+
+     @media all and (max-width: $breakpoint-mobile){
+        font-size: 30px !important;
+        }
 }
 
 
