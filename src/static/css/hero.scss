@@ -73,7 +73,10 @@
 	right: 0;
 	z-index: 11;
 	width: 100%;
-	bottom: 20px;
+	bottom: 30%;
+	@media all and (max-width: $breakpoint-tablet){
+		bottom: 20px;
+	}
 }
 .ea-detail-slider {
 	height: 100%;
