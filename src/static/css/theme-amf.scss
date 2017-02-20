@@ -133,9 +133,9 @@ $tertiary-font: 'Oswald', sans-serif;
 // HEADER STYLING
 $header-height: 80px;
 $header-height-mobile: 50px;
-$logo-width: 143px;
+$logo-width: 111px;
 $logo-height: 80px;
-$logo-width-mobile: 89px;
+$logo-width-mobile: 69px;
 $logo-height-mobile: 50px;
 $header-border-color: #ddd;
 $header-link-color: #000;
@@ -275,7 +275,7 @@ body{
     }
 }
 .header-logo{
-    background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll !important;
+    background: transparent url(../img/#{$theme-folder}/logo-ams.png) no-repeat 0 0 scroll !important;
     background-size: $logo-width !important;
     margin-top: 0 !important;
     @media all and (max-width: $breakpoint-mobile){

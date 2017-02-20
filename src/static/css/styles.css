@@ -171,13 +171,13 @@ body {
   .cart-amount {
     font-size: 13px !important; } }
 .header-logo {
-  background: transparent url(../img/amf/logo.png) no-repeat 0 0 scroll !important;
-  background-size: 143px !important;
+  background: transparent url(../img/amf/logo-ams.png) no-repeat 0 0 scroll !important;
+  background-size: 111px !important;
   margin-top: 0 !important; }
   @media all and (max-width: 767px) {
     .header-logo {
-      width: 89px !important;
-      background-size: 89px !important;
+      width: 69px !important;
+      background-size: 69px !important;
       margin: 0 !important; } }
 
 .header-menu-link {
@@ -1733,16 +1733,16 @@ select::-ms-expand {
 
 .header-logo {
   float: left;
-  width: 143px;
+  width: 111px;
   height: 80px;
   background: transparent url(../img/amf/logo.png) no-repeat 0 0 scroll;
-  background-size: 143px;
+  background-size: 111px;
   margin-top: 15px;
   display: block; }
   @media all and (max-width: 767px) {
     .header-logo {
-      width: 89px;
-      background-size: 89px;
+      width: 69px;
+      background-size: 69px;
       margin-top: 5px;
       position: absolute;
       left: 50px; } }
