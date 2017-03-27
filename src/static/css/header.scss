@@ -37,7 +37,6 @@
 }
 
 .mobile-menu{
-	background: green;
 	position: absolute;
 	top: $header-height-mobile;
 	width: 100%;
@@ -222,7 +221,7 @@
 
 	.cart-text{
 		@media all and (max-width: $breakpoint-mobile){
-			display: none !important;
+			// display: none !important;
 		}
 	}
 
@@ -324,7 +323,7 @@
 	}
 }
 
-.show-tell{
+.show-tell, .show-why{
 	@media all and (max-width: $breakpoint-mobile){
 		display: none;
 	}
@@ -518,4 +517,11 @@
 	}
 
 	
+}
+
+.bookingicon{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: baseline;
 }

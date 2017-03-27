@@ -364,3 +364,7 @@ body{
 .logo-offline{
     background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0/contain scroll !important;
 }
+
+.bookingicon{
+    display: none !important;
+}
