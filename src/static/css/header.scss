@@ -163,7 +163,11 @@
 
 	& span{
 		display: inline-block;
-		margin-left: 10px;
+
+		&.cart-amount{
+			margin-left: 10px;
+		}
+		
 	}
 
 	/*&:after{

@@ -510,3 +510,9 @@ $select-bg-color: #fff;
     width: auto !important;
     line-height: 0px !important;
 }
+
+@media all and(max-width: $breakpoint-mobile){
+    .cart-text{
+        display: none !important;
+    }
+}

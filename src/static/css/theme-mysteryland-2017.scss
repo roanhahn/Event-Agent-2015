@@ -595,3 +595,9 @@ body{
     background-image: url(../img/close.png) !important;
 }
 
+@media all and(max-width: $breakpoint-mobile){
+    .cart-text{
+        font-size: 17px;
+    }
+}
+
