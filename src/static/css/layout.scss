@@ -380,6 +380,10 @@ body{
 
 		& h3{
 			font-size: 56px;
+
+			@media all and(max-width: $breakpoint-mobile){
+				font-size: 28px;
+			}
 		}
 	}
 }
