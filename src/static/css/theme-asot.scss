@@ -1,0 +1,412 @@
+
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
+$breakpoint-mobile: 767px;
+
+$body-bg-color: #fff;
+
+$theme-folder: asot;
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proxima-nova/proximanova-bold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../font/proxima-nova/proximanova-extrabold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proxima-nova/proximanova-light-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../font/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../font/proxima-nova/proximanova-semibold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// FONTS
+
+$primary-font: 'proxima_novaregular', Arial, sans-serif;
+$primary-text-color: #000;
+$primary-link-color: #000;
+$secondary-text-color: #00f2eb;
+$secondary-link-color: #00f2eb;
+$tertiary-text-color: #666;
+$tertiary-link-color: #666;
+
+$secondary-font: 'proxima_novasemibold', Arial, sans-serif;
+$tertiary-font: 'proxima_nova_rgbold', Arial, sans-serif;
+$vier-font: 'proxima_novalight', Arial, sans-serif;
+
+// HEADER STYLING
+$header-height: 80px;
+$header-height-mobile: 50px;
+$logo-width: 320px;
+$logo-height: 20px;
+$logo-width-mobile: 50px;
+$logo-height-mobile: 22px;
+$header-border-color: #ddd;
+$header-link-color: #fff;
+$header-link-size: 20px;
+$header-hover-color: #00f2eb;
+
+
+
+// HERO STYLING
+
+$hero-bg-color: #00f2eb;
+$hero-color: #fff;
+$hero-size: 50px;
+$hero-size-mobile: 25px;
+
+// FOOTER STYLING
+
+$footer-bg-color: #fff;
+$footer-padding: 45px;
+$footer-text-color: #000;
+$footer-link-color: #000;
+$footer-hover-color: #00f2eb;
+$footer-header-color: #000;
+$footer-header-size: 16px;
+$footer-header-weight: 700;
+$footer-text-size: 13px;
+$footer-line-color: #cbcbcb;
+$footer-form-bg-color: #fff;
+$footer-form-line-color: #000;
+$footer-form-input-color: #000;
+$footer-form-submit-bg-color: #000;
+$footer-form-submit-color: #fff;
+$footer-form-submit-hover-bg-color: #00f2eb;
+$footer-form-submit-hover-color: #fff;
+
+
+// BUTTON STYLING
+$primary-btn-bg-color: #000;
+$primary-btn-text-color: #fff;
+$primary-btn-bg-hover-color: #00f2eb;
+$primary-btn-hover-text-color: #fff;
+
+$secondary-btn-bg-color: #00f2eb;
+$secondary-btn-text-color: #fff;
+
+// LOCATION STYLING
+
+$date-bg-color: #f1f1f2;
+$date-color: #000;
+$location-color: #fff;
+$location-title-color: #000;
+$location-subtitle-color: #444;
+
+// CONTENT STYLING
+
+$section-bg-color: #fff;
+$border-color: #cbcbcb;
+
+// RIBBON STYLING
+
+$ribbon-color: #00f2eb;
+$ribbon-shadow-color: #231f20;
+
+
+// FORM STYLING
+
+$select-bg-color: #fff;
+
+
+.header-logo{
+    background: transparent url(../img/#{$theme-folder}/logo_asot.svg) no-repeat 0 0 scroll !important;
+    background-size: $logo-width !important;
+    margin-top: 30px !important;
+    @media all and (max-width: $breakpoint-tablet){
+        background: transparent url(../img/#{$theme-folder}/logo_asot_mobile.svg) no-repeat 0 0 scroll !important;
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 30px 0 0 !important;
+    }
+    @media all and (max-width: $breakpoint-mobile){
+        background: transparent url(../img/#{$theme-folder}/logo_asot_mobile.svg) no-repeat 0 0 scroll !important;
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 15px 0 0 !important;
+    }
+}
+
+.section--grey, .tell-me-more-wrapper {
+    background: #000 url(../img/#{$theme-folder}/festival.png) no-repeat 0 0 scroll !important;
+    background-size: cover !important;
+    color: #fff !important;
+}
+
+.header-menu-link{
+    font-family: $secondary-font;
+    text-transform: uppercase;
+}
+
+.header{
+    background-color: #000 !important;
+}
+
+.hero-h1{
+    text-transform: uppercase;
+    line-height: 1.2 !important;
+    letter-spacing: 0px !important;
+}
+
+.footer{
+    border-top: 1px solid #ddd;
+}
+
+.footer-h4{
+    font-family: $tertiary-font;
+    padding-top: 35px;
+    @media all and (max-width: $breakpoint-tablet){
+        padding-top: 0px;
+    }
+}
+.footer-col{
+    min-height: 185px !important;
+    @media all and (max-width: $breakpoint-tablet){
+        min-height: 0px !important;
+    }
+}
+.accordion-h3{
+    text-transform: uppercase;
+    font-family: $tertiary-font !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+
+    & small{
+        font-family: $primary-font !important;
+        font-weight: normal !important;
+    }
+}
+
+.plain h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.h3-header{
+    text-transform: uppercase;
+    font-size: 20px !important;
+}
+
+.button--hero{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    font-family: $primary-font !important;
+    text-transform: uppercase!important;
+    font-weight: 900 !important;
+    font-size: 26px !important;
+    letter-spacing: 0px!important;
+    padding: 20px 50px !important;
+
+    & span{
+        display: block !important;
+    }
+
+    @media all and (max-width: $breakpoint-mobile){
+        font-size: 16px !important;
+        padding: 15px 10px !important;
+    }
+}
+
+.button--location{
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    padding: 15px 30px!important;
+    font-family: $primary-font !important;
+    text-transform: uppercase!important;
+    font-weight: 900 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.button--next, .button--prev{
+    color: #000 !important;
+
+    &:hover{
+        color: #fff !important;
+    }
+}
+.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .message, .mobile-menu ul li a {
+    color: #000 !important;
+}
+
+.button--primary{
+    background-color: $secondary-text-color !important;
+    color: #000 !important;
+}
+.event-hero{
+    height: 80% !important;
+}
+.hotel-item-list-button{
+    background-color: #000 !important;
+    color: #fff  !important;
+
+    &:hover{
+        background-color: $secondary-text-color !important;
+        color: #000 !important;
+    }
+}
+
+.fold-description{
+    border: none !important;
+}
+.h1-offline, .p-offline{
+    color: $primary-text-color !important;
+}
+
+
+.my-pager-link--active, .my-pager-link--active:hover, .my-pager-link:hover{
+    color: $secondary-text-color !important;
+}
+.logo-offline{
+    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0/contain scroll !important;
+}
+
+.bookingicon{
+    height: 20px !important;
+    width: auto !important;
+    line-height: 0px !important;
+}
+
+.open .accordion-row, .accordion-row:hover, .cart, .cart-wrapper{
+    background: #e9e9e9 url(../img/#{$theme-folder}/dash.png) repeat scroll 0 0 !important;
+}
+
+.cart-wrapper{
+    .summary-section--total{
+        border-color: #000 !important;
+    }
+    .form-label, .cart-steps .step-descr, .btn-remove{
+        color: #000 !important;
+    }
+}
+
+.accordion-h3, .hotel-item-list-price{
+    font-family: $tertiary-font !important;
+}
+
+.hotel-item-list-content .rating span, .hotel-item-grid-content .rating span{
+    color: #000 !important;
+    border-color: #000 !important;
+}
+
+.footer-h4{
+    font-size: 20px !important;
+    font-family: $primary-font !important;
+}
+
+.summary-section--total{
+    border-color: #fff !important;
+}
+
+.fold-h3, .h1, .plain h1{
+    color: $secondary-text-color !important;
+    font-family: $secondary-font !important;
+}
+.ea-offer-bigtext{
+    font-family: $secondary-font !important;
+}
+
+.display-options-grid{
+    background-image: url(../img/icon-grid-white.svg) !important;
+}
+.display-options-list{
+    background-image: url(../img/icon-list-white.svg) !important;
+}
+.display-options-map{
+    background-image: url(../img/icon-map-white.svg) !important;
+}
+
+.hotel-details, .facilities-list, .bookingform, .bookingform .form-label, .form-label{
+    color: #fff !important;
+}
+
+.facilities-list li::before, .tell-me-more h3{
+    color: $secondary-text-color !important;
+}
+
+.form-label{
+    font-weight: normal !important;
+}
+
+.footer{
+    padding-bottom: 0px !important;
+}
+.footer:after{
+background: #e9e9e9 url(../img/#{$theme-folder}/dash.png) repeat scroll 0 0 !important;
+display: block;
+margin-top: 45px;
+content: "";
+height: 100px;
+}
+
+.event-hero h1{
+    font-size: 70px !important;
+}
+
+@media all and(max-width: $breakpoint-mobile){
+    .header-menu .header-menu-link{
+        font-size: 15px !important;
+    }
+    .accordion-h3{
+        font-size: 22px !important;
+    }
+    .event-hero h1{
+        font-size: 40px !important;
+    }
+    .event-hero{
+        height: 90% !important;
+    }
+}
+
+@media all and(min-width: $breakpoint-mobile) {
+    .mobile-menu{
+        display: none !important;
+    }
+}

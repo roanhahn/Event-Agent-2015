@@ -232,15 +232,31 @@ body{
 }
 
 .video-background{
-	position: absolute;
-	top: 0;
-	left: 0;
 	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
 	right: 0;
+	top: 0;
+	z-index: 0;
+	background-color: #000;
 
-	& iframe{
-		width: 100%;
+	&:before{
+		content:"";
+		background-color: rgba(0,0,0,.5);
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	& iframe, video{
 		height: 100%;
+		object-fit: cover;
+		width: 100%;
+
 	}
 }
 
