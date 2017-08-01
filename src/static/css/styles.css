@@ -291,7 +291,7 @@ a, a:visited, a:active {
     font-size: 40px !important; }
 
   .event-hero {
-    height: 90% !important; } }
+    height: 50% !important; } }
 @media all and (min-width: 767px) {
   .mobile-menu {
     display: none !important; } }
@@ -2164,8 +2164,9 @@ select::-ms-expand {
   z-index: 1; }
 
 .video-responsive {
-  height: 100%;
-  position: relative; }
+  height: 50%;
+  position: relative;
+  background: red; }
 
 .canvas,
 .video {

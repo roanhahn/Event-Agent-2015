@@ -89,8 +89,10 @@
 }
 
 .video-responsive {
-	height: 100%;
+	height: 50%;
+	// padding-bottom: 56%;
 	position: relative;
+	background: red;
 }
 
 .canvas,
@@ -103,6 +105,7 @@
 	width: 100%;
 	background: #000;
 	z-index: 5;
+	// display: none;
 }
 
 #over_video{
