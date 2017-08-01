@@ -2163,6 +2163,31 @@ select::-ms-expand {
   right: 0;
   z-index: 1; }
 
+.video-responsive {
+  height: 100%;
+  position: relative; }
+
+.canvas,
+.video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  background: #000;
+  z-index: 5; }
+
+#over_video {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+  font-size: 12vw;
+  color: #FFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-shadow: 4px 4px 4px #5C433B; }
+
 .fold {
   border-top: 2px solid #cbcbcb;
   padding-top: 20px; }
