@@ -351,6 +351,7 @@ $select-bg-color: #fff;
 }
 .ea-offer-bigtext{
     font-family: $secondary-font !important;
+    font-family: 'proxima_nova_rgbold' !important;
 }
 
 .display-options-grid{
@@ -386,8 +387,19 @@ content: "";
 height: 100px;
 }
 
+.hotel-details-room .room-details, .hotel-details-room .room-title, .hotel-details-room .room-price {
+    color: #fff !important;
+}
+
 .event-hero h1{
     font-size: 70px !important;
+}
+
+.hotel-details-room{
+    .hotel-item-list-button{
+        background-color: $secondary-text-color !important;
+        color: #000 !important;
+    }
 }
 
 @media all and(max-width: $breakpoint-mobile){

@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(bootstrap.css);
 @import url(layerslider/layerslider.css);
 @import url(owl.carousel.css);
@@ -247,7 +245,8 @@ a, a:visited, a:active {
   font-family: "proxima_novasemibold", Arial, sans-serif !important; }
 
 .ea-offer-bigtext {
-  font-family: "proxima_novasemibold", Arial, sans-serif !important; }
+  font-family: "proxima_novasemibold", Arial, sans-serif !important;
+  font-family: 'proxima_nova_rgbold' !important; }
 
 .display-options-grid {
   background-image: url(../img/icon-grid-white.svg) !important; }
@@ -277,8 +276,15 @@ a, a:visited, a:active {
   content: "";
   height: 100px; }
 
+.hotel-details-room .room-details, .hotel-details-room .room-title, .hotel-details-room .room-price {
+  color: #fff !important; }
+
 .event-hero h1 {
   font-size: 70px !important; }
+
+.hotel-details-room .hotel-item-list-button {
+  background-color: #00f2eb !important;
+  color: #000 !important; }
 
 @media all and (max-width: 767px) {
   .header-menu .header-menu-link {
