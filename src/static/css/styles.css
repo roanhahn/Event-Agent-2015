@@ -801,7 +801,7 @@ body {
   right: 0;
   top: 0;
   z-index: 0;
-  background-color: red; }
+  background-color: #000; }
   .video-background:before {
     content: "";
     background-color: rgba(0, 0, 0, 0.5);
