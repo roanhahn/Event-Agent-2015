@@ -7,6 +7,12 @@ $body-bg-color: #fff;
 
 $theme-folder: asot;
 
+/* Theme color
+new #2dff8f
+
+*/
+
+
 @font-face {
     font-family: 'proxima_nova_rgbold';
     src: url('../font/proxima-nova/proximanova-bold-webfont.woff2') format('woff2'),
@@ -70,8 +76,8 @@ $theme-folder: asot;
 $primary-font: 'proxima_novaregular', Arial, sans-serif;
 $primary-text-color: #000;
 $primary-link-color: #000;
-$secondary-text-color: #00f2eb;
-$secondary-link-color: #00f2eb;
+$secondary-text-color: #2dff8f;
+$secondary-link-color: #2dff8f;
 $tertiary-text-color: #666;
 $tertiary-link-color: #666;
 
@@ -89,13 +95,13 @@ $logo-height-mobile: 22px;
 $header-border-color: #ddd;
 $header-link-color: #fff;
 $header-link-size: 20px;
-$header-hover-color: #00f2eb;
+$header-hover-color: #2dff8f;
 
 
 
 // HERO STYLING
 
-$hero-bg-color: #00f2eb;
+$hero-bg-color: #2dff8f;
 $hero-color: #fff;
 $hero-size: 50px;
 $hero-size-mobile: 25px;
@@ -106,7 +112,7 @@ $footer-bg-color: #fff;
 $footer-padding: 45px;
 $footer-text-color: #000;
 $footer-link-color: #000;
-$footer-hover-color: #00f2eb;
+$footer-hover-color: #2dff8f;
 $footer-header-color: #000;
 $footer-header-size: 16px;
 $footer-header-weight: 700;
@@ -117,17 +123,17 @@ $footer-form-line-color: #000;
 $footer-form-input-color: #000;
 $footer-form-submit-bg-color: #000;
 $footer-form-submit-color: #fff;
-$footer-form-submit-hover-bg-color: #00f2eb;
+$footer-form-submit-hover-bg-color: #2dff8f;
 $footer-form-submit-hover-color: #fff;
 
 
 // BUTTON STYLING
 $primary-btn-bg-color: #000;
 $primary-btn-text-color: #fff;
-$primary-btn-bg-hover-color: #00f2eb;
+$primary-btn-bg-hover-color: #2dff8f;
 $primary-btn-hover-text-color: #fff;
 
-$secondary-btn-bg-color: #00f2eb;
+$secondary-btn-bg-color: #2dff8f;
 $secondary-btn-text-color: #fff;
 
 // LOCATION STYLING
@@ -145,7 +151,7 @@ $border-color: #cbcbcb;
 
 // RIBBON STYLING
 
-$ribbon-color: #00f2eb;
+$ribbon-color: #2dff8f;
 $ribbon-shadow-color: #231f20;
 
 
@@ -173,7 +179,8 @@ $select-bg-color: #fff;
 }
 
 .section--grey, .tell-me-more-wrapper {
-    background: #000 url(../img/#{$theme-folder}/festival.png) no-repeat 0 0 scroll !important;
+    // background: #000 url(../img/#{$theme-folder}/festival.png) no-repeat 0 0 scroll !important;
+    background-color: #000 !important;
     background-size: cover !important;
     color: #fff !important;
 }
