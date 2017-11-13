@@ -2921,6 +2921,7 @@ CanvasVideoPlayer.prototype.drawFrame = function() {
 	this.ctx.drawImage(this.video, 0, 0, this.width, this.height);
 };
 
+
 $(document).ready(function() {
 /*
 var hotelgridbody = $(".hotel-item-grid-body").outerHeight();
@@ -2991,18 +2992,59 @@ $(".hotel-item-grid").hover
 
 
 //Select the #embeddedVideo element
-/*
-var video = document.getElementById('embeddedVideo');
+// var video = document.getElementById('embeddedVideo');
 
-//Create a new Vimeo.Player object
-var player = new Vimeo.Player(video);
+// //Create a new Vimeo.Player object
+// var player = new Vimeo.Player(video);
 
-//When the player is ready, set the volume to 0
-player.ready().then(function() {
-    player.setVolume(0);
-});*/
+// //When the player is ready, set the volume to 0
+// player.ready().then(function() {
+//     player.setVolume(0);
+// });
+
+// responsive video
 
 
+
+var videoheight = $('.video-background').outerHeight()*1.6;
+var videowidth = videoheight/9*16;
+
+// console.log(videoheight);
+
+function resizeVideo(){
+  $('.videoplayer').css({
+    'width': videowidth +'px',
+    'height': videoheight +'px'
+  })
+}
+
+function vidRescale(){
+
+  var w = $('.video-background').outerWidth()+200;
+  var h = $('.video-background').outerHeight()+200;
+
+  if (w/h > 16/9){
+    $('.videoplayer').css({
+      'width': w +'px',
+      'height': w/16*9 +'px'
+    })
+    // $('.video-background .videoplayer').css({'left': '0px'});
+  } else {
+    $('.videoplayer').css({
+      'width': h/9*16 +'px',
+      'height': h +'px'
+    })
+    // $('.video-background .videoplayer').css({'left': -($('.video-background').outerWidth()-w)/2});
+  }
+}
+
+vidRescale();
+
+$( window ).resize(function() {
+  w = $('.video-background').outerWidth()+200;
+  h = $('.video-background').outerHeight()+200;
+  vidRescale();
+});
 
 // PopOver
 
