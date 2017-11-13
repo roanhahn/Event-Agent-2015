@@ -59,10 +59,6 @@ a, a:visited, a:active {
   src: url("../font/ornitons-bold.woff2") format("woff2"), url("../font/ornitons-bold.woff") format("woff"), url("../font/ornitons-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-/* Theme color
-new #2dff8f
-
-*/
 @font-face {
   font-family: 'proxima_nova_rgbold';
   src: url("../font/proxima-nova/proximanova-bold-webfont.woff2") format("woff2"), url("../font/proxima-nova/proximanova-bold-webfont.woff") format("woff");
@@ -106,8 +102,9 @@ new #2dff8f
       margin: 15px 0 0 !important; } }
 
 .section--grey, .tell-me-more-wrapper {
-  background-color: #000 !important;
-  background-size: cover !important;
+  background: #000 url(../img/asot/asot-4.jpg) no-repeat 50% 50% fixed !important;
+  background-image: none !important;
+  background-size: 100% !important;
   color: #fff !important; }
 
 .header-menu-link {
@@ -115,7 +112,11 @@ new #2dff8f
   text-transform: uppercase; }
 
 .header {
-  background-color: #000 !important; }
+  background-color: rgba(0, 0, 0, 0.8) !important; }
+
+.content-wrapper {
+  top: 0 !important;
+  height: 100% !important; }
 
 .hero-h1 {
   text-transform: uppercase;
@@ -126,7 +127,7 @@ new #2dff8f
   border-top: 1px solid #ddd; }
 
 .footer-h4 {
-  font-family: "proxima_nova_rgbold", Arial, sans-serif;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
   padding-top: 35px; }
   @media all and (max-width: 991px) {
     .footer-h4 {
@@ -140,7 +141,7 @@ new #2dff8f
 
 .accordion-h3 {
   text-transform: uppercase;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif !important;
+  font-family: "proxima_novaextrabold", Arial, sans-serif !important;
   font-weight: 700 !important;
   font-size: 35px !important; }
   .accordion-h3 small {
@@ -156,21 +157,43 @@ new #2dff8f
   font-size: 20px !important; }
 
 .button--hero {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
   font-family: "proxima_novaregular", Arial, sans-serif !important;
   text-transform: uppercase !important;
   font-weight: 900 !important;
   font-size: 26px !important;
   letter-spacing: 0px !important;
-  padding: 20px 50px !important; }
+  padding: 20px 50px !important;
+  box-shadow: 0 0 6px 0 #ff721b !important;
+  border-color: #ff721b !important; }
   .button--hero span {
     display: block !important; }
+  .button--hero:hover {
+    background: #ff721b !important;
+    color: #fff !important; }
   @media all and (max-width: 767px) {
     .button--hero {
       font-size: 16px !important;
       padding: 15px 10px !important; } }
+
+.video-background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(transparent, #000);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, #000);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, #000);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, #000);
+  /* Standard syntax */
+  opacity: 1; }
 
 .button--location {
   font-size: 25px !important;
@@ -184,26 +207,36 @@ new #2dff8f
   border-radius: 0 !important; }
 
 .button--next, .button--prev {
-  color: #000 !important; }
+  color: #000 !important;
+  border-color: #ff721b !important; }
   .button--next:hover, .button--prev:hover {
     color: #fff !important; }
 
-.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .message, .mobile-menu ul li a {
+.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
   color: #000 !important; }
 
-.button--primary {
-  background-color: #2dff8f !important;
-  color: #000 !important; }
+.button--primary, .button--secondary, .button--next, .button--prev {
+  background-color: #ff721b !important;
+  color: #fff !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  text-shadow: 0 0 8px #fff !important;
+  box-shadow: 0 0 6px 0 #ff721b !important; }
+  .button--primary:hover, .button--secondary:hover, .button--next:hover, .button--prev:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    text-shadow: none !important; }
 
 .event-hero {
-  height: 80% !important; }
+  height: 100% !important; }
 
 .hotel-item-list-button {
-  background-color: #000 !important;
+  background-color: #ff721b !important;
   color: #fff  !important; }
   .hotel-item-list-button:hover {
-    background-color: #2dff8f !important;
-    color: #000 !important; }
+    background-color: #000 !important;
+    color: #fff !important; }
 
 .fold-description {
   border: none !important; }
@@ -212,7 +245,7 @@ new #2dff8f
   color: #000 !important; }
 
 .my-pager-link--active, .my-pager-link--active:hover, .my-pager-link:hover {
-  color: #2dff8f !important; }
+  color: #ff721b !important; }
 
 .logo-offline {
   background: transparent url(../img/asot/logo.svg) no-repeat center 0/contain scroll !important; }
@@ -222,16 +255,58 @@ new #2dff8f
   width: auto !important;
   line-height: 0px !important; }
 
-.open .accordion-row, .accordion-row:hover, .cart, .cart-wrapper {
-  background: #e9e9e9 url(../img/asot/dash.png) repeat scroll 0 0 !important; }
+.accordion-row {
+  background: #000; }
 
-.cart-wrapper .summary-section--total {
-  border-color: #000 !important; }
-.cart-wrapper .form-label, .cart-wrapper .cart-steps .step-descr, .cart-wrapper .btn-remove {
-  color: #000 !important; }
+.open .accordion-row, .accordion-row:hover, .cart, .cart-wrapper {
+  background: #e9e9e9 url(../img/asot/dash.png) repeat scroll 0 0 !important;
+  background: #000 !important;
+  color: #fff !important; }
+
+.accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, .section--theme h1 {
+  border-color: #fff !important; }
+
+.accordion-h3 {
+  color: #fff !important; }
+
+.accordion-h3 small, .accordion-h3:after {
+  color: #4c4c4c !important; }
+
+.accordion-row {
+  background-color: #000; }
+  .accordion-row:hover {
+    background-color: #191919 !important; }
+    .accordion-row:hover .accordion-h3 small {
+      color: #fff !important; }
+    .accordion-row:hover .accordion-h3:after {
+      color: #fff !important; }
+
+.open .accordion-row {
+  background-color: #000 !important;
+  border-bottom: 1px solid transparent !important; }
+
+.open .accordion-h3, .switch-display .switch-display-list-item, .form-rooms span {
+  color: #fff !important; }
+
+.cart {
+  background: #000 !important; }
+
+.cart-wrapper {
+  color: #fff !important;
+  background: #000 !important; }
+  .cart-wrapper .summary-section--total {
+    border-color: #000 !important; }
+  .cart-wrapper .form-label, .cart-wrapper .cart-steps .step-descr, .cart-wrapper .btn-remove {
+    color: #ff721b !important; }
+
+.close-cart {
+  background-image: url(../img/close.png) !important; }
 
 .accordion-h3, .hotel-item-list-price {
-  font-family: "proxima_nova_rgbold", Arial, sans-serif !important; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif !important; }
+
+.open .accordion-h3 {
+  color: #fff !important; }
 
 .hotel-item-list-content .rating span, .hotel-item-grid-content .rating span {
   color: #000 !important;
@@ -245,8 +320,8 @@ new #2dff8f
   border-color: #fff !important; }
 
 .fold-h3, .h1, .plain h1 {
-  color: #2dff8f !important;
-  font-family: "proxima_novasemibold", Arial, sans-serif !important; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif !important;
+  font-weight: normal !important; }
 
 .ea-offer-bigtext {
   font-family: "proxima_novasemibold", Arial, sans-serif !important;
@@ -265,17 +340,14 @@ new #2dff8f
   color: #fff !important; }
 
 .facilities-list li::before, .tell-me-more h3 {
-  color: #2dff8f !important; }
+  color: #ff721b !important; }
 
 .form-label {
   font-weight: normal !important; }
 
-.footer {
-  padding-bottom: 0px !important; }
-
 .footer:after {
   background: #e9e9e9 url(../img/asot/dash.png) repeat scroll 0 0 !important;
-  display: block;
+  display: none;
   margin-top: 45px;
   content: "";
   height: 100px; }
@@ -287,7 +359,7 @@ new #2dff8f
   font-size: 70px !important; }
 
 .hotel-details-room .hotel-item-list-button {
-  background-color: #2dff8f !important;
+  background-color: #ff721b !important;
   color: #000 !important; }
 
 @media all and (max-width: 767px) {
@@ -301,7 +373,7 @@ new #2dff8f
     font-size: 40px !important; }
 
   .event-hero {
-    height: 50% !important; } }
+    height: 100% !important; } }
 @media all and (min-width: 767px) {
   .mobile-menu {
     display: none !important; } }
@@ -318,11 +390,11 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #2dff8f; }
+  background: #ff721b; }
 
 ::selection {
   color: #fff;
-  background: #2dff8f; }
+  background: #ff721b; }
 
 a {
   text-decoration: none;
@@ -332,7 +404,7 @@ a {
   transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
 
 .readmore {
-  color: #2dff8f;
+  color: #ff721b;
   font-weight: bold; }
 
 .h1 {
@@ -340,7 +412,7 @@ a {
   text-transform: uppercase;
   margin: 10px 0 10px;
   font-size: 30px;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
   @media all and (max-width: 767px) {
     .h1 {
       font-size: 26px; } }
@@ -350,7 +422,7 @@ a {
   text-transform: uppercase;
   margin: 10px 0 10px;
   font-size: 30px;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
   @media all and (max-width: 767px) {
     .h2 {
       font-size: 26px; } }
@@ -396,7 +468,7 @@ a {
   line-height: 1.5; }
 
 .plain a {
-  color: #2dff8f;
+  color: #ff721b;
   text-decoration: underline; }
 
 .accordion-row {
@@ -490,7 +562,7 @@ a {
   font-size: 23px;
   color: #000;
   line-height: 1;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
   .location-h3 small {
     display: block;
     text-transform: none;
@@ -511,7 +583,7 @@ a {
   font-size: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
   @media all and (max-width: 767px) {
     .fold-h3 {
       font-size: 16px;
@@ -538,7 +610,7 @@ a {
 
 .show-more-info {
   display: inline-block;
-  color: #2dff8f;
+  color: #ff721b;
   font-weight: 700;
   cursor: pointer; }
   .show-more-info:before {
@@ -565,14 +637,14 @@ a {
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 1px solid #fff;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
 .tell-me-more p {
   margin-bottom: 10px;
   line-height: 25px; }
 
 .ea-offer-bigtext {
   width: 100%;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 36px; }
@@ -660,7 +732,7 @@ body {
   .section--white {
     background-color: #fff; }
   .section--theme {
-    background-color: #2dff8f;
+    background-color: #ff721b;
     color: #fff; }
     .section--theme a {
       color: #fff; }
@@ -757,7 +829,7 @@ body {
   padding: 10px;
   color: #000;
   line-height: 1;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif; }
+  font-family: "proxima_novaextrabold", Arial, sans-serif; }
   .location-date .day {
     font-weight: 700;
     font-size: 35px; }
@@ -889,7 +961,7 @@ body {
     -o-transition: background-color  0.2s ease-in-out 0s;
     transition: background-color  0.2s ease-in-out 0s; }
   .edm-item:hover:before {
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .edm-item .event {
     position: absolute;
     top: 50%;
@@ -1037,22 +1109,22 @@ svg {
   cursor: pointer;
   color: #fff; }
   .button--primary {
-    background-color: #000;
+    background-color: #ff721b;
     color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #ff721b;
     font-weight: 900; }
     .button--primary:hover {
-      background-color: #2dff8f;
+      background-color: #ff721b;
       color: #fff;
-      border-color: #2dff8f; }
+      border-color: #ff721b; }
   .button--secondary {
-    background-color: #2dff8f;
+    background-color: #ff721b;
     color: #fff;
-    border: 2px solid #2dff8f;
+    border: 2px solid #ff721b;
     font-weight: 900; }
     .button--secondary:hover {
       background-color: #fff;
-      color: #2dff8f; }
+      color: #ff721b; }
   .button--tertiary {
     background-color: transparent;
     color: #fff;
@@ -1071,13 +1143,13 @@ svg {
       color: #fff;
       border-color: #a2c957; }
   .button--selected {
-    background-color: #2dff8f;
+    background-color: #ff721b;
     color: #fff;
-    border-color: #2dff8f; }
+    border-color: #ff721b; }
     .button--selected:hover {
-      background-color: #2dff8f;
+      background-color: #ff721b;
       color: #fff;
-      border-color: #2dff8f; }
+      border-color: #ff721b; }
   .button--book {
     position: absolute;
     bottom: 15px;
@@ -1281,7 +1353,7 @@ svg {
     .manage-rooms .manage-button:hover {
       background-color: #666; }
   .manage-rooms .minus {
-    background-color: #000;
+    background-color: #ff721b;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -1298,7 +1370,7 @@ svg {
     font-weight: 700;
     font-size: 13px; }
   .manage-rooms .plus {
-    background-color: #000;
+    background-color: #ff721b;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -1427,7 +1499,7 @@ svg {
   display: block;
   text-transform: uppercase;
   color: #000;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
   font-weight: 700;
   font-size: 15px; }
   @media all and (max-width: 767px) {
@@ -1444,15 +1516,15 @@ svg {
   .form-label--ticket {
     font-size: 20px; }
   .form-label--error {
-    color: #2dff8f; }
+    color: #ff721b; }
 
 .form-label-price {
   font-weight: 400; }
 
 .form-error-list {
-  background-color: #2dff8f;
+  background-color: #ff721b;
   color: #fff;
-  border: 1px solid #2dff8f;
+  border: 1px solid #ff721b;
   padding: 10px 15px;
   margin-bottom: 30px; }
   .form-error-list li {
@@ -1501,8 +1573,8 @@ svg {
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3);
     box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.3); }
   .form-field--error {
-    background-color: #2dff8f;
-    border-color: #2dff8f;
+    background-color: #ff721b;
+    border-color: #ff721b;
     color: #fff; }
   .form-field--ok {
     border-color: #58d68d;
@@ -1576,7 +1648,7 @@ svg {
   height: 45px;
   outline: none !important;
   border: 1px solid #ccc;
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
   background-color: #fff;
   padding: 0px 40px 0 15px;
   -webkit-appearance: none;
@@ -1587,7 +1659,7 @@ svg {
   background-size: 25px;
   margin-bottom: 8px;
   cursor: pointer;
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 0 #666;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -1607,8 +1679,8 @@ svg {
     min-width: 80px;
     margin-right: 4px; }
   .form-select--error {
-    background-color: #2dff8f;
-    border-color: #2dff8f;
+    background-color: #ff721b;
+    border-color: #ff721b;
     text-shadow: 0 0 0 #fff; }
     .form-select--error .form-option {
       color: #fff; }
@@ -1663,7 +1735,7 @@ input[type="checkbox"]:checked + label span {
   border: 0;
   background: transparent;
   white-space: nowrap;
-  color: #2dff8f; }
+  color: #ff721b; }
   .btn-remove:before {
     content: "\f00d";
     font-family: "FontAwesome";
@@ -1794,10 +1866,10 @@ select::-ms-expand {
   -moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
   -o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s; }
   .header-menu-link:hover {
-    color: #2dff8f; }
+    color: #ff721b; }
 
 .hero {
-  background-color: #2dff8f;
+  background-color: #ff721b;
   color: #fff;
   padding: 50px 0;
   font-family: "proxima_novasemibold", Arial, sans-serif; }
@@ -1832,7 +1904,7 @@ select::-ms-expand {
   	top: -3px;
   	}*/ }
   .cart-total--active {
-    color: #2dff8f; }
+    color: #ff721b; }
   .cart-total i {
     position: relative;
     top: -2px; }
@@ -1847,7 +1919,7 @@ select::-ms-expand {
   font-weight: 700; }
 
 .cart-total-open {
-  color: #2dff8f;
+  color: #ff721b;
   /*& .cart-total:after{
   	content: "\f077";
   	}*/ }
@@ -1936,7 +2008,7 @@ select::-ms-expand {
   text-transform: uppercase; }
 
 .message {
-  background-color: #2dff8f;
+  background-color: #ff721b;
   color: #fff;
   position: fixed;
   /*top: $header-height;*/
@@ -1984,7 +2056,7 @@ select::-ms-expand {
 .tell-me-more-wrapper {
   position: fixed;
   top: 80px;
-  background-color: #2dff8f;
+  background-color: #ff721b;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2028,7 +2100,7 @@ select::-ms-expand {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
-    color: #2dff8f; }
+    color: #ff721b; }
   .cart-steps .step-icon {
     margin: 0 0 10px; }
   .cart-steps .step-svg {
@@ -2083,7 +2155,7 @@ select::-ms-expand {
     padding: 8px 15px !important;
     color: #fff; }
     .user-menu li a:hover {
-      background-color: #2dff8f;
+      background-color: #ff721b;
       color: #fff; }
   .user-menu li.line {
     border-top: 1px solid #cbcbcb;
@@ -2115,7 +2187,7 @@ select::-ms-expand {
     content: ""; }
   .event-hero h1 {
     color: #fff;
-    font-family: "proxima_nova_rgbold", Arial, sans-serif;
+    font-family: "proxima_novaextrabold", Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 80px;
@@ -2348,7 +2420,7 @@ select::-ms-expand {
     font-size: 17px;
     color: #000; }
   .hotel-item-grid-content .rating {
-    color: #2dff8f;
+    color: #ff721b;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -2356,16 +2428,16 @@ select::-ms-expand {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #2dff8f;
+      border-left: 1px solid #ff721b;
       padding-left: 10px; }
   .hotel-item-grid-content .more-info {
-    color: #2dff8f;
+    color: #ff721b;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-grid-content .more-info:hover {
-      color: #2dff8f; }
+      color: #ff721b; }
     @media all and (max-width: 767px) {
       .hotel-item-grid-content .more-info {
         display: block; } }
@@ -2537,7 +2609,7 @@ select::-ms-expand {
         padding-top: 0;
         margin-top: 0; } }
   .hotel-item-list-content .rating {
-    color: #2dff8f;
+    color: #ff721b;
     margin: 5px 0 10px;
     font-size: 15px;
     line-height: 1; }
@@ -2545,16 +2617,16 @@ select::-ms-expand {
       display: inline-block;
       margin-left: 5px;
       font-size: 13px;
-      border-left: 1px solid #2dff8f;
+      border-left: 1px solid #ff721b;
       padding-left: 10px; }
   .hotel-item-list-content .more-info {
-    color: #2dff8f;
+    color: #ff721b;
     font-size: 12px;
     font-weight: 700;
     display: none;
     margin-top: 2px; }
     .hotel-item-list-content .more-info:hover {
-      color: #2dff8f; }
+      color: #ff721b; }
     @media all and (max-width: 767px) {
       .hotel-item-list-content .more-info {
         display: block; } }
@@ -2632,7 +2704,7 @@ select::-ms-expand {
     text-align: center; } }
 
 .hotel-details .rating {
-  color: #2dff8f;
+  color: #ff721b;
   margin: 10px 0px 10px 0;
   font-size: 20px;
   line-height: 1;
@@ -2641,7 +2713,7 @@ select::-ms-expand {
     display: inline-block;
     margin-left: 5px;
     font-size: 13px;
-    border-left: 1px solid #2dff8f;
+    border-left: 1px solid #ff721b;
     padding-left: 10px; }
   @media all and (max-width: 767px) {
     .hotel-details .rating {
@@ -2657,7 +2729,7 @@ select::-ms-expand {
   background-color: #cbcbcb; }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #2dff8f;
+  background-color: #ff721b;
   opacity: 1; }
 
 .gmap-wrapper {
@@ -2695,7 +2767,7 @@ select::-ms-expand {
     line-height: 1;
     font-size: 20px; }
   .hotel-map-close:hover {
-    color: #2dff8f; }
+    color: #ff721b; }
 
 .hotel-card-container {
   width: 100%;
@@ -2982,7 +3054,7 @@ select::-ms-expand {
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "proxima_nova_rgbold", Arial, sans-serif;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
   font-weight: 700;
   text-align: center;
   line-height: 30px;
@@ -2992,7 +3064,7 @@ select::-ms-expand {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #2dff8f;
+  background: #ff721b;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;
@@ -3043,8 +3115,8 @@ select::-ms-expand {
   border-top-color: #1e5799; }
 
 .footer {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   padding-top: 45px;
   padding-bottom: 45px; }
 
@@ -3059,15 +3131,15 @@ select::-ms-expand {
   margin-bottom: 4px; }
 
 .footer-list-link {
-  color: #000;
+  color: #fff;
   cursor: pointer; }
   .footer-list-link:hover {
-    color: #2dff8f; }
+    color: #ff721b; }
 
 .footer-h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 10px; }
 
@@ -3111,7 +3183,7 @@ select::-ms-expand {
 
 .footer-form-submit {
   border: none;
-  background-color: #000;
+  background-color: #ff721b;
   color: #fff;
   font-family: "proxima_novaregular", Arial, sans-serif;
   text-transform: uppercase;
@@ -3132,8 +3204,8 @@ select::-ms-expand {
   -webkit-appearance: none;
   border-radius: 0; }
   .footer-form-submit:hover {
-    background-color: #2dff8f;
-    color: #fff; }
+    background-color: #ff721b;
+    color: #000; }
 
 /*!
  * Datepicker for Bootstrap v1.6.1 (https://github.com/eternicode/bootstrap-datepicker)
