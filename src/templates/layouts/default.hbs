@@ -46,6 +46,11 @@
 		<script src="{{assets}}/js/app.js"></script>
 		<script src="{{assets}}/js/plugins/bootstrap-datepicker.js"></script>
 
+		{{#if youtube}}
+			<script src="{{assets}}/js/plugins/youtube.js"></script>
+		{{/if}}
+
+
 		{{#if map}}
 		<script type="text/javascript">
 			$(document).ready(function() {
