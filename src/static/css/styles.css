@@ -878,6 +878,9 @@ body {
   height: 100%;
   z-index: 0;
   background-color: #000; }
+  @media all and (max-width: 767px) {
+    .video-background {
+      display: none; } }
   .video-background:before {
     content: "";
     background: -webkit-linear-gradient(transparent, #000);

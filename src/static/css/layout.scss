@@ -241,6 +241,10 @@ body{
 	z-index: 0;
 	background-color: #000;
 
+	@media all and (max-width: $breakpoint-mobile){
+		display: none;
+	}
+
 	&:before{
 		content:"";
 		background: -webkit-linear-gradient(transparent, #000); /* For Safari 5.1 to 6.0 */
@@ -274,6 +278,8 @@ body{
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	pointer-events: none;
+
+	
 }
 
 .location-visual--ams{
