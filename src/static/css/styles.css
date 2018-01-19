@@ -114,10 +114,10 @@ body {
   font-weight: normal !important; }
 
 .message {
-  background-color: #00ade7 !important; }
+  background-color: #00A3DA !important; }
 
 .button--outline {
-  border-color: #00ade7 !important; }
+  border-color: #00A3DA !important; }
 
 .section--white {
   background: #000 !important; }
@@ -219,7 +219,7 @@ body {
   font-weight: 600 !important; }
 
 .button--primary, .button--secondary, .button--next, .button--prev {
-  border-color: #fff !important;
+  border-color: #00ade7 !important;
   font-family: "Open Sans", Arial, sans-serif !important;
   -webkit-border-radius: 50px  !important;
   -moz-border-radius: 50px  !important;
@@ -229,9 +229,9 @@ body {
   font-weight: 700 !important;
   background-color: transparent !important; }
   .button--primary:hover, .button--secondary:hover, .button--next:hover, .button--prev:hover {
-    background-color: #fff !important;
-    color: #e6242b !important;
-    border-color: #fff !important; }
+    background-color: #00ade7 !important;
+    color: #fff !important;
+    border-color: #00ade7 !important; }
 
 .button--selected {
   background-color: #fff !important;
@@ -339,7 +339,7 @@ body {
   .button--hero span {
     display: block !important; }
   .button--hero:hover {
-    background-color: #00ade7 !important;
+    background-color: #00A3DA !important;
     color: #fff !important; }
   @media all and (max-width: 767px) {
     .button--hero {
@@ -422,7 +422,7 @@ body {
   font-size: 40% !important; }
 
 .cart-steps .step-descr {
-  color: #00ade7 !important; }
+  color: #00A3DA !important; }
 
 .plain h1, .summary-section {
   border-color: #fff !important; }
@@ -3143,7 +3143,7 @@ select::-ms-expand {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #00ade7;
+  background: #00A3DA;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;

@@ -339,7 +339,7 @@ body{
     font-weight: 600 !important;
 }
 .button--primary, .button--secondary, .button--next, .button--prev{
-    border-color: #fff !important;
+    border-color: #00ade7 !important;
     font-family: $primary-font !important;
     -webkit-border-radius: 50px  !important;
     -moz-border-radius: 50px  !important;
@@ -349,9 +349,9 @@ body{
     font-weight: 700 !important;
     background-color: transparent !important;
     &:hover{
-        background-color: #fff !important;
-        color: $secondary-link-color !important;
-        border-color: #fff !important;
+        background-color: #00ade7 !important;
+        color: #fff !important;
+        border-color: #00ade7 !important;
     }
 }
 
