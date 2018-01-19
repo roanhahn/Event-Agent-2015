@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="45px" viewBox="0 0 30 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-door-label</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-door-label" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M10.614,16.012 C9.241,14.931 8.369,13.338 8.369,11.556 C8.369,8.3 11.27,5.662 14.848,5.662 C17.64,5.662 20.013,7.271 20.923,9.522 C21.058,9.868 21.144,10.135 21.203,10.412 C22.689,14.942 24.579,15.242 26.73,15.284 C28.483,15.318 29.375,14.019 29.791,12.603 C30,5.16333008 22.466,0 14.999,0 C6.716,0 0,5.28491211 0,15 L0,45 L30,45 L30,26.764 C30,22.8129883 27.452,20.466 18.879,19.401 C14.547,18.863 12.045,17.382 10.614,16.012 Z" id="Fill-1"></path>
+        </g>
+    </g>
+</svg>
