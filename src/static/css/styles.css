@@ -3286,6 +3286,37 @@ select::-ms-expand {
     background-color: #e6242b;
     color: #fff; }
 
+.payoff {
+  margin-bottom: 60px; }
+  .payoff p {
+    float: right;
+    font-size: 12px;
+    line-height: 60px;
+    margin: 0;
+    text-transform: uppercase; }
+    @media all and (max-width: 767px) {
+      .payoff p {
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+        line-height: 1.2; } }
+  .payoff ul {
+    list-style-type: none;
+    float: left; }
+    @media all and (max-width: 767px) {
+      .payoff ul {
+        float: none;
+        text-align: center;
+        margin: 0 auto; } }
+    .payoff ul li {
+      display: inline-block;
+      margin-right: 8px; }
+      .payoff ul li:last-child {
+        margin-right: 0px; }
+      .payoff ul li img {
+        max-height: 60px;
+        width: auto; }
+
 /*!
  * Datepicker for Bootstrap v1.6.1 (https://github.com/eternicode/bootstrap-datepicker)
  *
