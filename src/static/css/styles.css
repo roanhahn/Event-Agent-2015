@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url(bootstrap.css);
+@import url(animate.css);
 @import url(layerslider/layerslider.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.css);
@@ -3316,6 +3317,110 @@ select::-ms-expand {
       .payoff ul li img {
         max-height: 60px;
         width: auto; }
+
+.usp-slider {
+  padding: 250px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); }
+  .usp-slider:before {
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute; }
+  .usp-slider h2 {
+    font-family: "ornitons-bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+    @media all and (max-width: 767px) {
+      .usp-slider h2 {
+        font-size: 24px; } }
+  .usp-slider .usp-slider-p {
+    font-family: "ornitons-regularregular";
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 30px;
+    line-height: 1.2; }
+    @media all and (max-width: 767px) {
+      .usp-slider .usp-slider-p {
+        font-size: 16px; } }
+  .usp-slider .button {
+    margin: 0 10px 10px;
+    background: #000 !important;
+    text-shadow: none;
+    min-width: 200px;
+    font-family: "ornitons-bold", sans-serif !important;
+    font-weight: 600 !important; }
+    .usp-slider .button:hover {
+      background: #00A3DA !important; }
+  .usp-slider ul {
+    list-style-type: none;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; }
+    @media all and (max-width: 991px) {
+      .usp-slider ul {
+        text-align: center;
+        margin-top: 60px; } }
+    .usp-slider ul li {
+      background: #00A3DA;
+      text-shadow: none;
+      display: inline-block;
+      line-height: 1.1;
+      width: 100px;
+      height: 100px;
+      padding: 15px;
+      margin: 5px;
+      font-size: 15px;
+      border-radius: 0px 8px 0px 8px;
+      flex-shrink: 1;
+      text-align: center;
+      font-family: "ornitons-demiboldregular";
+      font-weight: normal;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+      position: relative;
+      background: #e6242b;
+      border: 2px solid #000;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s; }
+      .usp-slider ul li:hover {
+        -ms-transform: scale(1.1, 1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1, 1.1);
+        /* Safari */
+        transform: scale(1.1, 1.1); }
+      .usp-slider ul li:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        background: transparent url(../img/check.svg) no-repeat 8px 8px scroll;
+        background-size: 20px auto;
+        opacity: .5;
+        display: none; }
+
+.wow {
+  visibility: hidden; }
 
 /*!
  * Datepicker for Bootstrap v1.6.1 (https://github.com/eternicode/bootstrap-datepicker)

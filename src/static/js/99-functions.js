@@ -83,7 +83,9 @@ $(".hotel-item-grid").hover
 
 
 
+// WOW
 
+new WOW().init();
 
 
 
