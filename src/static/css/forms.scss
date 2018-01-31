@@ -208,6 +208,11 @@
 	padding-left: 15px;
 }
 
+.form-group{
+	position: relative;
+	z-index: 100;
+}
+
 .input-group-addon{
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
