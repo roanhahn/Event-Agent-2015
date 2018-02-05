@@ -339,7 +339,13 @@ body{
 		display: none;
 	}
 	.xs-show{
-		display: block !important;
+		display: block;
+	}
+}
+
+@media all and(min-width: $breakpoint-mobile){
+	.xs-show{
+		display: none;
 	}
 }
 

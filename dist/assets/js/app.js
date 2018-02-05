@@ -3013,7 +3013,6 @@ $(".hotel-item-grid").hover
 new WOW().init();
 
 
-
 // PopOver
 
 $(function () {
