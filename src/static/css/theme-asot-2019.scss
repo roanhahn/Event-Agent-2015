@@ -145,7 +145,7 @@ $border-color: #cbcbcb;
 
 // RIBBON STYLING
 
-$ribbon-color: #ff0067;
+$ribbon-color: #ff721b;
 $ribbon-shadow-color: #231f20;
 
 
@@ -303,8 +303,12 @@ $select-bg-color: #fff;
         color: #fff !important;
     }
 }
-.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
+.manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
     color: #fff !important;
+}
+
+.ribbon span{
+    color: #000;
 }
 
 .button--primary, .button--secondary, .button--next, .button--prev{

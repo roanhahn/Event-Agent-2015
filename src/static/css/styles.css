@@ -214,8 +214,11 @@ a, a:visited, a:active {
   .button--next:hover, .button--prev:hover {
     color: #fff !important; }
 
-.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
+.manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
   color: #fff !important; }
+
+.ribbon span {
+  color: #000; }
 
 .button--primary, .button--secondary, .button--next, .button--prev {
   background-color: #ff0067 !important;
@@ -3119,7 +3122,7 @@ select::-ms-expand {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #ff0067;
+  background: #ff721b;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;
