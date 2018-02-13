@@ -1,0 +1,548 @@
+
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
+$breakpoint-mobile: 767px;
+
+$body-bg-color: #fff;
+
+$theme-folder: asot2019;
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proxima-nova/proximanova-bold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../font/proxima-nova/proximanova-extrabold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proxima-nova/proximanova-light-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../font/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../font/proxima-nova/proximanova-semibold-webfont.woff2') format('woff2'),
+    url('../font/proxima-nova/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// FONTS
+
+$primary-font: 'proxima_novaregular', Arial, sans-serif;
+$primary-text-color: #000;
+$primary-link-color: #000;
+$secondary-text-color: #ff0067;
+$secondary-link-color: #ff0067;
+$tertiary-text-color: #666;
+$tertiary-link-color: #666;
+
+$secondary-font: 'proxima_novasemibold', Arial, sans-serif;
+$tertiary-font: 'proxima_novaextrabold', Arial, sans-serif;
+$vier-font: 'proxima_novalight', Arial, sans-serif;
+
+// HEADER STYLING
+$header-height: 80px;
+$header-height-mobile: 50px;
+$logo-width: 320px;
+$logo-height: 20px;
+$logo-width-mobile: 50px;
+$logo-height-mobile: 22px;
+$header-border-color: #ddd;
+$header-link-color: #fff;
+$header-link-size: 20px;
+$header-hover-color: #ff0067;
+
+
+
+// HERO STYLING
+
+$hero-bg-color: #ff0067;
+$hero-color: #fff;
+$hero-size: 50px;
+$hero-size-mobile: 25px;
+
+// FOOTER STYLING
+
+$footer-bg-color: #000;
+$footer-padding: 45px;
+$footer-text-color: #fff;
+$footer-link-color: #fff;
+$footer-hover-color: #ff0067;
+$footer-header-color: #fff;
+$footer-header-size: 16px;
+$footer-header-weight: 700;
+$footer-text-size: 13px;
+$footer-line-color: #cbcbcb;
+$footer-form-bg-color: #fff;
+$footer-form-line-color: #000;
+$footer-form-input-color: #000;
+$footer-form-submit-bg-color: #ff0067;
+$footer-form-submit-color: #fff;
+$footer-form-submit-hover-bg-color: #ff0067;
+$footer-form-submit-hover-color: #000;
+
+
+// BUTTON STYLING
+$primary-btn-bg-color: #ff0067;
+$primary-btn-text-color: #fff;
+$primary-btn-bg-hover-color: #ff0067;
+$primary-btn-hover-text-color: #fff;
+
+$secondary-btn-bg-color: #ff0067;
+$secondary-btn-text-color: #fff;
+
+// LOCATION STYLING
+
+$date-bg-color: #f1f1f2;
+$date-color: #000;
+$location-color: #fff;
+$location-title-color: #000;
+$location-subtitle-color: #444;
+
+// CONTENT STYLING
+
+$section-bg-color: #fff;
+$border-color: #cbcbcb;
+
+// RIBBON STYLING
+
+$ribbon-color: #ff0067;
+$ribbon-shadow-color: #231f20;
+
+
+// FORM STYLING
+
+$select-bg-color: #fff;
+
+
+.header-logo{
+    background: transparent url(../img/#{$theme-folder}/logo_asot.svg) no-repeat 0 0 scroll !important;
+    background-size: $logo-width !important;
+    margin-top: 30px !important;
+    @media all and (max-width: $breakpoint-tablet){
+        background: transparent url(../img/#{$theme-folder}/logo_asot_mobile.svg) no-repeat 0 0 scroll !important;
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 30px 0 0 !important;
+    }
+    @media all and (max-width: $breakpoint-mobile){
+        background: transparent url(../img/#{$theme-folder}/logo_asot_mobile.svg) no-repeat 0 0 scroll !important;
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 15px 0 0 !important;
+    }
+}
+
+.section--grey, .tell-me-more-wrapper {
+    background: #000 url(../img/#{$theme-folder}/asot-4.jpg) no-repeat 50% 50% fixed !important;
+    background-image: none !important;
+    background-size: 100% !important;
+    color: #fff !important;
+}
+
+.header-menu-link{
+    font-family: $secondary-font;
+    text-transform: uppercase;
+}
+
+.header{
+    background-color: rgba(0,0,0,1) !important;
+}
+
+.content-wrapper{
+    top: 0 !important;
+    height: 100% !important;
+}
+
+.hero-h1{
+    text-transform: uppercase;
+    line-height: 1.2 !important;
+    letter-spacing: 0px !important;
+}
+
+.footer{
+    border-top: 1px solid #ddd;
+}
+
+.footer-h4{
+    font-family: $tertiary-font;
+    padding-top: 35px;
+    @media all and (max-width: $breakpoint-tablet){
+        padding-top: 0px;
+    }
+}
+.footer-col{
+    min-height: 185px !important;
+    @media all and (max-width: $breakpoint-tablet){
+        min-height: 0px !important;
+    }
+}
+.accordion-h3{
+    text-transform: uppercase;
+    font-family: $tertiary-font !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+
+    & small{
+        font-family: $primary-font !important;
+        font-weight: normal !important;
+    }
+}
+
+.plain h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.h3-header{
+    text-transform: uppercase;
+    font-size: 20px !important;
+}
+
+.button--hero{
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    font-family: $primary-font !important;
+    text-transform: uppercase!important;
+    font-weight: 900 !important;
+    font-size: 26px !important;
+    letter-spacing: 0px!important;
+    padding: 20px 50px !important;
+    // text-shadow: 0 0 8px #fff !important;
+    box-shadow: 0 0 6px 0 #ff0067 !important;
+    border-color: #ff0067 !important;
+
+    & span{
+        display: block !important;
+    }
+
+    &:hover{
+        background: #ff0067 !important;
+        color: #fff !important;
+    }
+
+    @media all and (max-width: $breakpoint-mobile){
+        font-size: 16px !important;
+        padding: 15px 10px !important;
+    }
+}
+
+.video-background{
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: -webkit-linear-gradient(transparent, #000); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(transparent, #000); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(transparent, #000); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(transparent, #000); /* Standard syntax */
+        opacity: 1; 
+      }
+}
+
+.button--location{
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    padding: 15px 30px!important;
+    font-family: $primary-font !important;
+    text-transform: uppercase!important;
+    font-weight: 900 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.button--next, .button--prev{
+    color: #000 !important;
+    border-color: #ff0067 !important;
+
+    &:hover{
+        color: #fff !important;
+    }
+}
+.ribbon span, .manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
+    color: #fff !important;
+}
+
+.button--primary, .button--secondary, .button--next, .button--prev{
+    background-color: $secondary-text-color !important;
+    color: #fff !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    text-shadow: 0 0 8px #fff !important;
+    box-shadow: 0 0 6px 0 #ff0067 !important;
+
+    &:hover{
+        background-color: #000 !important;
+        color: #fff !important;
+        text-shadow: none !important;
+    }
+}
+.event-hero{
+    height: 100% !important;
+}
+.hotel-item-list-button{
+    background-color: #ff0067 !important;
+    color: #fff  !important;
+
+    &:hover{
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}
+
+.fold-description{
+    border: none !important;
+}
+.h1-offline, .p-offline{
+    color: $primary-text-color !important;
+}
+
+
+.my-pager-link--active, .my-pager-link--active:hover, .my-pager-link:hover{
+    color: $secondary-text-color !important;
+}
+.logo-offline{
+    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat center 0/contain scroll !important;
+}
+
+.bookingicon{
+    height: 20px !important;
+    width: auto !important;
+    line-height: 0px !important;
+}
+
+.accordion-row{
+    background: #000;
+}
+.open .accordion-row, .accordion-row:hover, .cart, .cart-wrapper{
+    background: #e9e9e9 url(../img/#{$theme-folder}/dash.png) repeat scroll 0 0 !important;
+    background: #000 !important;
+    color: #fff !important;  
+}
+
+.accordion-row, .accordion-h3 small, .form-col, .summary-section, .my-pager-item, .switch-display-list-item--border, .tell-me-more h3, {
+    border-color: #fff !important;
+}
+
+.section--theme, .page-text{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.section--theme h1{
+    border-color: #000 !important;
+}
+
+.plain a {
+    color: #ff0067 !important;
+}
+
+.accordion-h3{
+    color: #fff !important;
+}
+.accordion-h3 small, .accordion-h3:after{
+    color: #4c4c4c !important;
+}
+.accordion-row{
+    background-color: #000;
+    &:hover{
+       background-color: #191919 !important;
+
+       & .accordion-h3 small{
+        color: #fff !important;
+    }
+    & .accordion-h3:after{
+       color: #fff !important;
+   }
+}
+}
+
+.open .accordion-row{
+    background-color: #000 !important;
+    border-bottom: 1px solid transparent !important;
+}
+.open .accordion-h3, .switch-display .switch-display-list-item, .form-rooms span{
+    color: #fff !important;
+}
+
+.cart{
+    background: #000 !important;
+}
+.cart-wrapper{
+    color: #fff !important;
+     background: #000 !important;
+    .summary-section--total{
+        border-color: #000 !important;
+    }
+    .form-label, .cart-steps .step-descr, .btn-remove{
+        color: #ff0067 !important;
+    }
+}
+
+.close-cart{
+    background-image: url(../img/close.png) !important;
+}
+
+.section--theme .close-page{
+    background-image: url(../img/close-cart.png) !important;
+}
+
+.accordion-h3, .hotel-item-list-price{
+    font-family: $tertiary-font !important;
+}
+
+.open .accordion-h3{
+    color: #fff !important;
+}
+
+.hotel-item-list-content .rating span, .hotel-item-grid-content .rating span{
+    color: #000 !important;
+    border-color: #000 !important;
+}
+
+.footer-h4{
+    font-size: 20px !important;
+    font-family: $primary-font !important;
+}
+
+.summary-section--total{
+    border-color: #fff !important;
+}
+
+.fold-h3, .h1, .plain h1{
+    // color: $secondary-text-color !important;
+    font-family: $tertiary-font !important;
+    font-weight: normal !important;
+}
+.ea-offer-bigtext{
+    font-family: $secondary-font !important;
+    font-family: 'proxima_nova_rgbold' !important;
+}
+
+.display-options-grid{
+    background-image: url(../img/icon-grid-white.svg) !important;
+}
+.display-options-list{
+    background-image: url(../img/icon-list-white.svg) !important;
+}
+.display-options-map{
+    background-image: url(../img/icon-map-white.svg) !important;
+}
+
+.hotel-details, .facilities-list, .bookingform, .bookingform .form-label, .form-label{
+    color: #fff !important;
+}
+
+.facilities-list li::before, .tell-me-more h3{
+    color: $secondary-text-color !important;
+}
+
+.form-label{
+    font-weight: normal !important;
+}
+
+
+.footer:after{
+background: #e9e9e9 url(../img/#{$theme-folder}/dash.png) repeat scroll 0 0 !important;
+display: none;
+margin-top: 45px;
+content: "";
+height: 100px;
+}
+
+.hotel-details-room .room-details, .hotel-details-room .room-title, .hotel-details-room .room-price {
+    color: #fff !important;
+}
+
+.event-hero h1{
+    font-size: 70px !important;
+}
+
+.hotel-details-room{
+    .hotel-item-list-button{
+        background-color: $secondary-text-color !important;
+        color: #000 !important;
+    }
+}
+
+@media all and(max-width: $breakpoint-mobile){
+    .header-menu .header-menu-link{
+        font-size: 15px !important;
+    }
+    .accordion-h3{
+        font-size: 22px !important;
+    }
+    .event-hero h1{
+        font-size: 40px !important;
+    }
+    .event-hero{
+        height: 100% !important;
+    }
+}
+
+@media all and(min-width: $breakpoint-mobile) {
+    .mobile-menu{
+        display: none !important;
+    }
+}
+
+.ribbon .text{
+    font-size: 12px !important;
+    
+}
+
+.ribbon span{
+    // color: #fff !important;
+    font-family: 'proxima_nova_rgbold' !important;
+    font-weight: 400 !important;
+    // text-transform: none !important;
+}
+
+.payoff{
+    display: none;
+}

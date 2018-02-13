@@ -629,3 +629,16 @@ body{
 .event-hero-buttons{
     bottom: 10% !important; 
 }
+
+.ribbon .text{
+    font-size: 9px !important;
+    white-space: nowrap;
+    background-color: #ff5a00 !important;
+    font-family: $primary-font !important;
+    font-weight: 700 !important;
+    // text-transform: none !important;
+}
+
+// .ribbon .text::before{
+//     border-left: 3px solid red !important;
+// }
