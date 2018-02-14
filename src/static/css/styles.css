@@ -403,7 +403,13 @@ a, a:visited, a:active {
   font-weight: 400 !important; }
 
 .payoff {
-  display: none; }
+  display: block;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
+  margin: 0px !important;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background: #000; }
 
 body {
   font-family: "proxima_novaregular", Arial, sans-serif;
