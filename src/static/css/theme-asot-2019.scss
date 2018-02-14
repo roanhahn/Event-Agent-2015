@@ -145,13 +145,15 @@ $border-color: #cbcbcb;
 
 // RIBBON STYLING
 
-$ribbon-color: #ff721b;
+$ribbon-color: #ff0067;
 $ribbon-shadow-color: #231f20;
 
 
 // FORM STYLING
 
 $select-bg-color: #fff;
+
+
 
 
 .header-logo{
@@ -308,7 +310,7 @@ $select-bg-color: #fff;
 }
 
 .ribbon span{
-    color: #000;
+    color: #fff;
 }
 
 .button--primary, .button--secondary, .button--next, .button--prev{
@@ -555,4 +557,8 @@ height: 100px;
     padding-top: 55px;
     padding-bottom: 55px;
     background: #000;
+}
+
+.form-error-list, .form-select--error {
+    background: #a00224 !important;
 }

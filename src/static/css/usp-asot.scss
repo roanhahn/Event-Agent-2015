@@ -1,0 +1,114 @@
+.usp-slider{
+	padding: 250px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #fff;
+	position: relative;
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 150px 0;
+	}
+
+	&:before{
+		display: none;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.2);
+		content: "";
+		position: absolute;
+	}
+
+	& img{
+		max-width: 130px;
+		margin-bottom: 20px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			max-width: 70px;
+		}
+	}
+
+	& h2{
+		font-family: 'proxima_novaextrabold';
+		text-transform: uppercase;
+		font-size: 50px;
+		margin-top: 0;
+		margin-bottom:  15px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 30px;
+		}
+
+		& span{
+			white-space: nowrap;
+			color: #ff0067;
+			display: block;
+		}
+	}
+
+	& .usp-slider-p{
+		font-family: 'proxima_novaregular';
+		font-weight: normal;
+		font-size: 22px;
+		margin-bottom: 60px;
+		line-height: 1.2;
+		// text-transform: uppercase;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+
+	& .button--hero{
+		min-width: 220px;
+		white-space: normal;
+		display: inline-block;
+		padding: 20px 0 !important;
+		font-size: 18px !important;
+		font-family: 'proxima_nova_rgbold' !important;
+		margin: 0 5px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			margin: 0 0 10px;
+		}
+	}
+
+	
+
+	& ul{
+		list-style-type: none;
+		margin-top: 60px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			margin-top: 30px;
+		}
+
+		& li{
+			text-transform: uppercase;
+			font-family: 'proxima_nova_rgbold';
+			font-size: 18px;
+			margin-bottom: 5px;
+			line-height: 1.2;
+
+			@media all and (max-width: $breakpoint-mobile){
+				font-size: 13px;
+			}
+
+			& i{
+				color: #ff0067;
+				margin-right: 10px;
+			}
+			& div{
+
+			}
+		}
+	}
+}
+
+.wow{
+	visibility: hidden;
+}

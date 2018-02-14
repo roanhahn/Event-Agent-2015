@@ -218,7 +218,7 @@ a, a:visited, a:active {
   color: #fff !important; }
 
 .ribbon span {
-  color: #000; }
+  color: #fff; }
 
 .button--primary, .button--secondary, .button--next, .button--prev {
   background-color: #ff0067 !important;
@@ -410,6 +410,9 @@ a, a:visited, a:active {
   padding-top: 55px;
   padding-bottom: 55px;
   background: #000; }
+
+.form-error-list, .form-select--error {
+  background: #a00224 !important; }
 
 body {
   font-family: "proxima_novaregular", Arial, sans-serif;
@@ -3128,7 +3131,7 @@ select::-ms-expand {
   /* Needed for Safari */
   width: 155px;
   display: block;
-  background: #ff721b;
+  background: #ff0067;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 27px;
@@ -3301,6 +3304,88 @@ select::-ms-expand {
       .payoff ul li img {
         max-height: 60px;
         width: auto; }
+
+.usp-slider {
+  padding: 250px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #fff;
+  position: relative;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); }
+  @media all and (max-width: 767px) {
+    .usp-slider {
+      padding: 150px 0; } }
+  .usp-slider:before {
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute; }
+  .usp-slider img {
+    max-width: 130px;
+    margin-bottom: 20px; }
+    @media all and (max-width: 767px) {
+      .usp-slider img {
+        max-width: 70px; } }
+  .usp-slider h2 {
+    font-family: 'proxima_novaextrabold';
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+    @media all and (max-width: 767px) {
+      .usp-slider h2 {
+        font-size: 30px; } }
+    .usp-slider h2 span {
+      white-space: nowrap;
+      color: #ff0067;
+      display: block; }
+  .usp-slider .usp-slider-p {
+    font-family: 'proxima_novaregular';
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 60px;
+    line-height: 1.2; }
+    @media all and (max-width: 767px) {
+      .usp-slider .usp-slider-p {
+        font-size: 16px;
+        margin-bottom: 30px; } }
+  .usp-slider .button--hero {
+    min-width: 220px;
+    white-space: normal;
+    display: inline-block;
+    padding: 20px 0 !important;
+    font-size: 18px !important;
+    font-family: 'proxima_nova_rgbold' !important;
+    margin: 0 5px; }
+    @media all and (max-width: 767px) {
+      .usp-slider .button--hero {
+        margin: 0 0 10px; } }
+  .usp-slider ul {
+    list-style-type: none;
+    margin-top: 60px; }
+    @media all and (max-width: 767px) {
+      .usp-slider ul {
+        margin-top: 30px; } }
+    .usp-slider ul li {
+      text-transform: uppercase;
+      font-family: 'proxima_nova_rgbold';
+      font-size: 18px;
+      margin-bottom: 5px;
+      line-height: 1.2; }
+      @media all and (max-width: 767px) {
+        .usp-slider ul li {
+          font-size: 13px; } }
+      .usp-slider ul li i {
+        color: #ff0067;
+        margin-right: 10px; }
+
+.wow {
+  visibility: hidden; }
 
 /*!
  * Datepicker for Bootstrap v1.6.1 (https://github.com/eternicode/bootstrap-datepicker)
