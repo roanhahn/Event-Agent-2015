@@ -221,6 +221,7 @@ $select-bg-color: #fff;
 .section--grey{
     background-color: #fff !important;
     background: #fff url(../img/electronicfamily/bg-hexagon.jpg) repeat center top fixed !important;
+    background: #fff !important;
     background-size: 100% !important;
 }
 .accordion-h3, .accordion-h3:active, .accordion-h3:visited, .accordion-h3:active::after, .accordion-h3::after, .accordion-h3:visited::after{
@@ -281,51 +282,59 @@ $select-bg-color: #fff;
 .footer{
     border-top: 2px solid #ede9e2;
     position: relative;
+    padding-bottom: 200px !important;
 
     &:before{
-        position: absolute;
-        bottom: -55%;
-        left: 10%;
-        content: "";
-        width: 322px;
-        height: 211px;
-        display: block;
-        background-image: url(../img/electronicfamily/footer_left.png);
-        background-repeat: no-repeat;
-        background-size: 322px;
-        background-position: 0 bottom;
-        z-index: 10;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: "";
+		width: 300px;
+		height: 227px;
+		display: block;
+		background-image: url(../img/electronicfamily/green-left.png);
+		background-repeat: no-repeat;
+		background-size: 300px auto;
+		background-position: 0 bottom;
+		z-index: 10;
+		display: block;
 
-        @media all and (max-width: $breakpoint-tablet){
-            display: none;
-        }
-        @media all and (max-width: $breakpoint-mobile){
-            display: none;
-        }
-    }
+		@media all and (max-width: 960px){
+			// width: 150px;
+			// height: 114px;
+			// background-size: 150px auto;
+		}
+		@media all and (max-width: 767px){
+			width: 150px;
+			height: 114px;
+			background-size: 150px auto;
+		}
+	}
 
-    &:after{
-        position: absolute;
-        right: 5%;
-        bottom: -65%;
-        content: "";
-        width: 315px;
-        height: 255px;
-        display: block;
-        background-image: url(../img/electronicfamily/footer_right.png);
-        background-repeat: no-repeat;
-        background-size: 315px;
-        background-position: 0 bottom;
-        z-index: 10;
+	&:after{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		content: "";
+		width: 300px;
+		height: 236px;
+		display: block;
+		background-image: url(../img/electronicfamily/green-right.png);
+		background-repeat: no-repeat;
+		background-size: 300px;
+		background-position: 0 bottom;
+		z-index: 10;
+		display: block;
 
-        @media all and (max-width: $breakpoint-tablet){
-            bottom: -15%;
-            width: 200px;
-            height: 200px;
-            background-size: 200px;
-            right: calc(50% - 100px);
-        }
-    }
+		@media all and (max-width: 960px){
+			
+		}
+		@media all and (max-width: 767px){
+			width: 150px;
+			height: 118px;
+			background-size: 150px auto;
+		}
+	}
 }
 
 .footer-h4{
@@ -473,22 +482,17 @@ $select-bg-color: #fff;
 }
 
 .payoff{
-    height: 400px;
-    background: #afd8d4;
-    background: -moz-linear-gradient(top,  #afd8d4 0%, #00a6ab 100%);
-    background: -webkit-linear-gradient(top,  #afd8d4 0%,#00a6ab 100%);
-    background: linear-gradient(to bottom,  #afd8d4 0%,#00a6ab 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afd8d4', endColorstr='#00a6ab',GradientType=0 );
-
-    @media all and (max-width: 767px){
-        height: 200px;
-    }
+    background: #00743c;
+	color: #b9ba20;
+	padding: 55px 0;
+	margin: 0 !important;
 }
 
 .tell-me-more-wrapper, .cart-wrapper, .section--theme, .page-text{
     background: #fff url(../img/electronicfamily/bg-hexagon.jpg) repeat center top fixed !important;
     background-size: 100% !important;
     color: #4a4a4a !important;
+    background: #fff !important;
     // border-bottom: 1px solid #ede9e2;
     // font-size: 16px;
 }
@@ -515,4 +519,132 @@ $select-bg-color: #fff;
     .cart-text{
         display: none !important;
     }
+}
+
+.usp-slider{
+	padding: 100px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	color: #fff;
+	position: relative;
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 50px 0;
+	}
+
+	&:before{
+		display: none;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.2);
+		content: "";
+		position: absolute;
+	}
+
+	& img{
+		max-width: 300px;
+		margin-bottom: 30px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			max-width: 200px;
+		}
+	}
+
+	& h2{
+		font-family: 'Gotham Black';
+		text-transform: uppercase;
+		font-size: 50px;
+		margin-top: 0;
+		margin-bottom:  60px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		& span{
+			white-space: nowrap;
+			color: #37d6c7;
+			display: block;
+		}
+	}
+
+	& .usp-slider-p{
+		font-family: 'Gotham Book';
+		font-weight: normal;
+		font-size: 22px;
+		margin-bottom: 60px;
+		line-height: 1.2;
+		// text-transform: uppercase;
+
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+
+	& .button--hero{
+		min-width: 220px;
+		white-space: normal;
+		display: inline-block;
+		padding: 20px 0 !important;
+		font-size: 18px !important;
+		font-family: 'Gotham Bold' !important;
+		// font-family: 'proxima_nova_rgbold' !important;
+		margin: 0 5px;
+		border: none;
+		background: #e20074;
+		// text-shadow: none;
+
+		&:hover{
+			background: #ff7d22;
+			color: #fff;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+			margin: 0 auto 10px;
+			display: block !important;
+			max-width: 220px;
+			font-size: 16px !important;
+		}
+	}
+
+
+
+	& ul{
+		list-style-type: none;
+		margin-top: 60px;
+
+		@media all and (max-width: $breakpoint-mobile){
+			margin-top: 30px;
+		}
+
+		& li{
+			text-transform: uppercase;
+			font-family: 'Gotham Medium';
+			font-size: 18px;
+			margin-bottom: 5px;
+			line-height: 1.2;
+
+			@media all and (max-width: $breakpoint-mobile){
+				font-size: 13px;
+			}
+
+			& i{
+				color: #37d6c7;
+				margin-right: 10px;
+			}
+			& div{
+
+			}
+		}
+	}
+}
+
+.wow{
+	visibility: hidden;
 }
