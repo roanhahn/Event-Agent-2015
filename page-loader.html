@@ -489,12 +489,6 @@
 	</div>
 </section>
 
-<div id="loading-data">
-	<svg width="200" height="200" viewbox="0 0 200 200">
-		<path id="border" transform="translate(100, 100)"/>
-		<path id="loader" transform="translate(100, 100) scale(.9)"/>
-	</svg>
-</div>
 
 
 
@@ -563,10 +557,8 @@
 			<ul>
 				<li><a href="#"><img src="assets/img/ALDA.png" alt=""></a></li>
 				<li><a href="#"><img src="assets/img/electronicfamily/logo-autotron.png" alt=""></a></li>
-				
 			</ul>
-			
-			<p>© 2018 ASOT - powered by EDM Booking</p>
+			<p>© 2018 Electronic Family</p>
 		</div>
 	</div>
 	<!-- Tell me more -->
@@ -686,36 +678,6 @@
 		
 		
 
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				// PIE loader
-				var loader = document.getElementById('loader')
-				, border = document.getElementById('border')
-				, α = 0
-				, π = Math.PI
-				, t = 10;
-
-				(function draw() {
-					α++;
-					α %= 360;
-					var r = ( α * π / 180 )
-					, x = Math.sin( r ) * 100
-					, y = Math.cos( r ) * - 100
-					, mid = ( α > 180 ) ? 1 : 0
-					, anim = 'M 0 0 v -100 A 100 100 1 ' 
-					+ mid + ' 1 ' 
-					+  x  + ' ' 
-					+  y  + ' z';
-					//[x,y].forEach(function( d ){
-					//  d = Math.round( d * 1e3 ) / 1e3;
-					//});
-					loader.setAttribute( 'd', anim );
-					border.setAttribute( 'd', anim );
-				setTimeout(draw, t); // Redraw
-			})();
-		});
-		</script>
 		
 	</body>
 	</html>
