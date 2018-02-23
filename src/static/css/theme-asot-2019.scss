@@ -305,8 +305,11 @@ $select-bg-color: #fff;
         color: #fff !important;
     }
 }
-.manage-rooms .amount, .form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
+.form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
     color: #fff !important;
+}
+.manage-rooms .amount{
+    color: #000;
 }
 
 .ribbon span{
