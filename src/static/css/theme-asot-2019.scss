@@ -3,7 +3,7 @@ $breakpoint-desktop: 1199px;
 $breakpoint-tablet: 991px;
 $breakpoint-mobile: 767px;
 
-$body-bg-color: #fff;
+$body-bg-color: #000;
 
 $theme-folder: asot2019;
 
@@ -191,8 +191,8 @@ $select-bg-color: #fff;
 }
 
 .content-wrapper{
-    top: 0 !important;
-    height: 100% !important;
+    // top: 0 !important;
+    // height: 100% !important;
 }
 
 .hero-h1{
@@ -305,7 +305,7 @@ $select-bg-color: #fff;
         color: #fff !important;
     }
 }
-.form-error-list, .form-error-list li:before, .form-select--error, .mobile-menu ul li a {
+.form-error-list, .form-error-list li:before, .form-select--error {
     color: #fff !important;
 }
 .manage-rooms .amount{
@@ -316,6 +316,9 @@ $select-bg-color: #fff;
     color: #fff;
 }
 
+.mobile-menu ul li a{
+    color: #ff0067 !important;
+}
 .button--primary, .button--secondary, .button--next, .button--prev{
     background-color: $secondary-text-color !important;
     color: #fff !important;

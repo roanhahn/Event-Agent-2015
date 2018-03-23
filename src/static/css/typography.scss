@@ -28,6 +28,12 @@ a{
 	transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
 }
 
+
+.conditions-link{
+	text-decoration: underline;
+	font-weight: bold;
+	color: $secondary-link-color;
+}
 .readmore{
 	color: $secondary-link-color;
 	font-weight: bold;
