@@ -642,3 +642,149 @@ body{
 // .ribbon .text::before{
 //     border-left: 3px solid red !important;
 // }
+
+.usp-slider{
+    padding: 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #fff;
+    position: relative;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+
+    @media all and (max-width: $breakpoint-mobile){
+        // background-position: top right;
+    }
+
+    &:before{
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.4);
+        content: "";
+        position: absolute;
+    }
+
+    & img{
+        max-width: 150px;
+        margin-bottom: 20px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            max-width: 70px;
+        }
+    }
+
+    & h2{
+        font-family: 'ornitons-bold';
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom:  15px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            font-size: 30px;
+        }
+
+        & span{
+            white-space: nowrap;
+            color: #ff0067;
+            display: block;
+        }
+    }
+
+    & .usp-slider-p{
+        font-family: 'ornitons-regularregular';
+        font-weight: normal;
+        font-size: 22px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+        // text-transform: uppercase;
+
+        @media all and (max-width: $breakpoint-mobile){
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+
+   & .button--hero{
+        min-width: 220px;
+        white-space: normal;
+        display: inline-block;
+        padding: 20px 0 !important;
+        font-size: 18px !important;
+        // font-family: 'Gotham Bold' !important;
+        // font-family: 'proxima_nova_rgbold' !important;
+        margin: 0 5px;
+       
+        background: transparent !important;
+        // text-shadow: none;
+            border: 2px solid #00A3DA!important;
+
+
+       
+    border-color: #00A3DA;
+    color: #fff;
+    letter-spacing: 2px;
+    
+
+        &:hover{
+            background: #00A3DA !important;
+            color: #fff;
+        }
+
+        @media all and (max-width: $breakpoint-mobile){
+            margin: 0 auto 10px;
+            display: block !important;
+            max-width: 240px;
+        }
+    }
+
+    
+
+    & ul{
+        list-style-type: none;
+        margin-top: 30px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            margin-top: 30px;
+        }
+
+        & li{
+            // text-transform: uppercase;
+            font-family: 'ornitons-demiboldregular';
+            font-size: 20px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+
+            @media all and (max-width: $breakpoint-mobile){
+                font-size: 13px;
+            }
+
+            & i{
+                color: #00A3DA;
+                margin-right: 10px;
+            }
+            & div{
+
+            }
+        }
+    }
+}
+
+.wow{
+    visibility: hidden;
+}
+
+.loader{
+
+    &-text{
+        color: #fff !important;
+        font-size: 15px !important;
+    }
+    &-bar{
+        background: #00A3DA !important;
+    }
+}
