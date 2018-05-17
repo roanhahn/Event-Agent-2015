@@ -24,12 +24,12 @@ layout: docs.hbs
 <section class="docs">
 	<div class="container">
 		<div class="row">			
-			<div class="col-md-4">
+			<div class="">
 				<h3 class="h3-docs">Pages</h3>
-				<ul class="ul-docs">
+				<ul class="ul-docs ">
 					{{#each pages}}
 					{{#isnt data.title 'Welcome'}}
-					<li><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
+					<li class="col-md-4"><a href="{{relative dest this.dest}}">{{ data.title }}</a></li>
 					{{/isnt}}
 					{{/each}}
 				</ul>

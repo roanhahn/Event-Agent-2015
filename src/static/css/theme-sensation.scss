@@ -26,9 +26,9 @@ $tertiary-font: 'Oswald', sans-serif;
 // HEADER STYLING
 $header-height: 80px;
 $header-height-mobile: 50px;
-$logo-width: 65px;
-$logo-height: 25px;
-$logo-width-mobile: 54px;
+$logo-width: 107px;
+$logo-height: 40px;
+$logo-width-mobile: 53px;
 $logo-height-mobile: 20px;
 $header-border-color: #ddd;
 $header-link-color: #000;
@@ -99,22 +99,57 @@ $select-bg-color: #fff;
 
 
 .header-logo{
-    background: transparent url(../img/#{$theme-folder}/logo.svg) no-repeat 0 0 scroll !important;
+    background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll !important;
     background-size: $logo-width !important;
-    margin-top: 26px !important;
+    margin-top: 20px !important;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     @media all and (max-width: $breakpoint-mobile){
         width: $logo-width-mobile !important;
         background-size: $logo-width-mobile !important;
-        margin: 15px 0 0 !important;
+        margin: 17px 0 0 !important;
     }
 }
 
+.header{
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.header.scrolled{
+    // background: red;
+    height: $header-height-mobile;
+    
+
+    & .header-logo{
+        width: $logo-width-mobile !important;
+        background-size: $logo-width-mobile !important;
+        margin: 17px 0 0 !important;
+
+    }
+
+    & .header-menu-item{
+        line-height: $header-height-mobile;
+        
+    }
+}
+.header-menu-item{
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
 .header-menu-link{
     font-family: $secondary-font;
     text-transform: uppercase;
 }
 
-
+.event-hero{
+    background: #fff !important;
+}
 .hero-h1{
     text-transform: uppercase;
     line-height: 1.2 !important;
@@ -177,7 +212,7 @@ $select-bg-color: #fff;
 
     @media all and (max-width: $breakpoint-mobile){
         font-size: 16px !important;
-         padding: 15px 10px !important;
+        padding: 15px 10px !important;
     }
 }
 
@@ -213,4 +248,249 @@ $select-bg-color: #fff;
     height: 20px !important;
     width: auto !important;
     line-height: 0px !important;
+}
+
+.usp-slider{
+    padding: 200px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+
+    @media all and (max-width: $breakpoint-mobile){
+        padding: 80px 0;
+    }
+
+    &:before{
+        display: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.2);
+        content: "";
+        position: absolute;
+    }
+
+    & img{
+        max-width: 300px;
+        margin-bottom: 30px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            max-width: 200px;
+        }
+    }
+
+    & h2{
+        font-family: 'Oswald';
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom:  10px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        & span{
+            white-space: nowrap;
+            color: #37d6c7;
+            display: block;
+        }
+    }
+
+    & .usp-slider-p{
+        font-family: 'Oswald';
+        font-weight: normal;
+        font-size: 24px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        @media all and (max-width: $breakpoint-mobile){
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+
+    & .button--hero{
+        min-width: 220px;
+        white-space: normal;
+        display: inline-block;
+        padding: 20px 0 !important;
+        font-size: 18px !important;
+        font-family: 'Oswald' !important;
+        // font-family: 'proxima_nova_rgbold' !important;
+        margin: 0 5px;
+        border: none;
+        background: rgba(0,0,0,.4);
+        border: 2px solid #fff;
+        text-shadow: none !important;
+
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+
+        @media all and (max-width: $breakpoint-mobile){
+            margin: 0 auto 10px;
+            display: block !important;
+            max-width: 220px;
+            font-size: 16px !important;
+        }
+    }
+
+
+
+    & ul{
+        list-style-type: none;
+        margin-top: 30px;
+
+        @media all and (max-width: $breakpoint-mobile){
+            margin-top: 30px;
+        }
+
+        & li{
+            text-transform: uppercase;
+            font-family: 'Oswald';
+            font-size: 18px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+
+            @media all and (max-width: $breakpoint-mobile){
+                font-size: 13px;
+            }
+
+            & i{
+                color: #37d6c7;
+                margin-right: 10px;
+            }
+            & div{
+
+            }
+        }
+    }
+}
+
+.wow{
+    visibility: hidden;
+}
+
+.loader{
+
+    &-text{
+        color: #000 !important;
+        font-size: 15px !important;
+    }
+    &-bar{
+        background: #6db2c2 !important;
+    }
+}
+
+.sensation-hero{
+    height: 624px;
+    // height: 60%;
+    background: #000 url(../img/sensation/sensation-hero.png) no-repeat center bottom scroll;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+    @media all and(max-width: $breakpoint-mobile){
+        height: 550px;
+    }
+
+    & .logo{
+        display: inline-block;
+        max-width: 240px;
+        @media all and(max-width: $breakpoint-tablet){
+            max-width: 200px;
+        }
+        @media all and(max-width: $breakpoint-mobile){
+            max-width: 140px;
+        }
+    }
+
+    & .inner{
+        padding: 100px 0;
+        // background: red;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+
+        -ms-transform: translate(0, -50%); /* IE 9 */
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        @media all and(max-width: $breakpoint-mobile){
+
+        }
+    }
+
+    & .sensation-hero-btn{
+        display: inline-block;
+        min-width: 240px;
+        background: rgba(0,0,0,.6);
+        font-family: 'Lato';
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 25px 0;
+        color: #fff;
+        margin: 10px;
+
+        &:hover{
+            background: #000;
+        }
+
+        @media all and(max-width: $breakpoint-tablet){
+            min-width: 200px;
+            padding: 15px 0;
+            font-size: 22px;
+        }
+
+        @media all and(max-width: $breakpoint-mobile){
+            display: block;
+            padding: 8px 0;
+            font-size: 18px;
+        }
+
+        & span{
+            display: block;
+            font-weight: 400;
+            font-family: 'Lato';
+            font-size: 20px;
+
+            @media all and(max-width: $breakpoint-tablet){
+                font-size: 16px;
+            }
+            @media all and(max-width: $breakpoint-mobile){
+                font-size: 14px;
+            }  
+
+            &:before{
+                display: block;
+                width: 80px;
+                height: 4px;
+                background: #f19537;
+                margin: 2px auto;
+                content: "";
+
+                @media all and(max-width: $breakpoint-tablet){
+                    width: 60px;
+                }
+                @media all and(max-width: $breakpoint-mobile){
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+.payoff{
+    display: none;
 }

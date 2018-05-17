@@ -82,6 +82,25 @@ $(".hotel-item-grid").hover
 // responsive video
 
 
+// SCROLL HEADER
+
+var headerheight = $(".header").outerHeight();
+
+console.log(headerheight);
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+  
+
+  if (scroll >= headerheight) {
+    $(".header").addClass("scrolled");
+    // $(".site-background").addClass("scrolled");
+  } else {
+    $(".header").removeClass("scrolled");
+    // $(".site-background").removeClass("scrolled");
+  }
+  
+});
 
 // WOW
 
