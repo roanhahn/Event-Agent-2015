@@ -398,24 +398,26 @@ $select-bg-color: #fff;
     background-size: cover;
     position: relative;
     text-align: center;
-
+    overflow: hidden;
+    
     @media all and(max-width: $breakpoint-mobile){
         height: 550px;
     }
 
     & .logo{
         display: inline-block;
-        max-width: 240px;
+        max-width: 273px;
         @media all and(max-width: $breakpoint-tablet){
             max-width: 200px;
         }
         @media all and(max-width: $breakpoint-mobile){
-            max-width: 140px;
+            // max-width: 140px;
+            // display: none;
         }
     }
 
     & .inner{
-        padding: 100px 0;
+        padding: 70px 0;
         // background: red;
         position: absolute;
         top: 50%;
@@ -427,19 +429,24 @@ $select-bg-color: #fff;
         transform: translate(0, -50%);
 
         @media all and(max-width: $breakpoint-mobile){
-
+            top: 50%;
+            bottom: auto;
+            padding: 100px 0;
+            -ms-transform: translate(0, -50%); /* IE 9 */
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
         }
     }
 
     & .sensation-hero-btn{
         display: inline-block;
-        min-width: 240px;
+        min-width: 235px;
         background: rgba(0,0,0,.6);
         font-family: 'Lato';
-        font-size: 28px;
+        font-size: 27px;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 25px 0;
+        padding: 15px 0;
         color: #fff;
         margin: 10px;
 
@@ -454,9 +461,10 @@ $select-bg-color: #fff;
         }
 
         @media all and(max-width: $breakpoint-mobile){
-            display: block;
-            padding: 8px 0;
+            // display: block;
+            padding: 10px 0;
             font-size: 18px;
+            margin: 0 0 10px;
         }
 
         & span{
@@ -474,7 +482,7 @@ $select-bg-color: #fff;
 
             &:before{
                 display: block;
-                width: 80px;
+                width: 75px;
                 height: 4px;
                 background: #f19537;
                 margin: 2px auto;

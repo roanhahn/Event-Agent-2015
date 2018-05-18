@@ -292,21 +292,19 @@ a, a:visited, a:active {
   background: #000 url(../img/sensation/sensation-hero.png) no-repeat center bottom scroll;
   background-size: cover;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   @media all and (max-width: 767px) {
     .sensation-hero {
       height: 550px; } }
   .sensation-hero .logo {
     display: inline-block;
-    max-width: 240px; }
+    max-width: 273px; }
     @media all and (max-width: 991px) {
       .sensation-hero .logo {
         max-width: 200px; } }
-    @media all and (max-width: 767px) {
-      .sensation-hero .logo {
-        max-width: 140px; } }
   .sensation-hero .inner {
-    padding: 100px 0;
+    padding: 70px 0;
     position: absolute;
     top: 50%;
     left: 0;
@@ -315,15 +313,24 @@ a, a:visited, a:active {
     /* IE 9 */
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%); }
+    @media all and (max-width: 767px) {
+      .sensation-hero .inner {
+        top: 50%;
+        bottom: auto;
+        padding: 100px 0;
+        -ms-transform: translate(0, -50%);
+        /* IE 9 */
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%); } }
   .sensation-hero .sensation-hero-btn {
     display: inline-block;
-    min-width: 240px;
+    min-width: 235px;
     background: rgba(0, 0, 0, 0.6);
     font-family: 'Lato';
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 25px 0;
+    padding: 15px 0;
     color: #fff;
     margin: 10px; }
     .sensation-hero .sensation-hero-btn:hover {
@@ -335,9 +342,9 @@ a, a:visited, a:active {
         font-size: 22px; } }
     @media all and (max-width: 767px) {
       .sensation-hero .sensation-hero-btn {
-        display: block;
-        padding: 8px 0;
-        font-size: 18px; } }
+        padding: 10px 0;
+        font-size: 18px;
+        margin: 0 0 10px; } }
     .sensation-hero .sensation-hero-btn span {
       display: block;
       font-weight: 400;
@@ -351,7 +358,7 @@ a, a:visited, a:active {
           font-size: 14px; } }
       .sensation-hero .sensation-hero-btn span:before {
         display: block;
-        width: 80px;
+        width: 75px;
         height: 4px;
         background: #f19537;
         margin: 2px auto;
